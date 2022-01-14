@@ -427,6 +427,10 @@
   font-weight: 400;
 }
 
+.weight-semibold {
+  font-weight: 700;
+}
+
 .weight-bold {
   font-weight: 900;
 }
