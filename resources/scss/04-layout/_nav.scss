@@ -17,8 +17,8 @@
             transition: background-color v(transition-duration) v(transition-timing);
 
             &:hover {
-                @include apply-utility('bg', 'white');
-                @include apply-utility('color', 'primary');
+                @include apply-utility('color', 'white');
+                background-color: darken(get-color('secondary'), $amount: 20%);
             }
         }
     }

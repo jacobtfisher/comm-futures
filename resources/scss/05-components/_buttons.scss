@@ -12,11 +12,11 @@
     @include apply-utility('weight', 'bold');
 
     &:hover {
-        outline: 3px solid get-color('secondary');
-        outline-offset: .25rem;
+        background-color: darken(get-color('secondary'), $amount: 20%); 
     }
 
     &:focus {
-        background-color: darken(get-color('secondary'), $amount: 20%);
+        outline: 3px solid get-color('secondary');
+        outline-offset: .25rem;
     }
 }
