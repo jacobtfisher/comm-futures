@@ -67,6 +67,7 @@ module.exports = config => {
     config.addLayoutAlias('blog', 'layouts/blog.njk')
     config.addLayoutAlias('post', 'layouts/post.njk')
     config.addLayoutAlias('organizers', 'layouts/organizers.njk');
+    config.addLayoutAlias('sponsorship', 'layouts/sponsorship.njk');
     config.addLayoutAlias('contact', 'layouts/contact.njk')
     config.addLayoutAlias('category', 'layouts/category.njk')
 

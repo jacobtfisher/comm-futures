@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: sponsorship
 title: Sponsorship
 meta_title: Sponsorship
 meta_description: Sponsorship information for the 2020 ICA Hackathon "Opening Computational Communication Science"
