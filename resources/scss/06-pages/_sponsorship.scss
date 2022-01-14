@@ -1,0 +1,20 @@
+.sponsor-grid {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: normal;
+    justify-content: center;
+    flex-direction: row;
+    padding-bottom: 15vh;
+    max-width: 100%;
+
+    .masonry-brick {
+        flex: 1 1 33%;
+        align-self: center;
+        max-height: 150px;
+        min-width: 300px;
+        max-width: 50%;
+        width: auto;
+        margin: 0 4rem 1rem 0; /* Some gutter */
+    }
+}
+
