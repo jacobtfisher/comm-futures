@@ -1,0 +1,45 @@
+---
+layout: base
+data: organizer_list
+---
+{{ content | safe }}
+
+<main id="main" class="main inner box-flex pt-600 pb-1100" tabindex="-1">
+
+    <article id="container-centre" class="column centre">
+
+        <header class="page-header">
+
+            <h1 class="page-title">{{ title }}</h1>
+
+            {% if sub_heading %}
+
+                <p class="sub-heading">{{ sub_heading }}</p>
+
+            {% endif %}
+
+        </header>
+
+        <div class="content flow">
+
+            <div class="inner box-grid headshot-grid">
+
+                {%- for organizer in organizer_list %}
+                    <div class="headshot-card">
+                        <div class="card-body">
+                            <div class="card-header-image"><img data-src="{{ organizer.headshot }}" alt="{{ organizer.name }}"></div>
+                            <div class="name text-600">{{ organizer.name }}</div>
+                            <div class="affiliation">
+                                <i class="fi fi-rr-home-location-alt" style="padding:0 .5em 0 0;"></i>
+                                <a href="{{organizer.institution_link}}">{{ organizer.institution }}</a>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor -%}
+            </div>
+
+        </div>
+
+    </article>
+
+</main>

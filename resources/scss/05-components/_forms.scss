@@ -3,8 +3,9 @@
 
 .textarea,
 .input {
-    border: 0;
+    border: 1px solid get-color('grey');
     border-radius: v(border-radius);
+    margin: .25rem 0;
     padding: 0 .5rem;
 }
 

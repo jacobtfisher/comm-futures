@@ -1,9 +1,9 @@
 {
-    "name": "Skeleventy",
+    "name": "Opening Communication Science",
     "url": "https://skeleventy.netlify.app",
     "author": {
-        "name": "Mill Burray",
-        "handle": "@joe_dyer1"
+        "name": "Jacob Fisher",
+        "handle": "@jake_fisher"
     },
     "images": {
         "favicon": "/favicon.png",
@@ -14,6 +14,6 @@
     },
     "social_links": {
         "github": "https://github.com/josephdyer/skeleventy",
-        "twitter": "https://twitter.com/joe_dyer1"
+        "twitter": "https://twitter.com/hackingcommsci"
     }
 }

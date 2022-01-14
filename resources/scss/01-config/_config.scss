@@ -34,9 +34,9 @@ $gorko-size-scale: (
  * You can also use them to power borders, fills or shadows, for example.
  */
 $gorko-colors: (
-    'primary': #01093c,
-    'secondary': #24e0d0,
-    'grey': #4e5b71,
+    'primary': #585858,
+    'secondary': #29b6f6,
+    'grey': #9e9e9e,
     'white': #fff
 );
 
@@ -133,7 +133,7 @@ $gorko-config: (
         'items': (
             'thin': '300',
             'regular': '400',
-            'bold': '700'
+            'bold': '900'
         ),
         'output': 'standard',
         'property': 'font-weight'

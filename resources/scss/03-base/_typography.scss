@@ -35,7 +35,13 @@ h3 {
 // sub-heading
 .sub-heading {
     font-size: v(text-700);
+    color: get-color('grey');
     line-height: 1.5;
+    font-weight: 500;
+}
+
+.page-title {
+    margin: 0;
 }
 
 // lists
