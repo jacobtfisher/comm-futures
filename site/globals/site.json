@@ -8,9 +8,9 @@
     "images": {
         "favicon": "/favicon.png",
         "favicon_svg": "/favicon.svg",
-        "apple_touch_icon": "/images/meta/apple-touch-icon.png",
-        "twitter": "/images/meta/twitter.jpg",
-        "og": "/images/meta/og.jpg"
+        "apple_touch_icon": "/images/meta/ios_app_image.png",
+        "twitter": "/images/meta/social_image.png",
+        "og": "/images/meta/social_image.png"
     },
     "social_links": {
         "github": "https://github.com/josephdyer/skeleventy",
