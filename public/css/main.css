@@ -1115,13 +1115,17 @@ a:not([class]):hover {
   background-color: #29b6f6;
   border: 0;
   border-radius: var(--border-radius);
-  color: #585858;
+  color: #fff;
   padding: 0.8rem 1.25rem;
   transition: background-color var(--transition-duration) var(--transition-timing);
   font-weight: 900;
 }
 .button:hover {
-  background: #fff;
+  outline: 3px solid #29b6f6;
+  outline-offset: 0.25rem;
+}
+.button:focus {
+  background-color: #077cb2;
 }
 
 .pagination {

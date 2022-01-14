@@ -9,4 +9,4 @@ eleventyNavigation:
   order: 5
 ---
 
-Simply fill out the form below and we'll gladly ignore it.
+Have a question for the organizing team? Feel free to send us a line using the form below.

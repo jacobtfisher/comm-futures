@@ -6,12 +6,17 @@
     background-color: get-color('secondary');
     border: 0;
     border-radius: v(border-radius);
-    color: get-color('primary');
+    color: get-color('white');
     padding: get-size('300') get-size('500');
     transition: background-color v(transition-duration) v(transition-timing);
     @include apply-utility('weight', 'bold');
 
     &:hover {
-        @include apply-utility('bg', 'white');
+        outline: 3px solid get-color('secondary');
+        outline-offset: .25rem;
+    }
+
+    &:focus {
+        background-color: darken(get-color('secondary'), $amount: 20%);
     }
 }
