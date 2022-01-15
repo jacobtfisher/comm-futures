@@ -9,4 +9,4 @@ We are excited that you would like to join us for the Opening Computational Comm
 
 In the meantime, please sign up for our mailing list using the interest form linked below, so we can be sure to keep you in touch with news and information as we get closer to the conference.
 
-<a href="https://forms.gle/3t9ALxioDimayz7VA" class="link button color-white text-400 weight-semibold pl-500 pr-500">Mailing List Sign Up</a>
+<a href="https://mediaillinois.co1.qualtrics.com/jfe/form/SV_eM21D9dzYqyF9EG" class="link button color-white text-400 weight-semibold pl-500 pr-500"><i class="fi fi-rr-form" style="color:white; padding-right:.5rem"></i>Hackathon Interest Form</a>

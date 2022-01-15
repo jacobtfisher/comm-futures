@@ -28,7 +28,7 @@ While project sessions are a great opportunity to explore, work together, and ha
 
 Breakouts are organized in the form of workshops and tutorials and will be scheduled concurrently to project sessions. Typically, these breakouts are short (max. 1h) and geared towards particular topics, research problems, hands-on tutorials, or tool demonstrations and applications. Each session can be organized by single or multiple organizers (maybe even you!) and can vary in format from classical “lecture” style to more interactive coding sessions. Ideas for potential breakouts include, but are not limited to:
 
-### Tutorials
+### Example Tutorials
 
 - Network science for communication scientists
 - Open communication science with Github
@@ -37,11 +37,12 @@ Breakouts are organized in the form of workshops and tutorials and will be sched
 - Building R/Python packages
 - High performance computing for communication scientists
 
-Interactive Tool Workshops:
+### Interactive Tool Workshops:
 
 - Designing naturalistic stimuli: An introduction to Asteroid Impact
 - Analyzing the world’s news with iCoRe
 - eMFDscore: Large-scale extraction of moral intuition from text messages
 - Anaconda: Creation, management, and sharing of coding environments
 
-Interested in hosting a workshop? Send us an email with your topic and a short session description!
+Please note that this is an incomplete list, as (we hope) many of the workshops and tutorials will be proposed by hackathon attendees. If you have registered for the hackathon and would like to offer a suggestion for a workshop or demo, please let us know [here](https://mediaillinois.co1.qualtrics.com/jfe/form/SV_9S20aEF33zdWPe6).
+
