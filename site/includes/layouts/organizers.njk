@@ -24,7 +24,9 @@ data: organizer_list
 
             <div class="inner box-grid headshot-grid">
 
-                {%- for organizer in organizer_list %}
+                {% set org_shuf = organizer_list | shuffle %}
+
+                {%- for organizer in org_shuf %}
                     <div class="headshot-card">
                         <div class="card-body">
                             <div class="card-header-image"><img data-src="{{ organizer.headshot }}" alt="{{ organizer.name }}"></div>
