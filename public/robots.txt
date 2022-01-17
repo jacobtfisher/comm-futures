@@ -2,4 +2,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://skeleventy.netlify.app/sitemap.xml
+Sitemap: https://hackingcommsci.org/sitemap.xml

@@ -1,39 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://skeleventy.netlify.app/blog/post-1/</loc>
-        <lastmod>2018-09-30</lastmod>
-    </url>
-    <url>
-        <loc>https://skeleventy.netlify.app/blog/post-2/</loc>
-        <lastmod>2019-10-30</lastmod>
-    </url>
-    <url>
-        <loc>https://skeleventy.netlify.app/blog/post-3/</loc>
-        <lastmod>2019-11-15</lastmod>
-    </url>
-    <url>
-        <loc>https://skeleventy.netlify.app/about/</loc>
+        <loc>https://hackingcommsci.org/about/</loc>
         <lastmod>2022-01-14</lastmod>
     </url>
     <url>
-        <loc>https://skeleventy.netlify.app/contact/</loc>
+        <loc>https://hackingcommsci.org/contact/</loc>
         <lastmod>2022-01-14</lastmod>
     </url>
     <url>
-        <loc>https://skeleventy.netlify.app/</loc>
+        <loc>https://hackingcommsci.org/</loc>
         <lastmod>2022-01-14</lastmod>
     </url>
     <url>
-        <loc>https://skeleventy.netlify.app/organizers/</loc>
+        <loc>https://hackingcommsci.org/organizers/</loc>
         <lastmod>2022-01-14</lastmod>
     </url>
     <url>
-        <loc>https://skeleventy.netlify.app/signup/</loc>
+        <loc>https://hackingcommsci.org/signup/</loc>
         <lastmod>2022-01-14</lastmod>
     </url>
     <url>
-        <loc>https://skeleventy.netlify.app/sponsorship/</loc>
+        <loc>https://hackingcommsci.org/sponsorship/</loc>
         <lastmod>2022-01-14</lastmod>
     </url>
 </urlset>
