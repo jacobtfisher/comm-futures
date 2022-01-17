@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: home
 meta_title: Home
 meta_description: ICA 2022 Pre-conference Hackathon
 title: Opening communication science

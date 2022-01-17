@@ -846,6 +846,32 @@
   border-width: 0;
 }
 
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 100%;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 5px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
 /* Box sizing rules */
 *,
 *::before,
@@ -1285,19 +1311,22 @@ a:not([class]):hover {
 .sponsor-grid {
   display: flex;
   flex-flow: row wrap;
-  align-items: normal;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
   flex-direction: row;
-  padding-bottom: 15vh;
+  gap: 4rem;
+  padding: 2rem;
   max-width: 100%;
 }
 .sponsor-grid .masonry-brick {
-  flex: 1 1 33%;
-  align-self: center;
-  max-height: 150px;
-  min-width: 300px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 120px;
   max-width: 50%;
+}
+.sponsor-grid .masonry-brick img.loaded {
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 100%;
   width: auto;
-  margin: 0 4rem 1rem 0;
-  /* Some gutter */
 }

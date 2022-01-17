@@ -1,12 +1,32 @@
 [
   {
+    "name": "ICA Computational Methods Division",
+    "logo": "/images/sponsor_logos/cm_logo.png",
+    "link": "http://ica-cm.org/",
+    "flex": "1 1 25%" 
+  },
+  {
+    "name": "ICA Communication Science & Biology Interest Group",
+    "logo": "/images/sponsor_logos/csab_logo.png",
+    "link": "https://commscience.org/",
+    "flex": "1 2 25%" 
+  },
+  {
     "name": "Charles H. Sandage Department of Advertising, University of Illinois Urbana-Champaign",
     "logo": "/images/sponsor_logos/uiuc_media.png",
-    "link": "https://media.illinois.edu/"
+    "link": "https://media.illinois.edu/",
+    "flex": "1 2 25%"
   },
   {
     "name": "Moody College of Communication, University of Texas at Austin",
     "logo": "/images/sponsor_logos/moody.svg",
-    "link": "https://moody.utexas.edu/"
+    "link": "https://moody.utexas.edu/",
+    "flex": "1 3 25%"
+  },
+  {
+    "name": "Department of Communication, UC Davis",
+    "logo": "/images/sponsor_logos/uc_davis_logo.png",
+    "link": "https://communication.ucdavis.edu/",
+    "flex": "1 2 25%"
   }
 ]

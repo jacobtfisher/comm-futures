@@ -1,20 +1,23 @@
 .sponsor-grid {
     display: flex;
     flex-flow: row wrap;
-    align-items: normal;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
     flex-direction: row;
-    padding-bottom: 15vh;
+    gap: 4rem;
+    padding: 2rem;
     max-width: 100%;
 
     .masonry-brick {
-        flex: 1 1 33%;
-        align-self: center;
-        max-height: 150px;
-        min-width: 300px;
+        object-fit: contain;
+        height: 120px;
         max-width: 50%;
-        width: auto;
-        margin: 0 4rem 1rem 0; /* Some gutter */
+
+        img.loaded{
+            object-fit: contain;
+            height: 100%;
+            width: auto;
+        }
     }
 }
 
