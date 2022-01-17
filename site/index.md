@@ -9,7 +9,7 @@ eleventyNavigation:
   order: 1
 ---
 
-_Opening Communication Science_ is a two day hands-on workshop to encourage open, non-competitive collaboration across communication subfields utilizing computational and "big data" methods. The hackathon is a collaborative effort between the [Computational Methods](http://ica-cm.org/) and [Communication Science and Biology](https://commscience.org/) interest groups of the International Communication Association. During the hackathon, attendees will join teams to collaborate on programming projects and learn from one another. Attendees will also have the opportunity to lead and attend breakout sessions taught by other hackathon attendees. No programming experience is necessary to participate in the hackathon, and we encourage those of all skill levels to attend!
+_Opening Communication Science_ is a two day hands-on workshop to encourage open, non-competitive collaboration across communication subfields utilizing computational and "big data" methods. The hackathon is a collaborative effort between the [Computational Methods](http://ica-cm.org/) division and the [Communication Science and Biology](https://commscience.org/) interest group of the International Communication Association. During the hackathon, attendees will join teams to collaborate on programming projects and learn from one another. Attendees will also have the opportunity to lead and attend breakout sessions taught by other hackathon attendees. No programming experience is necessary to participate in the hackathon, and we encourage those of all skill levels to attend!
 
 - **Dates:** May 25th & May 26th 2022
 - **Location:** Paris, FR
