@@ -12,6 +12,7 @@ h2,
 h3 {
     @include apply-utility('leading', 'tight');
     letter-spacing: -.01rem;
+    font-family: "Roboto Mono";
 }
 
 h1 {
@@ -38,6 +39,7 @@ h3 {
     color: get-color('grey');
     line-height: 1.5;
     font-weight: 500;
+    font-family: "Roboto Mono";
 }
 
 .page-title {
