@@ -2,6 +2,12 @@
 layout: base
 data: organizer_list
 ---
+
+<head>
+    <!-- Place your kit's code here -->
+    <script src="https://kit.fontawesome.com/4451d51824.js" crossorigin="anonymous"></script>
+</head>
+
 {{ content | safe }}
 
 <main id="main" class="main inner box-flex pt-600 pb-1100" tabindex="-1">
@@ -30,10 +36,14 @@ data: organizer_list
                     <div class="headshot-card">
                         <div class="card-body">
                             <div class="card-header-image"><img data-src="{{ organizer.headshot }}" alt="{{ organizer.name }}"></div>
-                            <div class="name text-600">{{ organizer.name }}</div>
+                            <div class="name text-500">{{ organizer.name }}</div>
                             <div class="affiliation">
-                                <i class="fi fi-rr-home-location-alt" style="padding:0 .5em 0 0;"></i>
-                                <a href="{{organizer.institution_link}}">{{ organizer.institution }}</a>
+                                <i class="fas fa-university" style="padding:0 .5em 0 0; color: grey"></i>
+                                <a href="{{organizer.institution_link}}">{{ organizer.institution }}</a><br>
+                            </div>
+                            <div class="affiliation">
+                                <i class="fab fa-twitter" style="padding:0 .5em 0 0; color:grey"></i>
+                                <a href="https://twitter.com/{{organizer.twitter_handle}}">@{{ organizer.twitter_handle }}</a><br>
                             </div>
                         </div>
                     </div>

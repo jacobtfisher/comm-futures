@@ -1247,9 +1247,9 @@ a:not([class]):hover {
   }
 }
 .headshot-grid {
-  --gap: 3.05rem;
+  --gap: 1.95rem;
   align-items: stretch;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   gap: var(--gap);
   padding-bottom: 15vh;
 }
@@ -1278,8 +1278,8 @@ a:not([class]):hover {
   flex-direction: row;
   flex: 1 1 auto;
   padding: 0.2rem 1rem;
-  font-size: 200;
   line-height: 1;
+  align-items: center;
 }
 
 .sponsor-grid {

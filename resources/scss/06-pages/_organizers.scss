@@ -1,7 +1,7 @@
 .headshot-grid {
-    --gap: #{get-size('900')};
+    --gap: #{get-size('700')};
     align-items: stretch;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     gap: v(gap);
     padding-bottom: 15vh;
 
@@ -32,8 +32,8 @@
                 flex-direction: row;
                 flex: 1 1 auto;
                 padding: .2rem 1rem;
-                font-size: 200;
                 line-height: 1;
+                align-items: center;
             }
 
         }
