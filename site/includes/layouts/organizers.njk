@@ -8,8 +8,6 @@ data: organizer_list
     <script src="https://kit.fontawesome.com/4451d51824.js" crossorigin="anonymous"></script>
 </head>
 
-{{ content | safe }}
-
 <main id="main" class="main inner box-flex pt-600 pb-1100" tabindex="-1">
 
     <article id="container-centre" class="column centre">
@@ -28,28 +26,38 @@ data: organizer_list
 
         <div class="content flow">
 
-            <div class="inner box-grid headshot-grid">
+            <div class="inner">
+                <div class="box-grid headshot-grid">
 
-                {% set org_shuf = organizer_list | shuffle %}
+                    {% set org_shuf = organizer_list | shuffle %}
 
-                {%- for organizer in org_shuf %}
-                    <div class="headshot-card">
-                        <div class="card-body">
-                            <div class="card-header-image"><img data-src="{{ organizer.headshot }}" alt="{{ organizer.name }}"></div>
-                            <div class="name text-500">{{ organizer.name }}</div>
-                            <div class="affiliation">
-                                <i class="fas fa-university" style="padding:0 .5em 0 0; color: grey"></i>
-                                <a href="{{organizer.institution_link}}">{{ organizer.institution }}</a><br>
-                            </div>
-                            <div class="affiliation">
-                                <i class="fab fa-twitter" style="padding:0 .5em 0 0; color:grey"></i>
-                                <a href="https://twitter.com/{{organizer.twitter_handle}}">@{{ organizer.twitter_handle }}</a><br>
+                    {%- for organizer in org_shuf %}
+                        <div class="headshot-card">
+                            <div class="card-body">
+                                <div class="card-header-image"><img data-src="{{ organizer.headshot }}" alt="{{ organizer.name }}"></div>
+                                <div class="name text-500">{{ organizer.name }}</div>
+                                <div class="affiliation">
+                                    <i class="fas fa-university" style="padding:0 .5em 0 0; color: grey"></i>
+                                    <a href="{{organizer.institution_link}}">{{ organizer.institution }}</a><br>
+                                </div>
+                                <div class="affiliation">
+                                    <i class="fab fa-twitter" style="padding:0 .5em 0 0; color:grey"></i>
+                                    <a href="https://twitter.com/{{organizer.twitter_handle}}">@{{ organizer.twitter_handle }}</a><br>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                {% endfor -%}
-            </div>
+                    {% endfor -%}
+                </div>
 
+                <div class = "callout">
+                    <div class = "callout-icon">
+                        <i class="fas fa-exclamation-circle color-grey"></i>
+                    </div>
+                    <div class = "callout-text">
+                        {{ content | safe }}
+                    </callout>
+                </div>
+            </div>
         </div>
 
     </article>

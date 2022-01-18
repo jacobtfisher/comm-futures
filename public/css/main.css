@@ -25,15 +25,23 @@
  * to enabling/disabling pre-built components/utilities.
  */
 .bg-primary {
-  background: #585858;
+  background: #111827;
 }
 
 .bg-secondary {
-  background: #29b6f6;
+  background: #0EA5E9;
+}
+
+.bg-light-red {
+  background: #F87171;
 }
 
 .bg-grey {
-  background: #9e9e9e;
+  background: #9CA3AF;
+}
+
+.bg-light-grey {
+  background: #F3F4F6;
 }
 
 .bg-white {
@@ -41,15 +49,23 @@
 }
 
 .color-primary {
-  color: #585858;
+  color: #111827;
 }
 
 .color-secondary {
-  color: #29b6f6;
+  color: #0EA5E9;
+}
+
+.color-light-red {
+  color: #F87171;
 }
 
 .color-grey {
-  color: #9e9e9e;
+  color: #9CA3AF;
+}
+
+.color-light-grey {
+  color: #F3F4F6;
 }
 
 .color-white {
@@ -1065,7 +1081,7 @@ h3 {
 }
 
 .sub-heading {
-  color: #9e9e9e;
+  color: #9CA3AF;
   line-height: 1.5;
   font-weight: 500;
   font-family: "Roboto Mono";
@@ -1086,17 +1102,17 @@ a {
 }
 a:not([class]) {
   color: currentColor;
-  border-bottom: var(--border-size) solid #29b6f6;
+  border-bottom: var(--border-size) solid #0EA5E9;
   padding-bottom: 0.1rem;
   -webkit-text-decoration-skip: ink;
           text-decoration-skip-ink: auto;
 }
 a:not([class]):hover {
-  color: #29b6f6;
+  color: #0EA5E9;
 }
 
 :focus {
-  outline: 3px solid #29b6f6;
+  outline: 3px solid #0EA5E9;
   outline-offset: 0.25rem;
 }
 
@@ -1127,7 +1143,7 @@ a:not([class]):hover {
   margin: 0 auto;
 }
 .logo:hover {
-  color: #29b6f6;
+  color: #0EA5E9;
 }
 
 @media (min-width : 40em) {
@@ -1150,7 +1166,7 @@ a:not([class]):hover {
   line-height: clamp(1.71rem, 1.45rem + 1.29vw, 2.37rem);
 }
 .nav .link.active, .nav .link:hover {
-  color: #29b6f6;
+  color: #0EA5E9;
 }
 .nav .link-get-started {
   border-radius: var(--border-radius);
@@ -1158,7 +1174,7 @@ a:not([class]):hover {
 }
 .nav .link-get-started:hover {
   color: #fff;
-  background-color: #077cb2;
+  background-color: #086189;
 }
 
 .mobile-nav {
@@ -1180,7 +1196,7 @@ a:not([class]):hover {
   padding: var(--gap) 0;
 }
 .mobile-nav .link.active, .mobile-nav .link:hover {
-  color: #29b6f6;
+  color: #0EA5E9;
 }
 
 .mobile-nav-toggle {
@@ -1244,7 +1260,7 @@ a:not([class]):hover {
 
 .button {
   display: inline-block;
-  background-color: #29b6f6;
+  background-color: #0EA5E9;
   border: 0;
   border-radius: var(--border-radius);
   color: #fff;
@@ -1253,10 +1269,10 @@ a:not([class]):hover {
   font-weight: 900;
 }
 .button:hover {
-  background-color: #077cb2;
+  background-color: #086189;
 }
 .button:focus {
-  outline: 3px solid #29b6f6;
+  outline: 3px solid #0EA5E9;
   outline-offset: 0.25rem;
 }
 
@@ -1270,7 +1286,7 @@ a:not([class]):hover {
 
 .textarea,
 .input {
-  border: 1px solid #9e9e9e;
+  border: 1px solid #9CA3AF;
   border-radius: var(--border-radius);
   margin: 0.25rem 0;
   padding: 0 0.5rem;
@@ -1285,7 +1301,7 @@ a:not([class]):hover {
 }
 
 .social-icons .icon-link:hover {
-  color: #29b6f6;
+  color: #0EA5E9;
 }
 .social-icons .icon {
   --social-icon-size: clamp(1.09rem, 1rem + 0.47vw, 1.33rem);
@@ -1306,6 +1322,24 @@ a:not([class]):hover {
 }
 .image.circle img {
   border-radius: 50%;
+}
+
+.callout {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  background-color: #F3F4F6;
+  border-radius: 1em;
+  padding: 0.5em;
+}
+.callout .callout-icon {
+  flex: 1 1 0;
+  margin: 0 clamp(1.09rem, 1rem + 0.47vw, 1.33rem) 0 clamp(0.56rem, 0.53rem + 0.16vw, 0.64rem);
+  align-self: top;
+}
+.callout .callout-text {
+  flex: 99 1 0;
+  font-size: clamp(0.88rem, 0.83rem + 0.24vw, 1rem);
 }
 
 .type-post .length-optimal {
@@ -1357,11 +1391,11 @@ a:not([class]):hover {
   padding: 0.25rem 0.5rem;
 }
 .card-title-link {
-  border-bottom: var(--border-size) solid #29b6f6;
+  border-bottom: var(--border-size) solid #0EA5E9;
   transition: border-color var(--transition-duration) var(--transition-timing);
 }
 .card-title-link:hover {
-  border-bottom-color: #585858;
+  border-bottom-color: #111827;
 }
 .card .datetime {
   position: absolute;
@@ -1383,12 +1417,12 @@ a:not([class]):hover {
   align-items: stretch;
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   gap: var(--gap);
-  padding-bottom: 15vh;
+  padding-bottom: clamp(1.71rem, 1.45rem + 1.29vw, 2.37rem);
 }
 .headshot-grid .headshot-card {
   overflow: hidden;
   position: relative;
-  border: 2px solid #9e9e9e;
+  border: 2px solid #9CA3AF;
   border-radius: 1em;
 }
 .headshot-grid .headshot-card .card-body {

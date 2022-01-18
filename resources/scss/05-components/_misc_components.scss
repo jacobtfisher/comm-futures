@@ -1,0 +1,21 @@
+//========== Misc Components ==========//
+
+.callout {
+	display: flex;
+	flex-flow: row wrap;
+	width: 100%;
+	background-color: get-color('light-grey');
+	border-radius: 1em;
+	padding: .5em;
+
+	.callout-icon{
+		flex: 1 1 0;
+		margin: 0 #{get-size('500')} 0 #{get-size('200')};
+		align-self: top;
+	}
+
+	.callout-text{
+		flex: 99 1 0;
+		font-size: #{get-size('400')};
+	}
+}

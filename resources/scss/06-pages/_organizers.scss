@@ -3,7 +3,7 @@
     align-items: stretch;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     gap: v(gap);
-    padding-bottom: 15vh;
+    padding-bottom: #{get-size('700')};
 
     .headshot-card {
         overflow: hidden;
