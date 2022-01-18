@@ -12,6 +12,7 @@
     // typography
     --base-font-size: #{$gorko-base-size};
     --ratio: 1.1;
+    --text-200: calc((var(--base-font-size) / var(--ratio)) / var(--ratio) / var(--ratio));
     --text-300: calc((var(--base-font-size) / var(--ratio)) / var(--ratio));
     --text-400: calc(var(--text-300) * var(--ratio));
     --text-500: calc(var(--text-400) * var(--ratio) * var(--ratio));
@@ -21,6 +22,7 @@
     --text-900: calc(var(--text-800) * var(--ratio));
     --text-1000: calc(var(--text-900) * var(--ratio));
     --text-1100: calc(var(--text-1000) * var(--ratio));
+    
 
     // borders
     --border-radius: .25rem;

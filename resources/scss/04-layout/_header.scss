@@ -1,9 +1,18 @@
 
 //==========  Header  ==========//
 
+.header {
+    display: none;
+
+    @include media-query('mobileXL') {
+        display: block
+    }
+
+}
+
 // logo
 .logo {
-    --logo-size: #{get-size('500')};
+    --logo-size: #{get-size('400')};
     font-size: v(logo-size);
     margin: 0 auto;
 
@@ -15,7 +24,7 @@
 @include media-query('mobileXL') {
 
     .logo {
-        --logo-size: #{get-size('600')};
+        --logo-size: #{get-size('500')};
         margin: 0 auto 0 0;
     }
 }

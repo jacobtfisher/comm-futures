@@ -3,7 +3,7 @@
 
 // set base font size
 body {
-    font-size: v(text-500);
+    font-size: #{get-size('500')};
 }
 
 // headings
@@ -16,13 +16,25 @@ h3 {
 }
 
 h1 {
-    --gap: #{get-size('700')};
-    font-size: v(text-900);
+    --gap: #{get-size('600')};
+    font-size: #{get-size('600')};
     margin: 0 0 v(gap);
+
+     @media (min-width : 40em) {
+        --gap: #{get-size('700')};
+        font-size: #{get-size('700')};
+        margin: 0 0 v(gap);
+    }
 }
 
 h2 {
-    font-size: v(text-800);
+    font-size: #{get-size('500')};
+
+     @media (min-width : 40em) {
+        --gap: #{get-size('600')};
+        font-size: #{get-size('600')};
+        margin: 0 0 v(gap);
+    }
 }
 
 h3 {
@@ -35,7 +47,6 @@ h3 {
 
 // sub-heading
 .sub-heading {
-    font-size: v(text-700);
     color: get-color('grey');
     line-height: 1.5;
     font-weight: 500;
