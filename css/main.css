@@ -1454,15 +1454,15 @@ a:not([class]):hover {
   align-items: center;
   justify-content: space-around;
   flex-direction: row;
-  gap: 4rem;
+  gap: 2rem;
   padding: 2rem;
   max-width: 100%;
 }
 .sponsor-grid .masonry-brick {
   -o-object-fit: contain;
      object-fit: contain;
-  height: 120px;
-  max-width: 50%;
+  height: 100px;
+  max-width: 45%;
 }
 .sponsor-grid .masonry-brick img.loaded {
   -o-object-fit: contain;

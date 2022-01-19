@@ -4,14 +4,14 @@
     align-items: center;
     justify-content: space-around;
     flex-direction: row;
-    gap: 4rem;
+    gap: 2rem;
     padding: 2rem;
     max-width: 100%;
 
     .masonry-brick {
         object-fit: contain;
-        height: 120px;
-        max-width: 50%;
+        height: 100px;
+        max-width: 45%;
 
         img.loaded{
             object-fit: contain;
