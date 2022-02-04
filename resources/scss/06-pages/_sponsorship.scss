@@ -17,6 +17,10 @@
             object-fit: contain;
             height: 100%;
             width: auto;
+
+            :hover {
+                cursor: pointer;
+            }
         }
     }
 }

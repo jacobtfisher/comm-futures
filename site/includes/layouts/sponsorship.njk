@@ -28,7 +28,7 @@ data: sponsors
             {%- for sponsor in sponsors %}
             <div class = "masonry-brick tooltip">
 
-                <img data-src="{{ sponsor.logo }}" alt="{{ sponsor.name }}" style="flex:{{ sponsor.flex }}"></img>
+                <a href="{{ sponsor.link }}"><img data-src="{{ sponsor.logo }}" alt="{{ sponsor.name }}" style="flex:{{ sponsor.flex }}"></img></a>
                 <span class="tooltiptext">{{sponsor.name}}</span>
 
             </div>

@@ -950,7 +950,7 @@
 /* Tooltip text */
 .tooltip .tooltiptext {
   visibility: hidden;
-  width: 100%;
+  width: auto;
   background-color: black;
   color: #fff;
   text-align: center;
@@ -1469,4 +1469,7 @@ a:not([class]):hover {
      object-fit: contain;
   height: 100%;
   width: auto;
+}
+.sponsor-grid .masonry-brick img.loaded :hover {
+  cursor: pointer;
 }

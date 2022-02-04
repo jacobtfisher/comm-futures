@@ -3,13 +3,13 @@
     "name": "ICA Computational Methods Division",
     "logo": "/images/sponsor_logos/cm_logo.png",
     "link": "http://ica-cm.org/",
-    "flex": "1 1 20%" 
+    "flex": "1 1 20%"
   },
   {
     "name": "ICA Communication Science & Biology Interest Group",
     "logo": "/images/sponsor_logos/csab_logo.png",
     "link": "https://commscience.org/",
-    "flex": "1 2 20%" 
+    "flex": "1 2 20%"
   },
   {
     "name": "Charles H. Sandage Department of Advertising, University of Illinois Urbana-Champaign",
@@ -21,6 +21,12 @@
     "name": "Moody College of Communication, University of Texas at Austin",
     "logo": "/images/sponsor_logos/moody.svg",
     "link": "https://moody.utexas.edu/",
+    "flex": "1 3 20%"
+  },
+  {
+    "name": "Digicommlab, Amsterdam School of Communication Research",
+    "logo": "/images/sponsor_logos/digicomm_logo.png",
+    "link": "http://www.digicomlab.eu/",
     "flex": "1 3 20%"
   },
   {
