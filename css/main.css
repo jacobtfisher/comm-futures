@@ -1454,7 +1454,9 @@ a:not([class]):hover {
   align-items: center;
   justify-content: space-around;
   flex-direction: row;
-  gap: 2rem;
+  row-gap: 4rem;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
   padding: 2rem;
   max-width: 100%;
 }

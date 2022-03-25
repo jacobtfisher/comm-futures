@@ -40,5 +40,11 @@
     "logo": "/images/sponsor_logos/ttu_comc_logo.png",
     "link": "https://www.depts.ttu.edu/comc/about/college/jcmi/",
     "flex": "1 2 20%"
+  },
+  {
+    "name": "The Underwood Institute",
+    "logo": "/images/sponsor_logos/underwood_logo.png",
+    "link": "https://www.underwood-institute.org/",
+    "flex": "1 2 20%"
   }
 ]
