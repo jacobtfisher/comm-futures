@@ -4,27 +4,41 @@
     "institution": "UIUC",
     "institution_link": "https://media.illinois.edu/",
     "headshot": "/images/headshots/jacob_headshot.jpg",
-    "twitter_handle": "jake_fisher"
+    "position": "Assistant Professor"
   },
   {
-    "name": "Josephine Lukito",
-    "institution": "UT Austin",
+    "name": "Christian Pipal",
+    "institution": "...",
     "institution_link": "https://moody.utexas.edu/",
-    "headshot": "/images/headshots/jo_headshot.jpg",
-    "twitter_handle": "josephinelukito"
+    "headshot": "/images/headshots/blank.webp",
+    "position": "..."
   },
   {
-    "name": "Frederic R. Hopp",
-    "institution": "ASCoR",
+    "name": "Laura Laugwitz",
+    "institution": "...",
     "institution_link": "https://ascor.uva.nl/",
-    "headshot": "/images/headshots/freddy_headshot.jpg",
-    "twitter_handle": "freddy_hopp"
+    "headshot": "/images/headshots/blank.webp",
+    "position": "..."
+  },
+  {
+    "name": "Margaret Yee Man Ng",
+    "institution": "UIUC",
+    "institution_link": "https://media.illinois.edu/",
+    "headshot": "/images/headshots/blank.webp",
+    "position": "Assistant Professor"
+  },
+  {
+    "name": "Dani Cosme",
+    "institution": "UPenn",
+    "institution_link": "https://ascor.uva.nl/",
+    "headshot": "/images/headshots/cosme_square.jpg",
+    "position": "Research Director"
   },
   {
     "name": "Felicia Loecherbach",
-    "institution": "VU Amsterdam",
+    "institution": "NYU",
     "institution_link": "https://vu.nl/en/about-vu/faculties/faculty-of-social-sciences/departments/communication-science",
     "headshot": "/images/headshots/felicia_headshot.jpg",
-    "twitter_handle": "fe_loe"
+    "position": "Postdoc"
   }
 ]

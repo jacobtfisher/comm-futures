@@ -37,12 +37,12 @@ data: organizer_list
                                 <div class="card-header-image"><img data-src="{{ organizer.headshot }}" alt="{{ organizer.name }}"></div>
                                 <div class="name text-500">{{ organizer.name }}</div>
                                 <div class="affiliation">
-                                    <i class="fas fa-university" style="padding:0 .5em 0 0; color: grey"></i>
-                                    <a href="{{organizer.institution_link}}">{{ organizer.institution }}</a><br>
+                                    <i class="fas fa-solid fa-microscope" style="padding:0 .5em 0 0; color:grey"></i>
+                                    {{ organizer.position }}<br>
                                 </div>
                                 <div class="affiliation">
-                                    <i class="fab fa-twitter" style="padding:0 .5em 0 0; color:grey"></i>
-                                    <a href="https://twitter.com/{{organizer.twitter_handle}}">@{{ organizer.twitter_handle }}</a><br>
+                                    <i class="fas fa-university" style="padding:0 .5em 0 0; color: grey"></i>
+                                    <a href="{{organizer.institution_link}}">{{ organizer.institution }}</a><br>
                                 </div>
                             </div>
                         </div>

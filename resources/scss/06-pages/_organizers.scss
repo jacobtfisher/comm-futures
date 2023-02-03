@@ -1,7 +1,7 @@
 .headshot-grid {
     --gap: #{get-size('700')};
     align-items: stretch;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 2fr));
     gap: v(gap);
     padding-bottom: #{get-size('700')};
 
@@ -14,7 +14,7 @@
         .card-body {
             display: flex;
             flex-direction: column;
-            padding-bottom: 1.5rem;
+            padding-bottom: 1rem;
 
             .card-header-image {
                 flex: 1 1 auto;
@@ -24,6 +24,7 @@
             .name {
                 flex: 1 1 auto;
                 padding: .5rem 1rem;
+                font-size: #{get-size('500')};
                 font-weight: 700;
             }
 
