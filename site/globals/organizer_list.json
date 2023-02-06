@@ -8,17 +8,17 @@
   },
   {
     "name": "Christian Pipal",
-    "institution": "...",
-    "institution_link": "https://moody.utexas.edu/",
-    "headshot": "/images/headshots/blank.webp",
-    "position": "..."
+    "institution": "University of Zurich",
+    "institution_link": "https://www.ikmz.uzh.ch/en.html",
+    "headshot": "images/headshots/headshot_uzh_christian_pipal.PNG",
+    "position": "Postdoc"
   },
   {
     "name": "Laura Laugwitz",
-    "institution": "...",
-    "institution_link": "https://ascor.uva.nl/",
-    "headshot": "/images/headshots/blank.webp",
-    "position": "..."
+    "institution": "Universität Hamburg",
+    "institution_link": "https://www.uni-hamburg.de/",
+    "headshot": "images/headshots/headshot_laura.jpg",
+    "position": "Graduate Student"
   },
   {
     "name": "Margaret Yee Man Ng",
