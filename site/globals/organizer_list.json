@@ -10,14 +10,14 @@
     "name": "Christian Pipal",
     "institution": "University of Zurich",
     "institution_link": "https://www.ikmz.uzh.ch/en.html",
-    "headshot": "images/headshots/headshot_uzh_christian_pipal.PNG",
+    "headshot": "/images/headshots/headshot_uzh_christian_pipal.PNG",
     "position": "Postdoc"
   },
   {
     "name": "Laura Laugwitz",
     "institution": "Universität Hamburg",
     "institution_link": "https://www.uni-hamburg.de/",
-    "headshot": "images/headshots/headshot_laura.jpg",
+    "headshot": "/images/headshots/headshot_laura.jpg",
     "position": "Graduate Student"
   },
   {
