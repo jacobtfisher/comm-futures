@@ -10,14 +10,14 @@
     "name": "Christian Pipal",
     "institution": "University of Zurich",
     "institution_link": "https://www.ikmz.uzh.ch/en.html",
-    "headshot": "/images/headshots/headshot_uzh_christian_pipal.PNG",
+    "headshot": "/images/headshots/christian_headshot.png",
     "position": "Postdoc"
   },
   {
     "name": "Laura Laugwitz",
     "institution": "Universität Hamburg",
     "institution_link": "https://www.uni-hamburg.de/",
-    "headshot": "/images/headshots/headshot_laura.jpg",
+    "headshot": "/images/headshots/laura_headshot.jpg",
     "position": "Graduate Student"
   },
   {
@@ -31,7 +31,7 @@
     "name": "Dani Cosme",
     "institution": "UPenn",
     "institution_link": "https://ascor.uva.nl/",
-    "headshot": "/images/headshots/cosme_square.jpg",
+    "headshot": "/images/headshots/cosme_headshot.jpg",
     "position": "Research Director"
   },
   {
