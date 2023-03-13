@@ -29,7 +29,7 @@
 }
 
 .bg-secondary {
-  background: #0EA5E9;
+  background: #EBBA50;
 }
 
 .bg-light-red {
@@ -53,7 +53,7 @@
 }
 
 .color-secondary {
-  color: #0EA5E9;
+  color: #EBBA50;
 }
 
 .color-light-red {
@@ -548,39 +548,30 @@
   .mobileM\:box-block {
     display: block;
   }
-
   .mobileM\:box-inline-block {
     display: inline-block;
   }
-
   .mobileM\:box-flex {
     display: flex;
   }
-
   .mobileM\:box-grid {
     display: grid;
   }
-
   .mobileM\:box-hidden {
     display: none;
   }
-
   .mobileM\:width-full {
     width: 100%;
   }
-
   .mobileM\:width-screen {
     width: 100vw;
   }
-
   .mobileM\:width-half {
     width: 50%;
   }
-
   .mobileM\:width-quarter {
     width: 25%;
   }
-
   .mobileM\:width-third {
     width: 33.3333333333%;
   }
@@ -589,39 +580,30 @@
   .mobileL\:box-block {
     display: block;
   }
-
   .mobileL\:box-inline-block {
     display: inline-block;
   }
-
   .mobileL\:box-flex {
     display: flex;
   }
-
   .mobileL\:box-grid {
     display: grid;
   }
-
   .mobileL\:box-hidden {
     display: none;
   }
-
   .mobileL\:width-full {
     width: 100%;
   }
-
   .mobileL\:width-screen {
     width: 100vw;
   }
-
   .mobileL\:width-half {
     width: 50%;
   }
-
   .mobileL\:width-quarter {
     width: 25%;
   }
-
   .mobileL\:width-third {
     width: 33.3333333333%;
   }
@@ -630,39 +612,30 @@
   .mobileXL\:box-block {
     display: block;
   }
-
   .mobileXL\:box-inline-block {
     display: inline-block;
   }
-
   .mobileXL\:box-flex {
     display: flex;
   }
-
   .mobileXL\:box-grid {
     display: grid;
   }
-
   .mobileXL\:box-hidden {
     display: none;
   }
-
   .mobileXL\:width-full {
     width: 100%;
   }
-
   .mobileXL\:width-screen {
     width: 100vw;
   }
-
   .mobileXL\:width-half {
     width: 50%;
   }
-
   .mobileXL\:width-quarter {
     width: 25%;
   }
-
   .mobileXL\:width-third {
     width: 33.3333333333%;
   }
@@ -671,39 +644,30 @@
   .tablet\:box-block {
     display: block;
   }
-
   .tablet\:box-inline-block {
     display: inline-block;
   }
-
   .tablet\:box-flex {
     display: flex;
   }
-
   .tablet\:box-grid {
     display: grid;
   }
-
   .tablet\:box-hidden {
     display: none;
   }
-
   .tablet\:width-full {
     width: 100%;
   }
-
   .tablet\:width-screen {
     width: 100vw;
   }
-
   .tablet\:width-half {
     width: 50%;
   }
-
   .tablet\:width-quarter {
     width: 25%;
   }
-
   .tablet\:width-third {
     width: 33.3333333333%;
   }
@@ -712,39 +676,30 @@
   .laptop\:box-block {
     display: block;
   }
-
   .laptop\:box-inline-block {
     display: inline-block;
   }
-
   .laptop\:box-flex {
     display: flex;
   }
-
   .laptop\:box-grid {
     display: grid;
   }
-
   .laptop\:box-hidden {
     display: none;
   }
-
   .laptop\:width-full {
     width: 100%;
   }
-
   .laptop\:width-screen {
     width: 100vw;
   }
-
   .laptop\:width-half {
     width: 50%;
   }
-
   .laptop\:width-quarter {
     width: 25%;
   }
-
   .laptop\:width-third {
     width: 33.3333333333%;
   }
@@ -753,39 +708,30 @@
   .desktop\:box-block {
     display: block;
   }
-
   .desktop\:box-inline-block {
     display: inline-block;
   }
-
   .desktop\:box-flex {
     display: flex;
   }
-
   .desktop\:box-grid {
     display: grid;
   }
-
   .desktop\:box-hidden {
     display: none;
   }
-
   .desktop\:width-full {
     width: 100%;
   }
-
   .desktop\:width-screen {
     width: 100vw;
   }
-
   .desktop\:width-half {
     width: 50%;
   }
-
   .desktop\:width-quarter {
     width: 25%;
   }
-
   .desktop\:width-third {
     width: 33.3333333333%;
   }
@@ -794,39 +740,30 @@
   .desktopL\:box-block {
     display: block;
   }
-
   .desktopL\:box-inline-block {
     display: inline-block;
   }
-
   .desktopL\:box-flex {
     display: flex;
   }
-
   .desktopL\:box-grid {
     display: grid;
   }
-
   .desktopL\:box-hidden {
     display: none;
   }
-
   .desktopL\:width-full {
     width: 100%;
   }
-
   .desktopL\:width-screen {
     width: 100vw;
   }
-
   .desktopL\:width-half {
     width: 50%;
   }
-
   .desktopL\:width-quarter {
     width: 25%;
   }
-
   .desktopL\:width-third {
     width: 33.3333333333%;
   }
@@ -835,39 +772,30 @@
   .desktopXL\:box-block {
     display: block;
   }
-
   .desktopXL\:box-inline-block {
     display: inline-block;
   }
-
   .desktopXL\:box-flex {
     display: flex;
   }
-
   .desktopXL\:box-grid {
     display: grid;
   }
-
   .desktopXL\:box-hidden {
     display: none;
   }
-
   .desktopXL\:width-full {
     width: 100%;
   }
-
   .desktopXL\:width-screen {
     width: 100vw;
   }
-
   .desktopXL\:width-half {
     width: 50%;
   }
-
   .desktopXL\:width-quarter {
     width: 25%;
   }
-
   .desktopXL\:width-third {
     width: 33.3333333333%;
   }
@@ -1021,10 +949,8 @@ select {
 /* Remove all animations and transitions for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   * {
-    -webkit-animation-duration: 0.01ms !important;
-            animation-duration: 0.01ms !important;
-    -webkit-animation-iteration-count: 1 !important;
-            animation-iteration-count: 1 !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
@@ -1102,17 +1028,17 @@ a {
 }
 a:not([class]) {
   color: currentColor;
-  border-bottom: var(--border-size) solid #0EA5E9;
+  border-bottom: var(--border-size) solid #EBBA50;
   padding-bottom: 0.1rem;
   -webkit-text-decoration-skip: ink;
           text-decoration-skip-ink: auto;
 }
 a:not([class]):hover {
-  color: #0EA5E9;
+  color: #EBBA50;
 }
 
 :focus {
-  outline: 3px solid #0EA5E9;
+  outline: 3px solid #EBBA50;
   outline-offset: 0.25rem;
 }
 
@@ -1143,7 +1069,7 @@ a:not([class]):hover {
   margin: 0 auto;
 }
 .logo:hover {
-  color: #0EA5E9;
+  color: #EBBA50;
 }
 
 @media (min-width : 40em) {
@@ -1166,7 +1092,7 @@ a:not([class]):hover {
   line-height: clamp(1.71rem, 1.45rem + 1.29vw, 2.37rem);
 }
 .nav .link.active, .nav .link:hover {
-  color: #0EA5E9;
+  color: #EBBA50;
 }
 .nav .link-get-started {
   border-radius: var(--border-radius);
@@ -1174,7 +1100,7 @@ a:not([class]):hover {
 }
 .nav .link-get-started:hover {
   color: #fff;
-  background-color: #086189;
+  background-color: #bf8a16;
 }
 
 .mobile-nav {
@@ -1196,7 +1122,7 @@ a:not([class]):hover {
   padding: var(--gap) 0;
 }
 .mobile-nav .link.active, .mobile-nav .link:hover {
-  color: #0EA5E9;
+  color: #EBBA50;
 }
 
 .mobile-nav-toggle {
@@ -1260,7 +1186,7 @@ a:not([class]):hover {
 
 .button {
   display: inline-block;
-  background-color: #0EA5E9;
+  background-color: #EBBA50;
   border: 0;
   border-radius: var(--border-radius);
   color: #fff;
@@ -1269,10 +1195,10 @@ a:not([class]):hover {
   font-weight: 900;
 }
 .button:hover {
-  background-color: #086189;
+  background-color: #bf8a16;
 }
 .button:focus {
-  outline: 3px solid #0EA5E9;
+  outline: 3px solid #EBBA50;
   outline-offset: 0.25rem;
 }
 
@@ -1301,7 +1227,7 @@ a:not([class]):hover {
 }
 
 .social-icons .icon-link:hover {
-  color: #0EA5E9;
+  color: #EBBA50;
 }
 .social-icons .icon {
   --social-icon-size: clamp(1.09rem, 1rem + 0.47vw, 1.33rem);
@@ -1391,7 +1317,7 @@ a:not([class]):hover {
   padding: 0.25rem 0.5rem;
 }
 .card-title-link {
-  border-bottom: var(--border-size) solid #0EA5E9;
+  border-bottom: var(--border-size) solid #EBBA50;
   transition: border-color var(--transition-duration) var(--transition-timing);
 }
 .card-title-link:hover {
@@ -1415,7 +1341,7 @@ a:not([class]):hover {
 .headshot-grid {
   --gap: clamp(1.71rem, 1.45rem + 1.29vw, 2.37rem);
   align-items: stretch;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 2fr));
   gap: var(--gap);
   padding-bottom: clamp(1.71rem, 1.45rem + 1.29vw, 2.37rem);
 }
@@ -1428,7 +1354,7 @@ a:not([class]):hover {
 .headshot-grid .headshot-card .card-body {
   display: flex;
   flex-direction: column;
-  padding-bottom: 1.5rem;
+  padding-bottom: 1rem;
 }
 .headshot-grid .headshot-card .card-body .card-header-image {
   flex: 1 1 auto;
@@ -1437,6 +1363,7 @@ a:not([class]):hover {
 .headshot-grid .headshot-card .card-body .name {
   flex: 1 1 auto;
   padding: 0.5rem 1rem;
+  font-size: clamp(1.09rem, 1rem + 0.47vw, 1.33rem);
   font-weight: 700;
 }
 .headshot-grid .headshot-card .card-body .affiliation {
@@ -1463,8 +1390,8 @@ a:not([class]):hover {
 .sponsor-grid .masonry-brick {
   -o-object-fit: contain;
      object-fit: contain;
-  height: 100px;
-  max-width: 45%;
+  height: 4em;
+  max-width: 60%;
 }
 .sponsor-grid .masonry-brick img.loaded {
   -o-object-fit: contain;

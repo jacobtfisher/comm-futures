@@ -31,27 +31,24 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _utilities_helpers__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @utilities/helpers */ "./resources/js/utilities/helpers/index.js");
 
 
-
 var Lazyload = function Lazyload() {
   // lazyload our images
   var images = _utilities_selectors__WEBPACK_IMPORTED_MODULE_0__["default"].wrapper.querySelectorAll('[data-src]');
-
   if ((0,_utilities_helpers__WEBPACK_IMPORTED_MODULE_1__.exists)(images)) {
     // options
     var options = {
       threshold: 0.5
     };
-
     var preloadImage = function preloadImage(img) {
       // find and store the image's data-load attribute
       var src = img.dataset.src;
-      img.src = src; // add a class of loaded
-      // we can then use this as a hook for fade-in animations etc
+      img.src = src;
 
+      // add a class of loaded
+      // we can then use this as a hook for fade-in animations etc
       img.classList.add('loaded');
       img.removeAttribute('data-src');
     };
-
     var lazyLoad = new IntersectionObserver(function (entries, lazyLoad) {
       entries.forEach(function (entry) {
         if (entry.isIntersecting) {
@@ -65,7 +62,6 @@ var Lazyload = function Lazyload() {
     });
   }
 }();
-
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Lazyload);
 
 /***/ }),
@@ -82,12 +78,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _utilities_selectors__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @utilities/selectors */ "./resources/js/utilities/selectors/index.js");
 
-
 var MobileNav = function MobileNav() {
   _utilities_selectors__WEBPACK_IMPORTED_MODULE_0__["default"].mobileNavToggle.addEventListener('click', function () {
     this.classList.toggle('expanded');
-    _utilities_selectors__WEBPACK_IMPORTED_MODULE_0__["default"].mobileNav.classList.toggle('menu-visible'); // set aria-expanded attribute on menu toggle button
+    _utilities_selectors__WEBPACK_IMPORTED_MODULE_0__["default"].mobileNav.classList.toggle('menu-visible');
 
+    // set aria-expanded attribute on menu toggle button
     if (this.getAttribute('aria-expanded') === 'false') {
       this.setAttribute('aria-expanded', 'true');
     } else {
@@ -95,7 +91,6 @@ var MobileNav = function MobileNav() {
     }
   });
 }();
-
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (MobileNav);
 
 /***/ }),
@@ -108,10 +103,11 @@ var MobileNav = function MobileNav() {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "page": () => (/* binding */ page),
-/* harmony export */   "exists": () => (/* binding */ exists)
+/* harmony export */   "exists": () => (/* binding */ exists),
+/* harmony export */   "page": () => (/* binding */ page)
 /* harmony export */ });
 /* harmony import */ var _utilities_selectors__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @utilities/selectors */ "./resources/js/utilities/selectors/index.js");
+
 
 /**
  * @description Test if the body id is something
@@ -124,9 +120,9 @@ var page = function page(name) {
   if (!name) {
     return _utilities_selectors__WEBPACK_IMPORTED_MODULE_0__["default"].body.getAttribute('id');
   }
-
   return _utilities_selectors__WEBPACK_IMPORTED_MODULE_0__["default"].body.getAttribute('id') == name;
 };
+
 /**
  * @description Check if element exists the page
  * @param  		{string} Element selector
@@ -134,11 +130,9 @@ var page = function page(name) {
  * @return 		{bool}
  */
 
-
 var exists = function exists(el, limit) {
   return el.length > 0;
 };
-
 
 
 /***/ }),
