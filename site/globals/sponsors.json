@@ -18,6 +18,12 @@
     "flex": "2 1 40%"
   },
   {
+    "name": "Department of Communication, Michigan State University",
+    "logo": "/images/sponsor_logos/comartsci_logo.png",
+    "link": "https://comartsci.msu.edu/departments/communication",
+    "flex": "2 1 20%"
+  },
+  {
     "name": "College of Media, University of Illinois Urbana-Champaign",
     "logo": "/images/sponsor_logos/uiuc_media.png",
     "link": "https://media.illinois.edu/",
@@ -64,5 +70,11 @@
     "logo": "/images/sponsor_logos/ucdavis_comm_logo.png",
     "link": "https://communication.ucdavis.edu/",
     "flex": "1 3 20%"
+  },
+  {
+    "name": "Underwood Institute",
+    "logo": "/images/sponsor_logos/underwood_logo.png",
+    "link": "https://www.underwood-institute.org/",
+    "flex": "1 3 40%"
   }
 ]

@@ -1096,12 +1096,12 @@ a:not([class]):hover {
 }
 .nav .link-get-started {
   border-radius: var(--border-radius);
-  transition: background-color var(--transition-duration) var(--transition-timing);
+  /* transition: background-color var(--transition-duration) var(--transition-timing); */
 }
-.nav .link-get-started:hover {
+/* .nav .link-get-started:hover {
   color: #fff;
   background-color: #bf8a16;
-}
+} */
 
 .mobile-nav {
   --transition-duration: .3s;
