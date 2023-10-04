@@ -22,12 +22,8 @@ data: sponsors
         {{ content | safe }}
 
         <h1> Last year sponsors </h1>
-        {# <p>This pre-conference is made possible thanks in part to generous sponsorship from the following organizations:</p>#}
-        <p>Last years hackathon was made possible thanks in part to generous sponsorship from the
-                following organizations.</p>
-        <p>We are currently soliciting sponsors for the 2024 Hackathon. If you would like more information regarding sponsoring the pre-conference this year
-                or in future years, please see the <a href="/sponsorship">Sponsorship</a> page.
-        </p>
+        <p>This pre-conference is made possible thanks in part to generous sponsorship from the following organizations:</p>
+
         <div class="box-grid sponsor-grid">
             {%- for sponsor in sponsors %}
             <div class = "masonry-brick tooltip">
