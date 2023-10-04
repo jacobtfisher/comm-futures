@@ -40,5 +40,12 @@
     "institution_link": "https://www.nyu.edu/",
     "headshot": "/images/headshots/jason.jpg",
     "position": "PhD Student"
+  },
+  {
+    "name": "Natalia Umansky",
+    "institution": "University of Zurich",
+    "institution_link": "https://www.ipz.uzh.ch/en.html",
+    "headshot": "/images/headshots/natalia.jpg",
+    "position": "Postdoc"
   }
 ]
