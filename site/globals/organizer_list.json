@@ -47,5 +47,12 @@
     "institution_link": "https://www.ipz.uzh.ch/en.html",
     "headshot": "/images/headshots/natalia.jpg",
     "position": "Postdoc"
+  },
+  {
+    "name": "Patrick Schwabl",
+    "institution": "LMU Munich",
+    "institution_link": "https://www.lmu.de/de/index.html",
+    "headshot": "/images/headshots/patrick.jpg",
+    "position": "PhD Student"
   }
 ]
