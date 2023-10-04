@@ -54,5 +54,19 @@
     "institution_link": "https://www.lmu.de/de/index.html",
     "headshot": "/images/headshots/patrick.jpg",
     "position": "PhD Student"
+  },
+  {
+    "name": "Ross Dahlke",
+    "institution": "Stanford University",
+    "institution_link": "https://www.stanford.edu",
+    "headshot": "/images/headshots/ross.jpg",
+    "position": "PhD Student"
+  },
+  {
+    "name": "Sue Lim",
+    "institution": "Michigan State University",
+    "institution_link": "https://msu.edu/",
+    "headshot": "/images/headshots/sue.jpg",
+    "position": "PhD Student"
   }
 ]
