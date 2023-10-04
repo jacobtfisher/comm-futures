@@ -11,9 +11,9 @@ eleventyNavigation:
 
 The ICA Pre-conference Hackathon is a two day hands-on workshop that takes place before the annual meeting of the [International Communication Association](https://www.icahdq.org/). The main goal of the hackathon is to encourage open, non-competitive collaboration across communication subfields utilizing computational and "big data" methods. The hackathon is a collaborative effort between the [Computational Methods](http://ica-cm.org/) division and the [Communication Science and Biology](https://commscience.org/) interest group of the International Communication Association. During the hackathon, attendees will join teams to collaborate on programming projects and learn from one another. Attendees will also have the opportunity to lead and attend breakout sessions taught by other hackathon attendees. No programming experience is necessary to participate in the hackathon, and we encourage those of all skill levels to attend!
 
-- **Dates:** May 24th & May 25th 2024
-- **Location:** Toronto, Canada
-- **Cost [Tier A/B/C]:** Faculty: $80/$60/$40, Students/Postdocs: $40/$20/$10
+- **Dates:** June 19th & June 20th 2024
+- **Location:** Brisbane, Australia
+- **Cost [Tier A/B/C]:** Faculty: $175/$125/$75, Students/Postdocs: $125/$75/$25
 
 ## What is a Hackathon?
 
