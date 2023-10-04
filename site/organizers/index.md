@@ -2,7 +2,7 @@
 layout: organizers
 title: Organizing Team
 meta_title: Organizers
-meta_description: Organizing team for the 2023 ICA Hackathon
+meta_description: Organizing team for the 2024 ICA Hackathon
 eleventyNavigation:
   key: Organizers
   order: 3

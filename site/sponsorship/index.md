@@ -2,13 +2,13 @@
 layout: sponsorship
 title: Sponsorship
 meta_title: Sponsorship
-meta_description: Sponsorship information for the 2023 ICA Hackathon
+meta_description: Sponsorship information for the 2024 ICA Hackathon
 eleventyNavigation:
   key: Sponsorship
   order: 4
 ---
 
-We are currently soliciting sponsors for the 2023 Hackathon. If you or your department, organization, or company would like to serve as a sponsor for the hackathon and help advance reproducible communication research, please email the pre-conference organizers at [hackingcommsci@gmail.com](mailto:hackingcommsci@gmail.com).
+We are currently soliciting sponsors for the 2024 Hackathon. If you or your department, organization, or company would like to serve as a sponsor for the hackathon and help advance reproducible communication research, please email the pre-conference organizers at [hackingcommsci@gmail.com](mailto:hackingcommsci@gmail.com).
 
 ## Why Should I Sponsor?
 

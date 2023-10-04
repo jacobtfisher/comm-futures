@@ -1,11 +1,11 @@
 ---
 layout: page
 meta_title: SignUp
-meta_description: Information about how to register for the ICA 2023 Hackathon
+meta_description: Information about how to register for the ICA 2024 Hackathon
 title: Sign Up
 ---
 
-We are excited that you would like to join us for the Hackathon at ICA 2023! Due to overwhelming interest last year, we are instituting a two-step application process for the hackathon. The first step is to fill out the application form linked below. By mid-February we will reach out to applicants to provide the link to register for the pre-conference through ICA. 
+We are excited that you would like to join us for the Hackathon at ICA 2024! Due to overwhelming interest last year, we are instituting a two-step application process for the hackathon. The first step is to fill out the application form linked below. By mid-February we will reach out to applicants to provide the link to register for the pre-conference through ICA. 
 
 <a href="https://mediaillinois.co1.qualtrics.com/jfe/form/SV_cuzxYBF5orsi2bQ" class="link button color-white text-400 weight-semibold pl-500 pr-500"><i class="fi fi-rr-form" style="color:white; padding-right:.5rem"></i>Hackathon Application</a>
 
