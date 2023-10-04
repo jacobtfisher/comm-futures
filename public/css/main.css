@@ -29,7 +29,7 @@
 }
 
 .bg-secondary {
-  background: #EBBA50;
+  background: #8AC0C8;
 }
 
 .bg-light-red {
@@ -53,7 +53,7 @@
 }
 
 .color-secondary {
-  color: #EBBA50;
+  color: #8AC0C8;
 }
 
 .color-light-red {
@@ -1028,17 +1028,17 @@ a {
 }
 a:not([class]) {
   color: currentColor;
-  border-bottom: var(--border-size) solid #EBBA50;
+  border-bottom: var(--border-size) solid #8AC0C8;
   padding-bottom: 0.1rem;
   -webkit-text-decoration-skip: ink;
           text-decoration-skip-ink: auto;
 }
 a:not([class]):hover {
-  color: #EBBA50;
+  color: #8AC0C8;
 }
 
 :focus {
-  outline: 3px solid #EBBA50;
+  outline: 3px solid #8AC0C8;
   outline-offset: 0.25rem;
 }
 
@@ -1069,7 +1069,7 @@ a:not([class]):hover {
   margin: 0 auto;
 }
 .logo:hover {
-  color: #EBBA50;
+  color: #8AC0C8;
 }
 
 @media (min-width : 40em) {
@@ -1092,7 +1092,7 @@ a:not([class]):hover {
   line-height: clamp(1.71rem, 1.45rem + 1.29vw, 2.37rem);
 }
 .nav .link.active, .nav .link:hover {
-  color: #EBBA50;
+  color: #8AC0C8;
 }
 .nav .link-get-started {
   border-radius: var(--border-radius);
@@ -1122,7 +1122,7 @@ a:not([class]):hover {
   padding: var(--gap) 0;
 }
 .mobile-nav .link.active, .mobile-nav .link:hover {
-  color: #EBBA50;
+  color: #8AC0C8;
 }
 
 .mobile-nav-toggle {
@@ -1186,7 +1186,7 @@ a:not([class]):hover {
 
 .button {
   display: inline-block;
-  background-color: #EBBA50;
+  background-color: #8AC0C8;
   border: 0;
   border-radius: var(--border-radius);
   color: #fff;
@@ -1198,7 +1198,7 @@ a:not([class]):hover {
   background-color: #bf8a16;
 }
 .button:focus {
-  outline: 3px solid #EBBA50;
+  outline: 3px solid #8AC0C8;
   outline-offset: 0.25rem;
 }
 
@@ -1227,7 +1227,7 @@ a:not([class]):hover {
 }
 
 .social-icons .icon-link:hover {
-  color: #EBBA50;
+  color: #8AC0C8;
 }
 .social-icons .icon {
   --social-icon-size: clamp(1.09rem, 1rem + 0.47vw, 1.33rem);
@@ -1317,7 +1317,7 @@ a:not([class]):hover {
   padding: 0.25rem 0.5rem;
 }
 .card-title-link {
-  border-bottom: var(--border-size) solid #EBBA50;
+  border-bottom: var(--border-size) solid #8AC0C8;
   transition: border-color var(--transition-duration) var(--transition-timing);
 }
 .card-title-link:hover {
