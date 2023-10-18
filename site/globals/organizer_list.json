@@ -24,7 +24,7 @@
     "name": "Mandy Badermann",
     "institution": "University of Tübingen",
     "institution_link": "https://uni-tuebingen.de/",
-    "headshot": "/images/headshots/mandy.jpeg",
+    "headshot": "/images/headshots/mandy.jpg",
     "position": "PhD Student"
   },
   {
@@ -66,7 +66,7 @@
     "name": "Sue Lim",
     "institution": "Michigan State University",
     "institution_link": "https://msu.edu/",
-    "headshot": "/images/headshots/sue.jpeg",
+    "headshot": "/images/headshots/sue.jpg",
     "position": "PhD Student"
   }
 ]
