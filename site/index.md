@@ -1,26 +1,39 @@
 ---
 layout: home
 meta_title: Home
-meta_description: ICA 2024 Pre-conference Hackathon
-title: ICA 2024 Pre-Conference Hackathon
+meta_description: "Communication Science Futures is a new conference aimed at addressing pressing issues and opportunities in the interdisciplinary, social scientific study of human communication. The conference will take place at Michigan State University May 31st - June 2nd, 2024"
+title: Communication Science Futures
 sub_heading: 
 eleventyNavigation:
   key: Home
   order: 1
 ---
 
-The ICA Pre-conference Hackathon is a two day hands-on workshop that takes place before the annual meeting of the [International Communication Association](https://www.icahdq.org/). The main goal of the hackathon is to encourage open, non-competitive collaboration across communication subfields utilizing computational and "big data" methods. The hackathon is a collaborative effort between the [Computational Methods](http://ica-cm.org/) division and the [Communication Science and Biology](https://commscience.org/) interest group of the International Communication Association. During the hackathon, attendees will join teams to collaborate on programming projects and learn from one another. Attendees will also have the opportunity to lead and attend breakout sessions taught by other hackathon attendees. No programming experience is necessary to participate in the hackathon, and we encourage those of all skill levels to attend!
+The Department of Communication at Michigan State University is pleased to announce *Communication Science Futures*, a new conference created to bring together leading scholars to address pressing issues and emerging trends shaping the future of interdisciplinary social scientific research into human communication and social behavior. This "un-conference" will feature keynotes by leading communication scholars, provocative working group sessions designed to ignite scholarly debates and foster cross-cutting collaborations among participants, and an interactive research presentation poster session for students and early career researchers. Communication Science Futures will take place May 31st-June 3rd, 2024 on the campus of Michigan State University in East Lansing. Submissions will be considered on a rolling basis until March 31st, 2024.
 
-- **Dates:** June 19th & June 20th 2024
-- **Location:** Brisbane, Australia
-- **Cost [Tier A/B/C]:** Faculty: $175/$125/$75, Students/Postdocs: $125/$75/$25
+- **Dates:** May 31st - June 2nd, 2024
+- **Location:** East Lansing, Michigan
+- **Cost:** Faculty: $225, Graduate Students: $125.
 
-## What is a Hackathon?
+## About the Conference
 
-Advancing open research practices in communication is contingent upon sharing tools, ideas, skills, and data across a disparate collection of sub-fields. Although conferences and workshops are undoubtedly beneficial for pursuing these goals, they rarely afford the unstructured time and hands-on collaboration required to fully realize their potential for catalyzing open research practices. We believe that **hackathons** can serve as a viable means of improving collaboration and skill development within communication science.
+Traditional conferences and workshops are invaluable venues for sharing research, networking, and accomplishing related goals, but they often lack the unstructured time and space needed to address pressing research challenges. In recent years, progress in a number of fields has benefited from the creation of non-traditional conferences such as “un”-conferences, hackathons, and summer schools. These conferences, rather than emphasizing one-way transfer of information from presenters to participants, center interactive collaboration, conversation, and problem-solving efforts.
 
-During a hackathon, participants self-organize and work together to learn new skills and solve problems of their choosing while engaging in discussions about coding, big data ethics, and reproducible research practices. Hackathons provide a collaborative, low-risk opportunity to experiment with new ideas, find potential collaborators, and to try something a little “out of the box.” For this reason, hackathons are organized quite differently from a traditional preconference or conference session. Instead of audience members passively listening to a series of talks on a subject, they will actively participate in (and perhaps even organize!) projects of their choosing.
+The primary objectives of Communication Science Futures are: a. to provide a venue for conversation concerning pressing challenges and opportunities facing the field of communication; b. to create opportunities for communication scholars to share knowledge regarding skills, best-practices, and resources for conducting rigorous social scientific research into human communication processes and effects; and c. to facilitate the development of collaborative relationships among researchers whose work examines similar topics but who may be located in different academic fields (or sub-fields).
 
-On the first day of the hackathon, organizers and attendees will propose a collection of projects that can be reasonably tackled during the hackathon. Everyone will select the project that they wish to work on, and will spend the rest of the time collaborating with their project team to accomplish their desired goals. At the same time, a collection of breakout sessions will serve as a more formal means of sharing knowledge and increasing skills. If you have an idea for a project or breakout session for the hackathon, please reach out to the organizing committee.
+Communication Science Futures will be organized around a series of Working Group Sessions. These sessions will consist of a panel of brief presentations followed by extended breakout discussions between presenters and participants aimed at addressing a “big picture” challenge or opportunity within the field. These working group sessions will be aligned with one of three themes:
 
-Hackathons do not require existing knowledge of computational skills. In fact, projects are often centered around learning and developing resources for beginners. We encourage everyone to participate, even (or especially!) if you have little to no coding knowledge.
+- **Futures in Research** - Forces, trends, or topics shaping the future of communication research. Topics in this theme could include, but are not limited to:
+  - Emerging Technologies: Exploring how new digital platforms and AI are reshaping communication research.
+  - Ethical Considerations: Addressing privacy, consent, and ethical challenges in contemporary research in a networked, digital society.
+  - Interdisciplinary Approaches: Integrating insights from psychology, sociology, and data science.
+- **Futures in Theory** - Issues and advancements in theory building and testing. Topics in this theme could include, but are not limited to:
+  - Complexity and Dynamics - Developing and refining theories regarding the emergent, dynamic nature of communication processes and effects.
+  - Theory Evaluation - Approaches for evaluating and comparing competing theories, or for (in-)validating existing theories.
+  - Formalizing Theories - Implementing methods for computationally and/or algorithmically formalizing communication theories.
+- **Futures in Methods** - New methods for collecting, analyzing, and reporting communication data.
+  - Computational Techniques - Advancements and best practices in text/image analysis, digital trace data, and other “big data” methods.
+  - Alternative Strategies for Evidence Generation - Highlighting non-traditional strategies for generating evidence for and against hypotheses, including Bayesian methods, machine learning, etc.
+  - Research Design & Management - Sharing skills, tips, and techniques for designing research and managing/analyzing/reporting data.
+
+In addition to these working group sessions, Communication Science Futures will host a poster session and a limited number of “Data Blitz” sessions aimed at providing students and early career scholars with the opportunity to present and receive feedback on in-progress research.

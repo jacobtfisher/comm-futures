@@ -103,8 +103,8 @@ var MobileNav = function MobileNav() {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "exists": () => (/* binding */ exists),
-/* harmony export */   "page": () => (/* binding */ page)
+/* harmony export */   exists: () => (/* binding */ exists),
+/* harmony export */   page: () => (/* binding */ page)
 /* harmony export */ });
 /* harmony import */ var _utilities_selectors__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @utilities/selectors */ "./resources/js/utilities/selectors/index.js");
 

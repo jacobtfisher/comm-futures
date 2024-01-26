@@ -1100,7 +1100,7 @@ a:not([class]):hover {
 }
 .nav .link-get-started:hover {
   color: #fff;
-  background-color: #bf8a16;
+  background-color: #4b96a1;
 }
 
 .mobile-nav {
@@ -1195,7 +1195,7 @@ a:not([class]):hover {
   font-weight: 900;
 }
 .button:hover {
-  background-color: #bf8a16;
+  background-color: #4b96a1;
 }
 .button:focus {
   outline: 3px solid #8AC0C8;

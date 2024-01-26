@@ -1096,12 +1096,12 @@ a:not([class]):hover {
 }
 .nav .link-get-started {
   border-radius: var(--border-radius);
-  /* transition: background-color var(--transition-duration) var(--transition-timing); */
+  transition: background-color var(--transition-duration) var(--transition-timing);
 }
-/* .nav .link-get-started:hover {
+.nav .link-get-started:hover {
   color: #fff;
-  background-color: #bf8a16;
-} */
+  background-color: #4b96a1;
+}
 
 .mobile-nav {
   --transition-duration: .3s;
@@ -1195,7 +1195,7 @@ a:not([class]):hover {
   font-weight: 900;
 }
 .button:hover {
-  background-color: #bf8a16;
+  background-color: #4b96a1;
 }
 .button:focus {
   outline: 3px solid #8AC0C8;
