@@ -2,7 +2,7 @@
 layout: home
 meta_title: Home
 meta_description: "Communication Science Futures is a new conference aimed at addressing pressing issues and opportunities in the interdisciplinary, social scientific study of human communication. The conference will take place at Michigan State University May 31st - June 2nd, 2024"
-title: Communication Science Futures
+title: Communication Science Futures @ MSU
 sub_heading: 
 eleventyNavigation:
   key: Home
@@ -23,17 +23,22 @@ The primary objectives of Communication Science Futures are: a. to provide a ven
 
 Communication Science Futures will be organized around a series of Working Group Sessions. These sessions will consist of a panel of brief presentations followed by extended breakout discussions between presenters and participants aimed at addressing a “big picture” challenge or opportunity within the field. These working group sessions will be aligned with one of three themes:
 
-- **Futures in Research** - Forces, trends, or topics shaping the future of communication research. Topics in this theme could include, but are not limited to:
-  - Emerging Technologies: Exploring how new digital platforms and AI are reshaping communication research.
-  - Ethical Considerations: Addressing privacy, consent, and ethical challenges in contemporary research in a networked, digital society.
-  - Interdisciplinary Approaches: Integrating insights from psychology, sociology, and data science.
-- **Futures in Theory** - Issues and advancements in theory building and testing. Topics in this theme could include, but are not limited to:
-  - Complexity and Dynamics - Developing and refining theories regarding the emergent, dynamic nature of communication processes and effects.
-  - Theory Evaluation - Approaches for evaluating and comparing competing theories, or for (in-)validating existing theories.
-  - Formalizing Theories - Implementing methods for computationally and/or algorithmically formalizing communication theories.
-- **Futures in Methods** - New methods for collecting, analyzing, and reporting communication data.
-  - Computational Techniques - Advancements and best practices in text/image analysis, digital trace data, and other “big data” methods.
-  - Alternative Strategies for Evidence Generation - Highlighting non-traditional strategies for generating evidence for and against hypotheses, including Bayesian methods, machine learning, etc.
-  - Research Design & Management - Sharing skills, tips, and techniques for designing research and managing/analyzing/reporting data.
+###  Futures in Research
+Forces, trends, or topics shaping the future of communication research. Topics in this theme could include, but are not limited to:
+- **Emerging Technologies:** Exploring how new digital platforms and AI are reshaping communication research.
+- **Interdisciplinary Approaches:** Integrating insights from psychology, sociology, and data science.
+- **Real-World Applications:** Discussing the role of communication research in addressing salient individual, social, and societal challenges.
+
+### Futures in Theory
+Issues and advancements in theory building and testing. Topics in this theme could include, but are not limited to:
+- **Complexity and Dynamics:** Developing and refining theories regarding the emergent, dynamic nature of communication processes and effects.
+- **Theory Evaluation:** Approaches for evaluating and comparing competing theories, or for (in-)validating existing theories.
+- **Formalizing Theories:** Implementing methods for computationally and/or algorithmically formalizing communication theories.
+
+### Futures in Methods
+New methods for collecting, analyzing, and reporting communication data. Topics in this theme could include, but are not limited to:
+- **Computational Techniques:** Advancements and best practices in text/image analysis, digital trace data, and other “big data” methods.
+- **Alternative Strategies for Evidence Generation:** Highlighting non-traditional strategies for generating evidence for and against hypotheses, including Bayesian methods, machine learning, etc.
+- **Research Design & Management:** Sharing skills, tips, and techniques for designing research and managing/analyzing/reporting data.
 
 In addition to these working group sessions, Communication Science Futures will host a poster session and a limited number of “Data Blitz” sessions aimed at providing students and early career scholars with the opportunity to present and receive feedback on in-progress research.
