@@ -12,14 +12,14 @@
 
 // page header
 .page-header {
-    --gap: #{get-size('800')};
+    --gap: #{get-size('00')};
     margin-bottom: v(gap);
 }
 
 @include media-query('tablet') {
 
     .page-header {
-        --gap: #{get-size('900')};
+        --gap: #{get-size('400')};
     }
 }
 

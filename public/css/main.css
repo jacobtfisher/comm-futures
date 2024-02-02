@@ -1,5 +1,6 @@
 @import url(https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css);
 @import url(https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);
+@import url(https://use.typekit.net/htm2dqa.css);
 @charset "UTF-8";
 /**
  * BASE SIZE
@@ -29,7 +30,7 @@
 }
 
 .bg-secondary {
-  background: #8AC0C8;
+  background: #008934;
 }
 
 .bg-light-red {
@@ -53,7 +54,7 @@
 }
 
 .color-secondary {
-  color: #8AC0C8;
+  color: #008934;
 }
 
 .color-light-red {
@@ -73,11 +74,11 @@
 }
 
 .font-base {
-  font-family: Roboto, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: ibm-plex-sans, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 .font-heading {
-  font-family: Roboto Mono, ui-monospace, system-ui, -apple-system, BlinkMacSystemFont, monospace;
+  font-family: ibm-plex-sans-condensed, ui-monospace, system-ui, -apple-system, BlinkMacSystemFont, monospace;
 }
 
 .box-block {
@@ -839,11 +840,11 @@
   padding-right: clamp(1.37rem, 1.21rem + 0.8vw, 1.78rem);
 }
 
-.flow > * + * {
-  margin-top: var(--gap);
+.flow > * {
+  margin-bottom: var(--gap);
 }
 @media (min-width : 48em) {
-  .flow > * + * {
+  .flow > * {
     --gap: clamp(1.71rem, 1.45rem + 1.29vw, 2.37rem);
   }
 }
@@ -970,36 +971,40 @@ h1,
 h2,
 h3 {
   line-height: 1.1;
-  letter-spacing: -0.01rem;
-  font-family: "Roboto Mono";
 }
 
 h1 {
-  --gap: clamp(1.37rem, 1.21rem + 0.8vw, 1.78rem);
-  font-size: clamp(1.37rem, 1.21rem + 0.8vw, 1.78rem);
+  --gap: clamp(0.7rem, 0.66rem + 0.2vw, 0.8rem);
+  font-family: "ibm-plex-sans";
+  font-size: clamp(2.14rem, 1.74rem + 1.99vw, 3.16rem);
+  font-weight: 800;
   margin: 0 0 var(--gap);
 }
 @media (min-width: 40em) {
   h1 {
-    --gap: clamp(1.71rem, 1.45rem + 1.29vw, 2.37rem);
-    font-size: clamp(1.71rem, 1.45rem + 1.29vw, 2.37rem);
+    --gap: clamp(0.7rem, 0.66rem + 0.2vw, 0.8rem);
+    font-size: clamp(2.14rem, 1.74rem + 1.99vw, 3.16rem);
     margin: 0 0 var(--gap);
   }
 }
 
 h2 {
-  font-size: clamp(1.09rem, 1rem + 0.47vw, 1.33rem);
+  font-size: clamp(1.37rem, 1.21rem + 0.8vw, 1.78rem);
+  --gap: .5em !important;
+  margin-bottom: var(--gap);
 }
 @media (min-width: 40em) {
   h2 {
-    --gap: clamp(1.37rem, 1.21rem + 0.8vw, 1.78rem);
+    --gap: clamp(0.7rem, 0.66rem + 0.2vw, 0.8rem);
     font-size: clamp(1.37rem, 1.21rem + 0.8vw, 1.78rem);
-    margin: 0 0 var(--gap);
+    margin-bottom: var(--gap);
   }
 }
 
 h3 {
-  font-size: var(--text-700);
+  font-size: clamp(1.37rem, 1.21rem + 0.8vw, 1.78rem);
+  --gap: .3em !important;
+  margin-bottom: var(--gap);
 }
 
 .content {
@@ -1010,7 +1015,6 @@ h3 {
   color: #9CA3AF;
   line-height: 1.5;
   font-weight: 500;
-  font-family: "Roboto Mono";
 }
 
 .page-title {
@@ -1019,6 +1023,7 @@ h3 {
 
 ol,
 ul {
+  margin-left: clamp(1.09rem, 1rem + 0.47vw, 1.33rem);
   padding: 0 0 0 clamp(1.09rem, 1rem + 0.47vw, 1.33rem);
 }
 
@@ -1028,17 +1033,17 @@ a {
 }
 a:not([class]) {
   color: currentColor;
-  border-bottom: var(--border-size) solid #8AC0C8;
+  border-bottom: var(--border-size) solid #008934;
   padding-bottom: 0.1rem;
   -webkit-text-decoration-skip: ink;
           text-decoration-skip-ink: auto;
 }
 a:not([class]):hover {
-  color: #8AC0C8;
+  color: #008934;
 }
 
 :focus {
-  outline: 3px solid #8AC0C8;
+  outline: 3px solid #008934;
   outline-offset: 0.25rem;
 }
 
@@ -1069,7 +1074,7 @@ a:not([class]):hover {
   margin: 0 auto;
 }
 .logo:hover {
-  color: #8AC0C8;
+  color: #008934;
 }
 
 @media (min-width : 40em) {
@@ -1092,7 +1097,7 @@ a:not([class]):hover {
   line-height: clamp(1.71rem, 1.45rem + 1.29vw, 2.37rem);
 }
 .nav .link.active, .nav .link:hover {
-  color: #8AC0C8;
+  color: #008934;
 }
 .nav .link-get-started {
   border-radius: var(--border-radius);
@@ -1100,7 +1105,7 @@ a:not([class]):hover {
 }
 .nav .link-get-started:hover {
   color: #fff;
-  background-color: #4b96a1;
+  background-color: #00230d;
 }
 
 .mobile-nav {
@@ -1122,7 +1127,7 @@ a:not([class]):hover {
   padding: var(--gap) 0;
 }
 .mobile-nav .link.active, .mobile-nav .link:hover {
-  color: #8AC0C8;
+  color: #008934;
 }
 
 .mobile-nav-toggle {
@@ -1170,13 +1175,13 @@ a:not([class]):hover {
 }
 
 .page-header {
-  --gap: clamp(2.14rem, 1.74rem + 1.99vw, 3.16rem);
+  --gap: ;
   margin-bottom: var(--gap);
 }
 
 @media (min-width : 48em) {
   .page-header {
-    --gap: clamp(2.67rem, 2.07rem + 3vw, 4.21rem);
+    --gap: clamp(0.88rem, 0.83rem + 0.24vw, 1rem);
   }
 }
 .footer-inner {
@@ -1186,7 +1191,7 @@ a:not([class]):hover {
 
 .button {
   display: inline-block;
-  background-color: #8AC0C8;
+  background-color: #008934;
   border: 0;
   border-radius: var(--border-radius);
   color: #fff;
@@ -1195,10 +1200,10 @@ a:not([class]):hover {
   font-weight: 900;
 }
 .button:hover {
-  background-color: #4b96a1;
+  background-color: #00230d;
 }
 .button:focus {
-  outline: 3px solid #8AC0C8;
+  outline: 3px solid #008934;
   outline-offset: 0.25rem;
 }
 
@@ -1227,7 +1232,7 @@ a:not([class]):hover {
 }
 
 .social-icons .icon-link:hover {
-  color: #8AC0C8;
+  color: #008934;
 }
 .social-icons .icon {
   --social-icon-size: clamp(1.09rem, 1rem + 0.47vw, 1.33rem);
@@ -1317,7 +1322,7 @@ a:not([class]):hover {
   padding: 0.25rem 0.5rem;
 }
 .card-title-link {
-  border-bottom: var(--border-size) solid #8AC0C8;
+  border-bottom: var(--border-size) solid #008934;
   transition: border-color var(--transition-duration) var(--transition-timing);
 }
 .card-title-link:hover {
@@ -1390,7 +1395,7 @@ a:not([class]):hover {
 .sponsor-grid .masonry-brick {
   -o-object-fit: contain;
      object-fit: contain;
-  height: 4em;
+  height: 10em;
   max-width: 60%;
 }
 .sponsor-grid .masonry-brick img.loaded {

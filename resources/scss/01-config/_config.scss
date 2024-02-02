@@ -37,7 +37,7 @@ $gorko-size-scale: (
  */
 $gorko-colors: (
     'primary': #111827,
-    'secondary': #8AC0C8,
+    'secondary': #008934,
     'light-red': #F87171,
     'grey': #9CA3AF,
     'light-grey': #F3F4F6,
@@ -62,8 +62,8 @@ $gorko-config: (
     ),
     'font': (
         'items': (
-            'base': 'Roboto, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif',
-            'heading': 'Roboto Mono, ui-monospace, system-ui, -apple-system, BlinkMacSystemFont, monospace'
+            'base': 'ibm-plex-sans, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif',
+            'heading': 'ibm-plex-sans-condensed, ui-monospace, system-ui, -apple-system, BlinkMacSystemFont, monospace'
         ),
         'output': 'standard',
         'property': 'font-family'

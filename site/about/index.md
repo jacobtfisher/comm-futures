@@ -3,9 +3,9 @@ layout: page
 meta_title: About
 meta_description: More information about the 2022 hackathon
 title: Hackathon Info
-eleventyNavigation:
-  key: About
-  order: 2
+# eleventyNavigation:
+#   key: About
+#   order: 2
 ---
 
 ## Project Sessions

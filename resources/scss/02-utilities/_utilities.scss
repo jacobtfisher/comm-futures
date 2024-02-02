@@ -11,8 +11,8 @@
 }
 
 // better vertical rhythm
-.flow > * + * {
-    margin-top: v(gap);
+.flow > * {
+    margin-bottom: v(gap);
 
     @include media-query('tablet') {
         --gap: #{get-size('700')};

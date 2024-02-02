@@ -11,34 +11,38 @@ h1,
 h2,
 h3 {
     @include apply-utility('leading', 'tight');
-    letter-spacing: -.01rem;
-    font-family: "Roboto Mono";
 }
 
 h1 {
-    --gap: #{get-size('600')};
-    font-size: #{get-size('600')};
+    --gap: #{get-size('300')};
+    font-family: "ibm-plex-sans";
+    font-size: #{get-size('800')};
+    font-weight: 800;
     margin: 0 0 v(gap);
 
      @media (min-width : 40em) {
-        --gap: #{get-size('700')};
-        font-size: #{get-size('700')};
+        --gap: #{get-size('300')};
+        font-size: #{get-size('800')};
         margin: 0 0 v(gap);
     }
 }
 
 h2 {
-    font-size: #{get-size('500')};
+    font-size: #{get-size('600')};
+    --gap: .5em !important;
+    margin-bottom: v(gap);
 
      @media (min-width : 40em) {
-        --gap: #{get-size('600')};
+        --gap: #{get-size('300')};
         font-size: #{get-size('600')};
-        margin: 0 0 v(gap);
+        margin-bottom: v(gap);
     }
 }
 
 h3 {
-    font-size: v(text-700);
+    font-size: #{get-size('600')};
+    --gap: .3em !important;
+    margin-bottom: v(gap);
 }
 
 .content {
@@ -50,7 +54,6 @@ h3 {
     color: get-color('grey');
     line-height: 1.5;
     font-weight: 500;
-    font-family: "Roboto Mono";
 }
 
 .page-title {
@@ -60,6 +63,7 @@ h3 {
 // lists
 ol,
 ul {
+    margin-left: get-size('500');
     padding: 0 0 0 get-size('500');
 }
 

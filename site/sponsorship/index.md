@@ -1,17 +1,11 @@
 ---
 layout: sponsorship
 title: Sponsorship
-meta_title: Sponsorship
-meta_description: Sponsorship information for the 2024 ICA Hackathon
+meta_title: Sponsors
+meta_description: Sponsor information for Communication Science Futures
 eleventyNavigation:
-  key: Sponsorship
-  order: 4
+  key: Sponsors
+  order: 5
 ---
 
-We are currently soliciting sponsors for the 2024 Hackathon. If you or your department, organization, or company would like to serve as a sponsor for the hackathon and help advance reproducible communication research, please email the pre-conference organizers at [hackingcommsci@gmail.com](mailto:hackingcommsci@gmail.com).
-
-## Why Should I Sponsor?
-
-Hackathons have proven to be immensely valuable tools for creating change in a wide variety of disciplines, including computer science, geology, psychology, and neuroscience. We believe that a hackathon will be similarly beneficial for advancing communication science. Additional sponsorship will provide the organizing team with needed resources to more effectively plan and implement the hackathon. These include including acquiring event space, creating scholarships / fee reductions for attendees, and providing meals and refreshments during the hackathon.
-
-As a “thank you” for sponsorship, we will be sure that your department, organization, or company will be featured both before and during the hackathon (website, opening presentation, etc). If you would like to discuss the potential of more substantial sponsorship, please see our sponsorship tiers.
+We are grateful to the sponsors for Communication Science Futures. If your department or organization is interested in serving as a sponsor in future years, please reach out to the organizing team.

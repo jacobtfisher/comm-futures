@@ -75,6 +75,7 @@ module.exports = config => {
   config.addLayoutAlias("organizers", "layouts/organizers.njk");
   config.addLayoutAlias("sponsorship", "layouts/sponsorship.njk");
   config.addLayoutAlias("contact", "layouts/contact.njk");
+  config.addLayoutAlias("cfp", "layouts/cfp.njk");
   // config.addLayoutAlias("category", "layouts/category.njk");
 
   // Include our static assets
