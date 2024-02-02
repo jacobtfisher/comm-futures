@@ -6,10 +6,7 @@ layout: base
 
     <header class="page-header">
 
-        <img src="/images/meta/science.png" style="padding:0 0 3rem 0; max-width: 15%; height: auto;">
-
-        <h1 class="page-title">{{ title }}</h1>
-
+        <img src="/images/meta/futures_logo.png" class="hero-image">
         {% if sub_heading %}
 
             <p class="sub-heading">{{ sub_heading }}</p>
@@ -19,28 +16,7 @@ layout: base
     </header>
 
     <div class="content flow">
-
         {{ content | safe }}
-        <div style="display:none">
-            <h1>Sponsors of our previous hackathons (2020-2023)</h1>
-
-            {#<p>This pre-conference is made possible thanks in part to generous sponsorship from the following organizations:</p>#}
-            <p>Previous hackathons were made possible thanks in part to generous sponsorship from the following organizations. <br>
-            <b>We are currently soliciting sponsors for the 2024 Hackathon.</b>
-            </p>
-                <div class="box-grid sponsor-grid">
-                    {%- for sponsor in sponsors %}
-                    <div class = "masonry-brick tooltip">
-
-                        <img data-src="{{ sponsor.logo }}" alt="{{ sponsor.name }}" style="flex:{{ sponsor.flex }}"></img>
-                        <span class="tooltiptext">{{sponsor.name}}</span>
-
-                    </div>
-                    {% endfor -%}
-                </div>
-
-            <p>If you would like more information regarding sponsoring the pre-conference this year or in future years, please see the <a href="/sponsorship">Sponsorship</a> page.</p>
-        </div>
     </div>
 
 </main>

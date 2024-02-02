@@ -1029,6 +1029,13 @@ ul {
   padding: 0 0 0 clamp(1.09rem, 1rem + 0.47vw, 1.33rem);
 }
 
+.code {
+  font-family: monospace;
+  background-color: #f0f0f0;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
 a {
   text-decoration: none;
   transition: color var(--transition-duration) var(--transition-timing);
@@ -1345,6 +1352,19 @@ a:not([class]):hover {
     grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
   }
 }
+.hero-image {
+  width: 90%;
+  max-width: 100%;
+  padding: 0 0 2rem;
+  height: auto;
+}
+@media (min-width: 640px) {
+  .hero-image {
+    width: 60%;
+    padding: 0 0 3rem;
+  }
+}
+
 .headshot-grid {
   --gap: clamp(1.71rem, 1.45rem + 1.29vw, 2.37rem);
   align-items: stretch;

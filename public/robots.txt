@@ -2,4 +2,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://hackingcommsci.org/sitemap.xml
+Sitemap: https://commscifutures.com/sitemap.xml
