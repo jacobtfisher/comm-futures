@@ -5,7 +5,7 @@ meta_description: Information about the call for proposals for "Communication Sc
 title: Call for Proposals
 ---
 
-The Department of Communication at Michigan State University is pleased to invite submissions for Communication Science Futures, a new conference created to bring together leading scholars to address pressing issues and emerging trends shaping the future of interdisciplinary social scientific research into human communication and social behavior. This "un-conference" will feature keynotes by leading communication scholars, provocative working group sessions designed to ignite scholarly debates and foster cross-cutting collaborations among participants, and an interactive research presentation poster session for students and early career researchers. Communication Science Futures will take place May 31st-June 3rd, 2024 on the campus of Michigan State University in East Lansing. Submissions will be considered on a rolling basis until **March 31st, 2024**.
+Communication Science Futures will take place May 31st-June 3rd, 2024 on the campus of Michigan State University in East Lansing. Submissions will be considered on a rolling basis until **March 31st, 2024**.
 
 Two categories of submissions will be considered for this year’s conference:
 
