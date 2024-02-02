@@ -23,7 +23,7 @@ The primary objectives of Communication Science Futures are: **(a)** to provide 
 
 Communication Science Futures will be organized around a series of Working Group Sessions. These sessions will consist of a panel of brief presentations followed by extended breakout discussions between presenters and participants aimed at addressing a “big picture” challenge or opportunity within the field. These working group sessions will be aligned with one of three themes:
 
-###  Futures in Research
+### Futures in Research
 
 Forces, trends, or topics shaping the future of communication research. Topics in this theme could include, but are not limited to:
 
