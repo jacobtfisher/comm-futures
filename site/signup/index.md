@@ -9,21 +9,22 @@ Communication Science Futures will take place May 31st-June 2nd, 2024 on the cam
 
 Two categories of submissions will be considered for this year’s conference:
 
-## Working Group Submissions
+## Working Group Presentation Submissions
 
-A central component of the inaugural meeting of Communication Science Futures will be the opportunity to engage in interactive working group sessions aimed at addressing a pressing issue or opportunity in communication research. These sessions will consist of a panel of brief presentations followed by extended small-group discussion and problem-solving sessions involving both presenters and participants. These working group sessions will be aligned with one of three themes:
+A central component of the inaugural meeting of Communication Science Futures will be the opportunity to engage in interactive working group sessions aimed at addressing a pressing issue or opportunity in communication research. Each session will begin with a panel of brief presentations introducing the topics that will be considered in the session. Following this, session attendees will break out into extended, presenter-led discussion groups to engage in small-group discussion, problem solving, and knowledge sharing. These working group sessions will be aligned with one of three themes:
 
 - **Futures in Research** - Forces, trends, or topics shaping the future of communication research.
 - **Futures in Theory** - Issues and advancements in theory building and testing.
 - **Futures in Methods** - New methods for collecting, analyzing, and reporting communication data.
 
-Proposals that speak across multiple sub-areas of communication research (e.g., interpersonal, organizational, technological, mediated, mass communication, etc.) are especially encouraged.  Working group proposals should begin with a concise summary of the topic that will be discussed, highlighting the significance of the topic, and explaining its current or future relevance to the field of communication. Proposals should also include at least two or three specific aspects or questions related to the topic for exploration with other attendees. These points should be framed to encourage open-ended discussion and collaborative thinking. We value contributions that foster critical, yet collegial discourse, encouraging participants to engage with ideas in a manner that is respectful, productive, and actionable. 
+Individual proposals submitted to the conference will be grouped by the conference organizers into panels based on thematic alignment. Proposals that speak across multiple sub-areas of communication research (e.g., interpersonal, organizational, technological, mediated, mass communication, etc.) are especially encouraged. Working group presentation proposals should begin with a concise summary of the topic that will be discussed, highlighting the significance of the topic, and explaining its current or future relevance to the field of communication. Proposals should also include at least a handful of specific sub-topics or questions related to the proposed topic that will guide the breakout discussion. These points should be framed to encourage open-ended discussion and collaborative thinking. We value contributions that foster critical, yet collegial discourse, encouraging participants to engage with ideas in a manner that is respectful, productive, and actionable. 
 
 Working group proposals should be no more than 1000 words in length (excluding references), and should contain a title, names and affiliations of contributors, and a list of 3-5 keywords that align with the submission.
 
 Please note that submission of a proposal does not guarantee the formation of a working group at the conference. All proposals will be reviewed by the organizing team for their potential to stimulate engaging and impactful discussions.
 
 ## Data Blitz Abstracts
+
 In addition to working groups and invited panels, Communication Science Futures will consist of a limited number of “Data Blitz” sessions in which students and early career scholars will have the opportunity to present and receive feedback on in-progress research. Data Blitz submissions should consist of a brief introduction situating the project within the literature, a description of the hypotheses or research questions addressed in the project, a summary of the methods and analysis plan, and (if available) a summary of preliminary results.
 
 Data blitz proposals should be no more than 250 words in length (excluding references), and should contain a title, names and affiliations of contributors, and a list of 3-5 keywords that align with the submission.
