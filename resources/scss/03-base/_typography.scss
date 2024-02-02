@@ -57,7 +57,9 @@ h3 {
 }
 
 .page-title {
-    margin: 0;
+    --gap: #{get-size('400')};
+    font-size: #{get-size('800')};
+    margin: 0 0 v(gap);
 }
 
 // lists

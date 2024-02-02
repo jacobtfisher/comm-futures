@@ -1018,7 +1018,9 @@ h3 {
 }
 
 .page-title {
-  margin: 0;
+  --gap: clamp(0.88rem, 0.83rem + 0.24vw, 1rem);
+  font-size: clamp(2.14rem, 1.74rem + 1.99vw, 3.16rem);
+  margin: 0 0 var(--gap);
 }
 
 ol,
