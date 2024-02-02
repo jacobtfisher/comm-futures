@@ -1,7 +1,7 @@
 ---
 layout: home
 meta_title: Home
-meta_description: "Communication Science Futures is a new conference aimed at addressing pressing issues and opportunities in the interdisciplinary, social scientific study of human communication. The conference will take place at Michigan State University May 31st - June 2nd, 2024"
+meta_description: "Communication Science Futures is a new conference aimed at addressing pressing issues and opportunities in the interdisciplinary, social scientific study of human communication. The conference will take place at Michigan State University May 30th - June 1st, 2024"
 title: Communication Science Futures
 sub_heading: 
 eleventyNavigation:
@@ -9,9 +9,9 @@ eleventyNavigation:
   order: 1
 ---
 
-The Department of Communication at Michigan State University is pleased to announce *Communication Science Futures*, a new conference created to bring together leading scholars to address pressing issues and emerging trends shaping the future of interdisciplinary social scientific research into human communication and social behavior. This "un-conference" will feature keynotes by leading communication scholars, provocative working group sessions designed to ignite scholarly debates and foster cross-cutting collaborations among participants, and an interactive research presentation poster session for students and early career researchers. Communication Science Futures will take place May 31st-June 2nd, 2024 on the campus of Michigan State University in East Lansing. Submissions will be considered on a rolling basis until March 31st, 2024.
+The Department of Communication at Michigan State University is pleased to announce *Communication Science Futures*, a new conference created to bring together leading scholars to address pressing issues and emerging trends shaping the future of interdisciplinary social scientific research into human communication and social behavior. This "un-conference" will feature keynotes by leading communication scholars, provocative working group sessions designed to ignite scholarly debates and foster cross-cutting collaborations among participants, and an interactive research presentation poster session for students and early career researchers. Communication Science Futures will take place May 30th-June 1st, 2024 on the campus of Michigan State University in East Lansing. Submissions will be considered on a rolling basis until March 31st, 2024.
 
-- **Dates:** May 31st - June 2nd, 2024
+- **Dates:** May 30th - June 1st, 2024
 - **Location:** East Lansing, Michigan
 - **Cost:** Faculty: $225, Graduate Students: $125.
 
