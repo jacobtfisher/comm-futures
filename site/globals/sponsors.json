@@ -12,6 +12,12 @@
     "flex": "3 1 60%"
   },
   {
+    "name": "Office of Research and Innovation, Michigan State University",
+    "logo": "/images/sponsor_logos/msu_ori_logo.png",
+    "link": "https://comartsci.msu.edu/",
+    "flex": "3 1 60%"
+  },
+  {
     "name": "iMotions",
     "logo": "/images/sponsor_logos/imotions_logo.png",
     "link": "https://imotions.com/",
