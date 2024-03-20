@@ -5,7 +5,7 @@ meta_description: Information about the call for proposals for "Communication Sc
 title: Call for Proposals
 ---
 
-Communication Science Futures will take place May 30th-June 1st, 2024 on the campus of Michigan State University in East Lansing. Submissions will be considered on a rolling basis until **March 31st, 2024**.
+Communication Science Futures will take place May 30th-June 1st, 2024 on the campus of Michigan State University in East Lansing. Submissions will be considered on a rolling basis until **April 15th, 2024**.
 
 Two categories of submissions will be considered for this year’s conference:
 
