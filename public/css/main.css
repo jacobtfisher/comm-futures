@@ -1267,19 +1267,22 @@ a:not([class]):hover {
 .callout {
   display: flex;
   flex-flow: row wrap;
-  width: 100%;
+  width: 90%;
   background-color: #F3F4F6;
   border-radius: 1em;
   padding: 0.5em;
+  margin-bottom: 20px;
 }
 .callout .callout-icon {
   flex: 1 1 0;
   margin: 0 clamp(1.09rem, 1rem + 0.47vw, 1.33rem) 0 clamp(0.56rem, 0.53rem + 0.16vw, 0.64rem);
+  padding-top: 14px;
   align-self: top;
 }
 .callout .callout-text {
   flex: 99 1 0;
-  font-size: clamp(0.88rem, 0.83rem + 0.24vw, 1rem);
+  font-size: clamp(1.09rem, 1rem + 0.47vw, 1.33rem);
+  padding: 10px;
 }
 
 .type-post .length-optimal {

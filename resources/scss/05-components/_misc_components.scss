@@ -3,19 +3,22 @@
 .callout {
 	display: flex;
 	flex-flow: row wrap;
-	width: 100%;
+	width: 90%;
 	background-color: get-color('light-grey');
 	border-radius: 1em;
 	padding: .5em;
+	margin-bottom: 20px;
 
 	.callout-icon{
 		flex: 1 1 0;
 		margin: 0 #{get-size('500')} 0 #{get-size('200')};
+		padding-top: 14px;
 		align-self: top;
 	}
 
 	.callout-text{
 		flex: 99 1 0;
-		font-size: #{get-size('400')};
+		font-size: #{get-size('500')};
+		padding: 10px;
 	}
 }

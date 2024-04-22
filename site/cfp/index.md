@@ -3,6 +3,9 @@ layout: cfp
 meta_title: Call for Proposals
 meta_description: Information about the call for proposals for "Communication Science Futures"
 title: Call for Proposals
+eleventyNavigation:
+  key: Call for Proposals
+  order: 6
 ---
 
 Communication Science Futures will take place May 30th-June 1st, 2024 on the campus of Michigan State University in East Lansing. Submissions will be considered on a rolling basis until **April 15th, 2024**.
