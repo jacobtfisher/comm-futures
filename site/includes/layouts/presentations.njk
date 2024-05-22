@@ -1,14 +1,59 @@
 ---
+layout: base
+tags: agenda-items
 pagination:
   data: agenda
   size: 1
   alias: presentation
+  addAllPagesToCollections: true
 permalink: "agenda-items/item-{{presentation.number}}/index.html"
 ---
-<div class = "pagination">
-  <ol>
-    {% for item in pagination.items %}
-      <li>{{ item.title }}</li>
-    {% endfor %}
-  </ol>
-</div>
+
+<head>
+  <!-- Place your kit's code here -->
+  <script src="https://kit.fontawesome.com/4451d51824.js" crossorigin="anonymous"></script>
+</head>
+
+<main id="main" class="main inner box-flex pt-1100 pb-1100" tabindex="-1">
+
+  <article id="container-centre" class="column centre">
+
+    <div class="content flow">
+
+      <div class="inner">
+        <img class = "header-img" src="/images/meta/csf_icon.png">
+        <div class = "presentation-card">
+
+          {% for item in pagination.items %}
+
+            <div class = "theme-chip">
+              <p> Futures in {{item.theme | capitalize}}</p>
+            </div>
+
+            <div class = "item-title">
+              <h2>{{ item.title }}</h2>
+            </div>
+
+            <div class = "item-presenter">
+              <div>
+                <i class="fas fa-solid fa-user" style="padding:0 .5em 0 0; color:grey"></i>
+                {{ item.presenter }}
+              </div>
+              <div>
+                <i class="fas fa-university" style="padding:0 .5em 0 0; color: grey"></i>
+                {{ item.affiliation }}
+              </div>
+            </div>
+
+            <div class = "item-abstract">
+              <p>{{ item.abstract }}</p>
+            </div>
+
+          {% endfor %}
+
+          <div class = "prev-next-buttons">
+            <a href="{{pagination.href.previous}}"> Previous </a>
+            <a href="{{pagination.href.next}}"> Next </a>
+          </div>
+        </div>
+      </div>

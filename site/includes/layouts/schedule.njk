@@ -28,7 +28,7 @@ data: agenda
 
             <div class="inner">
 
-                <h1>Futures in Theory</h1>
+                <h2>Futures in Theory</h2>
 
                 <div class="box-grid agenda-grid">
 
@@ -53,13 +53,13 @@ data: agenda
                     {% endfor -%}
                 </div>
 
-                <h1>Futures in Research</h1>
+                <h2>Futures in Research</h2>
                 <div class="box-grid agenda-grid">
 
                     {% set futures_research = (agenda | find('theme', "research")) %}
 
                     {%- for item in futures_research %}
-                        <div class="agenda-card">
+                        <div class="agenda-card" onclick="location.href='/agenda-items/item-{{item.number}}/index.html'">
                             <div class="card-body">
                                 <div class="item-title text-500">{{ item.title}}</div>
                                 <div class="item-presenter text-500">
@@ -77,13 +77,13 @@ data: agenda
                     {% endfor -%}
                 </div>
 
-                <h1>Futures in Methods</h1>
+                <h2>Futures in Methods</h2>
                 <div class="box-grid agenda-grid">
 
                     {% set futures_methods = (agenda | find('theme', "methods")) %}
 
                     {%- for item in futures_methods %}
-                        <div class="agenda-card">
+                        <div class="agenda-card" onclick="location.href='/agenda-items/item-{{item.number}}/index.html'">
                             <div class="card-body">
                                 <div class="item-title text-500">{{ item.title}}</div>
                                 <div class="item-presenter text-500">
