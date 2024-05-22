@@ -836,8 +836,8 @@
   width: 100%;
   margin: 0 auto;
   max-width: var(--max-width);
-  padding-left: clamp(1.37rem, 1.21rem + 0.8vw, 1.78rem);
-  padding-right: clamp(1.37rem, 1.21rem + 0.8vw, 1.78rem);
+  padding-left: clamp(0.7rem, 0.66rem + 0.2vw, 0.8rem);
+  padding-right: clamp(0.7rem, 0.66rem + 0.2vw, 0.8rem);
 }
 
 .flow > * {
