@@ -26,92 +26,140 @@ data: agenda
 
         <div class="content flow">
 
-            <div class="inner">
-
-                <h2>Futures in Theory</h2>
-
-                <div class="box-grid agenda-grid">
-
-                    {% set futures_theory = (agenda | find('theme', "theory")) %}
-
-                    {%- for item in futures_theory %}
-                        <div class="agenda-card" onclick="location.href='/agenda-items/item-{{item.number}}/index.html'">
-                            <div class="card-body">
-                                <div class="item-title text-500">{{ item.title}}</div>
-                                <div class="item-presenter text-500">
-                                    <div>
-                                        <i class="fas fa-solid fa-user" style="padding:0 .5em 0 0; color:grey"></i>
-                                        <b>{{ item.presenter }}</b>
-                                    </div>
-                                    <div>
-                                        <i class="fas fa-university" style="padding:0 .5em 0 0; color: grey"></i>
-                                        {{ item.affiliation }}
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    {% endfor -%}
+            <div class = "callout" style = "margin-top: 2rem">
+                <div class = "callout-icon">
+                    <i class="fas fa-exclamation-circle color-grey"></i>
                 </div>
-
-                <h2>Futures in Research</h2>
-                <div class="box-grid agenda-grid">
-
-                    {% set futures_research = (agenda | find('theme', "research")) %}
-
-                    {%- for item in futures_research %}
-                        <div class="agenda-card" onclick="location.href='/agenda-items/item-{{item.number}}/index.html'">
-                            <div class="card-body">
-                                <div class="item-title text-500">{{ item.title}}</div>
-                                <div class="item-presenter text-500">
-                                    <div>
-                                        <i class="fas fa-solid fa-user" style="padding:0 .5em 0 0; color:grey"></i>
-                                        <b>{{ item.presenter }}</b>
-                                    </div>
-                                    <div>
-                                        <i class="fas fa-university" style="padding:0 .5em 0 0; color: grey"></i>
-                                        {{ item.affiliation }}
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    {% endfor -%}
-                </div>
-
-                <h2>Futures in Methods</h2>
-                <div class="box-grid agenda-grid">
-
-                    {% set futures_methods = (agenda | find('theme', "methods")) %}
-
-                    {%- for item in futures_methods %}
-                        <div class="agenda-card" onclick="location.href='/agenda-items/item-{{item.number}}/index.html'">
-                            <div class="card-body">
-                                <div class="item-title text-500">{{ item.title}}</div>
-                                <div class="item-presenter text-500">
-                                    <div>
-                                        <i class="fas fa-solid fa-user" style="padding:0 .5em 0 0; color:grey"></i>
-                                        <b>{{ item.presenter }}</b>
-                                    </div>
-                                    <div>
-                                        <i class="fas fa-university" style="padding:0 .5em 0 0; color: grey"></i>
-                                        {{ item.affiliation }}
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    {% endfor -%}
-                </div>
-
-                <div class = "callout">
-                    <div class = "callout-icon">
-                        <i class="fas fa-exclamation-circle color-grey"></i>
-                    </div>
-                    <div class = "callout-text">
-                        {{ content | safe }}
-                    </callout>
-                </div>
+                <div class = "callout-text">
+                    {{ content | safe }}
+                </callout>
             </div>
         </div>
 
-    </article>
+        <div class="inner">
+
+            <h1> Thursday, May 30 </h1>
+            <h1> Friday, May 31 </h1>
+            <div class = "event-title">
+                <div class="time-chip"> 8:30 - 9:30am </div>
+                <div class = "event-title-text"> Welcome & Introduction </div>
+            </div>
+
+            <div class = "event-title">
+                <div class="time-chip"> 9:30am - 12:00pm </div>
+                <div class = "event-title-text"> Futures in Theory </div>
+            </div>
+
+            <h2 class = "agenda-grid-title"> Discussion Groups: </h2>
+
+            <div class="box-grid agenda-grid">
+
+                {% set futures_theory = (agenda | find('theme', "theory")) %}
+
+                {%- for item in futures_theory %}
+                    <div class="agenda-card" onclick="location.href='/agenda-items/item-{{item.number}}/index.html'">
+                        <div class="card-body">
+                            <div class="item-title text-500">{{ item.title}}</div>
+                            <div class="item-presenter text-500">
+                                <div>
+                                    <i class="fas fa-solid fa-user" style="padding:0 .5em 0 0; color:grey"></i>
+                                    <b>{{ item.presenter }}</b>
+                                </div>
+                                <div>
+                                    <i class="fas fa-university" style="padding:0 .5em 0 0; color: grey"></i>
+                                    {{ item.affiliation }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor -%}
+            </div>
+
+            <div class = "event-title">
+                <div class="time-chip"> 12:00 - 1:30pm </div>
+                <div class = "event-title-text"> Lunch / Coffee Break </div>
+            </div>
+
+            <div class = "event-title">
+                <div class="time-chip"> 1:30 - 4:30pm </div>
+                <div class = "event-title-text"> Futures in Research </div>
+            </div>
+
+            <h2 class = "agenda-grid-title"> Discussion Groups: </h2>
+
+            <div class="box-grid agenda-grid">
+
+                {% set futures_research = (agenda | find('theme', "research")) %}
+
+                {%- for item in futures_research %}
+                    <div class="agenda-card" onclick="location.href='/agenda-items/item-{{item.number}}/index.html'">
+                        <div class="card-body">
+                            <div class="item-title text-500">{{ item.title}}</div>
+                            <div class="item-presenter text-500">
+                                <div>
+                                    <i class="fas fa-solid fa-user" style="padding:0 .5em 0 0; color:grey"></i>
+                                    <b>{{ item.presenter }}</b>
+                                </div>
+                                <div>
+                                    <i class="fas fa-university" style="padding:0 .5em 0 0; color: grey"></i>
+                                    {{ item.affiliation }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor -%}
+            </div>
+
+            <h1> Saturday, June 31 </h1>
+
+            <div class = "event-title">
+                <div class="time-chip"> 8:30 - 9:00am </div>
+                <div class = "event-title-text"> Welcome & Introduction </div>
+            </div>
+
+            <div class = "event-title">
+                <div class="time-chip"> 9:00am - 12:00pm </div>
+                <div class = "event-title-text"> Futures in Methods </div>
+            </div>
+
+            <h2 class = "agenda-grid-title"> Discussion Groups: </h2>
+
+            <div class="box-grid agenda-grid">
+
+                {% set futures_methods = (agenda | find('theme', "methods")) %}
+
+                {%- for item in futures_methods %}
+                    <div class="agenda-card" onclick="location.href='/agenda-items/item-{{item.number}}/index.html'">
+                        <div class="card-body">
+                            <div class="item-title text-500">{{ item.title}}</div>
+                            <div class="item-presenter text-500">
+                                <div>
+                                    <i class="fas fa-solid fa-user" style="padding:0 .5em 0 0; color:grey"></i>
+                                    <b>{{ item.presenter }}</b>
+                                </div>
+                                <div>
+                                    <i class="fas fa-university" style="padding:0 .5em 0 0; color: grey"></i>
+                                    {{ item.affiliation }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor -%}
+            </div>
+
+            <div class = "event-title">
+                <div class="time-chip"> 12:00 - 1:00pm </div>
+                <div class = "event-title-text"> Lunch and Closing Remarks </div>
+            </div>
+
+            <div class = "event-title">
+                <div class="time-chip"> 1:00 - 3:00pm </div>
+                <div class = "event-title-text"> Flex Time </div>
+            </div>
+
+        </div>
+    </div>
+
+</article>
 
 </main>

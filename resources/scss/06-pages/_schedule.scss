@@ -1,9 +1,45 @@
+.event-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: #{get-size('500')};
+    font-weight: 700;
+    flex: 0 3 auto;
+
+    .time-chip {
+        display: inline-block;
+        padding: 0rem .8rem;
+        margin: .5rem 0rem;
+        border-radius: .5em;
+        background-color: get-color('secondary');
+        color: get-color('white');
+    }
+
+    .event-title-text {
+        padding: .3rem .5rem;
+        font-size: #{get-size('600')};
+        font-weight: 900;
+        flex: 3 1 auto;
+    }
+}
+
+.agenda-grid-title {
+    font-size: #{get-size('500')};
+    font-weight: 700;
+    margin-left: 1rem;
+    color: gray;
+}
+
 .agenda-grid {
     --gap: #{get-size('400')};
     align-items: stretch;
-    grid-template-columns: repeat(auto-fit, minmax(18rem, 2fr));
+
+    display: flex;
+    flex-flow: row wrap;
     gap: v(gap);
-    padding-bottom: #{get-size('700')};
+    padding: 1rem;
+    margin-bottom: 1rem;
 
     a {
         text-decoration: none !important;
@@ -25,7 +61,7 @@
             flex-direction: column;
             align-items: stretch;
             padding: .5rem 1rem;
-            
+
             .item-title {
                 font-size: #{get-size('400')};
                 font-style: italic;
@@ -53,7 +89,24 @@
         &:active {
             background-color: darken(get-color('grey'), 10%);
         }
+
     }
-         
 }
 
+@media (max-width: 768px) {
+    .agenda-grid .agenda-card {
+        flex: 0 0 100%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .agenda-grid .agenda-card {
+        flex: 0 0 40%;
+    }
+}
+
+@media (min-width: 1025px) {
+    .agenda-grid .agenda-card {
+        flex: 0 0 30%;
+    }
+}
