@@ -1433,6 +1433,12 @@ a:not([class]):not(.agenda-grid .agenda-card):hover {
   cursor: pointer;
 }
 
+.day-header {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 5px dotted green;
+}
+
 .event-title {
   display: flex;
   flex-direction: column;
@@ -1442,19 +1448,48 @@ a:not([class]):not(.agenda-grid .agenda-card):hover {
   font-weight: 700;
   flex: 0 3 auto;
 }
-.event-title .time-chip {
+.event-title .time-divider {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+.event-title .time-divider .time-chip {
   display: inline-block;
   padding: 0rem 0.8rem;
   margin: 0.5rem 0rem;
   border-radius: 0.5em;
   background-color: #008934;
   color: #fff;
+  flex: 0 0 auto;
+}
+.event-title .time-divider .time-hr {
+  margin: 0rem 0.5rem;
+  width: 100%;
+}
+.event-title .time-divider .time-hr hr {
+  border: 1px solid gray;
+  border-radius: 1px;
 }
 .event-title .event-title-text {
   padding: 0.3rem 0.5rem;
   font-size: clamp(1.37rem, 1.21rem + 0.8vw, 1.78rem);
   font-weight: 900;
   flex: 3 1 auto;
+}
+.event-title .event-subtitle-text {
+  padding: 0rem 1rem;
+  font-size: clamp(1.37rem, 1.21rem + 0.8vw, 1.78rem);
+  color: #008934;
+  font-weight: 900;
+  flex: 3 1 auto;
+}
+.event-title .event-body-text {
+  padding: 1rem;
+  font-size: clamp(1.09rem, 1rem + 0.47vw, 1.33rem);
+  font-weight: 400;
+  flex: 1 1 auto;
 }
 
 .agenda-grid-title {
