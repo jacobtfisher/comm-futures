@@ -1473,29 +1473,26 @@ a:not([class]):not(.agenda-grid .agenda-card):hover {
   border-radius: 1px;
 }
 .event-title .event-title-text {
-  padding: 0.3rem 0.5rem;
   font-size: clamp(1.37rem, 1.21rem + 0.8vw, 1.78rem);
   font-weight: 900;
   flex: 3 1 auto;
 }
 .event-title .event-subtitle-text {
-  padding: 0rem 1rem;
   font-size: clamp(1.37rem, 1.21rem + 0.8vw, 1.78rem);
   color: #008934;
   font-weight: 900;
   flex: 3 1 auto;
 }
 .event-title .event-body-text {
-  padding: 1rem;
   font-size: clamp(1.09rem, 1rem + 0.47vw, 1.33rem);
   font-weight: 400;
   flex: 1 1 auto;
+  margin-bottom: 1rem;
 }
 
 .agenda-grid-title {
   font-size: clamp(1.09rem, 1rem + 0.47vw, 1.33rem);
   font-weight: 700;
-  margin-left: 1rem;
   color: gray;
 }
 
@@ -1505,7 +1502,6 @@ a:not([class]):not(.agenda-grid .agenda-card):hover {
   display: flex;
   flex-flow: row wrap;
   gap: var(--gap);
-  padding: 1rem;
   margin-bottom: 1rem;
 }
 .agenda-grid a {

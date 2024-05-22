@@ -44,14 +44,12 @@
 
 
     .event-title-text {
-        padding: .3rem .5rem;
         font-size: #{get-size('600')};
         font-weight: 900;
         flex: 3 1 auto;
     }
 
     .event-subtitle-text {
-        padding: 0rem 1rem;
         font-size: #{get-size('600')};
         color: get-color('secondary');
         font-weight: 900;
@@ -59,17 +57,16 @@
     }
 
     .event-body-text {
-        padding: 1rem;
         font-size: #{get-size('500')};
         font-weight: 400;
         flex: 1 1 auto;
+        margin-bottom: 1rem;
     }
 }
 
 .agenda-grid-title {
     font-size: #{get-size('500')};
     font-weight: 700;
-    margin-left: 1rem;
     color: gray;
 }
 
@@ -80,7 +77,6 @@
     display: flex;
     flex-flow: row wrap;
     gap: v(gap);
-    padding: 1rem;
     margin-bottom: 1rem;
 
     a {
