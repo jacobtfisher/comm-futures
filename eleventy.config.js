@@ -59,6 +59,10 @@ module.exports = config => {
     return helpers.shuffle(array);
   });
 
+  config.addNunjucksFilter("find", function (arr=[], key="", value) {
+  return arr?.filter(item => item[key] === value);
+});
+
   module.exports = function (eleventyConfig) {
     eleventyConfig.ignores.add("_drafts/**");
     eleventyConfig.ignores.add("layouts/blog.njk");
@@ -70,13 +74,12 @@ module.exports = config => {
   config.addLayoutAlias("base", "layouts/base.njk");
   config.addLayoutAlias("home", "layouts/home.njk");
   config.addLayoutAlias("page", "layouts/page.njk");
-  // config.addLayoutAlias("blog", "layouts/blog.njk");
-  // config.addLayoutAlias("post", "layouts/post.njk");
   config.addLayoutAlias("organizers", "layouts/organizers.njk");
+  config.addLayoutAlias("schedule", "layouts/schedule.njk");
+  config.addLayoutAlias("presentations", "layouts/presentations.njk");
   config.addLayoutAlias("sponsorship", "layouts/sponsorship.njk");
   config.addLayoutAlias("contact", "layouts/contact.njk");
   config.addLayoutAlias("cfp", "layouts/cfp.njk");
-  // config.addLayoutAlias("category", "layouts/category.njk");
 
   // Include our static assets
   config.addPassthroughCopy("css");

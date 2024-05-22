@@ -5,7 +5,7 @@ a {
     text-decoration: none;
     transition: color v(transition-duration) v(transition-timing);
 
-    &:not([class]) {
+    &:not([class]):not(.agenda-grid .agenda-card) {
         color: currentColor;
         border-bottom: v(border-size) solid get-color('secondary');
         padding-bottom: .1rem;
