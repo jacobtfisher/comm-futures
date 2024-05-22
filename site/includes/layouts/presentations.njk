@@ -1,0 +1,14 @@
+---
+pagination:
+  data: agenda
+  size: 1
+  alias: presentation
+permalink: "agenda-items/item-{{presentation.number}}/index.html"
+---
+<div class = "pagination">
+  <ol>
+    {% for item in pagination.items %}
+      <li>{{ item.title }}</li>
+    {% endfor %}
+  </ol>
+</div>
