@@ -1634,6 +1634,7 @@ a:not([class]):not(.agenda-grid .agenda-card):hover {
 }
 .presentation-card .item-abstract {
   font-size: clamp(1.09rem, 1rem + 0.47vw, 1.33rem);
+  max-width: 60rem;
   line-height: 1.8rem;
   font-weight: 400;
   padding-top: 1rem;
@@ -1651,8 +1652,11 @@ a:not([class]):not(.agenda-grid .agenda-card):hover {
 }
 .presentation-card .prev-next-buttons {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
   gap: 1rem;
   margin-top: 1rem;
   width: 100%;
+  max-width: 20rem;
 }

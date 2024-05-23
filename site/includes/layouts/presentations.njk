@@ -69,8 +69,15 @@ permalink: "agenda-items/item-{{presentation.number}}/index.html"
             {% endfor %}
 
             <div class = "prev-next-buttons">
-              <a href="{{pagination.href.previous}}"> Previous </a>
-              <a href="{{pagination.href.next}}"> Next </a>
+              <div>
+                <a href="{{pagination.href.previous}}">
+                  <i class="fa-solid fa-chevron-left"></i> Previous </a>
+              </div>
+              <div>
+                <a href="{{pagination.href.next}}">Next
+                  <i class="fa-solid fa-chevron-right"></i>
+                </a>
+              </div>
             </div>
           </div>
         </div>

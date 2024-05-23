@@ -44,6 +44,7 @@
 
     .item-abstract {
         font-size: #{get-size('500')};
+        max-width: 60rem;
         line-height: 1.8rem;
         font-weight: 400;
         padding-top: 1rem;
@@ -63,10 +64,13 @@
 
     .prev-next-buttons {
         display: flex;
-        justify-content: space-between;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
         gap: 1rem;
         margin-top: 1rem;
         width: 100%;
+        max-width: 20rem;
     }
 
 }
