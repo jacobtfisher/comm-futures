@@ -1459,6 +1459,7 @@ a:not([class]):not(.agenda-grid .agenda-card):hover {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+  margin-top: 1rem;
   width: 100%;
 }
 .event-title .time-divider .time-chip {
@@ -1609,6 +1610,7 @@ a:not([class]):not(.agenda-grid .agenda-card):hover {
   font-weight: 400;
   padding-bottom: 0.5rem;
   flex: 3 1 auto;
+  max-width: 60rem;
 }
 .presentation-card .item-presenters {
   font-size: clamp(1.09rem, 1rem + 0.47vw, 1.33rem);
