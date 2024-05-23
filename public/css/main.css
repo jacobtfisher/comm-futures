@@ -1194,7 +1194,8 @@ a:not([class]):not(.agenda-grid .agenda-card):hover {
   }
 }
 .footer-inner {
-  align-items: center;
+  display: flex;
+  flex-direction: row-reverse;
   justify-content: space-between;
 }
 

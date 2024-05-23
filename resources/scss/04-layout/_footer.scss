@@ -1,7 +1,7 @@
-
 //==========  Footer  ==========//
 
 .footer-inner {
-    align-items: center;
+    display: flex;
+    flex-direction: row-reverse;
     justify-content: space-between;
 }
