@@ -1267,7 +1267,7 @@ a:not([class]):not(.agenda-grid .agenda-card):hover {
 .callout {
   display: flex;
   flex-flow: row wrap;
-  width: 90%;
+  max-width: 80rem;
   background-color: #F3F4F6;
   border-radius: 1em;
   padding: 0.5em;
@@ -1275,7 +1275,7 @@ a:not([class]):not(.agenda-grid .agenda-card):hover {
 }
 .callout .callout-icon {
   flex: 1 1 0;
-  margin: 0 clamp(1.09rem, 1rem + 0.47vw, 1.33rem) 0 clamp(0.56rem, 0.53rem + 0.16vw, 0.64rem);
+  margin: 0 clamp(.3rem, .4rem + 0.5vw, 1rem) 0 clamp(.3rem, 0.4rem + 0.5vw, 1rem);
   padding-top: 14px;
   align-self: top;
 }
