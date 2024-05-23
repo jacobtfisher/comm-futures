@@ -37,6 +37,13 @@ data: agenda
                 </callout>
             </div>
         </div>
+        <div class = "event-body-text">
+            <h2>Conference Location</h2>
+        WKAR Studio 1, 404 Wilson Rd, East Lansing, MI 48824
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2931.114775335102!2d-84.4838805872959!3d42.7224613710412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8822c27d40555555%3A0x83187efda38a6302!2sWKAR%20Public%20Media!5e0!3m2!1sen!2sus!4v1716478971382!5m2!1sen!2sus" width="100%" height="400" style="border:0; padding: 1rem 0rem" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
 
         <h1> Thursday, May 30 </h1>
         <div class = "event-title">
@@ -45,223 +52,234 @@ data: agenda
                 <div class = "time-hr"><hr></div>
             </div>
             <div class = "event-title-text"> Keynote Address </div>
-            <div class = "event-body-text">
-                    Dr. Byron Reeves <br>
+            <div class = "keynote-callout">
+                <div class = "keynote-headshot">
+                    <img src="/images/headshots/reeves_headshot.jpg">
+                </div>
+                <div class = "keynote-text">
+                    <b>Dr. Byron Reeves</b>
+                    <br>
                     Stanford University <br>
-                <i> Lorem Ipsum Dolor </i><br>
+                </div>
             </div>
         </div>
+    </div>
 
-        <div class = "event-title">
-            <div class = "time-divider">
-                <div class="time-chip"> 6:00 - 9:00pm  </div>
-                <div class = "time-hr"><hr></div>
-            </div>
-            <div class = "event-title-text"> Dinner & Opening Reception </div>
-            <div class = "event-body-text"></div>
+    <div class = "event-title">
+        <div class = "time-divider">
+            <div class="time-chip"> 6:00 - 9:00pm  </div>
+            <div class = "time-hr"><hr></div>
         </div>
+        <div class = "event-title-text"> Dinner & Opening Reception </div>
+        <div class = "event-body-text"></div>
+    </div>
 
-        <div class = "event-title">
-            <div class = "time-divider">
-                <div class="time-chip"> 8:00 - 11:00pm  </div>
-                <div class = "time-hr"><hr></div>
-            </div>
-            <div class = "event-title-text"> Happy Hour @ Dublin Square </div>
-            <div class = "event-body-text"></div>
+    <div class = "event-title">
+        <div class = "time-divider">
+            <div class="time-chip"> 8:00 - 11:00pm  </div>
+            <div class = "time-hr"><hr></div>
         </div>
+        <div class = "event-title-text"> Happy Hour @ Dublin Square </div>
 
-        <div class = "day-header">
-            <h1> Friday, May 31 </h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2930.447052545781!2d-84.48671868729542!3d42.73659297104009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8822e9d38e1ad615%3A0x694630c5d8ff3169!2sDublin%20Square!5e0!3m2!1sen!2sus!4v1716478415956!5m2!1sen!2sus" width="100%" height="400px" max-width="40rem" style="border:0; padding-top:1rem" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </div>
+
+    <div class = "day-header">
+        <h1> Friday, May 31 </h1>
+    </div>
+    <div class = "event-title">
+        <div class = "time-divider">
+            <div class="time-chip"> 8:30 - 9:30am  </div>
+            <div class = "time-hr"><hr></div>
         </div>
-        <div class = "event-title">
-            <div class = "time-divider">
-                <div class="time-chip"> 8:30 - 9:30am  </div>
-                <div class = "time-hr"><hr></div>
-            </div>
-            <div class = "event-title-text"> Welcome & Introduction </div>
+        <div class = "event-title-text"> Welcome & Introduction </div>
+    </div>
+
+    <div class = "event-title">
+
+        <div class = "time-divider">
+            <div class="time-chip"> 9:30am - 12:00pm  </div>
+            <div class = "time-hr"><hr></div>
         </div>
+        <div class = "event-title-text"> Futures in Theory </div>
+    </div>
 
-        <div class = "event-title">
+    <h2 class = "agenda-grid-title"> Discussion Groups: </h2>
 
-            <div class = "time-divider">
-                <div class="time-chip"> 9:30am - 12:00pm  </div>
-                <div class = "time-hr"><hr></div>
-            </div>
-            <div class = "event-title-text"> Futures in Theory </div>
-        </div>
+    <div class="box-grid agenda-grid">
 
-        <h2 class = "agenda-grid-title"> Discussion Groups: </h2>
+        {% set futures_theory = (agenda | find('theme', "theory")) %}
 
-        <div class="box-grid agenda-grid">
-
-            {% set futures_theory = (agenda | find('theme', "theory")) %}
-
-            {%- for item in futures_theory %}
-                <div class="agenda-card" onclick="location.href='/agenda-items/item-{{item.number}}/index.html'">
-                    <div class="card-body">
-                        <div class="item-title text-500">{{ item.title}}</div>
-                        <div class="item-presenter text-500">
-                            <div>
-                                <i class="fas fa-solid fa-user" style="padding:0 .5em 0 0; color:grey"></i>
-                                <b>{{ item.presenter }}</b>
-                            </div>
-                            <div>
-                                <i class="fas fa-university" style="padding:0 .5em 0 0; color: grey"></i>
-                                {{ item.affiliation }}
-                            </div>
+        {%- for item in futures_theory %}
+            <div class="agenda-card" onclick="location.href='/agenda-items/item-{{item.number}}/index.html'">
+                <div class="card-body">
+                    <div class="item-title text-500">{{ item.title}}</div>
+                    <div class="item-presenter text-500">
+                        <div>
+                            <i class="fas fa-solid fa-user" style="padding:0 .5em 0 0; color:grey"></i>
+                            <b>{{ item.presenter[0] }}</b>
+                        </div>
+                        <div>
+                            <i class="fas fa-university" style="padding:0 .5em 0 0; color: grey"></i>
+                            {{ item.affiliation[0] }}
                         </div>
                     </div>
                 </div>
-            {% endfor -%}
-        </div>
-
-        <div class = "event-title">
-            <div class = "time-divider">
-                <div class="time-chip"> 12:00 - 1:30pm  </div>
-                <div class = "time-hr"><hr></div>
             </div>
-            <div class = "event-title-text"> Lunch / Coffee Break </div>
+        {% endfor -%}
+    </div>
+
+    <div class = "event-title">
+        <div class = "time-divider">
+            <div class="time-chip"> 12:00 - 1:30pm  </div>
+            <div class = "time-hr"><hr></div>
         </div>
+        <div class = "event-title-text"> Lunch / Coffee Break </div>
+    </div>
 
-        <div class = "event-title">
-            <div class = "time-divider">
-                <div class="time-chip"> 1:30 - 4:30pm  </div>
-                <div class = "time-hr"><hr></div>
-            </div>
-            <div class = "event-title-text"> Futures in Research </div>
+    <div class = "event-title">
+        <div class = "time-divider">
+            <div class="time-chip"> 1:30 - 4:30pm  </div>
+            <div class = "time-hr"><hr></div>
         </div>
+        <div class = "event-title-text"> Futures in Research </div>
+    </div>
 
-        <h2 class = "agenda-grid-title"> Discussion Groups: </h2>
+    <h2 class = "agenda-grid-title"> Discussion Groups: </h2>
 
-        <div class="box-grid agenda-grid">
+    <div class="box-grid agenda-grid">
 
-            {% set futures_research = (agenda | find('theme', "research")) %}
+        {% set futures_research = (agenda | find('theme', "research")) %}
 
-            {%- for item in futures_research %}
-                <div class="agenda-card" onclick="location.href='/agenda-items/item-{{item.number}}/index.html'">
-                    <div class="card-body">
-                        <div class="item-title text-500">{{ item.title}}</div>
-                        <div class="item-presenter text-500">
-                            <div>
-                                <i class="fas fa-solid fa-user" style="padding:0 .5em 0 0; color:grey"></i>
-                                <b>{{ item.presenter }}</b>
-                            </div>
-                            <div>
-                                <i class="fas fa-university" style="padding:0 .5em 0 0; color: grey"></i>
-                                {{ item.affiliation }}
-                            </div>
+        {%- for item in futures_research %}
+            <div class="agenda-card" onclick="location.href='/agenda-items/item-{{item.number}}/index.html'">
+                <div class="card-body">
+                    <div class="item-title text-500">{{ item.title}}</div>
+                    <div class="item-presenter text-500">
+                        <div>
+                            <i class="fas fa-solid fa-user" style="padding:0 .5em 0 0; color:grey"></i>
+                            <b>{{ item.presenter[0] }}</b>
+                        </div>
+                        <div>
+                            <i class="fas fa-university" style="padding:0 .5em 0 0; color: grey"></i>
+                            {{ item.affiliation[0] }}
                         </div>
                     </div>
                 </div>
-            {% endfor -%}
-        </div>
-
-        <div class = "event-title">
-            <div class = "time-divider">
-                <div class="time-chip"> 4:30 - 5:00pm  </div>
-                <div class = "time-hr"><hr></div>
             </div>
-            <div class = "event-title-text"> Day One Closing Remarks </div>
-            <div class = "event-body-text"></div>
+        {% endfor -%}
+    </div>
+
+    <div class = "event-title">
+        <div class = "time-divider">
+            <div class="time-chip"> 4:30 - 5:00pm  </div>
+            <div class = "time-hr"><hr></div>
         </div>
+        <div class = "event-title-text"> Day One Closing Remarks </div>
+        <div class = "event-body-text"></div>
+    </div>
 
-        <div class = "event-title">
-            <div class = "time-divider">
-                <div class="time-chip"> 6:00 - 9:00pm  </div>
-                <div class = "time-hr"><hr></div>
-            </div>
-            <div class = "event-title-text"> Data Blitz Poster Session and Cocktail Hour </div>
-            <div class = "event-body-text">@ The Graduate </div>
+    <div class = "event-title">
+        <div class = "time-divider">
+            <div class="time-chip"> 6:00 - 9:00pm  </div>
+            <div class = "time-hr"><hr></div>
         </div>
+        <div class = "event-title-text"> Data Blitz Poster Session and Cocktail Hour </div>
+        <div class = "event-body-text">@ The Graduate </div>
 
-        <div class = "day-header">
-            <h1> Saturday, June 31 </h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2930.485901927622!2d-84.48730138729542!3d42.735770871040295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8822e9d40f1b140f%3A0xdca2edb382d35189!2sGraduate%20East%20Lansing!5e0!3m2!1sen!2sus!4v1716478698366!5m2!1sen!2sus" width="100%" height="400" style="border:0; padding-top:1rem;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </div>
+
+    <div class = "day-header">
+        <h1> Saturday, June 31 </h1>
+    </div>
+    <div class = "event-title">
+        <div class = "time-divider">
+            <div class="time-chip"> 8:30 - 9:00am   </div>
+            <div class = "time-hr"><hr></div>
         </div>
-        <div class = "event-title">
-            <div class = "time-divider">
-                <div class="time-chip"> 8:30 - 9:00am   </div>
-                <div class = "time-hr"><hr></div>
-            </div>
-            <div class = "event-title-text"> Welcome & Introduction </div>
+        <div class = "event-title-text"> Welcome & Introduction </div>
+    </div>
+
+    <div class = "event-title">
+
+        <div class = "time-divider">
+            <div class="time-chip"> 9:00am - 12:00pm  </div>
+            <div class = "time-hr"><hr></div>
         </div>
+        <div class = "event-title-text"> Futures in Methods </div>
+    </div>
 
-        <div class = "event-title">
+    <h2 class = "agenda-grid-title"> Discussion Groups: </h2>
 
-            <div class = "time-divider">
-                <div class="time-chip"> 9:00am - 12:00pm  </div>
-                <div class = "time-hr"><hr></div>
-            </div>
-            <div class = "event-title-text"> Futures in Methods </div>
-        </div>
+    <div class="box-grid agenda-grid">
 
-        <h2 class = "agenda-grid-title"> Discussion Groups: </h2>
+        {% set futures_methods = (agenda | find('theme', "methods")) %}
 
-        <div class="box-grid agenda-grid">
-
-            {% set futures_methods = (agenda | find('theme', "methods")) %}
-
-            {%- for item in futures_methods %}
-                <div class="agenda-card" onclick="location.href='/agenda-items/item-{{item.number}}/index.html'">
-                    <div class="card-body">
-                        <div class="item-title text-500">{{ item.title}}</div>
-                        <div class="item-presenter text-500">
-                            <div>
-                                <i class="fas fa-solid fa-user" style="padding:0 .5em 0 0; color:grey"></i>
-                                <b>{{ item.presenter }}</b>
-                            </div>
-                            <div>
-                                <i class="fas fa-university" style="padding:0 .5em 0 0; color: grey"></i>
-                                {{ item.affiliation }}
-                            </div>
+        {%- for item in futures_methods %}
+            <div class="agenda-card" onclick="location.href='/agenda-items/item-{{item.number}}/index.html'">
+                <div class="card-body">
+                    <div class="item-title text-500">{{ item.title}}</div>
+                    <div class="item-presenter text-500">
+                        <div>
+                            <i class="fas fa-solid fa-user" style="padding:0 .5em 0 0; color:grey"></i>
+                            <b>{{ item.presenter[0] }}</b>
+                        </div>
+                        <div>
+                            <i class="fas fa-university" style="padding:0 .5em 0 0; color: grey"></i>
+                            {{ item.affiliation[0] }}
                         </div>
                     </div>
                 </div>
-            {% endfor -%}
-        </div>
-
-        <div class = "event-title">
-            <div class = "time-divider">
-                <div class="time-chip"> 12:00 - 1:00pm </div>
-                <div class = "time-hr"><hr></div>
             </div>
-            <div class = "event-title-text"> Lunch and Closing Remarks </div>
-        </div>
+        {% endfor -%}
+    </div>
 
-        <div class = "event-title">
-            <div class = "time-divider">
-                <div class="time-chip"> 1:00 - 3:00pm </div>
-                <div class = "time-hr"><hr></div>
-            </div>
-            <div class = "event-title-text"> Flex Time </div>
-            <div class="event-body-text"> 
+    <div class = "event-title">
+        <div class = "time-divider">
+            <div class="time-chip"> 12:00 - 1:00pm </div>
+            <div class = "time-hr"><hr></div>
+        </div>
+        <div class = "event-title-text"> Lunch and Closing Remarks </div>
+    </div>
+
+    <div class = "event-title">
+        <div class = "time-divider">
+            <div class="time-chip"> 1:00 - 3:00pm </div>
+            <div class = "time-hr"><hr></div>
+        </div>
+        <div class = "event-title-text"> Flex Time </div>
+        <div class="event-body-text"> 
                     This time is reserved for attendees to have the opportunity to tour the MSU ComArtSci Lab Spaces, to continue discussions that emerged from the Working Group Sessions, meet with collaborators, or to explore campus and the surrounding area. 
                 </div>
 
-            <div class = "event-subtitle-text"> ComArtSci Lab Tours: </div>
-            <div class="event-body-text">
-                <b>CARISMA Lab (Room 29) </b><br>
+        <div class = "event-subtitle-text"> ComArtSci Lab Tours: </div>
+        <div class="event-body-text">
+            <b>CARISMA Lab (Room 29) </b><br>
                     VR, Human-AI Communication, Communication Neuroscience, and Non-Verbal Communication Research <br><br>
 
-                <b>CASE Lab (Room 14)</b><br>
+            <b>CASE Lab (Room 14)</b><br>
                     Eye Tracking Study <br>
-            </div>
+        </div>
 
-            <div class = "event-subtitle-text"> Broader Discussions: </div>
-            <div class="event-body-text">
+        <div class = "event-subtitle-text"> Broader Discussions: </div>
+        <div class="event-body-text">
                     During this time, attendees will also have the opportunity to participate in broader discussions about the future of communication research. At this time, two discussions are formally planned: <br>
-                <br>
+            <br>
 
-                <b>So... what is getting published these days? A frank discussion of trends in peer review<br>
+            <b>So... what is getting published these days? A frank discussion of trends in peer review<br>
                     CAS 191 (Deeb Conference Room) </b><br>
                     Led by Dr. Nick Bowman - Syracuse University
                 </div>
 
-            <div class="event-body-text">
-                <b> Exploring Future Frontiers: A Case Study of the Global Strategic Communication Consortium </br>
+        <div class="event-body-text">
+            <b> Exploring Future Frontiers: A Case Study of the Global Strategic Communication Consortium </br>
                     CAS 182 </b><br>
                     Led by Elina Erizkova - Central Michigan University
                 </div>
-    </div>
+</div>
 </div>
 
 </div>

@@ -3,22 +3,28 @@
 .callout {
 	display: flex;
 	flex-flow: row wrap;
-	width: 90%;
+	width: 100%;
 	background-color: get-color('light-grey');
 	border-radius: 1em;
 	padding: .5em;
 	margin-bottom: 20px;
 
-	.callout-icon{
+	.callout-icon {
 		flex: 1 1 0;
-		margin: 0 #{get-size('500')} 0 #{get-size('200')};
+		margin: 0 #{get-size('300')} 0 #{get-size('200')};
 		padding-top: 14px;
 		align-self: top;
 	}
 
-	.callout-text{
+	.callout-text {
 		flex: 99 1 0;
 		font-size: #{get-size('500')};
 		padding: 10px;
+	}
+}
+
+@media (max-width: 768px) {
+	.callout {
+		flex-flow: column wrap;
 	}
 }

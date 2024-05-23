@@ -62,6 +62,31 @@
         flex: 1 1 auto;
         margin-bottom: 1rem;
     }
+
+    .keynote-callout {
+        background-color: get-color('light-grey');
+        padding: 1rem;
+        margin-top: 1rem;
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 1rem;
+
+        .keynote-headshot {
+            border-radius: .5rem;
+            width: 30%;
+            height: auto;
+        }
+
+        .keynote-text {
+            font-size: #{get-size('500')};
+            font-weight: 400;
+        }
+
+    }
 }
 
 .agenda-grid-title {

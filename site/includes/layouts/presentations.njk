@@ -34,26 +34,43 @@ permalink: "agenda-items/item-{{presentation.number}}/index.html"
               <h2>{{ item.title }}</h2>
             </div>
 
-            <div class = "item-presenter">
-              <div>
-                <i class="fas fa-solid fa-user" style="padding:0 .5em 0 0; color:grey"></i>
-                {{ item.presenter }}
+            {% if item.presenter | length > 1 %}
+              <div class = "item-presenters">
+                {% for presenter in item.presenter %}
+                  <div>
+                    <i class="fas fa-solid fa-user" style="padding:0 .5em 0 0; color:grey"></i>
+                    {{ presenter }}
+                  </div>
+                {% endfor %}
               </div>
-              <div>
-                <i class="fas fa-university" style="padding:0 .5em 0 0; color: grey"></i>
-                {{ item.affiliation }}
+              <div class="item-affiliations">
+                {% for affil in item.affiliation %}
+                  <div>
+                    <i class="fas fa-university" style="padding:0 .5em 0 0; color:grey"></i>
+                    {{ affil }}
+                  </div>
+                {% endfor %}
+
+              {% else %}
+                <div class = "item-presenters">
+                  <i class="fas fa-solid fa-user" style="padding:0 .5em 0 0; color:grey"></i>
+                  <b>{{ item.presenter }}</b>
+                </div>
+                <div class = item-affiliations>
+                  <i class="fas fa-university" style="padding:0 .5em 0 0; color: grey"></i>
+                  {{ item.affiliation }}
+                </div>
+              {% endif %}
+
+              <div class = "item-abstract">
+                <p>{{ item.abstract }}</p>
               </div>
+
+            {% endfor %}
+
+            <div class = "prev-next-buttons">
+              <a href="{{pagination.href.previous}}"> Previous </a>
+              <a href="{{pagination.href.next}}"> Next </a>
             </div>
-
-            <div class = "item-abstract">
-              <p>{{ item.abstract }}</p>
-            </div>
-
-          {% endfor %}
-
-          <div class = "prev-next-buttons">
-            <a href="{{pagination.href.previous}}"> Previous </a>
-            <a href="{{pagination.href.next}}"> Next </a>
           </div>
         </div>
-      </div>
