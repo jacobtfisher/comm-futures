@@ -1615,6 +1615,7 @@ a:not([class]):not(.agenda-grid .agenda-card):hover {
   font-weight: 700;
   display: flex;
   flex-flow: row wrap;
+  align-items: center;
   -moz-column-gap: 1rem;
        column-gap: 1rem;
   flex: 1 1 50%;
@@ -1625,6 +1626,7 @@ a:not([class]):not(.agenda-grid .agenda-card):hover {
   font-weight: 700;
   display: flex;
   flex-flow: row wrap;
+  align-items: center;
   -moz-column-gap: 1rem;
        column-gap: 1rem;
   flex: 1 1 50%;
