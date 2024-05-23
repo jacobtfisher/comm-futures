@@ -8,6 +8,6 @@ eleventyNavigation:
   order: 6
 ---
 
-Communication Science Futures will take place May 30th-June 1st, 2024 on the campus of Michigan State University. Below you will find the conference schedule and agenda. Note that some elements of the schedule are still being finalized and are subject to change. Unless otherwise noted, all events will take place in WKAR Studio 1 in the Communication Arts & Sciences Building.
+Communication Science Futures will take place May 30th-June 1st, 2024 on the campus of Michigan State University. Below you will find the conference schedule and agenda. Note that some elements of the schedule are still being finalized and are subject to change. Unless otherwise noted, all events will take place in WKAR Studio A in the Communication Arts & Sciences Building.
 
 
