@@ -27,7 +27,12 @@ permalink: "agenda-items/item-{{presentation.number}}/index.html"
           {% for item in pagination.items %}
 
             <div class = "theme-chip">
-              <p> Futures in {{item.theme | capitalize}}</p>
+              {% if item.theme == "keynote" %}
+                <i class="fas fa-star" style="padding:0 .5em 0 0; color:white"></i> Keynote Address
+            {% else %}
+                <p> Futures in {{item.theme | capitalize}}</p>
+              {% endif %}
+
             </div>
 
             <div class = "item-title">

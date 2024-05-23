@@ -1505,17 +1505,24 @@ a:not([class]):not(.agenda-grid .agenda-card):hover {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
+  max-width: 60rem;
   margin-bottom: 1rem;
 }
 .event-title .keynote-callout .keynote-headshot {
   border-radius: 0.5rem;
   width: 30%;
+  flex: 0 0 auto;
   height: auto;
 }
 .event-title .keynote-callout .keynote-text {
   font-size: clamp(1.09rem, 1rem + 0.47vw, 1.33rem);
   font-weight: 400;
+}
+.event-title .keynote-callout .keynote-abstract {
+  font-size: clamp(0.88rem, 0.83rem + 0.24vw, 1rem);
+  font-weight: 400;
+  margin-top: 1rem;
 }
 
 .agenda-grid-title {
@@ -1575,12 +1582,22 @@ a:not([class]):not(.agenda-grid .agenda-card):hover {
   background-color: #808998;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 450px) {
   .agenda-grid .agenda-card {
     flex: 0 0 100%;
   }
+  .event-title .keynote-callout {
+    display: flex;
+    flex-direction: column;
+  }
+  .event-title .keynote-callout .keynote-headshot {
+    border-radius: 0.5rem;
+    width: 100%;
+    flex: 0 0 auto;
+    height: auto;
+  }
 }
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 451px) and (max-width: 1024px) {
   .agenda-grid .agenda-card {
     flex: 0 0 40%;
   }
