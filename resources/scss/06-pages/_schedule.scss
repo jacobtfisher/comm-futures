@@ -156,6 +156,7 @@
 
         &:hover {
             background-color: lighten(get-color('grey'), 10%);
+            cursor: pointer !important;
         }
 
         &:active {

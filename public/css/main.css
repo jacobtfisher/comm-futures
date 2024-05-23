@@ -1577,6 +1577,7 @@ a:not([class]):not(.agenda-grid .agenda-card):hover {
 }
 .agenda-grid .agenda-card:hover {
   background-color: #b8bdc6;
+  cursor: pointer !important;
 }
 .agenda-grid .agenda-card:active {
   background-color: #808998;
