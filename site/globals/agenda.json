@@ -225,6 +225,15 @@
     "number": 26
   },
   {
+    "title": "Multimodal biometric research: Dyadic interaction pilot testing",
+    "presenter": ["Daniel O'Young"],
+    "affiliation": ["iMotions"],
+    "headshot": "/images/headshots/jacob_headshot.jpg",
+    "abstract": "Research continues to clarify the relationships between physiology and behavior, especially in communications research. Technological advances currently provide convenient methods for multimodal data collection involving an array of physiological and behavioral sensors. Dyadic research has further shown the significance of physiological synchrony that occurs between individuals during effective interactions, in the context of productivity, training, education, personal relationships, and other shared experience. The application of multimodal data collection to dyadic research provides a next step towards understanding the components of effective dyadic experiences. Pilot data was collected to test synchronized data collection from two individuals (i.e. one dyad) and two sets of eye tracking glasses, galvanic skin response (GSR) sensors, and cameras/microphones. Results are shown from two dyads with contrasting experiences. Potential effects involving face viewing, GSR peaks, and valence of facial expressions and vocal expressions will be discussed, along with future directions.",
+    "theme": "methods",
+    "number": 28
+  },
+  {
     "title": "Five “ridiculous” futures for communication science: Challenges to the reign of deduction, generalization, random sampling, complex models and burdensome research logistics",
     "presenter": ["Byron Reeves"],
     "affiliation": ["Stanford University"],
