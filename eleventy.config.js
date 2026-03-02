@@ -88,6 +88,7 @@ module.exports = config => {
   config.addPassthroughCopy("globals");
   config.addPassthroughCopy("favicon.png");
   config.addPassthroughCopy("favicon.svg");
+  config.addPassthroughCopy({"site/archive": "archive"});
 
   return {
     markdownTemplateEngine: "njk",
