@@ -13,6 +13,7 @@ _Communication Science Futures_ is a conference that brings together scholars fr
 
 - **Dates:** September 18th - 20th, 2026
 - **Location:** MSU Union, East Lansing, Michigan
+- **Submission Deadline:** May 1, 2026
 - **Cost:** $225 for faculty, $125 for students/postdocs
 
 ## About the Conference
