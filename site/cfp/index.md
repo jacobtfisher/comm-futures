@@ -8,9 +8,9 @@ eleventyNavigation:
   order: 3
 ---
 
-The organizing team for _Communication Science Futures_ invites submissions for the 2026 meeting, to be held **September 18th--20th, 2026** at the **MSU Union** on the campus of Michigan State University in East Lansing, Michigan. This year's conference will feature a keynote address by **James W. Pennebaker**, panel presentations, interactive breakout sessions, and poster sessions for students and early career researchers.
+The organizing team for _Communication Science Futures_ invites submissions for the 2026 meeting, to be held **September 18th-20th, 2026** at the **MSU Union** on the campus of Michigan State University in East Lansing, Michigan. This year's conference will feature a keynote address by **James W. Pennebaker**, panel presentations, interactive breakout sessions, and poster sessions for students and early career researchers.
 
-Two categories of submissions will be considered:
+Two categories of submissions will be considered: research abstracts and demo & discussion proposals.
 
 ---
 
@@ -26,9 +26,9 @@ Submissions that speak across multiple sub-areas of communication research (e.g.
 
 Research abstracts should include a concise summary of the research question(s), theoretical or conceptual framework, methods (planned or completed), and (if available) preliminary findings or expected contributions.
 
-**Format:** Research abstracts should be no more than **500 words** in length (excluding references) and should include a title, names and affiliations of all contributors, and a list of 3--5 keywords.
+**Format:** Research abstracts should be no more than **500 words** in length (excluding references) and should include a title, names and affiliations of all contributors, and a list of 3-5 keywords.
 
-**Presentation format:** A select number of submissions (5--8 per theme) will be chosen for **stage presentations** during the Saturday and Sunday panel sessions. Presenters selected for stage presentations should plan on a **10--12 minute presentation with slides**. All remaining accepted submissions will be invited to present during one of two **poster sessions**. Poster presenters should prepare a 48" x 36" poster.
+**Presentation format:** A select number of submissions (5-8 per theme) will be chosen for **stage presentations** during the Saturday and Sunday panel sessions. Presenters selected for stage presentations should plan on a **10-12 minute presentation with slides**. All remaining accepted submissions will be invited to present during one of two **poster sessions**. Poster presenters should prepare a 48" x 36" poster.
 
 ---
 
@@ -45,9 +45,9 @@ Demos and discussions might include:
 
 Each accepted demo or discussion will be allocated a **45-minute breakout slot**, with multiple breakouts happening concurrently. Proposals should describe the topic, its relevance to the conference themes, and what participants can expect from the session (e.g., a live demonstration, a guided exercise, a facilitated discussion). As with research abstracts, proposals should be aligned with one or more of the conference themes listed above.
 
-**Format:** Demo & discussion proposals should be no more than **250 words** in length and should include a title, names and affiliations of all contributors, and a list of 3--5 keywords.
+**Format:** Demo & discussion proposals should be no more than **250 words** in length and should include a title, names and affiliations of all contributors, and a list of 3-5 keywords.
 
-Submitters are welcome --- and encouraged --- to submit to both tracks. Some overlap between research abstract and demo/discussion submissions is expected, but each submission should be unique and not a simply a duplicate of another submission.
+Submitters are welcome (and encouraged) to submit to both tracks. Some overlap between research abstract and demo/discussion submissions is expected, but each submission should be unique and not a simply a duplicate of another submission.
 
 ---
 
