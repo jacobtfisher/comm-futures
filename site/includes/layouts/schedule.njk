@@ -24,19 +24,172 @@ data: agenda
 
         </header>
 
-        <div class="content flow">
+        <div class="content flow"></div>
 
-            <div class="inner">
-                <div class = "callout" style = "margin-top: 2rem">
-                    <div class = "callout-icon">
-                        <i class="fas fa-exclamation-circle color-grey"></i>
-                    </div>
-                    <div class = "callout-text">
-                        {{ content | safe }}
-                    </div>
+        <div class="inner">
+
+            <div class = "callout" style = "margin-top: 2rem">
+                <div class = "callout-icon">
+                    <i class="fas fa-exclamation-circle color-grey"></i>
+                </div>
+                <div class = "callout-text">
+                    {{ content | safe }}
                 </div>
             </div>
+        </div>
 
+        <div class = "event-body-text">
+            <h2>Conference Location</h2>
+            MSU Union, 49 Abbot Rd, East Lansing, MI 48824
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2931.0384562844784!2d-84.48504!3d42.7240889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8822c27a42000001%3A0x2a6de20f41b5b0a7!2sMSU%20Union!5e0!3m2!1sen!2sus!4v1709000000000!5m2!1sen!2sus" width="100%" height="400" style="border:0; padding: 1rem 0rem" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        {# ===== FRIDAY ===== #}
+
+        <div class = "day-header">
+            <h1> Friday, September 18 </h1>
+        </div>
+
+        <div class = "event-title">
+            <div class = "time-divider">
+                <div class="time-chip"> Evening </div>
+                <div class = "time-hr"><hr></div>
+            </div>
+            <div class = "event-title-text"> Keynote Dinner & Opening Reception </div>
+            <div class = "event-body-text">
+                Join us for the opening keynote address followed by dinner and drinks. Details TBA.
+            </div>
+        </div>
+
+        {# ===== SATURDAY ===== #}
+
+        <div class = "day-header">
+            <h1> Saturday, September 19 </h1>
+        </div>
+
+        <div class = "event-title">
+            <div class = "time-divider">
+                <div class="time-chip"> Morning </div>
+                <div class = "time-hr"><hr></div>
+            </div>
+            <div class = "event-title-text"> Breakfast </div>
+        </div>
+
+        <div class = "event-title">
+            <div class = "time-divider">
+                <div class="time-chip"> Morning </div>
+                <div class = "time-hr"><hr></div>
+            </div>
+            <div class = "event-title-text"> Panel 1 — Futures in Research </div>
+            <div class = "event-body-text">
+                Stage presentations selected from the submission pool, exploring forces, trends, and topics shaping the future of communication research.
+            </div>
+        </div>
+
+        <div class = "event-title">
+            <div class = "time-divider">
+                <div class="time-chip"> Late Morning </div>
+                <div class = "time-hr"><hr></div>
+            </div>
+            <div class = "event-title-text"> Panel 2 — Futures in Theory </div>
+            <div class = "event-body-text">
+                Stage presentations addressing issues and advancements in communication theory building, testing, and formalization.
+            </div>
+        </div>
+
+        <div class = "event-title">
+            <div class = "time-divider">
+                <div class="time-chip"> Midday </div>
+                <div class = "time-hr"><hr></div>
+            </div>
+            <div class = "event-title-text"> Lunch & Poster Session 1 </div>
+        </div>
+
+        <div class = "event-title">
+            <div class = "time-divider">
+                <div class="time-chip"> Afternoon </div>
+                <div class = "time-hr"><hr></div>
+            </div>
+            <div class = "event-title-text"> Panel 3 — Futures in Methods </div>
+            <div class = "event-body-text">
+                Stage presentations highlighting new methods for collecting, analyzing, and reporting communication data.
+            </div>
+        </div>
+
+        <div class = "event-title">
+            <div class = "time-divider">
+                <div class="time-chip"> Afternoon </div>
+                <div class = "time-hr"><hr></div>
+            </div>
+            <div class = "event-title-text"> Breakout Session 1 </div>
+            <div class = "event-body-text">
+                Small-format discussions and workshops on "hot topics" submitted by attendees. Some will build on panel and poster content; others will be standalone.
+            </div>
+        </div>
+
+        <div class = "event-title">
+            <div class = "time-divider">
+                <div class="time-chip"> Evening </div>
+                <div class = "time-hr"><hr></div>
+            </div>
+            <div class = "event-title-text"> Happy Hour </div>
+            <div class = "event-body-text"> Location TBA </div>
+        </div>
+
+        {# ===== SUNDAY ===== #}
+
+        <div class = "day-header">
+            <h1> Sunday, September 20 </h1>
+        </div>
+
+        <div class = "event-title">
+            <div class = "time-divider">
+                <div class="time-chip"> Morning </div>
+                <div class = "time-hr"><hr></div>
+            </div>
+            <div class = "event-title-text"> Breakfast </div>
+        </div>
+
+        <div class = "event-title">
+            <div class = "time-divider">
+                <div class="time-chip"> Morning </div>
+                <div class = "time-hr"><hr></div>
+            </div>
+            <div class = "event-title-text"> Panel 4 — Futures in Research </div>
+            <div class = "event-body-text">
+                Stage presentations selected from the submission pool, exploring forces, trends, and topics shaping the future of communication research.
+            </div>
+        </div>
+
+        <div class = "event-title">
+            <div class = "time-divider">
+                <div class="time-chip"> Late Morning </div>
+                <div class = "time-hr"><hr></div>
+            </div>
+            <div class = "event-title-text"> Breakout Session 2 </div>
+            <div class = "event-body-text">
+                Tool demos, workshops, and discussion groups. Participants choose between technical demos and interactive sessions. Content depends on submissions.
+            </div>
+        </div>
+
+        <div class = "event-title">
+            <div class = "time-divider">
+                <div class="time-chip"> Midday </div>
+                <div class = "time-hr"><hr></div>
+            </div>
+            <div class = "event-title-text"> Lunch & Poster Session 2 </div>
+        </div>
+
+        <div class = "event-title">
+            <div class = "time-divider">
+                <div class="time-chip"> Afternoon </div>
+                <div class = "time-hr"><hr></div>
+            </div>
+            <div class = "event-title-text"> Follow-Up Discussions & Unstructured Time </div>
+            <div class = "event-body-text">
+                Time reserved for attendees to continue discussions, meet with collaborators, or explore campus and the surrounding area.
+            </div>
         </div>
 
     </article>

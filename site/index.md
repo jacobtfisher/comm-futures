@@ -11,8 +11,8 @@ eleventyNavigation:
 
 *Communication Science Futures* is a conference created to bring together leading scholars to address pressing issues and emerging trends shaping the future of interdisciplinary social scientific research into human communication and social behavior. This "un-conference" features keynotes by leading communication scholars, provocative working group sessions designed to ignite scholarly debates and foster cross-cutting collaborations among participants, and an interactive research presentation poster session for students and early career researchers.
 
-- **Dates:** TBD
-- **Location:** TBD
+- **Dates:** September 18th - 20th, 2026
+- **Location:** MSU Union, East Lansing, Michigan
 - **Cost:** TBD
 
 ## About the Conference
@@ -21,7 +21,7 @@ Traditional conferences and workshops are invaluable venues for sharing research
 
 The primary objectives of Communication Science Futures are: **(a)** to provide a venue for conversation concerning pressing challenges and opportunities facing the field of communication; **(b)** to create opportunities for communication scholars to share knowledge regarding skills, best-practices, and resources for conducting rigorous social scientific research into human communication processes and effects; and **(c)** to facilitate the development of collaborative relationships among researchers whose work examines similar topics but who may be located in different academic fields (or sub-fields).
 
-Communication Science Futures is organized around a series of Working Group Sessions. These sessions consist of a panel of brief presentations followed by extended breakout discussions between presenters and participants aimed at addressing a "big picture" challenge or opportunity within the field. These working group sessions are aligned with one of three themes:
+Communication Science Futures is organized around a series of panel presentations, interactive breakout sessions, and poster sessions. Panels and presentations are aligned with one of three themes:
 
 ### Futures in Research
 
@@ -47,4 +47,4 @@ New methods for collecting, analyzing, and reporting communication data. Topics 
 - **Alternative Strategies for Evidence Generation:** Highlighting non-traditional strategies for generating evidence for and against hypotheses, including Bayesian methods, machine learning, etc.
 - **Research Design & Management:** Sharing skills, tips, and techniques for designing research and managing/analyzing/reporting data.
 
-In addition to these working group sessions, Communication Science Futures will host a poster session and a limited number of "Data Blitz" sessions aimed at providing students and early career scholars with the opportunity to present and receive feedback on in-progress research.
+In addition to panel presentations, Communication Science Futures will feature interactive breakout sessions — small-format discussions and workshops on "hot topics" submitted by attendees — as well as poster sessions for students and early career scholars.

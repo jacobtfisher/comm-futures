@@ -8,4 +8,4 @@ eleventyNavigation:
   order: 6
 ---
 
-The conference schedule will be posted here once it has been finalized. Check back soon for updates!
+Communication Science Futures will take place September 18th-20th, 2026 at the MSU Union on the campus of Michigan State University. Below you will find the tentative conference schedule. Note that specific times and some elements of the schedule are still being finalized and are subject to change.
