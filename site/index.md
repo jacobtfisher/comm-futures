@@ -9,11 +9,11 @@ eleventyNavigation:
   order: 1
 ---
 
-_Communication Science Futures_ is a conference that brings together scholars from across the communication discipline to address pressing issues and emerging trends shaping the future of social scientific research into human communication and social behavior. Following a successful [inaugural meeting in 2024]({{ '/archive/2024/' | url }}) that drew more than 120 researchers and has served as the catalyst for a number of completed and ongoing collaborative research projects, CSF returns to Michigan State University in 2026 with an expanded format featuring panel presentations, hands-on demo and discussion sessions, and poster sessions.
+_Communication Science Futures_ is a conference that brings together scholars from across the communication discipline to address pressing issues and emerging trends shaping the future of social scientific research into human communication and social behavior. Following a successful [inaugural meeting in 2024]({{ '/archive/2024/' | url }}) that drew more than 120 researchers and has served as the catalyst for a number of completed and ongoing collaborative research projects, CSF will return to Michigan State University in 2026 with an expanded format featuring a keynote address from **James W. Pennebaker**, along with panel presentations, hands-on demo and discussion sessions, and poster sessions.
 
 - **Dates:** September 18th - 20th, 2026
 - **Location:** MSU Union, East Lansing, Michigan
-- **Cost:** TBD
+- **Cost:** $225 for faculty, $125 for students/postdocs
 
 ## About the Conference
 
