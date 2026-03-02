@@ -16,6 +16,21 @@ layout: base
     </header>
 
     <div class="content flow">
+        {% if intro %}
+        <p>{{ intro | safe }}</p>
+        {% endif %}
+        {% if key_details %}
+        <div class="home-info-cards" aria-label="Key conference details">
+            {% for item in key_details %}
+            <div class="home-info-card">
+                <div class="card-body">
+                    <span class="card-label">{{ item.label }}</span>
+                    <span class="card-value">{{ item.value | safe }}</span>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        {% endif %}
         {{ content | safe }}
     </div>
 

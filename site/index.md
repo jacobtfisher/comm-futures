@@ -7,14 +7,17 @@ sub_heading:
 eleventyNavigation:
   key: Home
   order: 1
+intro: '<em>Communication Science Futures</em> is a conference that brings together scholars from across the communication discipline to address pressing issues and emerging trends shaping the future of social scientific research into human communication and social behavior. Following a successful <a href="/archive/2024/">inaugural meeting in 2024</a>, <em>Communication Science Futures</em> will return to Michigan State University in 2026. This year''s conference features a keynote address from <strong>James W. Pennebaker</strong>, along with panel presentations, hands-on demo and discussion sessions, and poster sessions.'
+key_details:
+  - label: Dates
+    value: September 18th – 20th, 2026
+  - label: Location
+    value: MSU Union, East Lansing, Michigan
+  - label: Submission Deadline
+    value: May 1, 2026
+  - label: Cost
+    value: "$225 • Faculty<br>$125 • Students"
 ---
-
-_Communication Science Futures_ is a conference that brings together scholars from across the communication discipline to address pressing issues and emerging trends shaping the future of social scientific research into human communication and social behavior. Following a successful [inaugural meeting in 2024]({{ '/archive/2024/' | url }}), _Communication Science Futures_ will return to Michigan State University in 2026. This year's conference features a keynote address from **James W. Pennebaker**, along with panel presentations, hands-on demo and discussion sessions, and poster sessions.
-
-- **Dates:** September 18th - 20th, 2026
-- **Location:** MSU Union, East Lansing, Michigan
-- **Submission Deadline:** May 1, 2026
-- **Cost:** $225 for faculty, $125 for students/postdocs
 
 ## About the Conference
 
