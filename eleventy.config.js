@@ -91,6 +91,7 @@ module.exports = config => {
   config.addPassthroughCopy({"site/archive": "archive"});
 
   return {
+    pathPrefix: process.env.ELEVENTY_PATH_PREFIX || "/",
     markdownTemplateEngine: "njk",
     dir: {
       input: "site",

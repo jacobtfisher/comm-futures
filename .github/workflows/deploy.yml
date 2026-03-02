@@ -28,6 +28,8 @@ jobs:
       - run: npm ci
 
       - run: npm run production
+        env:
+          ELEVENTY_PATH_PREFIX: /comm-futures/
 
       - uses: actions/upload-pages-artifact@v3
         with:
