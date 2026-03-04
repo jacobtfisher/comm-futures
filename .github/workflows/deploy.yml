@@ -28,8 +28,7 @@ jobs:
       - run: npm ci
 
       - run: npm run production
-        env:
-          ELEVENTY_PATH_PREFIX: /comm-futures/
+        # No path prefix: custom domain (commscifutures.com) is served at root; assets must be at /css/, /js/, etc.
 
       - uses: actions/upload-pages-artifact@v3
         with:
