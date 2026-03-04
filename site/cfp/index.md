@@ -59,3 +59,9 @@ Submitters are welcome (and encouraged) to submit to both tracks. Some overlap b
 - **Review:** All submissions will be reviewed by the organizing committee.
 
 Submissions are open to scholars at all career stages and from all disciplinary backgrounds.
+
+---
+
+## Submit
+
+**[Submit your abstract or proposal →](https://msu.co1.qualtrics.com/jfe/form/SV_0wHKbpwWGkMyLNc)**
