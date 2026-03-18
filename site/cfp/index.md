@@ -53,8 +53,8 @@ Submitters are welcome (and encouraged) to submit to both tracks. Some overlap b
 
 ## Submission Guidelines
 
-- **Deadline:** Friday, May 1, 2026 at 11:59 PM (Anywhere on Earth)
-- **Notification:** Decisions will be communicated by May 15, 2026.
+- **Deadline:** Friday, June 5, 2026 at 11:59 PM (Anywhere on Earth)
+- **Notification:** Decisions will be communicated by June 19, 2026.
 - **Limit:** Each submitter may be first author on up to **three** submissions across both tracks.
 - **Review:** All submissions will be reviewed by the organizing committee.
 
