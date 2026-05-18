@@ -14,7 +14,7 @@ key_details:
   - label: Location
     value: MSU Union, East Lansing, Michigan
   - label: Submission Deadline
-    value: June 5, 2026
+    value: June 15, 2026
   - label: Cost
     value: "$250 • Faculty<br>$125 • Students"
 ---
