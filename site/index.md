@@ -13,11 +13,15 @@ key_details:
     value: September 18th – 20th, 2026
   - label: Location
     value: MSU Union, East Lansing, Michigan
-  - label: Submission Deadline
-    value: June 15, 2026
+  - label: "Posters & Discussions"
+    value: "Open through Aug. 1, 2026"
   - label: Cost
     value: "$250 • Faculty<br>$125 • Students"
 ---
+
+<div class="callout">
+  <div class="callout-text"><strong>Still accepting posters &amp; discussion sessions.</strong> Our submission deadline has passed, but a limited amount of space remains. We are accepting <strong>poster</strong> and <strong>demo &amp; discussion</strong> submissions through <strong>August 1, 2026</strong> — or until we run out of space, whichever comes first. See the <a href="/cfp/">Call for Proposals</a> for details.</div>
+</div>
 
 ## About the Conference
 

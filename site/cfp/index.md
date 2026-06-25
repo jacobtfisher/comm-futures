@@ -8,6 +8,10 @@ eleventyNavigation:
   order: 3
 ---
 
+<div class="callout">
+  <div class="callout-text"><strong>Update — posters &amp; discussion sessions are still open.</strong> Our general submission deadline (June 15) has passed, but a limited number of <strong>poster</strong> and <strong>demo &amp; discussion</strong> slots remain. We are accepting these submissions on a rolling basis through <strong>August 1, 2026</strong>, or until we run out of space — whichever comes first. New research-abstract submissions will be considered for poster presentation. <a href="https://msu.co1.qualtrics.com/jfe/form/SV_0wHKbpwWGkMyLNc">Submit a proposal →</a></div>
+</div>
+
 The organizing team for _Communication Science Futures_ invites submissions for the 2026 meeting, to be held **September 18th-20th, 2026** at the **MSU Union** on the campus of Michigan State University in East Lansing, Michigan. This year's conference will feature a keynote address by **James W. Pennebaker**, panel presentations, interactive breakout sessions, and poster sessions for students and early career researchers.
 
 Two categories of submissions will be considered: research abstracts and demo & discussion proposals.
@@ -53,8 +57,8 @@ Submitters are welcome (and encouraged) to submit to both tracks. Some overlap b
 
 ## Submission Guidelines
 
-- **Deadline:** Monday, June 15, 2026 at 11:59 PM (Anywhere on Earth)
-- **Notification:** Decisions will be communicated by June 29, 2026.
+- **Deadline:** The general submission deadline (Monday, June 15, 2026) has passed. We are still accepting **poster** and **demo & discussion** submissions on a rolling, space-available basis through **Saturday, August 1, 2026 at 11:59 PM (Anywhere on Earth)**, or until remaining slots are filled — whichever comes first.
+- **Notification:** Submissions received by June 15 will receive decisions by June 29, 2026. Submissions received during the extended poster and demo/discussion window will be reviewed on a rolling basis as space allows.
 - **Limit:** Each submitter may be first author on up to **three** submissions across both tracks.
 - **Review:** All submissions will be reviewed by the organizing committee.
 
