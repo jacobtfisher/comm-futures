@@ -20,7 +20,7 @@ key_details:
 ---
 
 <div class="callout">
-  <div class="callout-text"><strong>Still accepting posters &amp; discussion sessions.</strong> Our submission deadline has passed, but a limited amount of space remains. We are accepting <strong>poster</strong> and <strong>demo &amp; discussion</strong> submissions through <strong>August 1, 2026</strong> — or until we run out of space, whichever comes first. See the <a href="/cfp/">Call for Proposals</a> for details.</div>
+  <div class="callout-text"><strong>Note that the submission deadline has passed, but we are still accepting submissions for posters &amp; discussion sessions.</strong> We are accepting additional submissions on a rolling basis through <strong>August 1, 2026</strong> — or until we run out of space, whichever comes first. See the <a href="/cfp/">Call for Proposals</a> for details.</div>
 </div>
 
 ## About the Conference
