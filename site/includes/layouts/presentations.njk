@@ -21,68 +21,82 @@ permalink: "agenda-items/item-{{presentation.number}}/index.html"
     <div class="content flow">
 
       <div class="inner">
-        <img class = "header-img" src="/images/meta/csf_icon.png">
-        <div class = "presentation-card">
 
-          {% for item in pagination.items %}
+        <img class="header-img" src="{{ '/images/meta/csf_icon.png' | url }}" alt="Communication Science Futures">
 
-            <div class = "theme-chip">
-              {% if item.theme == "keynote" %}
-                <i class="fas fa-star" style="padding:0 .5em 0 0; color:white"></i> Keynote Address
+        <div class="presentation-card">
+
+          <div class="theme-chip">
+            {% if presentation.theme == "keynote" %}
+              <i class="fas fa-star" style="padding:0 .5em 0 0; color:white"></i> Keynote Address
             {% else %}
-                <p> Futures in {{item.theme | capitalize}}</p>
-              {% endif %}
+              <p>Futures in {{ presentation.theme | capitalize }}</p>
+            {% endif %}
+          </div>
 
+          <div class="item-title">
+            <h2>{{ presentation.title }}</h2>
+          </div>
+
+          {% if presentation.headshot %}
+            <img class="item-headshot" src="{{ presentation.headshot | url }}" alt="{{ presentation.presenter }}">
+          {% endif %}
+
+          {% if presentation.presenter is string %}
+            <div class="item-presenters">
+              <i class="fas fa-solid fa-user" style="padding:0 .5em 0 0; color:grey"></i>
+              <b>{{ presentation.presenter }}</b>
             </div>
-
-            <div class = "item-title">
-              <h2>{{ item.title }}</h2>
+            <div class="item-affiliations">
+              <i class="fas fa-university" style="padding:0 .5em 0 0; color:grey"></i>
+              {{ presentation.affiliation }}
             </div>
-
-            {% if item.presenter | length > 1 %}
-              <div class = "item-presenters">
-                {% for presenter in item.presenter %}
-                  <div>
-                    <i class="fas fa-solid fa-user" style="padding:0 .5em 0 0; color:grey"></i>
-                    {{ presenter }}
-                  </div>
-                {% endfor %}
-              </div>
-              <div class="item-affiliations">
-                {% for affil in item.affiliation %}
-                  <div>
-                    <i class="fas fa-university" style="padding:0 .5em 0 0; color:grey"></i>
-                    {{ affil }}
-                  </div>
-                {% endfor %}
-
-              {% else %}
-                <div class = "item-presenters">
+          {% else %}
+            <div class="item-presenters">
+              {% for presenter in presentation.presenter %}
+                <div>
                   <i class="fas fa-solid fa-user" style="padding:0 .5em 0 0; color:grey"></i>
-                  <b>{{ item.presenter }}</b>
+                  <b>{{ presenter }}</b>
                 </div>
-                <div class = item-affiliations>
-                  <i class="fas fa-university" style="padding:0 .5em 0 0; color: grey"></i>
-                  {{ item.affiliation }}
+              {% endfor %}
+            </div>
+            <div class="item-affiliations">
+              {% for affil in presentation.affiliation %}
+                <div>
+                  <i class="fas fa-university" style="padding:0 .5em 0 0; color:grey"></i>
+                  {{ affil }}
                 </div>
-              {% endif %}
+              {% endfor %}
+            </div>
+          {% endif %}
 
-              <div class = "item-abstract">
-                <p>{{ item.abstract }}</p>
-              </div>
+          <div class="item-abstract">
+            <p>{{ presentation.abstract }}</p>
+          </div>
 
-            {% endfor %}
-
-            <div class = "prev-next-buttons">
+          <div class="prev-next-buttons">
+            {% if pagination.href.previous %}
               <div>
-                <a href="{{pagination.href.previous}}">
-                  <i class="fa-solid fa-chevron-left"></i> Previous </a>
-              </div>
-              <div>
-                <a href="{{pagination.href.next}}">Next
-                  <i class="fa-solid fa-chevron-right"></i>
+                <a href="{{ pagination.href.previous }}">
+                  <i class="fa-solid fa-chevron-left"></i> Previous
                 </a>
               </div>
-            </div>
+            {% endif %}
+            {% if pagination.href.next %}
+              <div>
+                <a href="{{ pagination.href.next }}">
+                  Next <i class="fa-solid fa-chevron-right"></i>
+                </a>
+              </div>
+            {% endif %}
           </div>
+
         </div>
+
+      </div>
+
+    </div>
+
+  </article>
+
+</main>

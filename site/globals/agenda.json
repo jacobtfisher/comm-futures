@@ -1,1 +1,162 @@
-[]
+[
+  {
+    "number": 1,
+    "theme": "research",
+    "title": "Understanding Support Gaps: Current and Future Theorizing",
+    "presenter": "Yue Zhang",
+    "affiliation": "Michigan State University",
+    "headshot": "/images/headshots/yue_zhang.jpg",
+    "abstract": "How can communication scholars best study gaps? This talk addresses such question from a social support perspective. Support gaps are discrepancies between the social support people desire and what they receive. The talk maps out several key theoretical questions: Where do support desires come from? Is an exact match between desired and received support always optimal? How are support gaps created or mitigated within networks of relationships? And how do these gaps change over time? This talk calls for applying a broader range of approaches, including dyadic, longitudinal, and network methods, to address theoretical questions that have long puzzled scholars."
+  },
+  {
+    "number": 2,
+    "theme": "research",
+    "title": "A Model of Communication as Creating Understanding",
+    "presenter": "R. Kelly Aune",
+    "affiliation": "University of Hawaiʻi at Mānoa",
+    "headshot": "/images/headshots/aune.jpg",
+    "abstract": "Communication research has poured energy into the outcomes of communication while paying far less attention to the process itself, and to what it means to understand and be understood. This talk presents a model of communication as the creation of understanding, grounded in an evolutionary account of humans as social animals, with brains that operate as energy-efficient prediction engines. The model provides a common foundation for extant as well as the next generation of communication theories, addressing issues such as uncertainty, expectation, deception, and intergroup interaction."
+  },
+  {
+    "number": 3,
+    "theme": "research",
+    "title": "Cognitive Offloading to Generative AI: Bridging Distributed Cognition and AI-Mediated Communication",
+    "presenter": "Chen (Crystal) Chen",
+    "affiliation": "University of Miami",
+    "headshot": "/images/headshots/chen.jpg",
+    "abstract": "Generative AI can search, synthesize, compare, and recommend in a single exchange, absorbing stages of evaluative work that earlier tools never touched. This talk introduces cognitive offloading as a bridge between distributed cognition and communication's models of persuasion and learning, and maps a delegation continuum along which that work shifts from person to system. Early experiments point to a recurring trade-off, where reliable AI help can improve decisions while weakening memory and inflating confidence, a tension the next wave of persuasion and learning research will have to take seriously."
+  },
+  {
+    "number": 4,
+    "theme": "research",
+    "title": "Narrative Character Networks Explain Storytelling Success",
+    "presenter": "Xuanjun Gong",
+    "affiliation": "Texas A&M University",
+    "headshot": "/images/headshots/gong.jpg",
+    "abstract": "Why do some stories captivate audiences while others fall flat? This talk treats narratives as character networks, with characters as nodes and their interactions as edges, and asks how a story's structure shapes its success. Across more than 10,000 novels and 1,000 film screenplays, network features predict real-world popularity and audience ratings. The approach links how people learn from networks to the architecture of stories at scale, and points toward a more computational, design-oriented future for narrative research."
+  },
+  {
+    "number": 5,
+    "theme": "research",
+    "title": "Colleagues, Tools, or Crutches: AI Agents in Communication Research",
+    "presenter": "Ralf Schmälzle",
+    "affiliation": "Michigan State University",
+    "headshot": "/images/headshots/schmalzle.jpg",
+    "abstract": "AI writing and coding agents have moved from novelty to infrastructure in many research workflows, but the field has no shared way to judge what they do to how knowledge gets made. This talk works through three fault lines: productivity versus rigor, authorship and transparency, and capability versus dependency. The goal is to locate where the real tradeoffs sit and to start naming the norms the field will need as these tools reshape how research gets done."
+  },
+  {
+    "number": 6,
+    "theme": "research",
+    "title": "Continuums of Moral Influence: A Research Program Testing a New Theoretical Paradigm",
+    "presenter": "Rebecca Frazer",
+    "affiliation": "University of Florida",
+    "headshot": "/images/headshots/frazer.jpg",
+    "abstract": "The continuums of moral influence paradigm explains how media cues move moral judgment along a continuum that runs from disengagement to engagement. The studies in this program stay deliberately non-normative and break moral influence into basic perceptual and judgment processes that can be measured directly. This talk covers the strategy behind the line of research, the initial findings, and where a paradigm like this could take moral-influence research, from entertainment to political communication to cyberbullying."
+  },
+  {
+    "number": 7,
+    "theme": "theory",
+    "title": "Advancements in Theory Building and Testing: The Case of Truth-Default Theory",
+    "presenter": "Timothy R. Levine",
+    "affiliation": "University of Oklahoma",
+    "headshot": "/images/headshots/levine.jpg",
+    "abstract": "Communication science keeps accumulating undead theories, frameworks that persist even after they have been repeatedly disconfirmed. This talk traces the problem to the hypothetico-deductive habit and offers three correctives: abduction in place of theory-first testing, risky predictions in place of rejecting the nil-null, and attention to variance in place of group averages. Truth-Default Theory is the worked example of where a healthier approach to theory building can lead."
+  },
+  {
+    "number": 8,
+    "theme": "theory",
+    "title": "Desiderata for a Future Theory of Human-AI Interaction",
+    "presenter": "Nathan Walter",
+    "affiliation": "Northwestern University",
+    "headshot": "/images/headshots/walter.jpg",
+    "abstract": "Research on human-AI interaction has piled up far faster than the theory needed to organize it, leaving a literature long on findings and short on coherence. This talk lays out four desiderata for the next generation of HAII theory: predictions that are bold and falsifiable, generality beyond any one platform or moment, ideas that open new questions rather than just sorting old ones, and communication kept at the center of the account."
+  },
+  {
+    "number": 9,
+    "theme": "theory",
+    "title": "A Case Study in Theory-Method Coupling: The Differential Susceptibility to Media Effects Model",
+    "presenter": "Jane Shawcroft",
+    "affiliation": "The Ohio State University",
+    "abstract": "Translating theory into method requires stripping away nuance. When the same nuances are stripped away study after study, this can lead to bodies of research drifting from the frameworks they intend to test and refine. This talk develops the idea of “theoretical drift” using a systematic review of the Differential Susceptibility to Media Effects Model, demonstrating how tightening the link between method and theory could allow research to better drive theory development."
+  },
+  {
+    "number": 10,
+    "theme": "theory",
+    "title": "Conceptual Drift in Inoculation: A Review of Missing Components in Inoculation Theory Across Five Decades of Research",
+    "presenter": "Michel M. Haigh",
+    "affiliation": "Texas State University",
+    "headshot": "/images/headshots/haigh.jpg",
+    "abstract": "Inoculation is an attitude theory, yet a striking number of recent studies that claim to use it never measure attitudes, threat, or refutational preemption, its core components. This talk reviews five decades of inoculation research to document that conceptual drift and asks what it means for replication when studies share a label but not the construct. The larger question is what the future of inoculation research looks like if the theory's own building blocks keep going missing."
+  },
+  {
+    "number": 11,
+    "theme": "theory",
+    "title": "Do Metaphors Constitute or Constrain Scientific Progress? Applying the Borgian Problem in Communication Science",
+    "presenter": "Juven Nino A. Villacastin",
+    "affiliation": "UC Santa Barbara",
+    "headshot": "/images/headshots/villacastin.jpg",
+    "abstract": "Communication theories often rest on metaphors, with inoculation theory borrowing from biological immunity as a familiar example. This talk introduces the Borgian Problem, drawn from a Borges story about a map so detailed it becomes useless, to ask whether elaborating a metaphor (adding ever more vaccine-like constructs and mechanisms) actually advances understanding of persuasion or just perfects the metaphor. The talk employs a thought experiment to discuss what should count as theoretical progress."
+  },
+  {
+    "number": 12,
+    "theme": "theory",
+    "title": "Building a Theory of Marginalizing Messages",
+    "presenter": "Elizabeth Dorrance Hall",
+    "affiliation": "Michigan State University",
+    "headshot": "/images/headshots/dorrance_hall.jpg",
+    "abstract": "Marginalization, the experience of being pushed to the edges of a group, is accomplished largely through communication, yet the research on it sits in separate silos under labels like stigma communication, disconfirmation, and disenfranchising talk. This talk presents a theory of marginalizing messages that pulls those strands into one framework, with five assumptions and five propositions about how, why, and when a message marginalizes. The aim is a shared foundation that future work on belonging and exclusion can build on."
+  },
+  {
+    "number": 13,
+    "theme": "methods",
+    "title": "High-Throughput Communication Science: An Integrative Framework for Multimodal and Longitudinal Designs",
+    "presenter": "Rachael Kee",
+    "affiliation": "UC Davis",
+    "headshot": "/images/headshots/kee.jpg",
+    "abstract": "Communication theories describe rich processes that unfold over time, but the methods used to test them often capture a single slice in isolation. This talk proposes high-throughput communication science, an agenda that pairs passively-sensed multimodal data, from phones and wearables to mobile EEG, with Marr's three levels of explanation to study reciprocal causal dynamics as they actually unfold. The goal is a way to triangulate across data sources that matches the complexity of the theory, and a roadmap for the next generation of communication measurement."
+  },
+  {
+    "number": 14,
+    "theme": "methods",
+    "title": "Media in Interaction: A Multimodal Hyperscanning Framework for Studying Co-Viewing Communication",
+    "presenter": "Chang Lu",
+    "affiliation": "University of Southern California",
+    "abstract": "Media use rarely happens in a social vacuum, yet interpersonal and mass communication research have mostly stayed in separate lanes. This talk presents a multimodal hyperscanning paradigm that records two people's brain activity at once (using fNIRS) as they watch emotionally rich clips together, talk about them, and watch again. Pilot data suggest that loneliness shapes how neural alignment shifts after conversation, pointing toward a future where co-viewing can be studied as the unfolding, multi-person process it actually is."
+  },
+  {
+    "number": 15,
+    "theme": "methods",
+    "title": "Shared Responses to a Feature-Length Film: What Synchronous Neural Responses Can (and Cannot) Reveal About Online Processing and Subsequent Reflection",
+    "presenter": "Kathryn Sam",
+    "affiliation": "Vanderbilt University",
+    "headshot": "/images/headshots/sam.jpg",
+    "abstract": "People think about stories long after they end. This reflection depends on real-time story processing, yet the neuroscience of shared viewing relies predominantly on short clips. Using EEG data from 95 viewers, we extracted inter-subject correlations from a feature-length film. Shared responses tracked some engagement measures and distinguished between shot and scene types, while later reflection looked more idiosyncratic. This talk maps the utility and potential limits of shared viewing measures in naturalistic feature-length stimuli."
+  },
+  {
+    "number": 16,
+    "theme": "methods",
+    "title": "Using Psychophysiological Measures to Assess the Impact of Background Music Valence on Emotional Responses to Video Game Successes",
+    "presenter": "Robert F. Potter",
+    "affiliation": "The Ohio State University",
+    "headshot": "/images/headshots/potter.jpg",
+    "abstract": "Players often play their own background music while gaming, and this talk uses time-locked psychophysiology (facial EMG, skin conductance, heart rate) to ask how individual player attitudes toward a song influences emotional responses to game moments that matter. Instead of averaging physiology across a whole task, the study zooms in on individual game successes, showing that positive music heightens the emotional response to winning while negative music dampens it. The talk will make a case for the ability to measure emotion at the level of discrete, meaningful events."
+  },
+  {
+    "number": 17,
+    "theme": "methods",
+    "title": "Concerning the c′ Path: How PROCESS-based Mediation Undermines Experimental Methods",
+    "presenter": "Matthew Grizzard",
+    "affiliation": "The Ohio State University",
+    "headshot": "/images/headshots/grizzard.jpg",
+    "abstract": "A large amount of experimental mediation analysis in the field is run through PROCESS Model 4. This talk argues that the model often works against the experiments it is meant to serve. Simulations built on a real design show that the direct (c′) path controls away the very variance an experiment is built to induce, so PROCESS returns significant indirect effects whether or not the data fit the theory. The recommendation is a serial causal-chain SEM, and a cleaner standard for testing mediation going forward."
+  },
+  {
+    "number": 18,
+    "theme": "methods",
+    "title": "Large Language Models as Human Evaluators for Health Message Selection: The Roles of Prompting Strategy and Model Size",
+    "presenter": "Qijia Ye",
+    "affiliation": "University of Pennsylvania",
+    "headshot": "/images/headshots/ye.jpg",
+    "abstract": "Can large language models replace human respondents when testing messages? Doing so could make message evaluations faster and cheaper, but how far to trust it is still unclear. This talk benchmarks LLM-simulated ratings against 1,045 human evaluators across six models and two prompting strategies, finding the rankings track human judgments closely enough to pre-screen large message pools. However, larger models and fancier prompts do not always help, sharpening the question of how simulation should be designed."
+  }
+]

@@ -8,6 +8,27 @@ data: agenda
     <script src="https://kit.fontawesome.com/4451d51824.js" crossorigin="anonymous"></script>
 </head>
 
+{# Renders the clickable grid of stage talks for a given theme (research / theory / methods). #}
+{% macro talkgrid(theme) %}
+    {% set talks = agenda | find("theme", theme) %}
+    {% if talks | length %}
+        <h2 class="agenda-grid-title">Presentations:</h2>
+        <div class="box-grid agenda-grid">
+            {% for item in talks %}
+                <div class="agenda-card" onclick="location.href='{{ ('/agenda-items/item-' + (item.number | string) + '/') | url }}'">
+                    <div class="card-body">
+                        <div class="item-title text-500">{{ item.title }}</div>
+                        <div class="item-presenter text-500">
+                            <div><i class="fas fa-solid fa-user" style="padding:0 .5em 0 0; color:grey"></i> <b>{{ item.presenter }}</b></div>
+                            <div><i class="fas fa-university" style="padding:0 .5em 0 0; color: grey"></i> {{ item.affiliation }}</div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    {% endif %}
+{% endmacro %}
+
 <main id="main" class="main inner box-flex pt-600 pb-1100" tabindex="-1">
 
     <article id="container-centre" class="column centre">
@@ -53,13 +74,18 @@ data: agenda
 
         <div class = "event-title">
             <div class = "time-divider">
-                <div class="time-chip"> Evening </div>
+                <div class="time-chip"> 4:00pm </div>
                 <div class = "time-hr"><hr></div>
             </div>
-            <div class = "event-title-text"> Keynote Dinner & Opening Reception </div>
-            <div class = "event-body-text">
-                Join us for the opening keynote address followed by dinner and drinks.
+            <div class = "event-title-text"> Doors Open & Check-In </div>
+        </div>
+
+        <div class = "event-title">
+            <div class = "time-divider">
+                <div class="time-chip"> 5:00 - 6:00pm </div>
+                <div class = "time-hr"><hr></div>
             </div>
+            <div class = "event-title-text"> Keynote Address </div>
             <div class = "keynote-callout">
                 <img class = "keynote-headshot" src="{{ '/images/headshots/pennebaker.jpg' | url }}" alt="James W. Pennebaker">
                 <div>
@@ -73,6 +99,17 @@ data: agenda
             </div>
         </div>
 
+        <div class = "event-title">
+            <div class = "time-divider">
+                <div class="time-chip"> 6:00 - 9:00pm </div>
+                <div class = "time-hr"><hr></div>
+            </div>
+            <div class = "event-title-text"> Opening Reception & Dinner </div>
+            <div class = "event-body-text">
+                Join us for dinner and drinks following the keynote address.
+            </div>
+        </div>
+
         {# ===== SATURDAY ===== #}
 
         <div class = "day-header">
@@ -81,15 +118,18 @@ data: agenda
 
         <div class = "event-title">
             <div class = "time-divider">
-                <div class="time-chip"> Morning </div>
+                <div class="time-chip"> 8:30 - 9:00am </div>
                 <div class = "time-hr"><hr></div>
             </div>
-            <div class = "event-title-text"> Breakfast </div>
+            <div class = "event-title-text"> Welcome & Introduction </div>
+            <div class = "event-body-text">
+                Breakfast, coffee, and tea will be provided.
+            </div>
         </div>
 
         <div class = "event-title">
             <div class = "time-divider">
-                <div class="time-chip"> Morning </div>
+                <div class="time-chip"> 9:00 - 10:30am </div>
                 <div class = "time-hr"><hr></div>
             </div>
             <div class = "event-title-text"> Panel 1 — Futures in Research </div>
@@ -98,9 +138,11 @@ data: agenda
             </div>
         </div>
 
+        {{ talkgrid("research") }}
+
         <div class = "event-title">
             <div class = "time-divider">
-                <div class="time-chip"> Late Morning </div>
+                <div class="time-chip"> 10:30am - 12:00pm </div>
                 <div class = "time-hr"><hr></div>
             </div>
             <div class = "event-title-text"> Breakout Session 1 </div>
@@ -111,7 +153,7 @@ data: agenda
 
         <div class = "event-title">
             <div class = "time-divider">
-                <div class="time-chip"> Midday </div>
+                <div class="time-chip"> 12:00 - 1:30pm </div>
                 <div class = "time-hr"><hr></div>
             </div>
             <div class = "event-title-text"> Lunch & Poster Session 1 </div>
@@ -119,7 +161,7 @@ data: agenda
 
         <div class = "event-title">
             <div class = "time-divider">
-                <div class="time-chip"> Afternoon </div>
+                <div class="time-chip"> 1:30 - 3:00pm </div>
                 <div class = "time-hr"><hr></div>
             </div>
             <div class = "event-title-text"> Panel 2 — Futures in Theory </div>
@@ -128,15 +170,25 @@ data: agenda
             </div>
         </div>
 
+        {{ talkgrid("theory") }}
+
         <div class = "event-title">
             <div class = "time-divider">
-                <div class="time-chip"> Afternoon </div>
+                <div class="time-chip"> 3:00 - 4:30pm </div>
                 <div class = "time-hr"><hr></div>
             </div>
             <div class = "event-title-text"> Breakout Session 2 </div>
             <div class = "event-body-text">
                 Small-format discussions and workshops on "hot topics" submitted by attendees. Some will build on panel and poster content; others will be standalone.
             </div>
+        </div>
+
+        <div class = "event-title">
+            <div class = "time-divider">
+                <div class="time-chip"> 4:30 - 5:00pm </div>
+                <div class = "time-hr"><hr></div>
+            </div>
+            <div class = "event-title-text"> Closing Remarks </div>
         </div>
 
         <div class = "event-title">
@@ -156,15 +208,18 @@ data: agenda
 
         <div class = "event-title">
             <div class = "time-divider">
-                <div class="time-chip"> Morning </div>
+                <div class="time-chip"> 8:30 - 9:00am </div>
                 <div class = "time-hr"><hr></div>
             </div>
-            <div class = "event-title-text"> Breakfast </div>
+            <div class = "event-title-text"> Welcome & Introduction </div>
+            <div class = "event-body-text">
+                Breakfast, coffee, and tea will be provided.
+            </div>
         </div>
 
         <div class = "event-title">
             <div class = "time-divider">
-                <div class="time-chip"> Morning </div>
+                <div class="time-chip"> 9:00 - 10:30am </div>
                 <div class = "time-hr"><hr></div>
             </div>
             <div class = "event-title-text"> Panel 3 — Futures in Methods </div>
@@ -173,9 +228,11 @@ data: agenda
             </div>
         </div>
 
+        {{ talkgrid("methods") }}
+
         <div class = "event-title">
             <div class = "time-divider">
-                <div class="time-chip"> Late Morning </div>
+                <div class="time-chip"> 10:30am - 12:00pm </div>
                 <div class = "time-hr"><hr></div>
             </div>
             <div class = "event-title-text"> Breakout Session 3 </div>
@@ -186,7 +243,7 @@ data: agenda
 
         <div class = "event-title">
             <div class = "time-divider">
-                <div class="time-chip"> Midday </div>
+                <div class="time-chip"> 12:00 - 1:30pm </div>
                 <div class = "time-hr"><hr></div>
             </div>
             <div class = "event-title-text"> Lunch & Poster Session 2 </div>
@@ -194,7 +251,7 @@ data: agenda
 
         <div class = "event-title">
             <div class = "time-divider">
-                <div class="time-chip"> Afternoon </div>
+                <div class="time-chip"> 1:30 - 5:00pm </div>
                 <div class = "time-hr"><hr></div>
             </div>
             <div class = "event-title-text"> Follow-Up Discussions & Unstructured Time </div>
