@@ -35,7 +35,7 @@ data: agenda
 {% macro postergrid(session) %}
     {% set sheet = posters | find("session", session) %}
     {% if sheet | length %}
-        <h2 class="agenda-grid-title">Posters ({{ sheet | length }}):</h2>
+        <h2 class="agenda-grid-title poster-grid-title">Posters ({{ sheet | length }}):</h2>
         {# --poster-rows drives the column fill: items flow down column 1 for this many
            rows, then down column 2, preserving alphabetical order within each column
            while grid equalises each row's height. #}

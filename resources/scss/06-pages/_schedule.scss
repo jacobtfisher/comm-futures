@@ -169,6 +169,13 @@
 // Poster listings. Deliberately lighter than .agenda-card: posters have no detail
 // pages and there are ~15 per session, so a multi-column text list reads better than
 // a wall of boxes and keeps stage talks as the visually featured items.
+// The stage-talk "Presentations:" header gets its breathing room from the
+// description paragraph above it. The poster sessions have no description, so
+// the count subhead would otherwise sit flush against the session title.
+.poster-grid-title {
+    margin-top: .75rem;
+}
+
 .poster-list {
     // Grid rather than column-count: grid rows size to their tallest item, so a
     // two-line title in one column doesn't knock the facing column out of step.
