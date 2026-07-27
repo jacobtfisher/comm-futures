@@ -72,6 +72,14 @@
     "coauthors": "Joanna Strycharz"
   },
   {
+    "number": 25,
+    "session": 1,
+    "title": "A Human-in-the-Loop AI Pipeline for Belief Taxonomy Development",
+    "presenter": "Emily K. McKinley",
+    "affiliation": "University of California, Davis",
+    "coauthors": "Kim, Zhang, Calabrese"
+  },
+  {
     "number": 29,
     "session": 1,
     "title": "Capturing and analyzing TikTok content in low-resource languages",
