@@ -183,7 +183,9 @@
 
     .poster-item {
         padding: .75rem 0;
-        border-top: 1px solid get-color('grey');
+        // Echoes the dotted rule on .day-header, dialled right down: the day
+        // dividers are structural, these are just separators between entries.
+        border-top: 1px dotted get-color('grey');
 
         .poster-title {
             font-size: #{get-size('400')};
