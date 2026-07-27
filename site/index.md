@@ -14,13 +14,13 @@ key_details:
   - label: Location
     value: MSU Union, East Lansing, Michigan
   - label: "Posters & Discussions"
-    value: "Open through Aug. 1, 2026"
+    value: "Open through Aug. 14, 2026"
   - label: Cost
     value: "$250 • Faculty<br>$125 • Students"
 ---
 
 <div class="callout">
-  <div class="callout-text"><strong>Note that the submission deadline has passed, but we are still accepting submissions for posters &amp; discussion sessions.</strong> We are accepting additional submissions on a rolling basis through <strong>August 1, 2026</strong> — or until we run out of space, whichever comes first. See the <a href="/cfp/">Call for Proposals</a> for details.</div>
+  <div class="callout-text"><strong>Note that the submission deadline has passed, but we are still accepting submissions for posters &amp; discussion sessions.</strong> We are accepting additional submissions on a rolling basis through <strong>August 14, 2026</strong> — or until we run out of space, whichever comes first. See the <a href="/cfp/">Call for Proposals</a> for details.</div>
 </div>
 
 ## About the Conference
