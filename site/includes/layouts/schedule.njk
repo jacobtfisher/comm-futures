@@ -43,9 +43,6 @@ data: agenda
                     <div class="poster-presenter">
                         <div><i class="fas fa-solid fa-user" style="padding:0 .5em 0 0; color:grey"></i> <b>{{ p.presenter }}</b></div>
                         <div><i class="fas fa-university" style="padding:0 .5em 0 0; color:grey"></i> {{ p.affiliation }}</div>
-                        {% if p.coauthors %}
-                            <div class="poster-coauthors">with {{ p.coauthors }}</div>
-                        {% endif %}
                     </div>
                 </div>
             {% endfor %}
