@@ -36,7 +36,10 @@ data: agenda
     {% set sheet = posters | find("session", session) %}
     {% if sheet | length %}
         <h2 class="agenda-grid-title">Posters ({{ sheet | length }}):</h2>
-        <div class="poster-list">
+        {# --poster-rows drives the column fill: items flow down column 1 for this many
+           rows, then down column 2, preserving alphabetical order within each column
+           while grid equalises each row's height. #}
+        <div class="poster-list" style="--poster-rows: {{ (sheet | length / 2) | round(0, 'ceil') }}">
             {% for p in sheet %}
                 <div class="poster-item">
                     <div class="poster-title">{{ p.title }}</div>

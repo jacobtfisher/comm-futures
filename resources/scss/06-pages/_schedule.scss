@@ -170,13 +170,18 @@
 // pages and there are ~15 per session, so a multi-column text list reads better than
 // a wall of boxes and keeps stage talks as the visually featured items.
 .poster-list {
-    column-count: 2;
+    // Grid rather than column-count: grid rows size to their tallest item, so a
+    // two-line title in one column doesn't knock the facing column out of step.
+    // Shorter entries simply carry the slack as trailing whitespace, which keeps
+    // every top border aligned across the two columns.
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(var(--poster-rows, 8), auto);
+    grid-auto-flow: column;
     column-gap: #{get-size('700')};
     margin-bottom: 1.5rem;
 
     .poster-item {
-        break-inside: avoid;
-        -webkit-column-break-inside: avoid;
         padding: .75rem 0;
         border-top: 1px solid get-color('grey');
 
@@ -198,7 +203,9 @@
 
 @media (max-width: 700px) {
     .poster-list {
-        column-count: 1;
+        grid-template-columns: 1fr;
+        grid-template-rows: none;
+        grid-auto-flow: row;
     }
 }
 
