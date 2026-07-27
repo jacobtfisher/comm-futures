@@ -29,6 +29,30 @@ data: agenda
     {% endif %}
 {% endmacro %}
 
+{# Renders the poster listing for a given session (1 = Saturday lunch, 2 = Sunday lunch).
+   Posters get a lighter multi-column treatment than stage talks: no cards, no detail
+   pages, since there are ~15 per session and no abstracts to link to. #}
+{% macro postergrid(session) %}
+    {% set sheet = posters | find("session", session) %}
+    {% if sheet | length %}
+        <h2 class="agenda-grid-title">Posters ({{ sheet | length }}):</h2>
+        <div class="poster-list">
+            {% for p in sheet %}
+                <div class="poster-item">
+                    <div class="poster-title">{{ p.title }}</div>
+                    <div class="poster-presenter">
+                        <div><i class="fas fa-solid fa-user" style="padding:0 .5em 0 0; color:grey"></i> <b>{{ p.presenter }}</b></div>
+                        <div><i class="fas fa-university" style="padding:0 .5em 0 0; color:grey"></i> {{ p.affiliation }}</div>
+                        {% if p.coauthors %}
+                            <div class="poster-coauthors">with {{ p.coauthors }}</div>
+                        {% endif %}
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    {% endif %}
+{% endmacro %}
+
 <main id="main" class="main inner box-flex pt-600 pb-1100" tabindex="-1">
 
     <article id="container-centre" class="column centre">
@@ -157,7 +181,12 @@ data: agenda
                 <div class = "time-hr"><hr></div>
             </div>
             <div class = "event-title-text"> Lunch & Poster Session 1 </div>
+            <div class = "event-body-text">
+                Posters are presented over lunch in the main space. We treat the poster sessions as a central part of the conference, and expect them to be where some of the best one-on-one conversations happen.
+            </div>
         </div>
+
+        {{ postergrid(1) }}
 
         <div class = "event-title">
             <div class = "time-divider">
@@ -248,6 +277,8 @@ data: agenda
             </div>
             <div class = "event-title-text"> Lunch & Poster Session 2 </div>
         </div>
+
+        {{ postergrid(2) }}
 
         <div class = "event-title">
             <div class = "time-divider">

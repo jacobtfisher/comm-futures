@@ -1,0 +1,234 @@
+[
+  {
+    "number": 2,
+    "session": 1,
+    "title": "Coming to Like: A Drift Diffusion Model of Audiences' Enjoyment and Appreciation",
+    "presenter": "Joshua Baldwin",
+    "affiliation": "Boston University",
+    "coauthors": "Jia, Guvelioglu, Novozhilova, Fang, He, Kim, Liu"
+  },
+  {
+    "number": 5,
+    "session": 1,
+    "title": "Advancing the Theory of Stigma Management Communication",
+    "presenter": "Jenny Crowley",
+    "affiliation": "University of Tennessee",
+    "coauthors": "Michael Kotowski"
+  },
+  {
+    "number": 6,
+    "session": 1,
+    "title": "Transactive Memory Systems in Patient-provider Relationships",
+    "presenter": "Emily T. Dawson",
+    "affiliation": "Purdue University",
+    "coauthors": "Torsten Reimer"
+  },
+  {
+    "number": 10,
+    "session": 1,
+    "title": "Feeling Scattered: Development and Validation of the Attention Fragmentation Scale",
+    "presenter": "Jacob T. Fisher",
+    "affiliation": "Michigan State University",
+    "coauthors": "Doug Parry, Alex Lover"
+  },
+  {
+    "number": 15,
+    "session": 1,
+    "title": "What Makes a Supportive Relationship? Testing Support Gaps Across Relationships",
+    "presenter": "Junwen M. Hu",
+    "affiliation": "University of California, Davis",
+    "coauthors": "Amanda Holmstrom"
+  },
+  {
+    "number": 16,
+    "session": 1,
+    "title": "Visual Attention and Cognitive Responses in Ego-Defensive Message Processing",
+    "presenter": "Moonsun Jeon",
+    "affiliation": "Michigan State University",
+    "coauthors": ""
+  },
+  {
+    "number": 18,
+    "session": 1,
+    "title": "Inoxity: An Open-Source iOS Platform for High-Throughput Data Collection",
+    "presenter": "Rachael Kee",
+    "affiliation": "University of California, Davis",
+    "coauthors": "Laasya Madgula, Richard Huskey"
+  },
+  {
+    "number": 21,
+    "session": 1,
+    "title": "Haptics as a Modality of Communication: A Systematic Review",
+    "presenter": "Alex Lover",
+    "affiliation": "Michigan State University",
+    "coauthors": "Yan Wang, Jacob T. Fisher"
+  },
+  {
+    "number": 24,
+    "session": 1,
+    "title": "Can Constructive Memory Help Us Study Digital Persuasion?",
+    "presenter": "Ewa Maslowska",
+    "affiliation": "University of Illinois Urbana-Champaign",
+    "coauthors": "Joanna Strycharz"
+  },
+  {
+    "number": 29,
+    "session": 1,
+    "title": "Capturing and analyzing TikTok content in low-resource languages",
+    "presenter": "Yvens Rumbold",
+    "affiliation": "Michigan State University",
+    "coauthors": ""
+  },
+  {
+    "number": 31,
+    "session": 1,
+    "title": "Communicating Rural Consciousness",
+    "presenter": "Xavier Scruggs",
+    "affiliation": "Wake Forest University",
+    "coauthors": ""
+  },
+  {
+    "number": 33,
+    "session": 1,
+    "title": "Disentangling Entertainment Appraisals: Tracking Enjoyment, Appreciation, and Psychological Richness",
+    "presenter": "Manushka Sondhi",
+    "affiliation": "Michigan State University",
+    "coauthors": "Grady, Galinkala, Crozier, Ellithorpe, Wirz, Eden"
+  },
+  {
+    "number": 34,
+    "session": 1,
+    "title": "Perceptions, Trust, and Participation: A Mediation Model of Political Engagement",
+    "presenter": "Stephen Spates",
+    "affiliation": "Michigan State University",
+    "coauthors": "Xavier Scruggs"
+  },
+  {
+    "number": 43,
+    "session": 1,
+    "title": "Asymmetric Reciprocity in Posthuman Intimacy: Romantic Chatbots in China",
+    "presenter": "Keting Zhang",
+    "affiliation": "University of Nottingham Ningbo China",
+    "coauthors": ""
+  },
+  {
+    "number": 44,
+    "session": 1,
+    "title": "Everywhere and Nowhere: A Scoping Review of Anonymity in Online Hate Research",
+    "presenter": "Yidi Zhang",
+    "affiliation": "UC Santa Barbara",
+    "coauthors": ""
+  },
+  {
+    "number": 4,
+    "session": 2,
+    "title": "The Future of Worship?: Online Worship and Loneliness in Religious Americans, Mediated by Self-Disclosure",
+    "presenter": "Brooklyn Monroe Chillemi",
+    "affiliation": "Wake Forest University",
+    "coauthors": ""
+  },
+  {
+    "number": 8,
+    "session": 2,
+    "title": "AI Agency Framing and Task Interdependence",
+    "presenter": "Soumyajit De",
+    "affiliation": "University of California, Santa Barbara",
+    "coauthors": "Jennifer Gibbs"
+  },
+  {
+    "number": 13,
+    "session": 2,
+    "title": "Negativity and High Arousal Sustain Online News Reading",
+    "presenter": "Xuanjun Gong",
+    "affiliation": "Texas A&M University",
+    "coauthors": "Sara Grady, Austin Channell"
+  },
+  {
+    "number": 20,
+    "session": 2,
+    "title": "Frames We Can(not) See: How Deficit Thinking Shapes the Communication Science of AI and Children",
+    "presenter": "Zhixin Li",
+    "affiliation": "Syracuse University",
+    "coauthors": ""
+  },
+  {
+    "number": 23,
+    "session": 2,
+    "title": "Well-being Moderates Emotional Responses to Positive Daily Events and Positive News",
+    "presenter": "Yifei Lu",
+    "affiliation": "University of Pennsylvania",
+    "coauthors": "Stanoi, Cosme, Jovanova, Kang, Bassett, Boyd, Falk, Mucha, Ochsner, Lydon-Staley"
+  },
+  {
+    "number": 27,
+    "session": 2,
+    "title": "Modifying the Decision Structure of Screen-Time Self-Nudges: From Stop to Action",
+    "presenter": "Elisa Ragone",
+    "affiliation": "Purdue University",
+    "coauthors": "Torsten Reimer"
+  },
+  {
+    "number": 28,
+    "session": 2,
+    "title": "Do LLM-Agent Groups Exhibit a Hidden-Profile Effect?",
+    "presenter": "Torsten Reimer",
+    "affiliation": "Purdue University",
+    "coauthors": "Maurice Reimer, Jadhav, White"
+  },
+  {
+    "number": 7,
+    "session": 2,
+    "title": "Mapping the News-Finds-Me Construct: Evidence From a Nomological Network Analysis",
+    "presenter": "Sylo de Vegvar",
+    "affiliation": "University of California, Santa Barbara",
+    "coauthors": "Kristy A. Hamilton"
+  },
+  {
+    "number": 37,
+    "session": 2,
+    "title": "Fight and Flight? How Psychological Reactance and Learned Helplessness Shape Privacy Decision-Making",
+    "presenter": "Laurent Wang",
+    "affiliation": "University of Texas at Austin",
+    "coauthors": "Miriam Metzger"
+  },
+  {
+    "number": 38,
+    "session": 2,
+    "title": "Intellectual humility and learning outcomes in online health-information-seeking",
+    "presenter": "Xinyi Wang",
+    "affiliation": "University of Pennsylvania",
+    "coauthors": "Muzekari, Lyew, Fishman, Cinquegrani, Tan, Mercincavage, Lydon-Staley"
+  },
+  {
+    "number": 39,
+    "session": 2,
+    "title": "Understanding the Relationship between Technology Use and Well-Being in Older Adults",
+    "presenter": "Joshua Weinzapfel",
+    "affiliation": "Purdue University",
+    "coauthors": "Oh, Choung"
+  },
+  {
+    "number": 40,
+    "session": 2,
+    "title": "The Tug-of-War between Fear of Missing Out (FoMO) and Disconnection Motivations on Mental Stress",
+    "presenter": "Fan \"Ellie\" Yang",
+    "affiliation": "Illinois State University",
+    "coauthors": "Carr, Hayes"
+  },
+  {
+    "number": 42,
+    "session": 2,
+    "title": "Understanding Human–AI Emotional Support: The Influence of Chatbot Design on Anthropomorphism and Mind Perception",
+    "presenter": "Lucas J. Youngvorst",
+    "affiliation": "The Pennsylvania State University",
+    "coauthors": "Chinchilla, Logunova, Asmah, Ali, Mohammed"
+  },
+  {
+    "number": 45,
+    "session": 2,
+    "title": "Mapping Methods in Online Hate Research: A Review, Comparison, and Future Directions",
+    "presenter": "Yidi Zhang",
+    "affiliation": "UC Santa Barbara",
+    "coauthors": ""
+  }
+]
