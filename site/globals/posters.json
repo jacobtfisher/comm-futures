@@ -72,14 +72,6 @@
     "coauthors": "Joanna Strycharz"
   },
   {
-    "number": 25,
-    "session": 1,
-    "title": "A Human-in-the-Loop AI Pipeline for Belief Taxonomy Development",
-    "presenter": "Emily K. McKinley",
-    "affiliation": "University of California, Davis",
-    "coauthors": "Kim, Zhang, Calabrese"
-  },
-  {
     "number": 29,
     "session": 1,
     "title": "Capturing and analyzing TikTok content in low-resource languages",
@@ -262,5 +254,13 @@
     "presenter": "Yidi Zhang",
     "affiliation": "UC Santa Barbara",
     "coauthors": ""
+  },
+  {
+    "number": 46,
+    "session": 2,
+    "title": "Not Just Old Wine in New Bottles: Extending CMC Theory to AI-Mediated Communication",
+    "presenter": "Rui (Cara) Zhu",
+    "affiliation": "Michigan State University",
+    "coauthors": "Markowitz, Van Der Heide, Forsyth, Xinyu Zhang"
   }
 ]
