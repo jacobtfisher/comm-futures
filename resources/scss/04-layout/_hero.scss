@@ -1,16 +1,44 @@
 
 //==========  Hero  ==========//
 
-// Text-first hero replacing the full-lockup logo image. Kicker in the mono
-// label voice, display headline with the green accent word, short lede, two
-// chunky CTAs.
+// Brand mark tracks a fraction of the title line. Mobile stays near 1/3;
+// larger screens ease down to ~the "mm" in Communication (~27%) so the mark
+// grows with the headline without overtaking it. No rem ceiling — that was
+// undercutting the percentage and reading far smaller than intended.
+
+.hero-brand {
+    --hero-logo-size: 33%;
+
+    position: relative;
+    width: max-content;
+    max-width: 100%;
+    // Match the logo's used size (square) plus a gap before the headline.
+    padding-top: calc(var(--hero-logo-size) + #{get-size('500')});
+
+    @include media-query('tablet') {
+        --hero-logo-size: 30%;
+    }
+
+    @include media-query('laptop') {
+        --hero-logo-size: 22%;
+    }
+}
+
+.hero-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: var(--hero-logo-size);
+    height: auto;
+}
 
 .hero-kicker {
     font-family: var(--font-mono);
     font-size: get-size('300');
     font-weight: 500;
     text-transform: uppercase;
-    letter-spacing: .14em;
+    letter-spacing: var(--label-tracking);
     color: var(--ink-soft);
     margin-bottom: get-size('400');
 }
@@ -22,14 +50,14 @@
     // past that width the headline is the only element that can still scale,
     // and at the old 4.6rem cap it looked stranded on a large display.
     font-family: var(--font-display);
-    // Floor is 2.2rem, not 2.5rem: at a 320px viewport the fluid value works
-    // out to ~35px, and a 2.5rem floor clamped it back *up* to 40px, which
-    // pushed the now-unbreakable "Science Futures" 7px past the column.
-    font-size: clamp(2.2rem, 1.2rem + 5vw, 6rem);
+    // Floor is ~10% above the old 2.2rem so the mark and headline balance on
+    // phones. Still under the 2.5rem that overflowed "Science Futures" at 320px.
+    font-size: clamp(2.42rem, 1.32rem + 5.5vw, 6rem);
     font-weight: 800;
     line-height: 1.0;
     letter-spacing: -0.035em;
     margin: 0 0 get-size('400');
+    max-width: 100%;
 
     // Break between the two halves, never inside them — this is what keeps
     // "Science Futures" on one line at every width. Paired with the spans in
@@ -49,8 +77,18 @@
 .hero-lede {
     font-size: get-size('500');
     line-height: 1.55;
-    max-width: 34em;
-    // Was '700'. Tightened a step so the lede sits closer to the key-details
-    // grid it introduces, rather than floating between the headline and cards.
-    margin-bottom: get-size('600');
+    // Ends in the gutter between the third and fourth key-details cards.
+    max-width: 40em;
+    // Was '600'. Tightened so the key-details grid sits closer under the lede.
+    margin-bottom: get-size('400');
+}
+
+// Hero carries its own bottom gap — lighter than the default page-header so
+// the mark/title/lede block doesn't float so far above the info cards.
+.page-header.hero {
+    --gap: #{get-size('200')};
+
+    @include media-query('tablet') {
+        --gap: #{get-size('300')};
+    }
 }

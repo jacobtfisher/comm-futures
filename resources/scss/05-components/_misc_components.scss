@@ -16,7 +16,7 @@
 	font-size: #{get-size('300')};
 	font-weight: 700;
 	text-transform: uppercase;
-	letter-spacing: .08em;
+	letter-spacing: var(--label-tracking);
 	cursor: pointer;
 	transition:
 		background-color v(transition-duration) v(transition-timing),
@@ -61,6 +61,7 @@
 .callout {
 	display: flex;
 	flex-flow: row wrap;
+	align-items: flex-start;
 	width: 100%;
 	// Was neutral light-grey, which read as a generic disabled-state box.
 	// A faint brand tint ties it to the rest of the page; the ink border
@@ -68,22 +69,23 @@
 	background-color: var(--green-50);
 	border: var(--card-border) solid var(--ink);
 	border-radius: var(--radius-md);
-	padding: .5em;
-	margin-bottom: 20px;
+	padding: #{get-size('400')};
+	margin-bottom: #{get-size('500')};
+	gap: #{get-size('300')};
 
 	// Was flex: 1 1 0, which let the icon claim an equal share of the row and
 	// opened a large gap before the text. It only ever needs its own width.
 	.callout-icon {
 		flex: 0 0 auto;
-		margin: 0 #{get-size('200')} 0 #{get-size('300')};
-		padding-top: 14px;
+		padding-top: #{get-size('200')};
+		color: var(--ink-soft);
 		align-self: flex-start;
 	}
 
 	.callout-text {
 		flex: 1 1 0;
 		font-size: #{get-size('500')};
-		padding: 10px;
+		min-width: 0;
 	}
 }
 

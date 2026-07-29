@@ -42,6 +42,11 @@
     // rather than naming the family inline.
     --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
 
+    // Tracking for mono uppercase labels (hero kicker, card labels, time
+    // chips, agenda section titles, disclosure). Nav/logo chrome stays at
+    // .08em — tighter, not the same label voice.
+    --label-tracking: 0.12em;
+
     // Display face — headings, hero, event titles. Body copy is Inter, set as
     // the 'base' font in _config.scss.
     --font-display: Archivo, ui-sans-serif, system-ui, -apple-system, sans-serif;

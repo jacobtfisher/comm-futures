@@ -13,19 +13,11 @@
 
 }
 
-// logo — mark + wordmark. The hero no longer carries the logo image, so the
-// brand lives here.
+// logo — wordmark only. The mark lives large in the home hero instead.
 .logo {
     display: inline-flex;
     align-items: center;
-    gap: .6rem;
     color: var(--ink);
-
-    .logo-mark {
-        width: 2.25rem;
-        height: 2.25rem;
-        display: block;
-    }
 
     .logo-wordmark {
         font-family: var(--font-mono);
@@ -44,7 +36,6 @@
 @include media-query('mobileXL') {
 
     .logo {
-        --logo-size: #{get-size('500')};
         margin: 0 auto 0 0;
     }
 }

@@ -9,6 +9,10 @@
  * The panels are authored open and closed here on init, so with JS disabled or
  * still loading every abstract is readable rather than sealed behind a control
  * that will never respond.
+ *
+ * Open titles start at the display size in CSS; fitTitle() steps them down so
+ * a long wrap (Chen Crystal, Pennebaker-length abstracts aside) stays within
+ * about four lines instead of blowing out the left column.
  */
 
 const TalkCards = function TalkCards()
@@ -20,6 +24,48 @@ const TalkCards = function TalkCards()
 
     const panelFor = card => card.querySelector('.agenda-card-panel')
     const triggerFor = card => card.querySelector('.agenda-card-trigger')
+    const titleFor = card => card.querySelector('.item-title')
+
+    // Cap open titles at roughly four lines of the stylesheet size. Steps the
+    // computed font-size down until scrollHeight fits, with a floor so a
+    // pathological title cannot shrink into unreadability.
+    const fitTitle = function fitTitle(card)
+    {
+
+        const title = titleFor(card)
+
+        if ( ! title ) return
+
+        title.style.fontSize = ''
+
+        const styles = window.getComputedStyle(title)
+        const computedSize = parseFloat(styles.fontSize)
+
+        if ( ! computedSize ) return
+
+        const lineHeight = parseFloat(styles.lineHeight) || computedSize * 1.2
+        const maxHeight = lineHeight * 4
+        let size = computedSize
+        const floor = Math.max(computedSize * 0.7, 17)
+
+        while ( title.scrollHeight > maxHeight + 1 && size > floor )
+        {
+
+            size -= 0.5
+            title.style.fontSize = size + 'px'
+
+        }
+
+    }
+
+    const clearTitleFit = function clearTitleFit(card)
+    {
+
+        const title = titleFor(card)
+
+        if ( title ) title.style.fontSize = ''
+
+    }
 
     const close = function close(card)
     {
@@ -28,6 +74,7 @@ const TalkCards = function TalkCards()
         const trigger = triggerFor(card)
 
         card.classList.remove('is-open')
+        clearTitleFit(card)
         if ( panel ) panel.hidden = true
         if ( trigger ) trigger.setAttribute('aria-expanded', 'false')
 
@@ -42,6 +89,9 @@ const TalkCards = function TalkCards()
         card.classList.add('is-open')
         if ( panel ) panel.hidden = false
         if ( trigger ) trigger.setAttribute('aria-expanded', 'true')
+
+        // Measure after the open layout (side-by-side columns) has applied.
+        fitTitle(card)
 
     }
 
@@ -109,6 +159,15 @@ const TalkCards = function TalkCards()
 
     openFromHash()
     window.addEventListener('hashchange', openFromHash)
+
+    // Re-fit the open title when the left column width changes.
+    window.addEventListener('resize', function() {
+
+        const openCard = document.querySelector('.agenda-card.is-open')
+
+        if ( openCard ) fitTitle(openCard)
+
+    })
 
 }()
 

@@ -3,11 +3,6 @@ layout: base
 data: agenda
 ---
 
-<head>
-    <!-- Place your kit's code here -->
-    <script src="https://kit.fontawesome.com/4451d51824.js" crossorigin="anonymous"></script>
-</head>
-
 {# Renders the grid of stage talks for a given theme (research / theory / methods).
 
    Each card is an expander: the trigger is a real <button> (it used to be a div
@@ -74,7 +69,7 @@ data: agenda
     {% endif %}
 {% endmacro %}
 
-<main id="main" class="main inner box-flex pt-600 pb-1100" tabindex="-1">
+<main id="main" class="main inner box-flex pt-800 pb-1100" tabindex="-1">
 
     <article id="container-centre" class="column centre">
 
@@ -90,15 +85,12 @@ data: agenda
 
         </header>
 
-        <div class="content flow"></div>
-
-        <div class="inner">
-
-            <div class = "callout" style = "margin-top: 2rem">
-                <div class = "callout-icon">
-                    <i class="fas fa-exclamation-circle color-grey"></i>
+        <div class="content flow">
+            <div class="callout">
+                <div class="callout-icon">
+                    <i class="fas fa-exclamation-circle" aria-hidden="true"></i>
                 </div>
-                <div class = "callout-text">
+                <div class="callout-text">
                     {{ content | safe }}
                 </div>
             </div>
@@ -120,8 +112,8 @@ data: agenda
 
         {# ===== FRIDAY ===== #}
 
-        <div class = "day-header">
-            <h1> Friday, September 18 </h1>
+        <div class="day-header">
+            <h2>Friday, September 18</h2>
         </div>
 
         <div class = "event-title">
@@ -172,8 +164,8 @@ data: agenda
 
         {# ===== SATURDAY ===== #}
 
-        <div class = "day-header">
-            <h1> Saturday, September 19 </h1>
+        <div class="day-header">
+            <h2>Saturday, September 19</h2>
         </div>
 
         <div class = "event-title">
@@ -264,8 +256,8 @@ data: agenda
 
         {# ===== SUNDAY ===== #}
 
-        <div class = "day-header">
-            <h1> Sunday, September 20 </h1>
+        <div class="day-header">
+            <h2>Sunday, September 20</h2>
         </div>
 
         <div class = "event-title">

@@ -6,14 +6,17 @@ layout: base
 
     <header class="page-header hero">
 
-        {% if hero_kicker %}
-            <p class="hero-kicker">{{ hero_kicker }}</p>
-        {% endif %}
-
-        {# The two nowrap spans let the headline break where it likes between
-           them but never inside them, so "Science Futures" stays on one line at
-           every width instead of stranding "Futures" on its own. #}
-        <h1 class="hero-title"><span class="hero-line">Communication</span> <span class="hero-line">Science <span class="hero-accent">Futures</span></span></h1>
+        {# Brand block shrinks to the title width so the mark can be sized as a
+           fraction of that line (~1/3–1/2). The image is out of flow so its
+           intrinsic size cannot inflate the box; empty alt because the h1
+           carries the name. #}
+        <div class="hero-brand">
+            <img class="hero-logo" src="{{ '/images/meta/csf_icon.png' | url }}" alt="" width="789" height="795">
+            {# The two nowrap spans let the headline break where it likes between
+               them but never inside them, so "Science Futures" stays on one line at
+               every width instead of stranding "Futures" on its own. #}
+            <h1 class="hero-title"><span class="hero-line">Communication</span> <span class="hero-line">Science <span class="hero-accent">Futures</span></span></h1>
+        </div>
 
         {% if hero_lede %}
             <p class="hero-lede">{{ hero_lede }}</p>

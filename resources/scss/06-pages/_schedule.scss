@@ -3,9 +3,19 @@
 // craft-paper, and it fought the ink hairlines everywhere else. A heavy solid
 // ink rule says "new section" with the same force and the current vocabulary.
 .day-header {
-    margin-top: 3.5rem;
-    padding-top: 1.25rem;
+    margin-top: #{get-size('800')};
+    padding-top: #{get-size('500')};
     border-top: 4px solid var(--ink);
+
+    // Section divider, not a page title — keep below .page-title weight/size.
+    h2 {
+        margin: 0;
+        font-family: var(--font-display);
+        font-size: #{get-size('700')};
+        font-weight: 800;
+        letter-spacing: -0.025em;
+        line-height: 1.15;
+    }
 }
 
 .event-title {
@@ -34,7 +44,7 @@
             font-family: var(--font-mono);
             font-size: #{get-size('300')};
             font-weight: 700;
-            letter-spacing: 0.06em;
+            letter-spacing: var(--label-tracking);
             flex: 0 0 auto;
         }
 
@@ -56,14 +66,14 @@
 
     .event-title-text {
         font-size: #{get-size('600')};
-        font-weight: 900;
+        font-weight: 800;
         flex: 3 1 auto;
     }
 
     .event-subtitle-text {
         font-size: #{get-size('600')};
         color: get-color('secondary');
-        font-weight: 900;
+        font-weight: 800;
         flex: 3 1 auto;
     }
 
@@ -107,9 +117,7 @@
             font-size: #{get-size('300')};
             font-weight: 700;
             text-transform: uppercase;
-            letter-spacing: .12em;
-            color: var(--ink-soft);
-            margin-bottom: .35rem;
+            letter-spacing: var(--label-tracking);
         }
 
         .keynote-name {
@@ -147,7 +155,7 @@
     font-size: #{get-size('300')};
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: .12em;
+    letter-spacing: var(--label-tracking);
     color: var(--ink-soft);
 }
 
@@ -167,7 +175,7 @@
     a {
         text-decoration: none !important;
         border-bottom: none;
-        padding-bottom: none;
+        padding-bottom: 0;
         -webkit-text-decoration-skip: ink;
         text-decoration-skip-ink: auto;
     }
@@ -288,22 +296,54 @@
 // place instead left a part-filled row wherever the card had been sitting,
 // which is what made the alignment look broken. Grid honours `order` during
 // auto-placement, so this needs no JS. One open at a time.
+//
+// Open layout: title + presenter on the left, abstract on the right, split by
+// an ink vertical rule. Stacks again below tablet where the columns would
+// crush the abstract.
 .agenda-card.is-open {
     order: -1;
     grid-column: 1 / -1;
     background-color: get-color('light-grey');
+    display: grid;
+    grid-template-columns: minmax(14rem, 0.9fr) minmax(0, 1.35fr);
+    align-items: stretch;
 
-    .item-title {
-        font-size: #{get-size('500')};
+    .agenda-card-trigger {
+        border-right: var(--card-border) solid var(--ink);
+        padding: 1.1rem 1.25rem;
+        // Fill the left column so the rule runs the full card height.
+        height: 100%;
+        box-sizing: border-box;
     }
 
-    // Portrait appears only here, beside the name, above the rule.
+    .item-title {
+        font-family: var(--font-display);
+        font-size: #{get-size('700')};
+        font-weight: 800;
+        letter-spacing: -0.02em;
+        line-height: 1.2;
+        // Long titles are stepped down in resources/js/modules/talk-cards so
+        // they stay within roughly four lines instead of dominating the card.
+    }
+
+    // Portrait appears only here, beside the name.
     .card-headshot {
         display: block;
     }
 
     .card-identity {
         margin-top: .35rem;
+    }
+
+    .agenda-card-panel {
+        border-top: 0;
+        padding: 1.1rem 1.25rem;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .panel-abstract {
+        max-width: none;
     }
 }
 
@@ -318,13 +358,30 @@
         font-size: #{get-size('400')};
         line-height: 1.6;
         max-width: 68ch;
+        margin: 0;
     }
 }
 
 // `hidden` is only a display:block default, so anything that sets display on
 // this element would beat it. Belt and braces while the panel is collapsed.
 .agenda-card-panel[hidden] {
-    display: none;
+    display: none !important;
+}
+
+@media (max-width: 48em) {
+    .agenda-card.is-open {
+        grid-template-columns: 1fr;
+
+        .agenda-card-trigger {
+            border-right: 0;
+            border-bottom: var(--card-border) solid var(--ink);
+            height: auto;
+        }
+
+        .agenda-card-panel {
+            border-top: 0;
+        }
+    }
 }
 
 //========== Map embed ==========//
