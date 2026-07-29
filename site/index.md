@@ -8,16 +8,17 @@ eleventyNavigation:
   order: 1
 hero_kicker: "Second Meeting · Sept 18–20, 2026 · Michigan State University"
 hero_lede: "A working conference for scholars addressing the pressing issues and emerging trends shaping social scientific research into human communication."
-hero_primary:
-  label: "Submit a Poster"
-  url: "https://msu.co1.qualtrics.com/jfe/form/SV_0wHKbpwWGkMyLNc"
-  external: true
-hero_secondary:
-  label: "Read the CFP"
-  url: "/cfp/"
+# The two calls to action live in the gold banner rather than the hero, so the
+# submission deadline and the buttons that act on it sit together.
 banner:
-  chip: "Open Now"
   text: "Posters &amp; discussion sessions are accepted on a rolling basis through <strong>August 14, 2026</strong> — or until we run out of space, whichever comes first."
+  primary:
+    label: "Submit a Poster"
+    url: "https://msu.co1.qualtrics.com/jfe/form/SV_0wHKbpwWGkMyLNc"
+    external: true
+  secondary:
+    label: "Read the CFP"
+    url: "/cfp/"
 # Values kept short so all four cards sit on one row at full width.
 key_details:
   - label: Dates

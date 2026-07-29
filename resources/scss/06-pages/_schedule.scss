@@ -226,9 +226,14 @@
 }
 
 //========== Expanded talk panel ==========//
-// Clicking a card expands it across the full grid width; the surrounding cards
-// reflow around it because grid handles the row repacking. One open at a time.
+// Clicking a card expands it across the full grid width. `order: -1` moves it
+// to the front of the grid so it always forms a full-width band at the top of
+// the block, and the remaining cards pack neatly beneath it. Expanding in
+// place instead left a part-filled row wherever the card had been sitting,
+// which is what made the alignment look broken. Grid honours `order` during
+// auto-placement, so this needs no JS. One open at a time.
 .agenda-card.is-open {
+    order: -1;
     grid-column: 1 / -1;
     background-color: get-color('light-grey');
 

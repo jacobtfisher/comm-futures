@@ -31,25 +31,12 @@
     }
 }
 
+// The hero's two CTAs moved into the gold banner (see _home.scss) so the
+// submission deadline and the buttons acting on it sit together; .hero-cta is
+// gone with them. The lede now carries the gap down to the key-details grid.
 .hero-lede {
     font-size: get-size('500');
     line-height: 1.55;
     max-width: 34em;
-    margin-bottom: get-size('600');
-}
-
-.hero-cta {
-    display: flex;
-    flex-flow: row wrap;
-    gap: get-size('300');
     margin-bottom: get-size('700');
-
-    // Hero CTAs were inheriting the 21px body size, which made them read as
-    // slabs against the headline. '400' rather than the '300' label size —
-    // small enough to stop dominating, big enough to still read as the
-    // primary action.
-    .button {
-        font-size: get-size('400');
-        padding: .8em 1.5em;
-    }
 }

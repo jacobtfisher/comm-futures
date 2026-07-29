@@ -5,6 +5,10 @@ meta_description: Call for proposals for Communication Science Futures 2026
 title: Call for Proposals
 eleventyNavigation:
   key: Call for Proposals
+  # Nav label only — "Call for Proposals" was long enough to wrap in the nav
+  # bar. The page title and meta title stay spelled out; `key` stays as-is
+  # because it is the identifier other pages would reference as a parent.
+  title: CFP
   order: 3
 ---
 

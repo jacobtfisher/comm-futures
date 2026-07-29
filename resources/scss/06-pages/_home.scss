@@ -62,24 +62,14 @@
     }
 
     // Deadline banner — the one gold surface on the site. Freestanding rather
-    // than welded to the grid above it.
+    // than welded to the grid above it. Carries both calls to action, so the
+    // deadline and the buttons that act on it read as one unit. The "Open Now"
+    // chip is gone: with a Submit button sitting beside the date it was
+    // labelling something the block already says.
     .home-banner {
         background-color: var(--gold);
         border: 1px solid var(--ink);
         padding: get-size('500') 1.25rem;
-
-        .banner-chip {
-            display: inline-block;
-            font-family: var(--font-mono);
-            font-size: get-size('300');
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: .12em;
-            background-color: var(--ink);
-            color: var(--gold);
-            padding: .25em .8em;
-            margin-bottom: get-size('300');
-        }
 
         .banner-text {
             font-size: get-size('500');
@@ -87,6 +77,30 @@
 
             a {
                 color: var(--ink);
+            }
+        }
+
+        .banner-cta {
+            display: flex;
+            flex-flow: row wrap;
+            gap: get-size('300');
+            margin-top: get-size('400');
+
+            .button {
+                font-size: get-size('400');
+                padding: .8em 1.5em;
+            }
+
+            // On gold, a white-faced outline button reads as a hole punched in
+            // the banner. Transparent lets the gold carry through, so the pair
+            // reads as primary and secondary rather than two unrelated blocks.
+            .button--outline {
+                background-color: transparent;
+
+                &:hover {
+                    background-color: var(--ink);
+                    color: get-color('white');
+                }
             }
         }
     }

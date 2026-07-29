@@ -16,17 +16,6 @@ layout: base
             <p class="hero-lede">{{ hero_lede }}</p>
         {% endif %}
 
-        {% if hero_primary or hero_secondary %}
-            <div class="hero-cta">
-                {% if hero_primary %}
-                    <a class="button" href="{{ hero_primary.url }}"{% if hero_primary.external %} target="_blank" rel="noopener"{% endif %}>{{ hero_primary.label }}</a>
-                {% endif %}
-                {% if hero_secondary %}
-                    <a class="button button--outline" href="{{ hero_secondary.url }}"{% if hero_secondary.external %} target="_blank" rel="noopener"{% endif %}>{{ hero_secondary.label }}</a>
-                {% endif %}
-            </div>
-        {% endif %}
-
     </header>
 
     <div class="content flow">
@@ -46,8 +35,17 @@ layout: base
             {% endif %}
             {% if banner %}
                 <div class="home-banner">
-                    <span class="banner-chip">{{ banner.chip }}</span>
                     <div class="banner-text">{{ banner.text | safe }}</div>
+                    {% if banner.primary or banner.secondary %}
+                        <div class="banner-cta">
+                            {% if banner.primary %}
+                                <a class="button" href="{{ banner.primary.url }}"{% if banner.primary.external %} target="_blank" rel="noopener"{% endif %}>{{ banner.primary.label }}</a>
+                            {% endif %}
+                            {% if banner.secondary %}
+                                <a class="button button--outline" href="{{ banner.secondary.url }}"{% if banner.secondary.external %} target="_blank" rel="noopener"{% endif %}>{{ banner.secondary.label }}</a>
+                            {% endif %}
+                        </div>
+                    {% endif %}
                 </div>
             {% endif %}
         </div>
