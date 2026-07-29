@@ -26,14 +26,14 @@
 
         .time-chip {
             display: inline-block;
-            padding: .1rem .8rem;
+            padding: .15rem .8rem;
             margin: .5rem 0rem;
-            border-radius: 999px;
             background-color: var(--green-500);
             color: get-color('white');
-            font-size: #{get-size('400')};
+            font-family: "Roboto Mono";
+            font-size: #{get-size('300')};
             font-weight: 700;
-            letter-spacing: 0.01em;
+            letter-spacing: 0.06em;
             flex: 0 0 auto;
         }
 
@@ -75,9 +75,9 @@
 
     .keynote-callout {
         background-color: get-color('light-grey');
+        border: 1px solid var(--ink);
         padding: 1rem;
         margin-top: 1rem;
-        border-radius: 1rem;
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
@@ -87,7 +87,6 @@
         margin-bottom: 1rem;
 
         .keynote-headshot {
-            border-radius: .5rem;
             width: 30%;
             flex: 0 0 auto;
             height: auto;
@@ -134,8 +133,8 @@
         overflow: hidden;
         display: flex;
         position: relative;
-        border: 2px solid get-color('grey');
-        border-radius: 1em;
+        border: 1px solid var(--ink);
+        background-color: get-color('white');
 
         .card-body {
             display: flex;
@@ -237,7 +236,6 @@
         flex-direction: column;
 
         .keynote-headshot {
-            border-radius: .5rem;
             width: 100%;
             flex: 0 0 auto;
             height: auto;

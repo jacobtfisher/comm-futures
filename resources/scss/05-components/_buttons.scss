@@ -1,22 +1,43 @@
 
 //========== Buttons ==========//
 
+// Chunky, square, uppercase. Solid buttons are ink; green is the hover
+// moment rather than the resting state.
 .button {
     display: inline-block;
-    background-color: get-color('secondary');
-    border: 0;
+    background-color: var(--ink);
+    border: 2px solid var(--ink);
     border-radius: v(border-radius);
     color: get-color('white');
-    padding: get-size('300') get-size('500');
-    transition: background-color v(transition-duration) v(transition-timing);
-    @include apply-utility('weight', 'bold');
+    padding: get-size('300') get-size('600');
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    transition:
+        background-color v(transition-duration) v(transition-timing),
+        border-color v(transition-duration) v(transition-timing),
+        color v(transition-duration) v(transition-timing);
 
     &:hover {
-        background-color: darken(get-color('secondary'), $amount: 20%); 
+        background-color: var(--green-700);
+        border-color: var(--green-700);
+        color: get-color('white');
     }
 
     &:focus {
         outline: 3px solid get-color('secondary');
         outline-offset: .25rem;
+    }
+}
+
+// Outline variant — white face, ink frame.
+.button--outline {
+    background-color: get-color('white');
+    color: var(--ink);
+
+    &:hover {
+        background-color: var(--ink);
+        border-color: var(--ink);
+        color: get-color('white');
     }
 }

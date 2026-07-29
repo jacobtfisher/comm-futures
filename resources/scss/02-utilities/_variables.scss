@@ -30,7 +30,7 @@
     
 
     // borders
-    --border-radius: .25rem;
+    --border-radius: 0; // squared with the radius scale below
     --border-size: .15rem;
 
     // transitions
@@ -38,6 +38,12 @@
     --transition-timing: ease-out;
 
     //========== Design tokens (2026 polish pass) ==========//
+
+    // Ink — the near-black that borders, buttons, and display type share.
+    // Same value as the 'primary' text colour so lines and letters read as
+    // one material.
+    --ink: #111827;
+    --ink-soft: #6b7280; // kickers, labels, secondary text
 
     // Green scale, derived from the brand secondary (#008934). Previously the
     // brand green existed at exactly one saturation and hovers were computed
@@ -49,20 +55,20 @@
     --green-700: #00692a; // hover / active
     --green-900: #004d1f; // text on a green tint
 
-    // Neutral hairlines. The old cards used 2px of 'grey' (#9CA3AF), which is
-    // a text-weight grey doing a border's job — the single most dated element
-    // on the site.
+    // Gold — the second accent. Used sparingly: the deadline banner and
+    // nothing else, so it stays a signal rather than a theme.
+    --gold: #e5b43f;
+
+    // Neutral hairlines, for lines that should recede (the schedule time
+    // rule). Structural borders use --ink.
     --hairline: #e5e7eb;
     --hairline-strong: #d3d8e0;
 
-    // Elevation. Two steps only; both are deliberately faint.
-    --shadow-sm: 0 1px 2px rgba(17, 24, 39, .05), 0 4px 12px rgba(17, 24, 39, .04);
-    --shadow-md: 0 2px 6px rgba(17, 24, 39, .06), 0 14px 28px rgba(17, 24, 39, .07);
-
-    // Radius scale
-    --radius-sm: .375rem;
-    --radius-md: .75rem;
-    --radius-lg: 1rem;
+    // Radius scale — zeroed across the board. The tokens stay so un-squaring
+    // is a three-line change, but the aesthetic is hard corners everywhere.
+    --radius-sm: 0;
+    --radius-md: 0;
+    --radius-lg: 0;
 
     @include media-query('tablet') {
         --ratio: 1.2;

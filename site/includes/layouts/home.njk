@@ -4,33 +4,54 @@ layout: base
 
 <main id="main" class="main inner box-flex pt-800 pb-1100" tabindex="-1">
 
-    <header class="page-header">
+    <header class="page-header hero">
 
-        <img src="{{ '/images/meta/futures_logo.png' | url }}" class="hero-image">
-        {% if sub_heading %}
+        {% if hero_kicker %}
+            <p class="hero-kicker">{{ hero_kicker }}</p>
+        {% endif %}
 
-            <p class="sub-heading">{{ sub_heading }}</p>
+        <h1 class="hero-title">Communication Science <span class="hero-accent">Futures</span></h1>
 
+        {% if hero_lede %}
+            <p class="hero-lede">{{ hero_lede }}</p>
+        {% endif %}
+
+        {% if hero_primary or hero_secondary %}
+            <div class="hero-cta">
+                {% if hero_primary %}
+                    <a class="button" href="{{ hero_primary.url }}"{% if hero_primary.external %} target="_blank" rel="noopener"{% endif %}>{{ hero_primary.label }}</a>
+                {% endif %}
+                {% if hero_secondary %}
+                    <a class="button button--outline" href="{{ hero_secondary.url }}"{% if hero_secondary.external %} target="_blank" rel="noopener"{% endif %}>{{ hero_secondary.label }}</a>
+                {% endif %}
+            </div>
         {% endif %}
 
     </header>
 
     <div class="content flow">
-        {% if intro %}
-        <p>{{ intro | safe }}</p>
-        {% endif %}
-        {% if key_details %}
-        <div class="home-info-cards" aria-label="Key conference details">
-            {% for item in key_details %}
-            <div class="home-info-card">
-                <div class="card-body">
-                    <span class="card-label">{{ item.label }}</span>
-                    <span class="card-value">{{ item.value | safe }}</span>
+
+        <div class="home-details" aria-label="Key conference details">
+            {% if key_details %}
+                <div class="home-info-cards">
+                    {% for item in key_details %}
+                        <div class="home-info-card">
+                            <div class="card-body">
+                                <span class="card-label">{{ item.label }}</span>
+                                <span class="card-value">{{ item.value | safe }}</span>
+                            </div>
+                        </div>
+                    {% endfor %}
                 </div>
-            </div>
-            {% endfor %}
+            {% endif %}
+            {% if banner %}
+                <div class="home-banner">
+                    <span class="banner-chip">{{ banner.chip }}</span>
+                    <div class="banner-text">{{ banner.text | safe }}</div>
+                </div>
+            {% endif %}
         </div>
-        {% endif %}
+
         {{ content | safe }}
     </div>
 

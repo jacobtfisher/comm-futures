@@ -5,16 +5,36 @@
     display: none;
 
     @include media-query('mobileXL') {
-        display: block
+        display: block;
+        // One rule, not the mock's full compartment header — the restrained
+        // version of the same idea.
+        border-bottom: 1px solid var(--ink);
     }
 
 }
 
-// logo
+// logo — mark + wordmark. The hero no longer carries the logo image, so the
+// brand lives here.
 .logo {
-    --logo-size: #{get-size('400')};
-    font-size: v(logo-size);
-    margin: 0 auto;
+    display: inline-flex;
+    align-items: center;
+    gap: .6rem;
+    color: var(--ink);
+
+    .logo-mark {
+        width: 2.25rem;
+        height: 2.25rem;
+        display: block;
+    }
+
+    .logo-wordmark {
+        font-family: "Roboto Mono";
+        font-size: get-size('300');
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: .08em;
+        line-height: 1.2;
+    }
 
     &:hover {
         @include apply-utility('color', 'secondary');

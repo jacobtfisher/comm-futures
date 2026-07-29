@@ -1,2 +1,44 @@
 
 //==========  Hero  ==========//
+
+// Text-first hero replacing the full-lockup logo image. Kicker in the mono
+// label voice, display headline with the green accent word, short lede, two
+// chunky CTAs.
+
+.hero-kicker {
+    font-family: "Roboto Mono";
+    font-size: get-size('300');
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: .14em;
+    color: var(--ink-soft);
+    margin-bottom: get-size('400');
+}
+
+.hero-title {
+    // Custom clamp rather than the size scale: the scale's top steps overflow
+    // "Communication" as a single word on a 375px viewport. IBM Plex Sans has
+    // no real 800/900, so presence comes from true 700 at size.
+    font-size: clamp(2.5rem, 1.55rem + 4.8vw, 4.6rem);
+    font-weight: 700;
+    line-height: 1.02;
+    letter-spacing: -0.02em;
+    margin: 0 0 get-size('400');
+
+    .hero-accent {
+        color: var(--green-500);
+    }
+}
+
+.hero-lede {
+    font-size: get-size('500');
+    line-height: 1.6;
+    margin-bottom: get-size('600');
+}
+
+.hero-cta {
+    display: flex;
+    flex-flow: row wrap;
+    gap: get-size('300');
+    margin-bottom: get-size('700');
+}

@@ -8,8 +8,7 @@
     .headshot-card {
         overflow: hidden;
         position: relative;
-        border: 2px solid get-color('grey');
-        border-radius: 1em;
+        border: 1px solid var(--ink);
 
         .card-body {
             display: flex;

@@ -5,9 +5,10 @@
 	flex-flow: row wrap;
 	width: 100%;
 	// Was neutral light-grey, which read as a generic disabled-state box.
-	// A faint brand tint ties it to the rest of the page.
+	// A faint brand tint ties it to the rest of the page; the ink border
+	// matches the compartment lines used everywhere else.
 	background-color: var(--green-50);
-	border: 1px solid var(--green-100);
+	border: 1px solid var(--ink);
 	border-radius: var(--radius-md);
 	padding: .5em;
 	margin-bottom: 20px;

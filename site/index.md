@@ -3,27 +3,35 @@ layout: home
 meta_title: Home
 meta_description: "Communication Science Futures is a conference aimed at addressing pressing issues and opportunities in the interdisciplinary, social scientific study of human communication."
 title: Communication Science Futures
-sub_heading:
 eleventyNavigation:
   key: Home
   order: 1
-intro: '<em>Communication Science Futures</em> is a conference that brings together scholars from across the communication discipline to address pressing issues and emerging trends shaping the future of social scientific research into human communication and social behavior. Following a successful <a href="/archive/2024/">inaugural meeting in 2024</a>, <em>Communication Science Futures</em> will return to Michigan State University in 2026. This year''s conference features a keynote address from <strong>James W. Pennebaker</strong>, along with panel presentations, hands-on demo and discussion sessions, and poster sessions.'
+hero_kicker: "Second Meeting · Sept 18–20, 2026 · Michigan State University"
+hero_lede: "A working conference for scholars addressing the pressing issues and emerging trends shaping social scientific research into human communication."
+hero_primary:
+  label: "Submit a Poster"
+  url: "https://msu.co1.qualtrics.com/jfe/form/SV_0wHKbpwWGkMyLNc"
+  external: true
+hero_secondary:
+  label: "Read the CFP"
+  url: "/cfp/"
+banner:
+  chip: "Open Now"
+  text: "Posters &amp; discussion sessions are accepted on a rolling basis through <strong>August 14, 2026</strong> — or until we run out of space, whichever comes first."
 key_details:
   - label: Dates
     value: September 18th – 20th, 2026
   - label: Location
     value: MSU Union, East Lansing, Michigan
-  - label: "Posters & Discussions"
-    value: "Open through Aug. 14, 2026"
+  - label: Keynote
+    value: James W. Pennebaker
   - label: Cost
     value: "$250 • Faculty<br>$125 • Students"
 ---
 
-<div class="callout">
-  <div class="callout-text"><strong>Note that the submission deadline has passed, but we are still accepting submissions for posters &amp; discussion sessions.</strong> We are accepting additional submissions on a rolling basis through <strong>August 14, 2026</strong> — or until we run out of space, whichever comes first. See the <a href="/cfp/">Call for Proposals</a> for details.</div>
-</div>
-
 ## About the Conference
+
+<em>Communication Science Futures</em> is a conference that brings together scholars from across the communication discipline to address pressing issues and emerging trends shaping the future of social scientific research into human communication and social behavior. Following a successful <a href="/archive/2024/">inaugural meeting in 2024</a>, <em>Communication Science Futures</em> will return to Michigan State University in 2026. This year's conference features a keynote address from <strong>James W. Pennebaker</strong>, along with panel presentations, hands-on demo and discussion sessions, and poster sessions.
 
 Traditional conferences and workshops are invaluable venues for sharing research, networking, and accomplishing related goals, but they often lack the unstructured time and space needed to address pressing research challenges. In recent years, progress in a number of fields has benefited from the creation of non-traditional conferences such as "un"-conferences, hackathons, and summer schools. These formats, rather than emphasizing one-way transfer of information from presenters to participants, center interactive collaboration, conversation, and problem-solving.
 

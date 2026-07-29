@@ -3,11 +3,17 @@
 
 .nav {
 
+    // The mono nav stops being a leftover and becomes the site's label
+    // voice: uppercase, letterspaced, slightly under body size — the same
+    // register as the card labels and hero kicker.
     font-family: "Roboto Mono";
 
     .link {
         height: get-size('700');
         line-height: get-size('700');
+        font-size: get-size('300');
+        text-transform: uppercase;
+        letter-spacing: .08em;
 
         &.active,
         &:hover {
@@ -15,12 +21,14 @@
         }
 
         &-get-started {
+            background-color: var(--ink);
+            color: get-color('white');
             border-radius: v(border-radius);
             transition: background-color v(transition-duration) v(transition-timing);
 
             &:hover {
                 @include apply-utility('color', 'white');
-                background-color: darken(get-color('secondary'), $amount: 20%);
+                background-color: var(--green-700);
             }
         }
     }
