@@ -4,12 +4,19 @@
 :root {
 
     // site
-    // Was 80rem (1280px), which put body text at ~116 characters per line.
-    // Rather than capping prose narrower than the blocks around it (two
-    // competing right edges), the container itself is now the reading
-    // measure: everything — prose, cards, callouts — shares the same two
-    // edges. 50rem ≈ 740px of content ≈ 70 characters at body size.
-    --max-width: 50rem;
+    // 64rem gives the key-details grid enough room for four cards in one row.
+    // Prose is capped separately at --measure, but the two are not arbitrary:
+    // --measure is set so a paragraph's right edge lands on the same gridline
+    // as the third card's right edge, which is what stopped the earlier
+    // two-width attempt from reading as a mistake.
+    --max-width: 64rem;
+
+    // Reading measure — three of the four key-detail columns plus the two gaps
+    // between them. At the 64rem container the content box is 998px, so each
+    // column is (998 - 3×24) / 4 = 231.5px and three columns plus two gaps is
+    // 742.5px = 46.4rem. Below 64em the cards drop to two across and the
+    // relationship no longer applies, so a fixed value is fine.
+    --measure: 46.4rem;
 
     // spacing
     --gap: #{get-size('600')};
@@ -43,6 +50,10 @@
     // kicker, card labels, time chips, banner chip) pulls from this one token
     // rather than naming the family inline.
     --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+
+    // Display face — headings, hero, event titles. Body copy is Inter, set as
+    // the 'base' font in _config.scss.
+    --font-display: Archivo, ui-sans-serif, system-ui, -apple-system, sans-serif;
 
     // Ink — the near-black that borders, buttons, and display type share.
     // Same value as the 'primary' text colour so lines and letters read as

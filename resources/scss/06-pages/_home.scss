@@ -8,18 +8,28 @@
 // pattern survives any column count), light-grey fill, no radius, no
 // shadow. The gold banner sits directly beneath with no gap.
 
+// Grid arithmetic behind --measure (see _variables.scss): at the 64rem
+// container the four columns and three 1.5rem gaps divide the content width so
+// that three columns plus two gaps ≈ 46rem. Capping prose there puts a
+// paragraph's right edge on the same line as the third card's, so the two
+// widths read as one grid rather than two unrelated decisions.
 .home-details {
     display: grid;
-    gap: get-size('400');
+    gap: 1.5rem;
 
     .home-info-cards {
         display: grid;
         grid-template-columns: 1fr;
-        gap: get-size('400');
+        gap: 1.5rem;
         margin-bottom: 0;
 
         @media (min-width: 451px) {
             grid-template-columns: repeat(2, 1fr);
+        }
+
+        // Four across once the container is at full width.
+        @media (min-width: 64em) {
+            grid-template-columns: repeat(4, 1fr);
         }
     }
 

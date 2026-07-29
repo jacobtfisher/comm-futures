@@ -1,90 +1,11 @@
-.header-img {
-    width: clamp(10rem, 10rem + 5vw, 20rem);
-    padding-bottom: 2rem;
-}
-
-.presentation-card {
-    overflow: hidden;
-    display: flex;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: .5rem 1rem;
-    gap: .5rem;
-
-    .item-headshot {
-        width: clamp(7rem, 5.5rem + 6vw, 10rem);
-        height: clamp(7rem, 5.5rem + 6vw, 10rem);
-        object-fit: cover;
-        object-position: center;
-        border: 1px solid var(--ink);
-        flex: 0 0 auto;
-    }
-
-    .item-title {
-        font-size: #{get-size('400')};
-        font-weight: 400;
-        padding-bottom: .5rem;
-        flex: 3 1 auto;
-        max-width: 60rem;
-    }
-
-    .item-presenters {
-        font-size: #{get-size('500')};
-        font-weight: 700;
-        display: flex;
-        flex-flow: row wrap;
-        align-items: center;
-        column-gap: 1rem;
-        flex: 1 1 50%;
-        line-height: 1.5;
-    }
-
-    .item-affiliations {
-        font-size: #{get-size('500')};
-        font-weight: 700;
-        display: flex;
-        flex-flow: row wrap;
-        align-items: center;
-        column-gap: 1rem;
-        flex: 1 1 50%;
-        line-height: 1.5;
-    }
-
-    .item-abstract {
-        font-size: #{get-size('500')};
-        max-width: 60rem;
-        line-height: 1.8rem;
-        font-weight: 400;
-        padding-top: 1rem;
-        flex: 1 1 auto;
-    }
-
-    .theme-chip {
-        display: inline-block;
-        padding: .2rem .6rem;
-        margin-bottom: .5rem;
-        background-color: get-color('secondary');
-        color: get-color('white');
-        // Matches .time-chip on the schedule — same label voice, same shape.
-        font-family: var(--font-mono);
-        font-weight: 700;
-        text-transform: uppercase;
-        letter-spacing: .06em;
-        font-size: #{get-size('300')};
-        font-weight: 700;
-    }
-
-    .prev-next-buttons {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-        gap: 1rem;
-        margin-top: 1rem;
-        width: 100%;
-        max-width: 20rem;
-    }
-
-}
+// Per-talk detail pages (/agenda-items/item-N/) were removed: abstracts now
+// expand in place on the schedule, and the old URLs forward there via
+// site/agenda-redirects.njk. Everything this file used to hold — .presentation-card,
+// .header-img, .item-headshot/.item-presenters/.item-affiliations/.item-abstract,
+// .prev-next-buttons — styled markup that no longer exists.
+//
+// .theme-chip was the one rule still needed, and it moved to
+// 05-components/_misc_components.scss so the expanded schedule panel can use it.
+//
+// Kept as a file (rather than deleted) because 06-pages/_index.scss imports it
+// by name; the import is left in place so the partial list stays stable.

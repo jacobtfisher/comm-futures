@@ -16,7 +16,12 @@
 // Also a payload win: the old pair loaded 28 weight/style combinations of
 // Roboto and Roboto Mono plus a Typekit round-trip; this is two families with
 // variable ranges.
-@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400..900;1,400..700&family=JetBrains+Mono:wght@400..700&display=swap');
+// Archivo carries display only (headings, hero, event titles); Inter carries
+// running text. Archivo at paragraph length was doing too much talking — it's
+// a wood-type grotesque and the personality that makes it good at 4rem gets
+// tiring at 1.2rem. Inter is deliberately characterless at text sizes, which
+// is what body copy wants.
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@500..900&family=Inter:ital,wght@0,400..700;1,400..600&family=JetBrains+Mono:wght@400..700&display=swap');
 
 // Config
 @import '01-config';

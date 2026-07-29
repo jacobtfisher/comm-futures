@@ -1,0 +1,26 @@
+---
+# Talks used to have their own page at /agenda-items/item-N/. Abstracts now open
+# in place on the schedule, so those pages are gone — but the URLs stay alive as
+# redirects, because the schedule went live on 2026-07-27 and acceptance
+# correspondence may have pointed presenters at their own talk page. Each one
+# forwards to the matching card, which the talk-cards script opens from the hash.
+pagination:
+  data: agenda
+  size: 1
+  alias: talk
+permalink: "agenda-items/item-{{ talk.number }}/index.html"
+eleventyExcludeFromCollections: true
+---
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>{{ talk.title }} | {{ site.name }}</title>
+    <meta name="robots" content="noindex,follow">
+    <link rel="canonical" href="{{ site.url }}/schedule/#talk-{{ talk.number }}">
+    <meta http-equiv="refresh" content="0; url=/schedule/#talk-{{ talk.number }}">
+</head>
+<body>
+    <p>This talk has moved to the <a href="/schedule/#talk-{{ talk.number }}">conference schedule</a>.</p>
+</body>
+</html>

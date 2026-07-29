@@ -6,7 +6,14 @@ body {
     font-size: #{get-size('500')};
 }
 
-// headings
+// headings — Archivo, since body copy is now Inter
+h1,
+h2,
+h3,
+.page-title {
+    font-family: var(--font-display);
+}
+
 h1,
 h2,
 h3 {
@@ -63,6 +70,22 @@ h3 {
 // :not(:first-child) keeps the first heading tight to the page header.
 .content > h2:not(:first-child) {
     margin-top: get-size('600');
+}
+
+//========== Reading measure ==========//
+// The container is 64rem so the key-details grid fits four cards across, which
+// is wider than prose should ever run. Text elements cap at --measure; block
+// children (the details grid, callouts, the map) keep the full width. The two
+// edges relate to each other by the card grid rather than being independent
+// choices — see the --measure note in _variables.scss.
+.content > p,
+.content > ul,
+.content > ol,
+.content > blockquote,
+.content > h2,
+.content > h3,
+.content > h4 {
+    max-width: var(--measure);
 }
 
 // sub-heading

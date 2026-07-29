@@ -18,15 +18,16 @@ hero_secondary:
 banner:
   chip: "Open Now"
   text: "Posters &amp; discussion sessions are accepted on a rolling basis through <strong>August 14, 2026</strong> — or until we run out of space, whichever comes first."
+# Values kept short so all four cards sit on one row at full width.
 key_details:
   - label: Dates
-    value: September 18th – 20th, 2026
+    value: Sept 18–20, 2026
   - label: Location
-    value: MSU Union, East Lansing, Michigan
+    value: MSU Union, East Lansing
   - label: Keynote
     value: James W. Pennebaker
   - label: Cost
-    value: "$250 • Faculty<br>$125 • Students"
+    value: "$250 faculty<br>$125 students"
 ---
 
 ## About the Conference

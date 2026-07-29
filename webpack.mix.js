@@ -35,7 +35,12 @@ if ( mix.inProduction() )
     // I prefer to add the `.min` suffix on the output files just for convention
     mix.purgeCss({
             content: ['site/**/*.njk'],
-            safelist: ['menu-visible', 'loaded', 'expanded', /^type-/, /^page-/, /[data-src]/],
+            // `is-open` is applied by resources/js/modules/talk-cards at runtime
+            // and appears in no .njk file, so without safelisting it PurgeCSS
+            // strips the expanded-card rules and clicking a talk does nothing
+            // visible. Same reasoning as the existing menu-visible/expanded
+            // entries for the mobile nav.
+            safelist: ['menu-visible', 'loaded', 'expanded', 'is-open', /^type-/, /^page-/, /[data-src]/],
             extractorPattern: [/[^<>"'`\s]*[^<>"'`\s:]/g]
         })
         .minify('css/main.css')

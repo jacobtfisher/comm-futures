@@ -8,19 +8,36 @@ data: agenda
     <script src="https://kit.fontawesome.com/4451d51824.js" crossorigin="anonymous"></script>
 </head>
 
-{# Renders the clickable grid of stage talks for a given theme (research / theory / methods). #}
+{# Renders the grid of stage talks for a given theme (research / theory / methods).
+
+   Each card is an expander: the trigger is a real <button> (it used to be a div
+   with an onclick, so it could not be reached or fired from the keyboard) and
+   the abstract lives in a sibling panel that JS reveals in place, widening the
+   card across the whole grid row. resources/js/modules/talk-cards handles the
+   toggling; without JS the panel is simply always open, so every abstract is
+   still readable. #}
 {% macro talkgrid(theme) %}
     {% set talks = agenda | find("theme", theme) %}
     {% if talks | length %}
         <h2 class="agenda-grid-title">Presentations:</h2>
-        <div class="box-grid agenda-grid">
+        <div class="agenda-grid">
             {% for item in talks %}
-                <div class="agenda-card" onclick="location.href='{{ ('/agenda-items/item-' + (item.number | string) + '/') | url }}'">
-                    <div class="card-body">
-                        <div class="item-title text-500">{{ item.title }}</div>
-                        <div class="item-presenter text-500">
-                            <div><i class="fas fa-solid fa-user" style="padding:0 .5em 0 0; color:grey"></i> <b>{{ item.presenter }}</b></div>
-                            <div><i class="fas fa-university" style="padding:0 .5em 0 0; color: grey"></i> {{ item.affiliation }}</div>
+                <div class="agenda-card" id="talk-{{ item.number }}">
+                    <button type="button" class="agenda-card-trigger"
+                            aria-expanded="false" aria-controls="talk-panel-{{ item.number }}">
+                        <span class="item-title">{{ item.title }}</span>
+                        <span class="item-presenter">
+                            <span class="meta-row"><i class="fas fa-solid fa-user meta-icon" aria-hidden="true"></i><span class="meta-text">{{ item.presenter }}</span></span>
+                            <span class="meta-row"><i class="fas fa-university meta-icon" aria-hidden="true"></i><span class="meta-text">{{ item.affiliation }}</span></span>
+                        </span>
+                    </button>
+                    <div class="agenda-card-panel" id="talk-panel-{{ item.number }}">
+                        {% if item.headshot %}
+                            <img class="panel-headshot" src="{{ item.headshot | url }}" alt="{{ item.presenter }}" loading="lazy">
+                        {% endif %}
+                        <div class="panel-body">
+                            <span class="theme-chip">Futures in {{ item.theme | capitalize }}</span>
+                            <p class="panel-abstract">{{ item.abstract }}</p>
                         </div>
                     </div>
                 </div>
@@ -44,8 +61,8 @@ data: agenda
                 <div class="poster-item">
                     <div class="poster-title">{{ p.title }}</div>
                     <div class="poster-presenter">
-                        <div><i class="fas fa-solid fa-user" style="padding:0 .5em 0 0; color:grey"></i> <b>{{ p.presenter }}</b></div>
-                        <div><i class="fas fa-university" style="padding:0 .5em 0 0; color:grey"></i> {{ p.affiliation }}</div>
+                        <span class="meta-row"><i class="fas fa-solid fa-user meta-icon" aria-hidden="true"></i><span class="meta-text">{{ p.presenter }}</span></span>
+                        <span class="meta-row"><i class="fas fa-university meta-icon" aria-hidden="true"></i><span class="meta-text">{{ p.affiliation }}</span></span>
                     </div>
                 </div>
             {% endfor %}
@@ -89,8 +106,12 @@ data: agenda
 
             {# Address-query embed rather than a !pb coordinate string: the previous one was
                centred on 42.7240889,-84.48504, about a km south of the Union near Wilson/Stadium.
-               Letting Google geocode the address keeps it right and is far less fragile. #}
-            <iframe src="https://www.google.com/maps?q=MSU%20Union%2C%2049%20Abbot%20Rd%2C%20East%20Lansing%2C%20MI%2048824&amp;z=16&amp;output=embed" width="100%" height="400" style="border:0; padding: 1rem 0rem" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map showing the MSU Union, 49 Abbot Rd, East Lansing, MI"></iframe>
+               Letting Google geocode the address keeps it right and is far less fragile.
+               The .map-embed wrapper carries the ink frame and desaturation — see
+               _schedule.scss; the iframe itself keeps no inline styling. #}
+            <div class="map-embed">
+                <iframe src="https://www.google.com/maps?q=MSU%20Union%2C%2049%20Abbot%20Rd%2C%20East%20Lansing%2C%20MI%2048824&amp;z=16&amp;output=embed" height="400" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map showing the MSU Union, 49 Abbot Rd, East Lansing, MI"></iframe>
+            </div>
         </div>
 
         {# ===== FRIDAY ===== #}
