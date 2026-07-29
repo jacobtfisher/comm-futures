@@ -13,7 +13,7 @@ eleventyNavigation:
 ---
 
 <div class="callout">
-  <div class="callout-text">Note that our general submission deadline (June 15) has passed, but we are still accepting submissions for posters &amp; discussion sessions on a rolling basis through <strong>August 14, 2026</strong> — or until we run out of space, whichever comes first. New research-abstract submissions will be considered for poster presentation only. <a href="https://msu.co1.qualtrics.com/jfe/form/SV_0wHKbpwWGkMyLNc">Submit a proposal →</a></div>
+  <div class="callout-text">Note that our general submission deadline (June 15) has passed, but we are still considering submissions for posters &amp; discussion sessions on a rolling basis through <strong>August 14, 2026</strong> — or until we run out of space, whichever comes first. New research-abstract submissions will be considered for poster presentation only. <a href="https://msu.co1.qualtrics.com/jfe/form/SV_0wHKbpwWGkMyLNc">Submit a proposal →</a></div>
 </div>
 
 The organizing team for _Communication Science Futures_ invites submissions for the 2026 meeting, to be held **September 18th-20th, 2026** at the **MSU Union** on the campus of Michigan State University in East Lansing, Michigan. This year's conference will feature a keynote address by **James W. Pennebaker**, panel presentations, interactive breakout sessions, and poster sessions for students and early career researchers.

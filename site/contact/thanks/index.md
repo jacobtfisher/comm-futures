@@ -10,4 +10,4 @@ We've received your message and someone from the organizing team will get back t
 
 In the meantime, you might want to look over the [conference schedule](/schedule/) or the [call for proposals](/cfp/) — posters and discussion sessions are open on a rolling basis through **August 14, 2026**.
 
-If your message was time-sensitive and you'd rather follow up directly, we're at [commscifutures@gmail.com](mailto:commscifutures@gmail.com).
+If your message was time-sensitive and you'd rather follow up directly, we're at [commscifutures@msu.edu](mailto:commscifutures@msu.edu).

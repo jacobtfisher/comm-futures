@@ -9,4 +9,4 @@ eleventyNavigation:
   order: 5
 ---
 
-Have a question for the organizing team? Send us a line using the form below, or email us directly at [commscifutures@gmail.com](mailto:commscifutures@gmail.com).
+Have a question for the organizing team? Send us a line using the form below, or email us directly at [commscifutures@msu.edu](mailto:commscifutures@msu.edu).
