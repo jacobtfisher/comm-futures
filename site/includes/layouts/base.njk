@@ -7,13 +7,13 @@
 
     {# include main.css if in development mode #}
     {% if helpers.environment === 'development' %}
-        <link rel="stylesheet" href="{{ '/css/main.css' | url }}">
+        <link rel="stylesheet" href="{{ '/css/main.css' | url | bust }}">
     {% else %}
-        <link rel="stylesheet" href="{{ '/css/main.min.css' | url }}">
+        <link rel="stylesheet" href="{{ '/css/main.min.css' | url | bust }}">
     {% endif %}
 
     {# include javascript #}
-    <script src="{{ ('/js/' + ('main.js' if helpers.environment === 'development' else 'main.min.js')) | url }}" defer></script>
+    <script src="{{ ('/js/' + ('main.js' if helpers.environment === 'development' else 'main.min.js')) | url | bust }}" defer></script>
 
     {# include Google Analytics Code #}
 

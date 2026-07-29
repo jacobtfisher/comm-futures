@@ -13,12 +13,12 @@ layout: base
         <div class="hero-brand">
             <div
                 class="hero-logo"
-                data-hero-logo-anim="{{ '/images/meta/futures-logo-animation.html' | url }}"
-                data-hero-logo-static="{{ '/images/meta/csf_icon.png' | url }}"
+                data-hero-logo-anim="{{ '/images/meta/futures-logo-animation.html' | url | bust }}"
+                data-hero-logo-static="{{ '/images/meta/csf_icon.png' | url | bust }}"
             >
                 <iframe
                     class="hero-logo__media"
-                    src="{{ '/images/meta/futures-logo-animation.html' | url }}"
+                    src="{{ '/images/meta/futures-logo-animation.html' | url | bust }}"
                     title=""
                     tabindex="-1"
                     aria-hidden="true"

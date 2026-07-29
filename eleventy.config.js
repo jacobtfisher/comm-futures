@@ -2,6 +2,8 @@ const navigation = require('@11ty/eleventy-navigation')
 const dates = require('./utilities/filters/dates')
 const helpers = require('./utilities/filters/helpers')
 const path = require('path')
+const fs = require('fs')
+const crypto = require('crypto')
 
 module.exports = config => {
   // navigation plugin
@@ -12,6 +14,37 @@ module.exports = config => {
 
   // Timestamp for datetime element
   config.addFilter("timestamp", dates.timestamp);
+
+  // Cache-bust a static asset URL with a short hash of its built contents.
+  // The CSS/JS filenames never change, and GitHub Pages serves them with
+  // Cache-Control: max-age=600, so for ~10 min after every deploy browsers
+  // paired the new HTML with a stale main.min.css (e.g. an old .hero-logo
+  // without border:0 → a default iframe box, plus the pre-fix margins). A
+  // content hash gives each build a fresh URL, so updates apply immediately
+  // and unchanged assets still cache long-term. Apply AFTER the `url` filter.
+  config.addFilter("bust", (url) => {
+    if (typeof url !== "string" || !url) return url;
+    const [pathPart, query] = url.split("?");
+    // Mix writes css/ and js/ at the repo root before Eleventy runs; images/
+    // live there too. Fall back to the Eleventy output dir, then give up.
+    const candidates = [
+      path.join(__dirname, pathPart),
+      path.join(__dirname, "public", pathPart),
+    ];
+    for (const file of candidates) {
+      try {
+        const hash = crypto
+          .createHash("md5")
+          .update(fs.readFileSync(file))
+          .digest("hex")
+          .slice(0, 8);
+        return `${url}${query ? "&" : "?"}v=${hash}`;
+      } catch (e) {
+        // try the next candidate
+      }
+    }
+    return url;
+  });
 
   // Remove whitespace from a string
   config.addNunjucksFilter("spaceless", helpers.spaceless);
