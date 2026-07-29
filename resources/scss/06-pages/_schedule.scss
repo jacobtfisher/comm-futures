@@ -179,6 +179,25 @@
             flex: 3 1 auto;
         }
 
+        // Headshot + name/affiliation. Collapsed this is just the text block;
+        // opening the card reveals the portrait to its left (see .is-open).
+        .card-identity {
+            display: flex;
+            align-items: center;
+            gap: .9rem;
+            flex: 1 1 auto;
+        }
+
+        .card-headshot {
+            display: none;
+            flex: 0 0 auto;
+            width: 5.5rem;
+            height: 5.5rem;
+            object-fit: cover;
+            object-position: center;
+            border: 1px solid var(--ink);
+        }
+
         .item-presenter {
             font-size: #{get-size('400')};
             font-weight: 400;
@@ -186,6 +205,7 @@
             flex-direction: column;
             gap: .15rem;
             flex: 1 1 auto;
+            min-width: 0;
             line-height: 1.45;
         }
 
@@ -240,40 +260,33 @@
     .item-title {
         font-size: #{get-size('500')};
     }
+
+    // Portrait appears only here, beside the name, above the rule.
+    .card-headshot {
+        display: block;
+    }
+
+    .card-identity {
+        margin-top: .35rem;
+    }
 }
 
+// Below the rule the panel now carries the abstract alone: the portrait moved
+// up beside the name, and the track chip is gone (the section heading above
+// each grid already names the track).
 .agenda-card-panel {
     border-top: 1px solid var(--ink);
     padding: 1.1rem 1rem 1.25rem;
-    display: flex;
-    flex-flow: row wrap;
-    gap: 1.25rem;
-    align-items: flex-start;
-
-    .panel-headshot {
-        flex: 0 0 auto;
-        width: 8rem;
-        height: 8rem;
-        object-fit: cover;
-        object-position: center;
-        border: 1px solid var(--ink);
-    }
-
-    .panel-body {
-        flex: 1 1 18rem;
-        min-width: 0;
-    }
 
     .panel-abstract {
         font-size: #{get-size('400')};
         line-height: 1.6;
-        max-width: 60ch;
-        margin-top: .6rem;
+        max-width: 68ch;
     }
 }
 
-// Collapsed cards hide the panel outright — `hidden` alone loses to the
-// panel's own `display: flex`.
+// `hidden` is only a display:block default, so anything that sets display on
+// this element would beat it. Belt and braces while the panel is collapsed.
 .agenda-card-panel[hidden] {
     display: none;
 }

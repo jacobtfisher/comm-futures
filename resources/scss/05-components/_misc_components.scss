@@ -1,19 +1,11 @@
 //========== Misc Components ==========//
 
-// Theme chip. Lifted out of .presentation-card (which was deleted along with
-// the per-talk detail pages) so the expanded schedule panel can use it. Shares
-// the label voice and square shape with .time-chip.
-.theme-chip {
-	display: inline-block;
-	padding: .2rem .6rem;
-	background-color: var(--green-500);
-	color: get-color('white');
-	font-family: var(--font-mono);
-	font-size: #{get-size('300')};
-	font-weight: 700;
-	text-transform: uppercase;
-	letter-spacing: .06em;
-}
+// .theme-chip lived here briefly, carried over when the per-talk detail pages
+// were removed. Its last use was the expanded schedule panel, which dropped it
+// because each talk grid already sits under a heading naming its track
+// ("Panel 1 — Futures in Research"), so the chip restated the section it was
+// inside. Removed rather than left dead. .time-chip in 06-pages/_schedule.scss
+// is the surviving example of the same shape.
 
 .callout {
 	display: flex;

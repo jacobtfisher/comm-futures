@@ -26,19 +26,23 @@ data: agenda
                     <button type="button" class="agenda-card-trigger"
                             aria-expanded="false" aria-controls="talk-panel-{{ item.number }}">
                         <span class="item-title">{{ item.title }}</span>
-                        <span class="item-presenter">
-                            <span class="meta-row"><i class="fas fa-solid fa-user meta-icon" aria-hidden="true"></i><span class="meta-text">{{ item.presenter }}</span></span>
-                            <span class="meta-row"><i class="fas fa-university meta-icon" aria-hidden="true"></i><span class="meta-text">{{ item.affiliation }}</span></span>
+                        {# Headshot sits with the name rather than down in the panel, and CSS
+                           reveals it only once the card is open — showing it collapsed would
+                           make every card tall and the grid rows uneven. alt is empty on
+                           purpose: the presenter's name is right beside it as text, so
+                           captioning the image would just announce the name twice. #}
+                        <span class="card-identity">
+                            {% if item.headshot %}
+                                <img class="card-headshot" src="{{ item.headshot | url }}" alt="" loading="lazy">
+                            {% endif %}
+                            <span class="item-presenter">
+                                <span class="meta-row"><i class="fas fa-solid fa-user meta-icon" aria-hidden="true"></i><span class="meta-text">{{ item.presenter }}</span></span>
+                                <span class="meta-row"><i class="fas fa-university meta-icon" aria-hidden="true"></i><span class="meta-text">{{ item.affiliation }}</span></span>
+                            </span>
                         </span>
                     </button>
                     <div class="agenda-card-panel" id="talk-panel-{{ item.number }}">
-                        {% if item.headshot %}
-                            <img class="panel-headshot" src="{{ item.headshot | url }}" alt="{{ item.presenter }}" loading="lazy">
-                        {% endif %}
-                        <div class="panel-body">
-                            <span class="theme-chip">Futures in {{ item.theme | capitalize }}</span>
-                            <p class="panel-abstract">{{ item.abstract }}</p>
-                        </div>
+                        <p class="panel-abstract">{{ item.abstract }}</p>
                     </div>
                 </div>
             {% endfor %}
