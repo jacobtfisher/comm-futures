@@ -88,6 +88,20 @@ h3 {
     max-width: var(--measure);
 }
 
+// Home is the exception: it is the one page where prose sits directly beneath
+// full-width blocks (the key-details grid and the gold banner), and a narrower
+// text column against them reads as a misalignment rather than a measure. Text
+// there runs the full container width so both share the same two edges.
+.page-home .content > p,
+.page-home .content > ul,
+.page-home .content > ol,
+.page-home .content > blockquote,
+.page-home .content > h2,
+.page-home .content > h3,
+.page-home .content > h4 {
+    max-width: none;
+}
+
 // sub-heading
 .sub-heading {
     color: var(--ink-soft);
