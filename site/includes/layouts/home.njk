@@ -10,7 +10,10 @@ layout: base
             <p class="hero-kicker">{{ hero_kicker }}</p>
         {% endif %}
 
-        <h1 class="hero-title">Communication Science <span class="hero-accent">Futures</span></h1>
+        {# The two nowrap spans let the headline break where it likes between
+           them but never inside them, so "Science Futures" stays on one line at
+           every width instead of stranding "Futures" on its own. #}
+        <h1 class="hero-title"><span class="hero-line">Communication</span> <span class="hero-line">Science <span class="hero-accent">Futures</span></span></h1>
 
         {% if hero_lede %}
             <p class="hero-lede">{{ hero_lede }}</p>

@@ -17,14 +17,26 @@
 
 .hero-title {
     // Custom clamp rather than the size scale: the scale's top steps overflow
-    // "Communication" as a single word on a 375px viewport. Now at a real
-    // Archivo 800 with tighter tracking, so it reads heavier at the same size.
+    // "Communication" as a single word on a 375px viewport. The ceiling is
+    // 6rem, reached around 1536px — the container stops growing at 64rem, so
+    // past that width the headline is the only element that can still scale,
+    // and at the old 4.6rem cap it looked stranded on a large display.
     font-family: var(--font-display);
-    font-size: clamp(2.5rem, 1.55rem + 4.8vw, 4.6rem);
+    // Floor is 2.2rem, not 2.5rem: at a 320px viewport the fluid value works
+    // out to ~35px, and a 2.5rem floor clamped it back *up* to 40px, which
+    // pushed the now-unbreakable "Science Futures" 7px past the column.
+    font-size: clamp(2.2rem, 1.2rem + 5vw, 6rem);
     font-weight: 800;
     line-height: 1.0;
     letter-spacing: -0.035em;
     margin: 0 0 get-size('400');
+
+    // Break between the two halves, never inside them — this is what keeps
+    // "Science Futures" on one line at every width. Paired with the spans in
+    // home.njk.
+    .hero-line {
+        white-space: nowrap;
+    }
 
     .hero-accent {
         color: var(--green-500);

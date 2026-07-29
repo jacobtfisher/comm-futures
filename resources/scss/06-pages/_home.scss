@@ -1,26 +1,27 @@
 
 //========== Homepage ==========//
 
-// Key-details grid + deadline banner, composed as one flush block.
-//
-// The grid is a compartment table, not floating cards: cells share ink
-// hairlines (container draws top+left, each cell draws right+bottom, so the
-// pattern survives any column count), light-grey fill, no radius, no
-// shadow. The gold banner sits directly beneath with no gap.
-
-// Grid arithmetic behind --measure (see _variables.scss): at the 64rem
-// container the four columns and three 1.5rem gaps divide the content width so
-// that three columns plus two gaps ≈ 46rem. Capping prose there puts a
-// paragraph's right edge on the same line as the third card's, so the two
-// widths read as one grid rather than two unrelated decisions.
+// Key-details grid + deadline banner. Bordered cells with a light-grey fill,
+// square corners, no shadow, separated by a small gap rather than sharing
+// edges. Four across at full width, two on tablets, stacked on phones.
 .home-details {
+    // One gap value for both axes and for the banner beneath, so the block
+    // reads as a set. Was a flat 1.5rem, which left the stacked cards drifting
+    // apart on a phone where they are the full column width; tighter on small
+    // screens, only a little looser once there is room for a real grid.
+    --card-gap: .7rem;
+
+    @media (min-width: 48em) {
+        --card-gap: 1rem;
+    }
+
     display: grid;
-    gap: 1.5rem;
+    gap: var(--card-gap);
 
     .home-info-cards {
         display: grid;
         grid-template-columns: 1fr;
-        gap: 1.5rem;
+        gap: var(--card-gap);
         margin-bottom: 0;
 
         @media (min-width: 451px) {
@@ -35,7 +36,7 @@
 
     .home-info-card {
         background-color: get-color('light-grey');
-        border: 1px solid var(--ink);
+        border: var(--card-border) solid var(--ink);
 
         .card-body {
             display: flex;
@@ -68,7 +69,7 @@
     // labelling something the block already says.
     .home-banner {
         background-color: var(--gold);
-        border: 1px solid var(--ink);
+        border: var(--card-border) solid var(--ink);
         padding: get-size('500') 1.25rem;
 
         .banner-text {

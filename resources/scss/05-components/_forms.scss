@@ -7,7 +7,7 @@
 .input {
     font: inherit;
     font-size: get-size('400');
-    border: 1px solid var(--ink);
+    border: var(--card-border) solid var(--ink);
     border-radius: v(border-radius);
     background-color: get-color('white');
     color: var(--ink);

@@ -11,11 +11,12 @@
     // two-width attempt from reading as a mistake.
     --max-width: 64rem;
 
-    // Reading measure — three of the four key-detail columns plus the two gaps
-    // between them. At the 64rem container the content box is 998px, so each
-    // column is (998 - 3×24) / 4 = 231.5px and three columns plus two gaps is
-    // 742.5px = 46.4rem. Below 64em the cards drop to two across and the
-    // relationship no longer applies, so a fixed value is fine.
+    // Reading measure, ~70 characters at body size. Applies to every page
+    // except home, which runs prose the full container width so it lines up
+    // with the key-details grid and the banner (see the .page-home override in
+    // 03-base/_typography). This value was originally derived from the home
+    // card grid; that relationship no longer exists, so it is now just a
+    // readable line length.
     --measure: 46.4rem;
 
     // spacing
@@ -79,6 +80,11 @@
     // rule). Structural borders use --ink.
     --hairline: #e5e7eb;
     --hairline-strong: #d3d8e0;
+
+    // Weight of the ink border on boxed surfaces — cards, callouts, the
+    // banner, the map frame. One token so they cannot drift apart; at 1px the
+    // frames read thin against the display weights around them.
+    --card-border: 2px;
 
     // Radius scale — zeroed across the board. The tokens stay so un-squaring
     // is a three-line change, but the aesthetic is hard corners everywhere.

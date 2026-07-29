@@ -76,7 +76,7 @@
 
     .keynote-callout {
         background-color: get-color('light-grey');
-        border: 1px solid var(--ink);
+        border: var(--card-border) solid var(--ink);
         padding: 1rem;
         margin-top: 1rem;
         display: flex;
@@ -176,7 +176,7 @@
         display: flex;
         flex-direction: column;
         position: relative;
-        border: 1px solid var(--ink);
+        border: var(--card-border) solid var(--ink);
         background-color: get-color('white');
         transition: background-color v(transition-duration) v(transition-timing);
 
@@ -231,7 +231,7 @@
             height: 5.5rem;
             object-fit: cover;
             object-position: center;
-            border: 1px solid var(--ink);
+            border: var(--card-border) solid var(--ink);
         }
 
         .item-presenter {
@@ -311,7 +311,7 @@
 // up beside the name, and the track chip is gone (the section heading above
 // each grid already names the track).
 .agenda-card-panel {
-    border-top: 1px solid var(--ink);
+    border-top: var(--card-border) solid var(--ink);
     padding: 1.1rem 1rem 1.25rem;
 
     .panel-abstract {
@@ -329,7 +329,7 @@
 
 //========== Map embed ==========//
 .map-embed {
-    border: 1px solid var(--ink);
+    border: var(--card-border) solid var(--ink);
     margin: 1.25rem 0 0;
     line-height: 0; // kills the inline-frame descender gap
 
