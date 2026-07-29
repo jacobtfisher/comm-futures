@@ -4,6 +4,9 @@
 .main {
     flex-direction: column;
     flex: 1;
+    // Let nowrap hero lines shrink the column instead of forcing page overflow.
+    min-width: 0;
+    max-width: 100%;
 
     &:focus {
         outline: 0;

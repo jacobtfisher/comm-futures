@@ -7,11 +7,14 @@
 // undercutting the percentage and reading far smaller than intended.
 
 .hero-brand {
-    --hero-logo-size: 33%;
+    --hero-logo-size: min(33%, 5.5rem);
 
     position: relative;
     width: max-content;
     max-width: 100%;
+    // Flex/grid ancestors default min-width:auto to the nowrap title width,
+    // which blew the page out horizontally on phones and made the mark huge.
+    min-width: 0;
     // Match the logo's used size (square) plus a gap before the headline.
     padding-top: calc(var(--hero-logo-size) + #{get-size('500')});
 
@@ -30,6 +33,7 @@
     left: 0;
     display: block;
     width: var(--hero-logo-size);
+    max-width: 100%;
     height: auto;
 }
 
@@ -50,9 +54,10 @@
     // past that width the headline is the only element that can still scale,
     // and at the old 4.6rem cap it looked stranded on a large display.
     font-family: var(--font-display);
-    // Floor is ~10% above the old 2.2rem so the mark and headline balance on
-    // phones. Still under the 2.5rem that overflowed "Science Futures" at 320px.
-    font-size: clamp(2.42rem, 1.32rem + 5.5vw, 6rem);
+    // Known-safe fluid scale: a higher floor (~2.42rem) made nowrap
+    // "Science Futures" wider than a phone column, which expanded the flex
+    // min-content width, clipped the page, and inflated the hero mark.
+    font-size: clamp(2.2rem, 1.2rem + 5vw, 6rem);
     font-weight: 800;
     line-height: 1.0;
     letter-spacing: -0.035em;
@@ -78,7 +83,7 @@
     font-size: get-size('500');
     line-height: 1.55;
     // Ends in the gutter between the third and fourth key-details cards.
-    max-width: 40em;
+    max-width: min(40em, 100%);
     // Was '600'. Tightened so the key-details grid sits closer under the lede.
     margin-bottom: get-size('400');
 }
@@ -87,6 +92,8 @@
 // the mark/title/lede block doesn't float so far above the info cards.
 .page-header.hero {
     --gap: #{get-size('200')};
+    min-width: 0;
+    width: 100%;
 
     @include media-query('tablet') {
         --gap: #{get-size('300')};

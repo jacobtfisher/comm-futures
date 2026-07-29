@@ -17,6 +17,7 @@
 .logo {
     display: inline-flex;
     align-items: center;
+    flex-shrink: 0;
     color: var(--ink);
 
     .logo-wordmark {
@@ -26,6 +27,8 @@
         text-transform: uppercase;
         letter-spacing: .08em;
         line-height: 1.2;
+        // Keep "Comm Sci" on one line; the <br> still splits Futures below.
+        white-space: nowrap;
     }
 
     &:hover {
