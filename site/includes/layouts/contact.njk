@@ -22,7 +22,26 @@ layout: base
 
             {{ content | safe }}
 
-            <form class="form pt-400" name="contact" netlify>
+            {# This form carried a bare `netlify` attribute and no action, from when
+               the site was on Netlify. It now deploys to GitHub Pages, which serves
+               static files and processes nothing — so submitting did a GET back to
+               this same page and every message was silently dropped.
+
+               GitHub Pages can't handle a POST, so delivery needs an external
+               endpoint. FormSubmit forwards to the address in the action and needs
+               no account or API key; the first submission triggers a one-time
+               confirmation email that has to be accepted before anything is
+               delivered. `_honey` is a honeypot field bots fill and humans never
+               see. The mailto line above the form is the fallback that works
+               regardless. #}
+            <form class="form pt-400" name="contact"
+                  action="https://formsubmit.co/commscifutures@gmail.com" method="POST">
+
+                <input type="hidden" name="_subject" value="Communication Science Futures — website contact form">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="{{ site.url }}/contact/thanks/">
+                <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" class="box-hidden">
 
                 <div class="row mb-500">
                     <label class="text-400 weight-bold" for="name">Name</label>
@@ -31,12 +50,12 @@ layout: base
 
                 <div class="row mb-500">
                     <label class="text-400 weight-bold" for="email">Email</label>
-                    <input class="input width-full" id="email" type="text" name="email" autocapitalize="off" autocomplete="email" required>
+                    <input class="input width-full" id="email" type="email" name="email" autocapitalize="off" autocomplete="email" required>
                 </div>
 
                 <div class="row mb-800">
                     <label class="text-400 weight-bold" for="message">Message</label>
-                    <textarea class="textarea width-full" id="message" name="message"></textarea>
+                    <textarea class="textarea width-full" id="message" name="message" rows="6" required></textarea>
                 </div>
 
                 <div class="row">

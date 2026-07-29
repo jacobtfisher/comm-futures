@@ -1,5 +1,56 @@
 //========== Misc Components ==========//
 
+// Disclosure — a labelled show/hide control. Driven by
+// resources/js/modules/disclosure, which reads aria-controls; the caret is
+// hung off aria-expanded so the arrow can never disagree with the real state.
+.disclosure-toggle {
+	display: inline-flex;
+	align-items: center;
+	gap: .5em;
+	margin-top: .9rem;
+	padding: .45em .9em;
+	background-color: transparent;
+	border: 1px solid var(--ink);
+	color: var(--ink);
+	font-family: var(--font-mono);
+	font-size: #{get-size('300')};
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: .08em;
+	cursor: pointer;
+	transition:
+		background-color v(transition-duration) v(transition-timing),
+		color v(transition-duration) v(transition-timing);
+
+	&::after {
+		content: '';
+		width: .45em;
+		height: .45em;
+		border-right: 2px solid currentColor;
+		border-bottom: 2px solid currentColor;
+		transform: translateY(-.15em) rotate(45deg);
+		transition: transform v(transition-duration) v(transition-timing);
+	}
+
+	&[aria-expanded='true']::after {
+		transform: translateY(.1em) rotate(-135deg);
+	}
+
+	&:hover {
+		background-color: var(--ink);
+		color: get-color('white');
+	}
+
+	&:focus-visible {
+		outline: 3px solid var(--green-500);
+		outline-offset: 2px;
+	}
+}
+
+.disclosure-panel[hidden] {
+	display: none;
+}
+
 // .theme-chip lived here briefly, carried over when the per-talk detail pages
 // were removed. Its last use was the expanded schedule panel, which dropped it
 // because each talk grid already sits under a heading naming its track

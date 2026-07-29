@@ -82,7 +82,9 @@
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
-        align-items: center;
+        // Was centred, which left the portrait floating mid-block now that the
+        // abstract is several paragraphs deep. Top-aligned reads as a header.
+        align-items: flex-start;
         gap: 2rem;
         max-width: 60rem;
         margin-bottom: 1rem;
@@ -93,15 +95,45 @@
             height: auto;
         }
 
-        .keynote-text {
+        .keynote-body {
+            min-width: 0;
+        }
+
+        // "KEYNOTE SPEAKER" in the label voice rather than a bold run-in, so it
+        // reads as a category and the name gets the emphasis.
+        .keynote-label {
+            display: block;
+            font-family: var(--font-mono);
+            font-size: #{get-size('300')};
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: .12em;
+            color: var(--ink-soft);
+            margin-bottom: .35rem;
+        }
+
+        .keynote-name {
             font-size: #{get-size('500')};
-            font-weight: 400;
+            font-weight: 700;
+        }
+
+        // Talk title sits between the name and the abstract, in the display
+        // face — it is the heading of this block, not body copy.
+        .keynote-title {
+            font-family: var(--font-display);
+            font-size: #{get-size('600')};
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+            margin-top: .5rem;
         }
 
         .keynote-abstract {
             font-size: #{get-size('400')};
             font-weight: 400;
-            margin-top: 1rem;
+            line-height: 1.6;
+            max-width: 62ch;
+            margin-top: .9rem;
         }
 
     }
@@ -165,6 +197,10 @@
             align-items: stretch;
             padding: .85rem 1rem;
 
+            // Keyboard only. The ring that used to linger after a mouse click
+            // came from a global bare `:focus` rule in 03-base/_links, not from
+            // here; that rule is now :focus-visible, so a click leaves nothing
+            // behind and a Tab still shows the ring.
             &:focus-visible {
                 outline: 3px solid var(--green-500);
                 outline-offset: -3px;
@@ -374,9 +410,13 @@
     .event-title .keynote-callout {
         display: flex;
         flex-direction: column;
+        gap: 1.25rem;
 
+        // Was width: 100%, which turned the portrait into a full-bleed image
+        // taller than the phone viewport once the block stacked.
         .keynote-headshot {
-            width: 100%;
+            width: 60%;
+            max-width: 11rem;
             flex: 0 0 auto;
             height: auto;
         }

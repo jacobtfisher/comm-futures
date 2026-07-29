@@ -1,18 +1,37 @@
 
 //========== Forms ==========//
 
+// Ink borders and square corners, matching the cards and callouts rather than
+// the old text-weight grey.
 .textarea,
 .input {
-    border: 1px solid get-color('grey');
+    font: inherit;
+    font-size: get-size('400');
+    border: 1px solid var(--ink);
     border-radius: v(border-radius);
+    background-color: get-color('white');
+    color: var(--ink);
     margin: .25rem 0;
-    padding: 0 .5rem;
+    padding: .55rem .7rem;
+
+    &:focus-visible {
+        outline: 3px solid var(--green-500);
+        outline-offset: -3px;
+    }
 }
 
 .input {
-    height: get-size('800');
+    height: auto;
 }
 
+// Was a fixed height off the size scale; rows= on the element is the more
+// predictable control and lets the field grow if the user drags it.
 .textarea {
-    height: get-size('1100');
+    height: auto;
+    min-height: get-size('1000');
+    resize: vertical;
+}
+
+.form label {
+    display: block;
 }

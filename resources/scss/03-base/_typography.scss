@@ -90,9 +90,11 @@ h3 {
 
 // sub-heading
 .sub-heading {
-    color: get-color('grey');
+    color: var(--ink-soft);
     line-height: 1.5;
     font-weight: 500;
+    // Was running flush into the first paragraph of page content.
+    margin-bottom: get-size('500');
 }
 
 .page-title {

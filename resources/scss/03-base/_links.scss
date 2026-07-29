@@ -17,7 +17,17 @@ a {
     }
 }
 
-:focus {
+// This was a bare `:focus`, which painted the green ring on every focusable
+// element the moment it was clicked and left it there until focus moved
+// somewhere else — the lingering green box around a clicked talk card, and the
+// same on every button, link and input on the site.
+//
+// `:focus-visible` is the browser's own judgement about whether a focus ring is
+// warranted: keyboard and other non-pointer input get the ring, a plain mouse
+// click does not. The indicator stays for the people who navigate by keyboard
+// and need to see where they are, which is why the answer is not simply
+// removing the outline.
+:focus-visible {
     outline: 3px solid get-color('secondary');
     outline-offset: .25rem;
 }

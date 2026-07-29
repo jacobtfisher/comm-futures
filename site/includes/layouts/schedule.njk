@@ -138,14 +138,22 @@ data: agenda
                 <div class = "time-hr"><hr></div>
             </div>
             <div class = "event-title-text"> Keynote Address </div>
-            <div class = "keynote-callout">
-                <img class = "keynote-headshot" src="{{ '/images/headshots/pennebaker.jpg' | url }}" alt="James W. Pennebaker">
-                <div>
-                    <div class = "keynote-text">
-                        <strong>Keynote Speaker:</strong> James W. Pennebaker
+            <div class="keynote-callout">
+                <img class="keynote-headshot" src="{{ '/images/headshots/pennebaker.jpg' | url }}" alt="James W. Pennebaker">
+                <div class="keynote-body">
+                    <span class="keynote-label">Keynote Speaker</span>
+                    <div class="keynote-name">James W. Pennebaker</div>
+                    <div class="keynote-title">
+                        The Accidental Text Analyst: Tracing Words from Trauma to Artificial Intelligence
                     </div>
-                    <div class = "keynote-abstract">
-                        Talk title TBD.
+                    {# Disclosure, same no-JS contract as the talk cards: the panel is
+                       authored open and the disclosure module closes it on init, so the
+                       abstract is readable if the script never runs. #}
+                    <button type="button" class="disclosure-toggle" aria-expanded="false" aria-controls="keynote-abstract">
+                        Read the abstract
+                    </button>
+                    <div class="disclosure-panel keynote-abstract" id="keynote-abstract">
+                        In this talk, I'll provide a brief history of how my research and thinking gradually changed from physical symptoms and expressive writing to text analysis, function words, and AI. It has not been a straightforward path. Rather, I've been guided by serendipity, rumor, and luck. Once I began studying language, it became apparent that the words we use can provide a window into how the individual mind works. More exciting, by exploring the language of large groups of people, we are now seeing the interplay of the individual with the culture around them. The revolution of big data and AI is now reshaping how we think about our research questions, methods, theories, our profession, and the entire academic enterprise. In some ways it is threatening. In others, it is exhilarating. I conclude with some thoughts about the future of theory, methods, and measurement in the social sciences.
                     </div>
                 </div>
             </div>

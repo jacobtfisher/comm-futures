@@ -28,7 +28,9 @@
         color: get-color('white');
     }
 
-    &:focus {
+    // :focus-visible for the same reason as the global rule in 03-base/_links:
+    // a clicked button should not keep a ring, a keyboard-focused one should.
+    &:focus-visible {
         outline: 3px solid get-color('secondary');
         outline-offset: .25rem;
     }
