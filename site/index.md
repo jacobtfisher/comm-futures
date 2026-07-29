@@ -7,7 +7,7 @@ eleventyNavigation:
   key: Home
   order: 1
 hero_kicker: "Second Meeting · Sept 18–20, 2026 · Michigan State University"
-hero_lede: "A working conference for scholars addressing the pressing issues and emerging trends shaping social scientific research into human communication."
+hero_lede: "A collaboration-centered conference for scholars addressing pressing issues and emerging trends shaping the future of social scientific research into human communication."
 # The two calls to action live in the gold banner rather than the hero, so the
 # submission deadline and the buttons that act on it sit together.
 banner:

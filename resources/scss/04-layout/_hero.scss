@@ -50,5 +50,7 @@
     font-size: get-size('500');
     line-height: 1.55;
     max-width: 34em;
-    margin-bottom: get-size('700');
+    // Was '700'. Tightened a step so the lede sits closer to the key-details
+    // grid it introduces, rather than floating between the headline and cards.
+    margin-bottom: get-size('600');
 }
