@@ -1,7 +1,19 @@
 .DS_Store
 node_modules/
-dist/
-public/
-css/
-js/
 mix-manifest.json
+
+# Build output, anchored to the repo root.
+#
+# These were previously unanchored (`css/`, `js/`, ...), which in gitignore
+# syntax matches a directory of that name at ANY depth — so `js/` also matched
+# `resources/js/`, and every new file under it was silently ignored. That is how
+# resources/js/modules/talk-cards and .../disclosure went missing from the repo
+# while still working locally: `git add` reported nothing to add, and CI would
+# have failed to resolve @modules/talk-cards from main.js on a fresh clone.
+#
+# The leading slash pins each pattern to the root, so the generated css/ and js/
+# are ignored and the authored resources/ tree is not.
+/dist/
+/public/
+/css/
+/js/
