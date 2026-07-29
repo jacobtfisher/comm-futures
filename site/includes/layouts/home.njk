@@ -7,11 +7,23 @@ layout: base
     <header class="page-header hero">
 
         {# Brand block shrinks to the title width so the mark can be sized as a
-           fraction of that line (~1/3–1/2). The image is out of flow so its
-           intrinsic size cannot inflate the box; empty alt because the h1
-           carries the name. #}
+           fraction of that line. Empty alt / aria-hidden because the h1 carries
+           the name. Animated mark by default; JS swaps in the static PNG only
+           when the user prefers reduced motion. #}
         <div class="hero-brand">
-            <img class="hero-logo" src="{{ '/images/meta/csf_icon.png' | url }}" alt="" width="789" height="795">
+            <div
+                class="hero-logo"
+                data-hero-logo-anim="{{ '/images/meta/futures-logo-animation.html' | url }}"
+                data-hero-logo-static="{{ '/images/meta/csf_icon.png' | url }}"
+            >
+                <iframe
+                    class="hero-logo__media"
+                    src="{{ '/images/meta/futures-logo-animation.html' | url }}"
+                    title=""
+                    tabindex="-1"
+                    aria-hidden="true"
+                ></iframe>
+            </div>
             {# The two nowrap spans let the headline break where it likes between
                them but never inside them, so "Science Futures" stays on one line at
                every width instead of stranding "Futures" on its own. #}

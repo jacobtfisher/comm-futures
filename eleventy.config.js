@@ -90,6 +90,12 @@ module.exports = config => {
   config.addPassthroughCopy("favicon.svg");
   config.addPassthroughCopy({"site/archive": "archive"});
 
+  // Mix writes into css/ and js/; watch them so --serve recopies into public/
+  // when assets rebuild (otherwise the browser keeps serving stale CSS/JS).
+  config.addWatchTarget("css");
+  config.addWatchTarget("js");
+  config.addWatchTarget("images");
+
   return {
     pathPrefix: process.env.ELEVENTY_PATH_PREFIX || "/",
     markdownTemplateEngine: "njk",

@@ -1,40 +1,53 @@
 
 //==========  Hero  ==========//
 
-// Brand mark tracks a fraction of the title line. Mobile stays near 1/3;
-// larger screens ease down to ~the "mm" in Communication (~27%) so the mark
-// grows with the headline without overtaking it. No rem ceiling — that was
-// undercutting the percentage and reading far smaller than intended.
+// Brand mark tracks a fraction of the title line: ~1/3 on phones, easing to
+// 30% from tablet up. At the largest size (title at its 6rem cap) that lands
+// the mark's right edge about at the end of "Comm" — the second m — in the
+// headline. No rem ceiling — that was undercutting the percentage and reading
+// far smaller than intended.
 
 .hero-brand {
-    --hero-logo-size: min(33%, 5.5rem);
+    --hero-logo-size: 33%;
 
-    position: relative;
+    // In-flow column so the mark→title gap is a real flex gap. The old
+    // padding-top: calc(var(--hero-logo-size) + …) trick resolved the %
+    // against the page-header width while the mark's width % resolved
+    // against this narrower max-content box — that mismatch added a large
+    // empty band under the logo.
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: get-size('500');
     width: max-content;
     max-width: 100%;
     // Flex/grid ancestors default min-width:auto to the nowrap title width,
     // which blew the page out horizontally on phones and made the mark huge.
     min-width: 0;
-    // Match the logo's used size (square) plus a gap before the headline.
-    padding-top: calc(var(--hero-logo-size) + #{get-size('500')});
 
     @include media-query('tablet') {
         --hero-logo-size: 30%;
     }
-
-    @include media-query('laptop') {
-        --hero-logo-size: 22%;
-    }
 }
 
 .hero-logo {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
     width: var(--hero-logo-size);
     max-width: 100%;
-    height: auto;
+    aspect-ratio: 1;
+    flex-shrink: 0;
+}
+
+.hero-logo__media {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    // Kill the UA iframe inset border that survives `border: 0` in some engines.
+    outline: 0;
+    background: transparent;
+    pointer-events: none;
+    // Percentage height only resolves if the square parent has an explicit height.
+    aspect-ratio: 1;
 }
 
 .hero-kicker {

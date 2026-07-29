@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CSF logo</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      background: transparent;
+      overflow: hidden;
+    }
+    #mark {
+      display: block;
+      width: 100%;
+      height: 100%;
+      /* Keep strokes/breathe scale inside the iframe clip. */
+      overflow: visible;
+      transform: scale(0.97);
+      transform-origin: center;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      #mark { animation: none; }
+    }
+  </style>
+</head>
+<body>
+  <svg id="mark" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <g id="breathe">
+      <circle
+        id="dash"
+        cx="500" cy="494" r="442"
+        fill="none" stroke="#0b0b0b" stroke-width="29" stroke-linecap="round"
+        stroke-dasharray="36.8 46.6 15.5 65.9 25.2 42.7 40.7 67.8 17.5 40.7 18.9 44.5"
+      />
+      <g transform="translate(-15 0)">
+        <path
+          d="M501 97 A399 399 0 1 1 371 872 L273 920 Q238 938 283 812 A399 399 0 0 1 501 97 Z"
+          fill="#049c4f" stroke="#0b0b0b" stroke-width="32" stroke-linejoin="round"
+        />
+        <g id="orbits" transform="translate(9 0)"></g>
+      </g>
+    </g>
+  </svg>
+  <script>
+    (function () {
+      const CX = 501, CY = 496;
+      const RX = 303, RY = 105, STROKE = 28;
+      const ROTS = [0, 60, 120];
+      const PAD = 16;
+      const REVS = 1;
+      const COUNTER = true;
+      const SPIN = true;
+      const DURATION_MS = 8000;
+
+      const LETTERS = [
+        { ch: 'C', rot: 0, phase: 214, speed: 1 },
+        { ch: 'S', rot: 120, phase: 150, speed: 2 },
+        { ch: 'F', rot: 60, phase: 70, speed: -1 },
+      ];
+
+      function orbitPoint(rot, tDeg) {
+        const t = (tDeg * Math.PI) / 180;
+        const r = (rot * Math.PI) / 180;
+        const u = RX * Math.cos(t);
+        const v = RY * Math.sin(t);
+        return {
+          x: CX + u * Math.cos(r) - v * Math.sin(r),
+          y: CY + u * Math.sin(r) + v * Math.cos(r),
+          z: Math.sin(t),
+        };
+      }
+
+      function halfArc(rot, near) {
+        const t0 = (near ? 0 : 180) - PAD;
+        const t1 = (near ? 180 : 360) + PAD;
+        const from = orbitPoint(rot, t0);
+        const to = orbitPoint(rot, t1);
+        return `M ${from.x} ${from.y} A ${RX} ${RY} ${rot} 1 1 ${to.x} ${to.y}`;
+      }
+
+      const NS = 'http://www.w3.org/2000/svg';
+      const root = document.getElementById('orbits');
+      const breathe = document.getElementById('breathe');
+      const dash = document.getElementById('dash');
+
+      const farPaths = ROTS.map((rot) => {
+        const p = document.createElementNS(NS, 'path');
+        p.setAttribute('d', halfArc(rot, false));
+        p.setAttribute('fill', 'none');
+        p.setAttribute('stroke', '#0b0b0b');
+        p.setAttribute('stroke-width', String(STROKE));
+        return p;
+      });
+
+      const nearByRot = {};
+      ROTS.forEach((rot) => {
+        const p = document.createElementNS(NS, 'path');
+        p.setAttribute('d', halfArc(rot, true));
+        p.setAttribute('fill', 'none');
+        p.setAttribute('stroke', '#0b0b0b');
+        p.setAttribute('stroke-width', String(STROKE));
+        nearByRot[rot] = p;
+      });
+
+      const bubbles = LETTERS.map((L) => {
+        const g = document.createElementNS(NS, 'g');
+        const circle = document.createElementNS(NS, 'circle');
+        circle.setAttribute('fill', '#0b0b0b');
+        const text = document.createElementNS(NS, 'text');
+        text.setAttribute('text-anchor', 'middle');
+        text.setAttribute('dominant-baseline', 'central');
+        text.setAttribute('fill', '#ffffff');
+        text.setAttribute('font-family', '"Helvetica Neue", Helvetica, Arial, sans-serif');
+        text.setAttribute('font-weight', '800');
+        text.setAttribute('letter-spacing', '-0.02em');
+        text.textContent = L.ch;
+        g.appendChild(circle);
+        g.appendChild(text);
+        return { ...L, g, circle, text };
+      });
+
+      function paint(progress) {
+        const positions = bubbles.map((b) => {
+          const sp = COUNTER ? b.speed : Math.abs(b.speed);
+          const p = orbitPoint(b.rot, b.phase + sp * 360 * REVS * progress);
+          return { ...b, ...p };
+        });
+        const behind = positions.filter((b) => b.z <= 0);
+        const front = positions.filter((b) => b.z > 0);
+        const behindRots = new Set(behind.map((b) => b.rot));
+
+        while (root.firstChild) root.removeChild(root.firstChild);
+
+        farPaths.forEach((p) => root.appendChild(p));
+
+        behind.forEach((b) => {
+          root.appendChild(nearByRot[b.rot]);
+          const s = 1 + 0.12 * b.z;
+          const r = 58 * s;
+          b.circle.setAttribute('cx', b.x);
+          b.circle.setAttribute('cy', b.y);
+          b.circle.setAttribute('r', String(r));
+          b.text.setAttribute('x', b.x);
+          b.text.setAttribute('y', b.y);
+          b.text.setAttribute('font-size', String(69 * s));
+          root.appendChild(b.g);
+        });
+
+        ROTS.filter((rot) => !behindRots.has(rot)).forEach((rot) => {
+          root.appendChild(nearByRot[rot]);
+        });
+
+        front.forEach((b) => {
+          const s = 1 + 0.12 * b.z;
+          const r = 58 * s;
+          b.circle.setAttribute('cx', b.x);
+          b.circle.setAttribute('cy', b.y);
+          b.circle.setAttribute('r', String(r));
+          b.text.setAttribute('x', b.x);
+          b.text.setAttribute('y', b.y);
+          b.text.setAttribute('font-size', String(69 * s));
+          root.appendChild(b.g);
+        });
+
+        const scale = 1 + 0.012 * Math.sin(progress * Math.PI * 2);
+        breathe.setAttribute(
+          'transform',
+          `translate(${CX} ${CY}) scale(${scale}) translate(${-CX} ${-CY})`
+        );
+
+        const dashDeg = SPIN ? 60 * progress : 0;
+        dash.setAttribute('transform', `rotate(${dashDeg} 500 494)`);
+      }
+
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        paint(0);
+        return;
+      }
+
+      let start = null;
+      function frame(ts) {
+        if (start == null) start = ts;
+        const progress = ((ts - start) % DURATION_MS) / DURATION_MS;
+        paint(progress);
+        requestAnimationFrame(frame);
+      }
+      requestAnimationFrame(frame);
+    })();
+  </script>
+</body>
+</html>
