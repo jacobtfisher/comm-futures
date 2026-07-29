@@ -6,7 +6,7 @@
 // chunky CTAs.
 
 .hero-kicker {
-    font-family: "Roboto Mono";
+    font-family: var(--font-mono);
     font-size: get-size('300');
     font-weight: 500;
     text-transform: uppercase;
@@ -17,12 +17,12 @@
 
 .hero-title {
     // Custom clamp rather than the size scale: the scale's top steps overflow
-    // "Communication" as a single word on a 375px viewport. IBM Plex Sans has
-    // no real 800/900, so presence comes from true 700 at size.
+    // "Communication" as a single word on a 375px viewport. Now at a real
+    // Archivo 800 with tighter tracking, so it reads heavier at the same size.
     font-size: clamp(2.5rem, 1.55rem + 4.8vw, 4.6rem);
-    font-weight: 700;
-    line-height: 1.02;
-    letter-spacing: -0.02em;
+    font-weight: 800;
+    line-height: 1.0;
+    letter-spacing: -0.035em;
     margin: 0 0 get-size('400');
 
     .hero-accent {
@@ -32,7 +32,8 @@
 
 .hero-lede {
     font-size: get-size('500');
-    line-height: 1.6;
+    line-height: 1.55;
+    max-width: 34em;
     margin-bottom: get-size('600');
 }
 
@@ -41,4 +42,13 @@
     flex-flow: row wrap;
     gap: get-size('300');
     margin-bottom: get-size('700');
+
+    // Hero CTAs were inheriting the 21px body size, which made them read as
+    // slabs against the headline. '400' rather than the '300' label size —
+    // small enough to stop dominating, big enough to still read as the
+    // primary action.
+    .button {
+        font-size: get-size('400');
+        padding: .8em 1.5em;
+    }
 }

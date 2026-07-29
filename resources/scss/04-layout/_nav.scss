@@ -6,7 +6,7 @@
     // The mono nav stops being a leftover and becomes the site's label
     // voice: uppercase, letterspaced, slightly under body size — the same
     // register as the card labels and hero kicker.
-    font-family: "Roboto Mono";
+    font-family: var(--font-mono);
 
     .link {
         height: get-size('700');

@@ -63,10 +63,15 @@
 
     .theme-chip {
         display: inline-block;
-        padding: .2rem .5rem;
+        padding: .2rem .6rem;
         margin-bottom: .5rem;
         background-color: get-color('secondary');
         color: get-color('white');
+        // Matches .time-chip on the schedule — same label voice, same shape.
+        font-family: var(--font-mono);
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: .06em;
         font-size: #{get-size('300')};
         font-weight: 700;
     }

@@ -1,10 +1,11 @@
+// Day dividers. Previously a 5px green dotted rule, which was the loudest
+// thing on the page and belonged to the older, softer look — dotted reads
+// craft-paper, and it fought the ink hairlines everywhere else. A heavy solid
+// ink rule says "new section" with the same force and the current vocabulary.
 .day-header {
-    margin-top: 3rem;
-    padding-top: 2rem;
-    // Was the CSS named colour `green` (#008000), not the brand #008934 — so
-    // the site's signature divider was a slightly different green from every
-    // other green on the page.
-    border-top: 5px dotted var(--green-500);
+    margin-top: 3.5rem;
+    padding-top: 1.25rem;
+    border-top: 4px solid var(--ink);
 }
 
 .event-title {
@@ -30,7 +31,7 @@
             margin: .5rem 0rem;
             background-color: var(--green-500);
             color: get-color('white');
-            font-family: "Roboto Mono";
+            font-family: var(--font-mono);
             font-size: #{get-size('300')};
             font-weight: 700;
             letter-spacing: 0.06em;
@@ -106,18 +107,28 @@
     }
 }
 
-.agenda-grid-title {
-    font-size: #{get-size('500')};
+// Section label above the talk/poster grids, in the mono label voice rather
+// than the hardcoded `gray` it used before.
+.agenda-grid-title,
+.poster-grid-title {
+    font-family: var(--font-mono);
+    font-size: #{get-size('300')};
     font-weight: 700;
-    color: gray;
+    text-transform: uppercase;
+    letter-spacing: .12em;
+    color: var(--ink-soft);
 }
 
+// Talk cards. Was flex with `flex: 0 0 30%` per card plus a gap — three cards
+// and two gaps never sum to 100%, so every row left a ragged remainder on the
+// right and a short final row sat oddly against it. Grid gives equal columns
+// that actually fill the width, and rows size to their tallest card so the
+// bottoms line up.
 .agenda-grid {
     --gap: #{get-size('400')};
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     align-items: stretch;
-
-    display: flex;
-    flex-flow: row wrap;
     gap: v(gap);
     margin-bottom: 1rem;
 
@@ -135,12 +146,13 @@
         position: relative;
         border: 1px solid var(--ink);
         background-color: get-color('white');
+        transition: background-color v(transition-duration) v(transition-timing);
 
         .card-body {
             display: flex;
             flex-direction: column;
             align-items: stretch;
-            padding: .5rem 1rem;
+            padding: .75rem 1rem;
 
             .item-title {
                 font-size: #{get-size('400')};
@@ -162,13 +174,16 @@
             }
         }
 
+        // Was lighten($grey, 10%) — a mid-grey heavy enough to look like a
+        // disabled state rather than a hover, and Sass colour functions are
+        // deprecated in Dart Sass besides.
         &:hover {
-            background-color: lighten(get-color('grey'), 10%);
+            background-color: get-color('light-grey');
             cursor: pointer !important;
         }
 
         &:active {
-            background-color: darken(get-color('grey'), 10%);
+            background-color: var(--green-50);
         }
 
     }
@@ -198,9 +213,9 @@
 
     .poster-item {
         padding: .75rem 0;
-        // Echoes the dotted rule on .day-header, dialled right down: the day
-        // dividers are structural, these are just separators between entries.
-        border-top: 1px dotted get-color('grey');
+        // Solid hairline now that .day-header is a solid ink rule — the dotted
+        // echo belonged to the older look.
+        border-top: 1px solid var(--hairline-strong);
 
         .poster-title {
             font-size: #{get-size('400')};
@@ -227,10 +242,6 @@
 }
 
 @media (max-width: 450px) {
-    .agenda-grid .agenda-card {
-        flex: 0 0 100%;
-    }
-
     .event-title .keynote-callout {
         display: flex;
         flex-direction: column;
@@ -243,14 +254,16 @@
     }
 }
 
-@media (min-width: 451px) and (max-width: 1024px) {
-    .agenda-grid .agenda-card {
-        flex: 0 0 40%;
+// Column counts for the talk grid. Widths come from the grid track, so these
+// only need to set how many columns exist.
+@media (max-width: 450px) {
+    .agenda-grid {
+        grid-template-columns: 1fr;
     }
 }
 
-@media (min-width: 1025px) {
-    .agenda-grid .agenda-card {
-        flex: 0 0 30%;
+@media (min-width: 451px) and (max-width: 1024px) {
+    .agenda-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }

@@ -9,11 +9,13 @@
 // shadow. The gold banner sits directly beneath with no gap.
 
 .home-details {
+    display: grid;
+    gap: get-size('400');
+
     .home-info-cards {
         display: grid;
         grid-template-columns: 1fr;
-        border-top: 1px solid var(--ink);
-        border-left: 1px solid var(--ink);
+        gap: get-size('400');
         margin-bottom: 0;
 
         @media (min-width: 451px) {
@@ -23,8 +25,7 @@
 
     .home-info-card {
         background-color: get-color('light-grey');
-        border-right: 1px solid var(--ink);
-        border-bottom: 1px solid var(--ink);
+        border: 1px solid var(--ink);
 
         .card-body {
             display: flex;
@@ -33,7 +34,7 @@
             padding: 1.15rem 1.25rem 1.3rem;
 
             .card-label {
-                font-family: "Roboto Mono";
+                font-family: var(--font-mono);
                 font-size: get-size('300');
                 font-weight: 500;
                 color: var(--ink-soft);
@@ -50,16 +51,16 @@
         }
     }
 
-    // Deadline banner — the one gold surface on the site.
+    // Deadline banner — the one gold surface on the site. Freestanding rather
+    // than welded to the grid above it.
     .home-banner {
         background-color: var(--gold);
         border: 1px solid var(--ink);
-        border-top: 0;
         padding: get-size('500') 1.25rem;
 
         .banner-chip {
             display: inline-block;
-            font-family: "Roboto Mono";
+            font-family: var(--font-mono);
             font-size: get-size('300');
             font-weight: 700;
             text-transform: uppercase;

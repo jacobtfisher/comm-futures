@@ -3,8 +3,20 @@
 @import url("https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css");
 
 // Fonts
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-@import url("https://use.typekit.net/htm2dqa.css");
+//
+// Archivo (grotesque, drawn from American gothic wood type) + JetBrains Mono.
+// Replaces IBM Plex Sans via Typekit and the Roboto/Roboto Mono pair.
+//
+// The reason for the swap is mechanical, not just taste: the Plex kit topped
+// out at 700 — document.fonts.check('800 16px ibm-plex-sans') returned false —
+// so every font-weight: 800/900 in this stylesheet was being clamped or faux-
+// bolded by the browser. There was no way to actually get heavier. Archivo is
+// a true variable face across 400–900, so display weights are real.
+//
+// Also a payload win: the old pair loaded 28 weight/style combinations of
+// Roboto and Roboto Mono plus a Typekit round-trip; this is two families with
+// variable ranges.
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400..900;1,400..700&family=JetBrains+Mono:wght@400..700&display=swap');
 
 // Config
 @import '01-config';

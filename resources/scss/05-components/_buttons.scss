@@ -9,7 +9,11 @@
     border: 2px solid var(--ink);
     border-radius: v(border-radius);
     color: get-color('white');
-    padding: get-size('300') get-size('600');
+    // em-based padding so the box tracks whatever size it's given, and the
+    // mono label voice to match the nav.
+    font-family: var(--font-mono);
+    font-size: get-size('400');
+    padding: .85em 1.6em;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: .08em;

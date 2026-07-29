@@ -62,14 +62,9 @@ $gorko-config: (
     ),
     'font': (
         'items': (
-            'base': 'ibm-plex-sans, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif',
-            // 'heading' previously led with ibm-plex-sans-condensed, which is not in
-            // the Typekit kit and never loaded — anything using .font-heading would
-            // have silently fallen through to Roboto Mono. Nothing referenced it, so
-            // this is a dormant trap rather than a live bug; pointed at the face that
-            // actually loads.
-            'heading': 'ibm-plex-sans, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif',
-            'mono': '"Roboto Mono", ui-monospace, SFMono-Regular, Menlo, monospace'
+            'base': 'Archivo, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif',
+            'heading': 'Archivo, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif',
+            'mono': '"JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace'
         ),
         'output': 'standard',
         'property': 'font-family'

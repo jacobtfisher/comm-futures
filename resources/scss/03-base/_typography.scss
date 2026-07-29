@@ -15,9 +15,12 @@ h3 {
 
 h1 {
     --gap: #{get-size('300')};
-    font-family: "ibm-plex-sans";
     font-size: #{get-size('800')};
+    // Archivo has a genuine 800; the previous face topped out at 700, so this
+    // declaration was being faux-bolded. Negative tracking because grotesques
+    // at display size need the letters pulled together.
     font-weight: 800;
+    letter-spacing: -0.025em;
     margin: 0 0 v(gap);
 
      @media (min-width : 40em) {
@@ -32,8 +35,8 @@ h1 {
 // 800/900 weights — heavy-everywhere flattens emphasis.
 h2 {
     font-size: #{get-size('700')};
-    font-weight: 700;
-    letter-spacing: -0.015em;
+    font-weight: 800;
+    letter-spacing: -0.025em;
     --gap: .5em !important;
     margin-bottom: v(gap);
 
@@ -47,7 +50,7 @@ h2 {
 h3 {
     font-size: #{get-size('600')};
     font-weight: 700;
-    letter-spacing: -0.01em;
+    letter-spacing: -0.02em;
     --gap: .3em !important;
     margin-bottom: v(gap);
 }

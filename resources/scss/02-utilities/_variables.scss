@@ -39,6 +39,11 @@
 
     //========== Design tokens (2026 polish pass) ==========//
 
+    // The label voice. Every uppercase-letterspaced label on the site (nav,
+    // kicker, card labels, time chips, banner chip) pulls from this one token
+    // rather than naming the family inline.
+    --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+
     // Ink — the near-black that borders, buttons, and display type share.
     // Same value as the 'primary' text colour so lines and letters read as
     // one material.
