@@ -4,20 +4,10 @@
 :root {
 
     // site
-    // 64rem gives the key-details grid enough room for four cards in one row.
-    // Prose is capped separately at --measure, but the two are not arbitrary:
-    // --measure is set so a paragraph's right edge lands on the same gridline
-    // as the third card's right edge, which is what stopped the earlier
-    // two-width attempt from reading as a mistake.
+    // 64rem gives the key-details grid enough room for four cards in one row,
+    // and it is the single width everything shares: prose is no longer capped
+    // narrower than the callouts, grids and banners it sits beside.
     --max-width: 64rem;
-
-    // Reading measure, ~70 characters at body size. Applies to every page
-    // except home, which runs prose the full container width so it lines up
-    // with the key-details grid and the banner (see the .page-home override in
-    // 03-base/_typography). This value was originally derived from the home
-    // card grid; that relationship no longer exists, so it is now just a
-    // readable line length.
-    --measure: 46.4rem;
 
     // spacing
     --gap: #{get-size('600')};
