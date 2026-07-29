@@ -1,14 +1,18 @@
 
 //========== Homepage ==========//
+// The logo was consuming the entire first viewport, so dates, location and the
+// Register button all sat below the fold. Trimmed so the intro and key-details
+// cards start pulling into view. This is the one change here that alters
+// composition rather than finish — easy to revert on its own.
 .hero-image {
-    width: 90%;
+    width: 78%;
     max-width: 100%;
-    padding:0 0 2rem;
+    padding:0 0 1.5rem;
     height: auto;
-  
+
     @media (min-width: 640px) { // Tablets and above
-      width: 60%;
-      padding:0 0 3rem;
+      width: 44%;
+      padding:0 0 2rem;
     }
 }
 
@@ -25,22 +29,47 @@
         overflow: hidden;
         display: flex;
         position: relative;
-        border: 2px solid get-color('grey');
-        border-radius: 1em;
+        // Was: 2px solid #9CA3AF + 1em radius — a text-weight grey doing a
+        // border's job. Hairline + faint elevation reads current at the same
+        // size and layout.
+        border: 1px solid var(--hairline);
+        border-radius: var(--radius-md);
+        background-color: #fff;
+        box-shadow: var(--shadow-sm);
+        transition:
+            transform var(--transition-duration) var(--transition-timing),
+            box-shadow var(--transition-duration) var(--transition-timing),
+            border-color var(--transition-duration) var(--transition-timing);
+
+        // Thin brand rule along the top edge — the accent that carries the
+        // green through the page rather than leaving it to the logo and button.
+        &::before {
+            content: '';
+            position: absolute;
+            inset: 0 0 auto 0;
+            height: 3px;
+            background-color: var(--green-500);
+        }
+
+        &:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+            border-color: var(--green-100);
+        }
 
         .card-body {
             display: flex;
             flex-direction: column;
             align-items: stretch;
-            padding: 1rem;
+            padding: 1.15rem 1.15rem 1.25rem;
 
             .card-label {
                 font-size: #{get-size('300')};
                 font-weight: 700;
-                color: get-color('grey');
+                color: var(--green-900);
                 text-transform: uppercase;
-                letter-spacing: 0.05em;
-                margin-bottom: 0.25rem;
+                letter-spacing: 0.06em;
+                margin-bottom: 0.35rem;
             }
 
             .card-value {

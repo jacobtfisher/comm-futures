@@ -27,26 +27,52 @@ h1 {
     }
 }
 
+// h2 was the same size as h3 (both '600'), so section headings never read as a
+// step above sub-headings. Moved up to '700' and lightened from the site-wide
+// 800/900 weights — heavy-everywhere flattens emphasis.
 h2 {
-    font-size: #{get-size('600')};
+    font-size: #{get-size('700')};
+    font-weight: 700;
+    letter-spacing: -0.015em;
     --gap: .5em !important;
     margin-bottom: v(gap);
 
      @media (min-width : 40em) {
         --gap: #{get-size('300')};
-        font-size: #{get-size('600')};
+        font-size: #{get-size('700')};
         margin-bottom: v(gap);
     }
 }
 
 h3 {
     font-size: #{get-size('600')};
+    font-weight: 700;
+    letter-spacing: -0.01em;
     --gap: .3em !important;
     margin-bottom: v(gap);
 }
 
 .content {
     word-wrap: break-word;
+}
+
+//========== Reading measure ==========//
+// Prose is constrained to --measure; block-level layout children (cards, grids,
+// tables, callouts, media) are divs and so fall through untouched by design.
+.content > p,
+.content > ul,
+.content > ol,
+.content > blockquote,
+.content > h2,
+.content > h3,
+.content > h4 {
+    max-width: var(--measure);
+}
+
+// Give section headings room to breathe above, so the scroll gets some rhythm.
+// :not(:first-child) keeps the first heading tight to the page header.
+.content > h2:not(:first-child) {
+    margin-top: get-size('600');
 }
 
 // sub-heading

@@ -1,7 +1,10 @@
 .day-header {
     margin-top: 3rem;
     padding-top: 2rem;
-    border-top: 5px dotted green;
+    // Was the CSS named colour `green` (#008000), not the brand #008934 — so
+    // the site's signature divider was a slightly different green from every
+    // other green on the page.
+    border-top: 5px dotted var(--green-500);
 }
 
 .event-title {
@@ -23,11 +26,14 @@
 
         .time-chip {
             display: inline-block;
-            padding: 0rem .8rem;
+            padding: .1rem .8rem;
             margin: .5rem 0rem;
-            border-radius: .5em;
-            background-color: get-color('secondary');
+            border-radius: 999px;
+            background-color: var(--green-500);
             color: get-color('white');
+            font-size: #{get-size('400')};
+            font-weight: 700;
+            letter-spacing: 0.01em;
             flex: 0 0 auto;
         }
 
@@ -36,7 +42,10 @@
             width: 100%;
 
             hr {
-                border: 1px solid gray;
+                // Was the named colour `gray` (#808080) at 1px — heavy enough
+                // to compete with the chip it sits next to.
+                border: 0;
+                border-top: 1px solid var(--hairline-strong);
                 border-radius: 1px;
             }
 

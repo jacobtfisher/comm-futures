@@ -4,7 +4,10 @@
 :root {
 
     // site
-    --max-width: 80rem;
+    // Was 80rem (1280px). With prose now constrained to --measure, a container
+    // that wide left the full-width cards running far past the text and gave the
+    // page a ragged right edge. 68rem keeps the two closer together.
+    --max-width: 68rem;
 
     // spacing
     --gap: #{get-size('600')};
@@ -31,6 +34,39 @@
     // transitions
     --transition-duration: .25s;
     --transition-timing: ease-out;
+
+    //========== Design tokens (2026 polish pass) ==========//
+
+    // Green scale, derived from the brand secondary (#008934). Previously the
+    // brand green existed at exactly one saturation and hovers were computed
+    // with Sass darken(), which is deprecated in Dart Sass. These are the
+    // fixed steps that replace it.
+    --green-50: #f2f8f4; // tinted surfaces (callouts, bands)
+    --green-100: #dbeae1; // borders on tinted surfaces
+    --green-500: #008934; // brand — matches $gorko-colors 'secondary'
+    --green-700: #00692a; // hover / active
+    --green-900: #004d1f; // text on a green tint
+
+    // Neutral hairlines. The old cards used 2px of 'grey' (#9CA3AF), which is
+    // a text-weight grey doing a border's job — the single most dated element
+    // on the site.
+    --hairline: #e5e7eb;
+    --hairline-strong: #d3d8e0;
+
+    // Elevation. Two steps only; both are deliberately faint.
+    --shadow-sm: 0 1px 2px rgba(17, 24, 39, .05), 0 4px 12px rgba(17, 24, 39, .04);
+    --shadow-md: 0 2px 6px rgba(17, 24, 39, .06), 0 14px 28px rgba(17, 24, 39, .07);
+
+    // Reading measure. Body prose was running ~116 characters per line at
+    // desktop; 60-75 is the comfortable range. Note that `ch` is the width of
+    // the `0` glyph, which in Plex Sans is wider than the average lowercase
+    // character — 58ch measures out to roughly 70 real characters.
+    --measure: 58ch;
+
+    // Radius scale
+    --radius-sm: .375rem;
+    --radius-md: .75rem;
+    --radius-lg: 1rem;
 
     @include media-query('tablet') {
         --ratio: 1.2;
