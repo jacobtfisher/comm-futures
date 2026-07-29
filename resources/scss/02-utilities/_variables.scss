@@ -4,10 +4,12 @@
 :root {
 
     // site
-    // Was 80rem (1280px). With prose now constrained to --measure, a container
-    // that wide left the full-width cards running far past the text and gave the
-    // page a ragged right edge. 68rem keeps the two closer together.
-    --max-width: 68rem;
+    // Was 80rem (1280px), which put body text at ~116 characters per line.
+    // Rather than capping prose narrower than the blocks around it (two
+    // competing right edges), the container itself is now the reading
+    // measure: everything — prose, cards, callouts — shares the same two
+    // edges. 50rem ≈ 740px of content ≈ 70 characters at body size.
+    --max-width: 50rem;
 
     // spacing
     --gap: #{get-size('600')};
@@ -56,12 +58,6 @@
     // Elevation. Two steps only; both are deliberately faint.
     --shadow-sm: 0 1px 2px rgba(17, 24, 39, .05), 0 4px 12px rgba(17, 24, 39, .04);
     --shadow-md: 0 2px 6px rgba(17, 24, 39, .06), 0 14px 28px rgba(17, 24, 39, .07);
-
-    // Reading measure. Body prose was running ~116 characters per line at
-    // desktop; 60-75 is the comfortable range. Note that `ch` is the width of
-    // the `0` glyph, which in Plex Sans is wider than the average lowercase
-    // character — 58ch measures out to roughly 70 real characters.
-    --measure: 58ch;
 
     // Radius scale
     --radius-sm: .375rem;

@@ -41,16 +41,6 @@
             box-shadow var(--transition-duration) var(--transition-timing),
             border-color var(--transition-duration) var(--transition-timing);
 
-        // Thin brand rule along the top edge — the accent that carries the
-        // green through the page rather than leaving it to the logo and button.
-        &::before {
-            content: '';
-            position: absolute;
-            inset: 0 0 auto 0;
-            height: 3px;
-            background-color: var(--green-500);
-        }
-
         &:hover {
             transform: translateY(-2px);
             box-shadow: var(--shadow-md);
@@ -87,18 +77,13 @@
         }
     }
 
-    // 2 per row on medium
-    @media (min-width: 451px) and (max-width: 768px) {
+    // 2×2 everywhere above mobile. The previous 4-in-one-line desktop rule
+    // assumed the old 80rem container; at a reading-width container four
+    // across leaves ~170px per card, which crushes the values onto three
+    // lines. Two wide cards per row reads deliberate at this width.
+    @media (min-width: 451px) {
         .home-info-card {
             flex: 0 0 calc(50% - var(--gap) / 2);
-        }
-    }
-
-    // 4 in one line on larger screens
-    @media (min-width: 769px) {
-        .home-info-card {
-            flex: 1 1 0;
-            min-width: 0;
         }
     }
 }

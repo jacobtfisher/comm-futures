@@ -56,19 +56,6 @@ h3 {
     word-wrap: break-word;
 }
 
-//========== Reading measure ==========//
-// Prose is constrained to --measure; block-level layout children (cards, grids,
-// tables, callouts, media) are divs and so fall through untouched by design.
-.content > p,
-.content > ul,
-.content > ol,
-.content > blockquote,
-.content > h2,
-.content > h3,
-.content > h4 {
-    max-width: var(--measure);
-}
-
 // Give section headings room to breathe above, so the scroll gets some rhythm.
 // :not(:first-child) keeps the first heading tight to the page header.
 .content > h2:not(:first-child) {

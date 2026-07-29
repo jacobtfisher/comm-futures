@@ -12,10 +12,6 @@
 	padding: .5em;
 	margin-bottom: 20px;
 
-	.callout-text {
-		max-width: var(--measure);
-	}
-
 	// Was flex: 1 1 0, which let the icon claim an equal share of the row and
 	// opened a large gap before the text. It only ever needs its own width.
 	.callout-icon {
