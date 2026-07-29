@@ -11,7 +11,7 @@ hero_lede: "A collaboration-centered conference for scholars addressing pressing
 # The two calls to action live in the gold banner rather than the hero, so the
 # submission deadline and the buttons that act on it sit together.
 banner:
-  text: "Posters &amp; discussion sessions are accepted on a rolling basis through <strong>August 14, 2026</strong> — or until we run out of space, whichever comes first."
+  text: "The submission deadline has passed, but poster and discussion submissions will be considered on a rolling basis until <strong>August 14, 2026</strong> — or until we run out of space, whichever comes first."
   primary:
     label: "Submit a Poster"
     url: "https://msu.co1.qualtrics.com/jfe/form/SV_0wHKbpwWGkMyLNc"
