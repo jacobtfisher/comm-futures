@@ -4,16 +4,27 @@
 
         <p class="color-ink text-400">© 2026 {{ site.name }} | <a href="{{ '/archive/2024/' | url }}">2024 Archive</a></p>
 
-        {# Authored pressed-less and hidden; the module unhides it and sets the
-           real state on init. If the script never runs the control stays out of
-           the footer rather than sitting there dead, since with no JS it cannot
-           do anything and the page still follows the system preference. #}
-        <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden>
-            <span class="theme-toggle__track" aria-hidden="true"><span class="theme-toggle__thumb"></span></span>
-            <span class="theme-toggle__label">Dark mode</span>
-        </button>
+        {# Toggle and icons share one flex child so the reversed row has exactly
+           two, whatever site.social_links holds. Listing them separately made
+           the icon list a third item, and with no social links configured it
+           renders zero-width — a phantom holding the end slot while
+           space-between pushed the toggle into the middle of the footer, by
+           more and more as the viewport widened. #}
+        <div class="footer-chrome">
 
-        {% include 'components/social-icons.njk' %}
+            {# Authored pressed-less and hidden; the module unhides it and sets
+               the real state on init. If the script never runs the control
+               stays out of the footer rather than sitting there dead, since
+               with no JS it cannot do anything and the page still follows the
+               system preference. #}
+            <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden>
+                <span class="theme-toggle__track" aria-hidden="true"><span class="theme-toggle__thumb"></span></span>
+                <span class="theme-toggle__label">Dark mode</span>
+            </button>
+
+            {% include 'components/social-icons.njk' %}
+
+        </div>
 
     </div>
 

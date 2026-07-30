@@ -5,11 +5,26 @@
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
-    // The row is reversed, so a third child would otherwise land at the far
-    // left with the copyright and icons pushed apart around it. Wrapping keeps
-    // all three legible once the footer runs out of room.
+    // Lets the copyright and the chrome stack rather than crush once the
+    // footer runs out of room.
     flex-wrap: wrap;
     gap: #{get-size('400')};
+}
+
+// The left-hand cluster: theme toggle, then whatever social icons exist. One
+// flex child rather than two, so space-between above has exactly two items to
+// work with and the toggle sits flush with the container edge instead of being
+// pushed inward by an empty icon list holding the end slot.
+.footer-chrome {
+    display: flex;
+    align-items: center;
+    gap: #{get-size('400')};
+    // The row is reversed, so its main-start is the right edge and a wrapped
+    // line puts this back over there — flush left beside the copyright on one
+    // line, then jumping right the moment it dropped to its own. The auto
+    // margin eats the free space on the main-start side instead, which pins
+    // the cluster to the left in both cases.
+    margin-right: auto;
 }
 
 // Theme toggle. Drawn from the existing tokens rather than introducing colours
