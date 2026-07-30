@@ -5,6 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ meta_title if meta_title else title }} | {{ site.name }}</title>
 
+    {# Theme override, applied before the stylesheet is even parsed. The main
+       bundle is deferred, so leaving this to it would paint the system theme
+       first and repaint on hydrate — a full-page flash of the wrong colours on
+       every navigation. sessionStorage, not localStorage: the choice should
+       last the visit and then let the OS take back over.
+
+       Absent key means "no choice made", which is why nothing is written here
+       for a reader who has not touched the toggle. #}
+    <script>
+        (function () {
+            try {
+                var t = sessionStorage.getItem('theme')
+                if (t === 'dark' || t === 'light') {
+                    document.documentElement.setAttribute('data-theme', t)
+                }
+            } catch (e) {}
+        })()
+    </script>
+
     {# include main.css if in development mode #}
     {% if helpers.environment === 'development' %}
         <link rel="stylesheet" href="{{ '/css/main.css' | url | bust }}">
