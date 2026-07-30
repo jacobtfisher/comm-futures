@@ -40,7 +40,11 @@ if ( mix.inProduction() )
             // strips the expanded-card rules and clicking a talk does nothing
             // visible. Same reasoning as the existing menu-visible/expanded
             // entries for the mobile nav.
-            safelist: ['menu-visible', 'loaded', 'expanded', 'is-open', 'bg-surface', 'color-ink', /^type-/, /^page-/, /[data-src]/],
+            // `data-theme` is written by the footer toggle and by the inline
+            // pre-paint script, never as a literal attribute in a .njk file,
+            // so without safelisting it PurgeCSS drops the entire dark block
+            // that the toggle depends on and the control does nothing.
+            safelist: ['menu-visible', 'loaded', 'expanded', 'is-open', 'bg-surface', 'color-ink', /^type-/, /^page-/, /[data-src]/, /data-theme/, /^theme-toggle/],
             extractorPattern: [/[^<>"'`\s]*[^<>"'`\s:]/g]
         })
         .minify('css/main.css')

@@ -32,19 +32,45 @@
        down in lightness, since the face is a much larger filled block than a
        chip or a button: it lands near 3.6:1 against the ground so the disc
        still reads as a shape, and near 3.6:1 under the bone linework so the
-       strokes still read on top of it. */
+       strokes still read on top of it.
+
+       Applied twice, mirroring _variables.scss: once for the system
+       preference, once for a data-theme the parent posts in when the footer
+       toggle disagrees with the OS. The values cannot be shared between the
+       two rules the way the stylesheet shares them through a mixin, so they
+       are written out both times.
+
+       color-scheme has to be restated in each. It is what keeps the frame's
+       base canvas from being painted opaque white, and left at `light dark`
+       it would follow the OS while the tokens followed the toggle — putting
+       the white slab straight back for anyone choosing dark on a light OS. */
     @media (prefers-color-scheme: dark) {
-      :root {
+      :root:not([data-theme='light']) {
         /* --mark-line and --mark-bubble mirror --ink in
            resources/scss/02-utilities/_variables.scss; --mark-bubble-text
            mirrors the ground there. The iframe cannot see those custom
            properties, so the values are duplicated and must change in step —
            otherwise the mark drifts off the wordmark beside it. */
+        color-scheme: dark;
         --mark-line: #e6dfd0;
         --mark-face: #417a4d;
         --mark-bubble: #e6dfd0;
         --mark-bubble-text: #171614;
       }
+    }
+
+    :root[data-theme='dark'] {
+      color-scheme: dark;
+      --mark-line: #e6dfd0;
+      --mark-face: #417a4d;
+      --mark-bubble: #e6dfd0;
+      --mark-bubble-text: #171614;
+    }
+
+    /* Light chosen against a dark OS: the tokens fall back to the :root
+       defaults on their own, but the canvas needs saying explicitly. */
+    :root[data-theme='light'] {
+      color-scheme: light;
     }
 
     /* Painted via CSS rather than presentation attributes so the two themes
@@ -98,6 +124,23 @@
   </svg>
   <script>
     (function () {
+      // The parent page's footer toggle can disagree with the OS, and this
+      // document cannot see the choice: it is a separate browsing context, so
+      // neither the attribute on the parent's <html> nor its sessionStorage
+      // reaches here. The parent posts the theme in on load and on every
+      // toggle; the CSS above keys off the attribute set here.
+      //
+      // Registered before anything else in this function because the
+      // reduced-motion branch below returns early, and those readers need the
+      // mark to track the toggle just as much as everyone else.
+      window.addEventListener('message', function (event) {
+        if (event.origin !== window.location.origin) return;
+        const theme = event.data && event.data.theme;
+        if (theme === 'dark' || theme === 'light') {
+          document.documentElement.setAttribute('data-theme', theme);
+        }
+      });
+
       const CX = 501, CY = 496;
       const RX = 303, RY = 105, STROKE = 28;
       const ROTS = [0, 60, 120];

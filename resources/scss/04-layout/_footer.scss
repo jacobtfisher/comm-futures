@@ -4,4 +4,78 @@
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
+    align-items: center;
+    // The row is reversed, so a third child would otherwise land at the far
+    // left with the copyright and icons pushed apart around it. Wrapping keeps
+    // all three legible once the footer runs out of room.
+    flex-wrap: wrap;
+    gap: #{get-size('400')};
+}
+
+// Theme toggle. Drawn from the existing tokens rather than introducing colours
+// of its own, so it inherits both themes for free — the track is a card
+// surface inside a --rule frame, matching the compartments used everywhere
+// else, and the thumb is the same ink as the label beside it.
+.theme-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: #{get-size('300')};
+    padding: 0;
+    background: none;
+    border: 0;
+    cursor: pointer;
+    color: var(--ink-soft);
+    font-family: var(--font-mono);
+    font-size: get-size('300');
+    text-transform: uppercase;
+    letter-spacing: var(--label-tracking);
+
+    &:hover {
+        color: var(--ink);
+    }
+
+    .theme-toggle__track {
+        position: relative;
+        flex: 0 0 auto;
+        width: 2.35rem;
+        height: 1.25rem;
+        border: var(--card-border) solid var(--rule);
+        border-radius: var(--radius-sm);
+        background-color: var(--surface-muted);
+    }
+
+    .theme-toggle__thumb {
+        position: absolute;
+        // Centres the thumb in the track whatever --card-border is, rather
+        // than assuming a 2px frame.
+        top: 50%;
+        left: 0.15rem;
+        width: 0.65rem;
+        height: 0.65rem;
+        transform: translateY(-50%);
+        background-color: var(--ink-soft);
+        transition: left var(--transition-duration) var(--transition-timing),
+                    background-color var(--transition-duration) var(--transition-timing);
+    }
+
+    &:hover .theme-toggle__thumb {
+        background-color: var(--ink);
+    }
+
+    // Pressed means dark is on. The thumb travels and takes the accent, so the
+    // state is carried by position and colour, not colour alone.
+    &[aria-pressed='true'] {
+        color: var(--ink);
+
+        .theme-toggle__thumb {
+            left: calc(100% - 0.8rem);
+            background-color: var(--green-500);
+        }
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .theme-toggle .theme-toggle__thumb {
+        transition: none;
+    }
 }

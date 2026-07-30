@@ -121,7 +121,7 @@
     }
 }
 
-// Dark theme. System preference only — no toggle.
+// Dark theme.
 //
 // The ground is a warm near-black rather than a blue-black or a true grey: it
 // is the bone/ochre of the light theme's paper turned inside out, so the two
@@ -133,59 +133,75 @@
 // The hero animation carries its own copy of these tokens: it is loaded in an
 // iframe, so the custom properties below do not reach it. Its --mark-line and
 // --mark-bubble track --ink by hand — change one, change the other.
-@media (prefers-color-scheme: dark) {
-    :root {
-        color-scheme: dark;
+@mixin dark-theme {
+    color-scheme: dark;
 
-        --surface: #171614;
-        // Lifted a step from the original #211f1c. At that value the muted
-        // band sat only 1.12:1 off the ground, so cards and callouts read as
-        // barely-there rectangles; this brings them to 1.22:1, enough for the
-        // compartments to be seen as compartments without becoming panels.
-        --surface-muted: #2a2724;
+    --surface: #171614;
+    // Lifted a step from the original #211f1c. At that value the muted
+    // band sat only 1.12:1 off the ground, so cards and callouts read as
+    // barely-there rectangles; this brings them to 1.22:1, enough for the
+    // compartments to be seen as compartments without becoming panels.
+    --surface-muted: #2a2724;
 
-        // Bone, pulled back from white. Full-white body copy on a near-black
-        // ground is the single biggest source of dark-mode eye strain, so the
-        // brief here is "brighter", not "whiter" — both values keep the warm
-        // cast and stay well short of #fff. Body copy lands at 13.6:1 and
-        // secondary text at 7.2:1 against the ground; over a card, where most
-        // of it actually sits, 11.2:1 and 5.9:1.
-        --ink: #e6dfd0;
-        --ink-soft: #aaa298;
-        --on-ink: #171614;
+    // Bone, pulled back from white. Full-white body copy on a near-black
+    // ground is the single biggest source of dark-mode eye strain, so the
+    // brief here is "brighter", not "whiter" — both values keep the warm
+    // cast and stay well short of #fff. Body copy lands at 13.6:1 and
+    // secondary text at 7.2:1 against the ground; over a card, where most
+    // of it actually sits, 11.2:1 and 5.9:1.
+    --ink: #e6dfd0;
+    --ink-soft: #aaa298;
+    --on-ink: #171614;
 
-        // Frames recede to a warm grey. In light mode borders can carry ink
-        // weight because the paper is bright; here the same move would outline
-        // every card in bone. Lifted alongside --surface-muted so the frames
-        // do not fall behind the fills they enclose: 3.4:1 against the ground
-        // and still 2.8:1 against a card — the layout is compartments, so the
-        // frames have to keep reading as frames.
-        --rule: #736b5e;
+    // Frames recede to a warm grey. In light mode borders can carry ink
+    // weight because the paper is bright; here the same move would outline
+    // every card in bone. Lifted alongside --surface-muted so the frames
+    // do not fall behind the fills they enclose: 3.4:1 against the ground
+    // and still 2.8:1 against a card — the layout is compartments, so the
+    // frames have to keep reading as frames.
+    --rule: #736b5e;
 
-        // Brand green desaturated toward sage, which keeps the accent legible
-        // without the neon edge a lifted #008934 takes on against dark.
-        // --green-50 is the tinted callout ground and tracks --surface-muted.
-        --green-50: #252d26;
-        --green-100: #2c352d;
-        --green-500: #86b891;
-        --green-700: #a3cdac; // hover reads brighter, not darker, on dark
-        --green-900: #c3dbc7;
+    // Brand green desaturated toward sage, which keeps the accent legible
+    // without the neon edge a lifted #008934 takes on against dark.
+    // --green-50 is the tinted callout ground and tracks --surface-muted.
+    --green-50: #252d26;
+    --green-100: #2c352d;
+    --green-500: #86b891;
+    --green-700: #a3cdac; // hover reads brighter, not darker, on dark
+    --green-900: #c3dbc7;
 
-        // A step below the accent green: as a filled block behind text it read
-        // brighter than the same value does as a letterform.
-        --chip-fill: #74a37e;
+    // A step below the accent green: as a filled block behind text it read
+    // brighter than the same value does as a letterform.
+    --chip-fill: #74a37e;
 
-        // The deadline banner keeps its gold signal as a deep amber ground so
-        // bone text and frame still read on it.
-        --gold: #3d3218;
+    // The deadline banner keeps its gold signal as a deep amber ground so
+    // bone text and frame still read on it.
+    --gold: #3d3218;
 
-        // A bone slab is too much light for a button at this size; a deep
-        // green face with bone text carries the same emphasis quietly.
-        --btn-fill: #2f4a37;
-        --btn-fill-hover: #3c5d45;
-        --btn-text: var(--ink);
+    // A bone slab is too much light for a button at this size; a deep
+    // green face with bone text carries the same emphasis quietly.
+    --btn-fill: #2f4a37;
+    --btn-fill-hover: #3c5d45;
+    --btn-text: var(--ink);
 
-        --hairline: #302c27;
-        --hairline-strong: #4c453c;
-    }
+    --hairline: #302c27;
+    --hairline-strong: #4c453c;
 }
+
+// Applied two ways, because the footer toggle has to be able to disagree with
+// the operating system.
+//
+// The media query is the default and stays authoritative for anyone who never
+// touches the control — note it backs off the moment an explicit light choice
+// is present, which is the only way a reader on a dark OS can get to light.
+// The attribute is written by the toggle (and, before first paint, by the
+// inline script in base.njk) and wins in both directions.
+//
+// A reader who has made no choice carries no attribute at all, rather than one
+// naming their current system state: if they flip the OS to dark at sunset the
+// page should follow, and it only can while nothing is pinned.
+@media (prefers-color-scheme: dark) {
+    :root:not([data-theme='light']) { @include dark-theme; }
+}
+
+:root[data-theme='dark'] { @include dark-theme; }
