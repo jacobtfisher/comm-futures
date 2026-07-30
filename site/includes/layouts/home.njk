@@ -8,14 +8,12 @@ layout: base
 
         {# Brand block shrinks to the title width so the mark can be sized as a
            fraction of that line. Empty alt / aria-hidden because the h1 carries
-           the name. Animated mark by default; JS swaps in the static PNG only
-           when the user prefers reduced motion. #}
+           the name. The mark handles reduced motion itself — it paints a single
+           static frame and never starts its animation loop — so there is no
+           PNG swap here; that fallback was light-only artwork and went nearly
+           invisible against the dark theme's ground. #}
         <div class="hero-brand">
-            <div
-                class="hero-logo"
-                data-hero-logo-anim="{{ '/images/meta/futures-logo-animation.html' | url | bust }}"
-                data-hero-logo-static="{{ '/images/meta/csf_icon.png' | url | bust }}"
-            >
+            <div class="hero-logo">
                 <iframe
                     class="hero-logo__media"
                     src="{{ '/images/meta/futures-logo-animation.html' | url | bust }}"
