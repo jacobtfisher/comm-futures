@@ -1,5 +1,15 @@
 //========== Utilities ==========//
 
+// Theme-aware surface/text. Prefer these over Gorko's bg-white / color-primary
+// so prefers-color-scheme dark can remap via --surface / --ink.
+.bg-surface {
+  background-color: var(--surface);
+}
+
+.color-ink {
+  color: var(--ink);
+}
+
 // container
 .inner {
   @include apply-utility('width', 'full');
@@ -53,8 +63,8 @@
 .tooltip .tooltiptext {
   visibility: hidden;
   width: auto;
-  background-color: black;
-  color: #fff;
+  background-color: var(--ink);
+  color: var(--on-ink);
   text-align: center;
   padding: 5px 5px;
   font-size: .8rem;

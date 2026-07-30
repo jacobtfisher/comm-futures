@@ -8,13 +8,13 @@
 
             <li class="item">
 
-                <a href="{{ item.url | url }}" class="link box-block color-primary weight-semibold pl-300 pr-300 {{ 'active' if item.url === page.url }}" {{ 'aria-current=page' if item.url === page.url }}>{{ item.title }}</a>
+                <a href="{{ item.url | url }}" class="link box-block color-ink weight-semibold pl-300 pr-300 {{ 'active' if item.url === page.url }}" {{ 'aria-current=page' if item.url === page.url }}>{{ item.title }}</a>
 
             </li>
 
         {%- endfor %}
 
-        <li class="item ml-400"><a href="https://commscifutures.eventbrite.com/" target="_blank" rel="noopener" class="link link-get-started box-block color-white weight-semibold pl-500 pr-500">Register</a></li>
+        <li class="item ml-400"><a href="https://commscifutures.eventbrite.com/" target="_blank" rel="noopener" class="link link-get-started box-block weight-semibold pl-500 pr-500">Register</a></li>
 
     </ul>
 

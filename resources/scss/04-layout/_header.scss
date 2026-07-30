@@ -8,7 +8,7 @@
         display: block;
         // One rule, not the mock's full compartment header — the restrained
         // version of the same idea.
-        border-bottom: 1px solid var(--ink);
+        border-bottom: 1px solid var(--rule);
     }
 
 }
@@ -32,7 +32,7 @@
     }
 
     &:hover {
-        @include apply-utility('color', 'secondary');
+        color: var(--green-500);
     }
 }
 

@@ -5,6 +5,55 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CSF logo</title>
   <style>
+    :root {
+      /* This file is loaded in an iframe, so the parent page's custom
+         properties do not reach it and it has to carry its own theme. Without
+         `color-scheme` the frame's base canvas is painted opaque white even
+         though html/body below are transparent, which on the dark site showed
+         up as a white slab behind the mark. Declaring both schemes lets the
+         canvas follow the reader's system preference instead. */
+      color-scheme: light dark;
+
+      /* Linework is the same near-black as the headline beside it, so the mark
+         and the wordmark read as one material. */
+      --mark-line: #0b0b0b;
+      --mark-face: #049c4f;
+      --mark-bubble: #0b0b0b;
+      --mark-bubble-text: #ffffff;
+    }
+
+    /* Dark counterpart. The composition inverts rather than dimming: linework
+       and letter bubbles go to the site's bone, the letters inside them go to
+       the page ground, so the light theme's dark-blob-with-light-letter becomes
+       a light-blob-with-dark-letter and the mark keeps its structure.
+
+       The green face is the one value that cannot simply flip. Kept in the
+       sage hue the dark theme uses for the brand green (~133°) but taken well
+       down in lightness, since the face is a much larger filled block than a
+       chip or a button: it lands near 3.6:1 against the ground so the disc
+       still reads as a shape, and near 3.6:1 under the bone linework so the
+       strokes still read on top of it. */
+    @media (prefers-color-scheme: dark) {
+      :root {
+        /* --mark-line and --mark-bubble mirror --ink in
+           resources/scss/02-utilities/_variables.scss; --mark-bubble-text
+           mirrors the ground there. The iframe cannot see those custom
+           properties, so the values are duplicated and must change in step —
+           otherwise the mark drifts off the wordmark beside it. */
+        --mark-line: #e6dfd0;
+        --mark-face: #417a4d;
+        --mark-bubble: #e6dfd0;
+        --mark-bubble-text: #171614;
+      }
+    }
+
+    /* Painted via CSS rather than presentation attributes so the two themes
+       have somewhere to hook; CSS wins over the attributes either way. */
+    .mark-line { stroke: var(--mark-line); }
+    .mark-face { fill: var(--mark-face); stroke: var(--mark-line); }
+    .mark-bubble { fill: var(--mark-bubble); }
+    .mark-bubble-text { fill: var(--mark-bubble-text); }
+
     html, body {
       margin: 0;
       padding: 0;
@@ -32,14 +81,16 @@
     <g id="breathe">
       <circle
         id="dash"
+        class="mark-line"
         cx="500" cy="494" r="442"
-        fill="none" stroke="#0b0b0b" stroke-width="29" stroke-linecap="round"
+        fill="none" stroke-width="29" stroke-linecap="round"
         stroke-dasharray="36.8 46.6 15.5 65.9 25.2 42.7 40.7 67.8 17.5 40.7 18.9 44.5"
       />
       <g transform="translate(-15 0)">
         <path
+          class="mark-face"
           d="M501 97 A399 399 0 1 1 371 872 L273 920 Q238 938 283 812 A399 399 0 0 1 501 97 Z"
-          fill="#049c4f" stroke="#0b0b0b" stroke-width="32" stroke-linejoin="round"
+          stroke-width="32" stroke-linejoin="round"
         />
         <g id="orbits" transform="translate(9 0)"></g>
       </g>
@@ -91,7 +142,7 @@
         const p = document.createElementNS(NS, 'path');
         p.setAttribute('d', halfArc(rot, false));
         p.setAttribute('fill', 'none');
-        p.setAttribute('stroke', '#0b0b0b');
+        p.setAttribute('class', 'mark-line');
         p.setAttribute('stroke-width', String(STROKE));
         return p;
       });
@@ -101,7 +152,7 @@
         const p = document.createElementNS(NS, 'path');
         p.setAttribute('d', halfArc(rot, true));
         p.setAttribute('fill', 'none');
-        p.setAttribute('stroke', '#0b0b0b');
+        p.setAttribute('class', 'mark-line');
         p.setAttribute('stroke-width', String(STROKE));
         nearByRot[rot] = p;
       });
@@ -109,11 +160,11 @@
       const bubbles = LETTERS.map((L) => {
         const g = document.createElementNS(NS, 'g');
         const circle = document.createElementNS(NS, 'circle');
-        circle.setAttribute('fill', '#0b0b0b');
+        circle.setAttribute('class', 'mark-bubble');
         const text = document.createElementNS(NS, 'text');
         text.setAttribute('text-anchor', 'middle');
         text.setAttribute('dominant-baseline', 'central');
-        text.setAttribute('fill', '#ffffff');
+        text.setAttribute('class', 'mark-bubble-text');
         text.setAttribute('font-family', '"Helvetica Neue", Helvetica, Arial, sans-serif');
         text.setAttribute('font-weight', '800');
         text.setAttribute('letter-spacing', '-0.02em');

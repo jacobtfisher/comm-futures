@@ -17,18 +17,18 @@
 
         &.active,
         &:hover {
-            @include apply-utility('color', 'secondary');
+            color: var(--green-500);
         }
 
         &-get-started {
-            background-color: var(--ink);
-            color: get-color('white');
+            background-color: var(--btn-fill);
+            color: var(--btn-text);
             border-radius: v(border-radius);
             transition: background-color v(transition-duration) v(transition-timing);
 
             &:hover {
-                @include apply-utility('color', 'white');
-                background-color: var(--green-700);
+                color: var(--btn-text);
+                background-color: var(--btn-fill-hover);
             }
         }
     }

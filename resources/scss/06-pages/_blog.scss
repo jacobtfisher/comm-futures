@@ -34,11 +34,11 @@
     }
 
     &-title-link {
-        border-bottom: v(border-size) solid get-color('secondary');
+        border-bottom: v(border-size) solid var(--green-500);
         transition: border-color v(transition-duration) v(transition-timing);
 
         &:hover {
-            border-bottom-color: get-color('primary');
+            border-bottom-color: var(--ink);
         }
     }
 

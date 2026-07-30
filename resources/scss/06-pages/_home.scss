@@ -35,8 +35,8 @@
     }
 
     .home-info-card {
-        background-color: get-color('light-grey');
-        border: var(--card-border) solid var(--ink);
+        background-color: var(--surface-muted);
+        border: var(--card-border) solid var(--rule);
 
         .card-body {
             display: flex;
@@ -69,7 +69,7 @@
     // labelling something the block already says.
     .home-banner {
         background-color: var(--gold);
-        border: var(--card-border) solid var(--ink);
+        border: var(--card-border) solid var(--rule);
         padding: get-size('500') 1.25rem;
 
         .banner-text {
@@ -97,10 +97,12 @@
             // reads as primary and secondary rather than two unrelated blocks.
             .button--outline {
                 background-color: transparent;
+                border-color: var(--ink);
 
                 &:hover {
-                    background-color: var(--ink);
-                    color: get-color('white');
+                    background-color: var(--btn-fill);
+                    border-color: var(--btn-fill);
+                    color: var(--btn-text);
                 }
             }
         }
