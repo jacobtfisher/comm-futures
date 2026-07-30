@@ -40,7 +40,7 @@ if ( mix.inProduction() )
             // strips the expanded-card rules and clicking a talk does nothing
             // visible. Same reasoning as the existing menu-visible/expanded
             // entries for the mobile nav.
-            safelist: ['menu-visible', 'loaded', 'expanded', 'is-open', /^type-/, /^page-/, /[data-src]/],
+            safelist: ['menu-visible', 'loaded', 'expanded', 'is-open', 'bg-surface', 'color-ink', /^type-/, /^page-/, /[data-src]/],
             extractorPattern: [/[^<>"'`\s]*[^<>"'`\s:]/g]
         })
         .minify('css/main.css')

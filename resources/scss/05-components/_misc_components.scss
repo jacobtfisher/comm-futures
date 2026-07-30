@@ -10,7 +10,7 @@
 	margin-top: .9rem;
 	padding: .45em .9em;
 	background-color: transparent;
-	border: var(--card-border) solid var(--ink);
+	border: var(--card-border) solid var(--rule);
 	color: var(--ink);
 	font-family: var(--font-mono);
 	font-size: #{get-size('300')};
@@ -37,8 +37,8 @@
 	}
 
 	&:hover {
-		background-color: var(--ink);
-		color: get-color('white');
+		background-color: var(--btn-fill);
+		color: var(--btn-text);
 	}
 
 	&:focus-visible {
@@ -67,7 +67,7 @@
 	// A faint brand tint ties it to the rest of the page; the ink border
 	// matches the compartment lines used everywhere else.
 	background-color: var(--green-50);
-	border: var(--card-border) solid var(--ink);
+	border: var(--card-border) solid var(--rule);
 	border-radius: var(--radius-md);
 	padding: #{get-size('400')};
 	margin-bottom: #{get-size('500')};

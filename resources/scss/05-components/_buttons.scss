@@ -1,14 +1,14 @@
 
 //========== Buttons ==========//
 
-// Chunky, square, uppercase. Solid buttons are ink; green is the hover
-// moment rather than the resting state.
+// Chunky, square, uppercase. Solid buttons take the fill token — ink in light
+// mode, a deep green in dark — and green is the hover moment either way.
 .button {
     display: inline-block;
-    background-color: var(--ink);
-    border: 2px solid var(--ink);
+    background-color: var(--btn-fill);
+    border: 2px solid var(--btn-fill);
     border-radius: v(border-radius);
-    color: get-color('white');
+    color: var(--btn-text);
     // em-based padding so the box tracks whatever size it's given, and the
     // mono label voice to match the nav.
     font-family: var(--font-mono);
@@ -23,27 +23,28 @@
         color v(transition-duration) v(transition-timing);
 
     &:hover {
-        background-color: var(--green-700);
-        border-color: var(--green-700);
-        color: get-color('white');
+        background-color: var(--btn-fill-hover);
+        border-color: var(--btn-fill-hover);
+        color: var(--btn-text);
     }
 
     // :focus-visible for the same reason as the global rule in 03-base/_links:
     // a clicked button should not keep a ring, a keyboard-focused one should.
     &:focus-visible {
-        outline: 3px solid get-color('secondary');
+        outline: 3px solid var(--green-500);
         outline-offset: .25rem;
     }
 }
 
-// Outline variant — white face, ink frame.
+// Outline variant — surface face, framed rather than filled.
 .button--outline {
-    background-color: get-color('white');
+    background-color: var(--surface);
+    border-color: var(--rule);
     color: var(--ink);
 
     &:hover {
-        background-color: var(--ink);
-        border-color: var(--ink);
-        color: get-color('white');
+        background-color: var(--btn-fill);
+        border-color: var(--btn-fill);
+        color: var(--btn-text);
     }
 }

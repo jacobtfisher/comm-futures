@@ -5,7 +5,7 @@
 .day-header {
     margin-top: #{get-size('800')};
     padding-top: #{get-size('500')};
-    border-top: 4px solid var(--ink);
+    border-top: 4px solid var(--rule);
 
     // Section divider, not a page title — keep below .page-title weight/size.
     h2 {
@@ -39,8 +39,8 @@
             display: inline-block;
             padding: .15rem .8rem;
             margin: .5rem 0rem;
-            background-color: var(--green-500);
-            color: get-color('white');
+            background-color: var(--chip-fill);
+            color: var(--on-ink);
             font-family: var(--font-mono);
             font-size: #{get-size('300')};
             font-weight: 700;
@@ -72,7 +72,7 @@
 
     .event-subtitle-text {
         font-size: #{get-size('600')};
-        color: get-color('secondary');
+        color: var(--green-500);
         font-weight: 800;
         flex: 3 1 auto;
     }
@@ -85,8 +85,8 @@
     }
 
     .keynote-callout {
-        background-color: get-color('light-grey');
-        border: var(--card-border) solid var(--ink);
+        background-color: var(--surface-muted);
+        border: var(--card-border) solid var(--rule);
         padding: 1rem;
         margin-top: 1rem;
         display: flex;
@@ -184,9 +184,8 @@
         display: flex;
         flex-direction: column;
         position: relative;
-        border: var(--card-border) solid var(--ink);
-        background-color: get-color('white');
-        transition: background-color v(transition-duration) v(transition-timing);
+        border: var(--card-border) solid var(--rule);
+        background-color: var(--surface);
 
         // The trigger is a real button (it was a div with an onclick, so it was
         // unreachable by keyboard). Reset the UA button styling and let it fill
@@ -239,7 +238,7 @@
             height: 5.5rem;
             object-fit: cover;
             object-position: center;
-            border: var(--card-border) solid var(--ink);
+            border: var(--card-border) solid var(--rule);
         }
 
         .item-presenter {
@@ -257,7 +256,7 @@
         // disabled state rather than a hover, and Sass colour functions are
         // deprecated in Dart Sass besides.
         &:hover {
-            background-color: get-color('light-grey');
+            background-color: var(--surface-muted);
         }
     }
 }
@@ -303,13 +302,13 @@
 .agenda-card.is-open {
     order: -1;
     grid-column: 1 / -1;
-    background-color: get-color('light-grey');
+    background-color: var(--surface-muted);
     display: grid;
     grid-template-columns: minmax(14rem, 0.9fr) minmax(0, 1.35fr);
     align-items: stretch;
 
     .agenda-card-trigger {
-        border-right: var(--card-border) solid var(--ink);
+        border-right: var(--card-border) solid var(--rule);
         padding: 1.1rem 1.25rem;
         // Fill the left column so the rule runs the full card height.
         height: 100%;
@@ -351,7 +350,7 @@
 // up beside the name, and the track chip is gone (the section heading above
 // each grid already names the track).
 .agenda-card-panel {
-    border-top: var(--card-border) solid var(--ink);
+    border-top: var(--card-border) solid var(--rule);
     padding: 1.1rem 1rem 1.25rem;
 
     .panel-abstract {
@@ -374,7 +373,7 @@
 
         .agenda-card-trigger {
             border-right: 0;
-            border-bottom: var(--card-border) solid var(--ink);
+            border-bottom: var(--card-border) solid var(--rule);
             height: auto;
         }
 
@@ -386,7 +385,7 @@
 
 //========== Map embed ==========//
 .map-embed {
-    border: var(--card-border) solid var(--ink);
+    border: var(--card-border) solid var(--rule);
     margin: 1.25rem 0 0;
     line-height: 0; // kills the inline-frame descender gap
 
@@ -405,6 +404,16 @@
     &:hover iframe,
     &:focus-within iframe {
         filter: none;
+    }
+
+    // Google serves light tiles regardless of the page, so on dark the frame
+    // would sit there as the one glaring rectangle. Dimmed until hover, which
+    // still restores the map at full strength.
+    @media (prefers-color-scheme: dark) {
+
+        iframe {
+            filter: saturate(.25) brightness(.72) contrast(1.05);
+        }
     }
 }
 

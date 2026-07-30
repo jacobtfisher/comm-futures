@@ -51,11 +51,36 @@
     // the 'base' font in _config.scss.
     --font-display: Archivo, ui-sans-serif, system-ui, -apple-system, sans-serif;
 
+    // Prefer light form controls by default; flipped under prefers-color-scheme.
+    color-scheme: light;
+
     // Ink — the near-black that borders, buttons, and display type share.
     // Same value as the 'primary' text colour so lines and letters read as
     // one material.
     --ink: #111827;
     --ink-soft: #6b7280; // kickers, labels, secondary text
+
+    // Surfaces — page chrome and muted bands (cards, keynote callout, hover).
+    // Text sitting on a solid ink/green fill uses --on-ink.
+    --surface: #ffffff;
+    --surface-muted: #f3f4f6;
+    --on-ink: #ffffff;
+
+    // Structural borders — card, callout, banner and header frames. Same value
+    // as --ink in light mode, where line and letter are meant to read as one
+    // material; a separate token so dark mode can let the frames recede
+    // instead of ringing every box in bone.
+    --rule: var(--ink);
+
+    // Button fill, its hover step, and the text that sits on both.
+    --btn-fill: var(--ink);
+    --btn-fill-hover: var(--green-700);
+    --btn-text: var(--on-ink);
+
+    // Filled green chips (the schedule time chips). Its own token because a
+    // solid green block needs to sit further back than green used as a text
+    // accent does, and the two are the same colour only in light mode.
+    --chip-fill: var(--green-500);
 
     // Green scale, derived from the brand secondary (#008934). Previously the
     // brand green existed at exactly one saturation and hovers were computed
@@ -93,5 +118,61 @@
 
     @include media-query('laptop') {
         --ratio: 1.25;
+    }
+}
+
+// Dark theme. System preference only — no toggle.
+//
+// The ground is a warm near-black rather than a blue-black or a true grey: it
+// is the bone/ochre of the light theme's paper turned inside out, so the two
+// themes share a temperature. Everything else is pitched to sit quietly on it
+// — text stops short of white, frames stop well short of the text, and the two
+// accents are desaturated rather than lifted, since a saturated colour on a
+// dark ground is what actually glares.
+//
+// The hero animation is light artwork and is deliberately left alone.
+@media (prefers-color-scheme: dark) {
+    :root {
+        color-scheme: dark;
+
+        --surface: #171614;
+        --surface-muted: #211f1c;
+
+        // Bone, pulled back from white. Full-white body copy on a near-black
+        // ground is the single biggest source of dark-mode eye strain.
+        --ink: #ddd6c7;
+        --ink-soft: #9b9389;
+        --on-ink: #171614;
+
+        // Frames recede to a warm grey. In light mode borders can carry ink
+        // weight because the paper is bright; here the same move would outline
+        // every card in bone. Kept near 3:1 against the ground, though — the
+        // layout is compartments, so the frames still have to read as frames.
+        --rule: #665e52;
+
+        // Brand green desaturated toward sage, which keeps the accent legible
+        // without the neon edge a lifted #008934 takes on against dark.
+        --green-50: #1e241f;
+        --green-100: #2c352d;
+        --green-500: #86b891;
+        --green-700: #a3cdac; // hover reads brighter, not darker, on dark
+        --green-900: #c3dbc7;
+
+        // A step below the accent green: as a filled block behind text it read
+        // brighter than the same value does as a letterform.
+        --chip-fill: #74a37e;
+
+        // The deadline banner keeps its gold signal as a deep amber ground so
+        // bone text and frame still read on it.
+        --gold: #3d3218;
+
+        // A bone slab is too much light for a button at this size; a deep
+        // green face with bone text carries the same emphasis quietly.
+        --btn-fill: #2f4a37;
+        --btn-fill-hover: #3c5d45;
+        --btn-text: var(--ink);
+
+        --hairline: #302c27;
+        --hairline-strong: #4c453c;
     }
 }
