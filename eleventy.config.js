@@ -113,6 +113,7 @@ module.exports = config => {
   config.addLayoutAlias("sponsorship", "layouts/sponsorship.njk");
   config.addLayoutAlias("contact", "layouts/contact.njk");
   config.addLayoutAlias("cfp", "layouts/cfp.njk");
+  config.addLayoutAlias("discussion-guide", "layouts/discussion-guide.njk");
 
   // Include our static assets
   config.addPassthroughCopy("css");

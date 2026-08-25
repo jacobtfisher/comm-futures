@@ -1,0 +1,42 @@
+---
+layout: base
+---
+
+<main id="main" class="main discussion-guide inner pt-800 pb-1100" tabindex="-1">
+
+    <header class="discussion-guide__header">
+        <p class="discussion-guide__eyebrow">Discussion leader guide</p>
+        <h1 class="page-title">{{ title }}</h1>
+
+        {% if sub_heading %}
+            <p class="sub-heading">{{ sub_heading }}</p>
+        {% endif %}
+    </header>
+
+    <div class="discussion-guide__layout">
+
+        <aside class="discussion-guide__sidebar">
+            <nav class="discussion-guide__toc" aria-label="On this page">
+                <p class="discussion-guide__toc-label">On this page</p>
+                <ol>
+                    <li><a href="#purpose">What these sessions are for</a></li>
+                    <li><a href="#role">Your role</a></li>
+                    <li><a href="#prepare">Before the conference</a></li>
+                    <li><a href="#choose-format">Choose a format</a></li>
+                    <li><a href="#ninety-minutes">Use the 90 minutes</a></li>
+                    <li><a href="#prompts">Facilitation prompts</a></li>
+                    <li><a href="#five-minute-prep">Five-minute preparation</a></li>
+                    <li><a href="#changes-course">When the discussion changes course</a></li>
+                    <li><a href="#notes">Ending and notes</a></li>
+                    <li><a href="#logistics">Logistics</a></li>
+                </ol>
+            </nav>
+        </aside>
+
+        <article class="discussion-guide__content content">
+            {{ content | safe }}
+        </article>
+
+    </div>
+
+</main>
