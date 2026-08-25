@@ -7,17 +7,17 @@ eleventyNavigation:
   key: Home
   order: 1
 hero_lede: "A collaboration-centered conference for scholars addressing pressing issues and emerging trends shaping the future of social scientific research into human communication."
-# The two calls to action live in the gold banner rather than the hero, so the
-# submission deadline and the buttons that act on it sit together.
+# The primary registration call to action lives in the gold banner rather than
+# the hero so the current conference status and next step sit together.
 banner:
-  text: "The submission deadline has passed, but poster and discussion submissions will be considered on a rolling basis until <strong>August 14, 2026</strong> — or until we run out of space, whichever comes first."
+  text: "Submissions for Communication Science Futures 2026 are now <strong>closed</strong>. Registration remains open while space is available."
   primary:
-    label: "Submit a Poster"
-    url: "https://msu.co1.qualtrics.com/jfe/form/SV_0wHKbpwWGkMyLNc"
+    label: "Register for CSF 2026"
+    url: "https://commscifutures.eventbrite.com/"
     external: true
   secondary:
-    label: "Read the CFP"
-    url: "/cfp/"
+    label: "View the Schedule"
+    url: "/schedule/"
 # Values kept short so all four cards sit on one row at full width.
 key_details:
   - label: Dates

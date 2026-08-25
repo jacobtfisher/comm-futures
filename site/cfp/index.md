@@ -13,7 +13,7 @@ eleventyNavigation:
 ---
 
 <div class="callout">
-  <div class="callout-text">Note that our general submission deadline (June 15) has passed, but we are still considering submissions for posters &amp; discussion sessions on a rolling basis through <strong>August 14, 2026</strong> — or until we run out of space, whichever comes first. New research-abstract submissions will be considered for poster presentation only. <a href="https://msu.co1.qualtrics.com/jfe/form/SV_0wHKbpwWGkMyLNc">Submit a proposal →</a></div>
+  <div class="callout-text">Submissions for Communication Science Futures 2026 are now <strong>closed</strong>. If you are planning to attend, registration remains open while space is available. <a href="https://commscifutures.eventbrite.com/">Register for CSF 2026 →</a></div>
 </div>
 
 The organizing team for _Communication Science Futures_ invites submissions for the 2026 meeting, to be held **September 18th-20th, 2026** at the **MSU Union** on the campus of Michigan State University in East Lansing, Michigan. This year's conference will feature a keynote address by **James W. Pennebaker**, panel presentations, interactive breakout sessions, and poster sessions for students and early career researchers.
@@ -51,7 +51,7 @@ Demos and discussions might include:
 - A hands-on tutorial on a specific analytical technique
 - A structured discussion around a shared methodological challenge or debate about best practices
 
-Each accepted demo or discussion will be allocated a **45-minute breakout slot**, with multiple breakouts happening concurrently. Proposals should describe the topic, its relevance to the conference themes, and what participants can expect from the session (e.g., a live demonstration, a guided exercise, a facilitated discussion). As with research abstracts, proposals should be aligned with one or more of the conference themes listed above.
+Accepted discussions will be allocated a **90-minute breakout slot**. Tool demos will be scheduled within the Sunday breakout block, with timing based on the session format. Multiple sessions will happen concurrently. Proposals should describe the topic, its relevance to the conference themes, and what participants can expect from the session (e.g., a live demonstration, a guided exercise, a facilitated discussion). As with research abstracts, proposals should be aligned with one or more of the conference themes listed above.
 
 **Format:** Demo & discussion proposals should be no more than **250 words** in length and should include a title, names and affiliations of all contributors, and a list of 3-5 keywords.
 
@@ -61,7 +61,7 @@ Submitters are welcome (and encouraged) to submit to both tracks. Some overlap b
 
 ## Submission Guidelines
 
-- **Deadline:** The general submission deadline (Monday, June 15, 2026) has passed. We are still accepting **poster** and **demo & discussion** submissions on a rolling, space-available basis through **Friday, August 14, 2026 at 11:59 PM (Anywhere on Earth)**, or until remaining slots are filled — whichever comes first.
+- **Deadline:** Submissions for the 2026 conference are closed.
 - **Notification:** Submissions received by June 15 will receive decisions by June 29, 2026. Submissions received during the extended poster and demo/discussion window will be reviewed on a rolling basis as space allows.
 - **Limit:** Each submitter may be first author on up to **three** submissions across both tracks.
 - **Review:** All submissions will be reviewed by the organizing committee.
@@ -70,6 +70,6 @@ Submissions are open to scholars at all career stages and from all disciplinary 
 
 ---
 
-## Submit
+## Register
 
-**[Submit your abstract or proposal →](https://msu.co1.qualtrics.com/jfe/form/SV_0wHKbpwWGkMyLNc)**
+**[Register for Communication Science Futures 2026 →](https://commscifutures.eventbrite.com/)**
