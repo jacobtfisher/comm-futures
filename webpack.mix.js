@@ -34,7 +34,7 @@ if ( mix.inProduction() )
     // mix minifies CSS & JS by default
     // I prefer to add the `.min` suffix on the output files just for convention
     mix.purgeCss({
-            content: ['site/**/*.njk'],
+            content: ['site/**/*.{md,njk}'],
             // `is-open` is applied by resources/js/modules/talk-cards at runtime
             // and appears in no .njk file, so without safelisting it PurgeCSS
             // strips the expanded-card rules and clicking a talk does nothing
@@ -51,5 +51,4 @@ if ( mix.inProduction() )
         .minify('js/main.js')
 
 }
-
 
