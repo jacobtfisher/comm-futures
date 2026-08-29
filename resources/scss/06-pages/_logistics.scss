@@ -143,8 +143,12 @@
         border-color: var(--ink);
         color: var(--on-ink);
 
-        .logistics-card-label {
-            color: var(--green-700);
+        .logistics-card-label,
+        .logistics-facts dt {
+            color: var(--on-ink);
+            font-family: var(--font-display);
+            font-size: get-size('400');
+            letter-spacing: .04em;
         }
 
         .logistics-facts {

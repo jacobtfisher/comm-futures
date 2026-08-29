@@ -4,7 +4,7 @@ templateEngineOverride: njk
 meta_title: Logistics
 meta_description: Travel, lodging, food, shopping, and things to do near Communication Science Futures at Michigan State University.
 title: Logistics
-sub_heading: Get here, get settled, and make the most of your time in East Lansing.
+sub_heading: Travel, local transportation, nearby food and coffee, and things to do in East Lansing.
 eleventyNavigation:
   key: Logistics
   order: 4
@@ -13,11 +13,11 @@ eleventyNavigation:
 <div class="logistics-page">
 
     <div class="logistics-intro">
-        <p class="logistics-kicker">ARRIVE / EAT / EXPLORE</p>
-        <p class="logistics-intro-copy">Communication Science Futures takes place at the MSU Union, in the middle of a walkable campus and just across Grand River Avenue from downtown East Lansing. This page is a starting point for getting around, finding a meal, and filling a free afternoon.</p>
+        <p class="logistics-kicker">TRAVEL / LOCAL INFORMATION</p>
+        <p class="logistics-intro-copy">Communication Science Futures takes place at the MSU Union, across Grand River Avenue from downtown East Lansing and a short walk from Graduate East Lansing. Use this page for airport transportation, local transit, nearby businesses, and ideas for free time.</p>
         <nav class="logistics-jump-links" aria-label="On this page">
             <a href="#getting-here">Getting here</a>
-            <a href="#around-town">Around the Graduate</a>
+            <a href="#around-town">Near the Graduate</a>
             <a href="#free-time">Free time</a>
         </nav>
     </div>
@@ -43,8 +43,8 @@ eleventyNavigation:
     <section id="getting-here" class="logistics-section">
         <div class="logistics-section-heading">
             <p class="logistics-kicker">01 / GETTING HERE</p>
-            <h2>Start with the simple route</h2>
-            <p>The easiest airport connection is the Michigan Flyer-AirRide coach from Detroit Metro Airport (DTW) to East Lansing. Once you are here, the conference, hotel, downtown, and campus are all close together.</p>
+            <h2>Travel to East Lansing</h2>
+            <p>Michigan Flyer-AirRide provides direct coach service from Detroit Metro Airport (DTW) to East Lansing. The conference venue, hotel, downtown, and campus are all close together once you arrive.</p>
         </div>
 
         <div class="logistics-card-grid logistics-card-grid--two">
@@ -89,9 +89,9 @@ eleventyNavigation:
 
     <section id="around-town" class="logistics-section">
         <div class="logistics-section-heading">
-            <p class="logistics-kicker">02 / AROUND THE GRADUATE</p>
-            <h2>Walk out the door and find your people</h2>
-            <p>Downtown East Lansing is directly across Grand River Avenue from campus, with restaurants, coffee shops, bars, bookstores, retail, services, and plenty of places to linger.</p>
+            <p class="logistics-kicker">02 / NEAR THE GRADUATE</p>
+            <h2>Food, coffee, and essentials nearby</h2>
+            <p>Downtown East Lansing is directly across Grand River Avenue from campus, with restaurants, coffee shops, bars, bookstores, shops, and services within walking distance.</p>
         </div>
 
         <div class="logistics-map-layout">
@@ -99,7 +99,7 @@ eleventyNavigation:
                 <div class="logistics-map-header">
                     <div>
                         <p class="logistics-card-label">Neighborhood map</p>
-                        <h3>Graduate → campus → downtown</h3>
+                        <h3>Hotel, conference venue, and downtown</h3>
                     </div>
                     <span class="map-pin map-pin--hotel" aria-hidden="true"></span>
                 </div>
@@ -116,7 +116,7 @@ eleventyNavigation:
             </div>
 
             <aside class="logistics-map-guide">
-                <p class="logistics-card-label">Use this as your anchor</p>
+                <p class="logistics-card-label">Key locations</p>
                 <h3>Four useful landmarks</h3>
                 <ol class="logistics-landmark-list">
                     <li>
@@ -143,15 +143,15 @@ eleventyNavigation:
         <div class="logistics-coffee-block">
             <div class="logistics-subsection-heading">
                 <p class="logistics-card-label">Coffee nearby</p>
-                <h3>Start close, then wander</h3>
-                <p>Two especially convenient options are already inside the conference orbit: Poindexter is in the Graduate lobby, and Strange Matter is on the first floor of the MSU Union. Downtown adds several more cafés within a short walk.</p>
+                <h3>Coffee near the conference</h3>
+                <p>Poindexter is in the Graduate lobby, and Strange Matter is on the first floor of the MSU Union. Foster, Foxtail, and Haraz are additional options within a short walk downtown.</p>
             </div>
 
             <div class="logistics-coffee-grid">
                 <article class="logistics-coffee-card logistics-coffee-card--anchor">
                     <p class="coffee-location">In the Graduate lobby</p>
                     <h4>Poindexter Coffee</h4>
-                    <p>Breakfast, lunch, pastries, and coffee without leaving the hotel. The lobby seating also makes this an easy place to catch up with another attendee.</p>
+                    <p>Breakfast, lunch, pastries, and coffee in the hotel lobby, with seating available.</p>
                     <a class="text-link" href="https://www.hilton.com/en/hotels/langegu-graduate-east-lansing/dining/" target="_blank" rel="noopener">Hotel dining details <span aria-hidden="true">↗</span></a>
                 </article>
 
@@ -172,7 +172,7 @@ eleventyNavigation:
                 <article class="logistics-coffee-card">
                     <p class="coffee-location">431 E. Grand River Avenue</p>
                     <h4>Foxtail Coffee</h4>
-                    <p>A café along Grand River with espresso drinks, cold brew, and space to settle in on the east side of downtown.</p>
+                    <p>A café on the east side of downtown with espresso drinks, cold brew, and seating.</p>
                     <a class="text-link" href="https://www.foxtailcoffee.com/" target="_blank" rel="noopener">Visit Foxtail <span aria-hidden="true">↗</span></a>
                 </article>
 
@@ -187,8 +187,8 @@ eleventyNavigation:
 
         <div class="logistics-card-grid logistics-card-grid--three logistics-nearby-grid">
             <article class="logistics-card logistics-card--compact">
-                <p class="logistics-card-label">Eat + drink</p>
-                <h3>Good first stops</h3>
+                <p class="logistics-card-label">Restaurants + bars</p>
+                <h3>Nearby options</h3>
                 <ul class="logistics-place-list">
                     <li><a href="https://www.graduaterockbar.com/" target="_blank" rel="noopener">Graduate Rock Bar</a><span>At the hotel · 133 Evergreen Ave.</span></li>
                     <li><a href="https://barrio-tacos.com/locations/east-lansing/" target="_blank" rel="noopener">Barrio Tacos</a><span>202 Albert Ave.</span></li>
@@ -198,8 +198,8 @@ eleventyNavigation:
             </article>
 
             <article class="logistics-card logistics-card--compact">
-                <p class="logistics-card-label">Shopping + essentials</p>
-                <h3>Browse downtown</h3>
+                <p class="logistics-card-label">Shops</p>
+                <h3>Shopping and essentials</h3>
                 <ul class="logistics-place-list">
                     <li><a href="https://www.curiousbooks.com/" target="_blank" rel="noopener">Curious Book Shop</a><span>307 E. Grand River Ave.</span></li>
                     <li><a href="https://www.thebikeshop412.com/" target="_blank" rel="noopener">The Bike Shop</a><span>303 M.A.C. Ave.</span></li>
@@ -209,8 +209,8 @@ eleventyNavigation:
             </article>
 
             <article class="logistics-card logistics-card--compact">
-                <p class="logistics-card-label">Something playful</p>
-                <h3>Make an evening of it</h3>
+                <p class="logistics-card-label">Entertainment</p>
+                <h3>Things to do nearby</h3>
                 <ul class="logistics-place-list">
                     <li><a href="https://www.pinballpetes.org/" target="_blank" rel="noopener">Pinball Pete’s</a><span>Arcade · 220 Albert Ave.</span></li>
                     <li><a href="https://www.forcrepesake.com/" target="_blank" rel="noopener">For Crêpe Sake</a><span>211 M.A.C. Ave.</span></li>
@@ -224,15 +224,15 @@ eleventyNavigation:
     <section id="free-time" class="logistics-section">
         <div class="logistics-section-heading">
             <p class="logistics-kicker">03 / FREE TIME</p>
-            <h2>Go a little farther</h2>
-            <p>MSU is a large, green campus with museums, gardens, performances, and quiet places to walk. These are easy additions before the first session, between events, or on Sunday afternoon.</p>
+            <h2>Things to do on campus</h2>
+            <p>MSU has museums, gardens, performances, and walking routes that are easy to visit before or after conference sessions.</p>
         </div>
 
         <div class="logistics-activity-grid">
             <article class="logistics-activity">
                 <span class="activity-index">A</span>
-                <h3>Walk the north campus</h3>
-                <p>Start at the Union and wander toward Beaumont Tower, the Red Cedar River, and the historic heart of campus.</p>
+                <h3>Explore north campus</h3>
+                <p>From the Union, walk toward Beaumont Tower, the Red Cedar River, and the historic center of campus.</p>
                 <a class="text-link" href="https://tour.msu.edu/locations" target="_blank" rel="noopener">See campus locations <span aria-hidden="true">↗</span></a>
             </article>
             <article class="logistics-activity">
@@ -243,13 +243,13 @@ eleventyNavigation:
             </article>
             <article class="logistics-activity">
                 <span class="activity-index">C</span>
-                <h3>Find some green</h3>
-                <p>The MSU Horticulture Gardens are open daily from sunrise to sundown and make a good reset between conversations.</p>
+                <h3>Visit the Horticulture Gardens</h3>
+                <p>The MSU Horticulture Gardens are open daily from sunrise to sundown.</p>
                 <a class="text-link" href="https://msu-prod.dotcmscloud.com/hrt/our_gardens/Visit/" target="_blank" rel="noopener">Visit the gardens <span aria-hidden="true">↗</span></a>
             </article>
             <article class="logistics-activity">
                 <span class="activity-index">D</span>
-                <h3>Get an MSU classic</h3>
+                <h3>Dairy Store and Wharton Center</h3>
                 <p>Stop at the MSU Dairy Store for campus-made ice cream and cheese, or check the Wharton Center for performances.</p>
                 <div class="activity-links">
                     <a class="text-link" href="https://msudairystore.com/" target="_blank" rel="noopener">Dairy Store <span aria-hidden="true">↗</span></a>
@@ -260,7 +260,7 @@ eleventyNavigation:
     </section>
 
     <aside class="logistics-note logistics-note--footer">
-        <strong>Before you head out:</strong> restaurants, shops, museums, transit, and campus venues can change their hours for weekends, football games, holidays, or private events. Check the linked site for current details, and use the <a href="https://www.google.com/maps/search/?api=1&amp;query=Graduate+East+Lansing+133+Evergreen+Ave+East+Lansing+MI" target="_blank" rel="noopener">Graduate as your map starting point</a>.
+        <strong>Check hours before visiting:</strong> restaurants, shops, museums, transit, and campus venues may change their hours for weekends, football games, holidays, or private events. Use the linked sites for current details and the <a href="https://www.google.com/maps/search/?api=1&amp;query=Graduate+East+Lansing+133+Evergreen+Ave+East+Lansing+MI" target="_blank" rel="noopener">Graduate as your map starting point</a>.
     </aside>
 
 </div>
