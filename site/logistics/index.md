@@ -103,13 +103,16 @@ eleventyNavigation:
                     </div>
                     <span class="map-pin map-pin--hotel" aria-hidden="true"></span>
                 </div>
-                <iframe
-                    title="OpenStreetMap showing Graduate East Lansing, the MSU Union, Michigan Flyer stop, and downtown East Lansing"
-                    src="https://www.openstreetmap.org/export/embed.html?bbox=-84.4960%2C42.7290%2C-84.4730%2C42.7445&amp;layer=mapnik&amp;marker=42.7357139%2C-84.4848492"
-                    loading="lazy"
-                    referrerpolicy="no-referrer"
-                ></iframe>
-                <p class="logistics-map-caption"><a href="https://www.openstreetmap.org/?mlat=42.7357139&amp;mlon=-84.4848492#map=15/42.73571/-84.48485" target="_blank" rel="noopener">Open the larger map in OpenStreetMap <span aria-hidden="true">↗</span></a></p>
+                <div class="map-embed logistics-map-embed">
+                    <iframe
+                        title="Map centered on Graduate East Lansing, near the MSU Union and downtown East Lansing"
+                        src="https://www.google.com/maps?q=Graduate%20East%20Lansing%2C%20133%20Evergreen%20Ave%2C%20East%20Lansing%2C%20MI%2048823&amp;z=16&amp;output=embed"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                </div>
+                <p class="logistics-map-caption"><a href="https://www.google.com/maps/search/?api=1&amp;query=Graduate+East+Lansing+133+Evergreen+Ave+East+Lansing+MI" target="_blank" rel="noopener">Open the larger map in Google Maps <span aria-hidden="true">↗</span></a></p>
             </div>
 
             <aside class="logistics-map-guide">
