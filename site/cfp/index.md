@@ -36,7 +36,7 @@ Research abstracts should include a concise summary of the research question(s),
 
 **Format:** Research abstracts should be no more than **500 words** in length (excluding references) and should include a title, names and affiliations of all contributors, and a list of 3-5 keywords.
 
-**Presentation format:** A select number of submissions (5-8 per theme) will be chosen for **stage presentations** during the Saturday and Sunday panel sessions. Presenters selected for stage presentations should plan on a **10-12 minute presentation with slides**. All remaining accepted submissions will be invited to present during one of two **poster sessions**. Poster presenters should prepare a 48" x 36" poster.
+**Presentation format:** A select number of submissions (5-8 per theme) will be chosen for **stage presentations** during the Saturday and Sunday panel sessions. Presenters selected for stage presentations should plan on a **10-12 minute presentation with slides**. All remaining accepted submissions will be invited to present during one of two **poster sessions**. Poster presenters should prepare a 24" x 36" poster.
 
 ---
 
