@@ -1,8 +1,10 @@
 ---
 layout: sponsorship
-title: Sponsorship
+title: Sponsors
 meta_title: Sponsors
-meta_description: Sponsor information for Communication Science Futures
+meta_description: Sponsors supporting Communication Science Futures 2026
+eleventyNavigation:
+  key: Sponsors
+  order: 4.5
+hero_lede: "We are grateful to the organizations that help make Communication Science Futures possible."
 ---
-
-We are grateful to the sponsors for Communication Science Futures. If your department or organization is interested in serving as a sponsor in future years, please reach out to the organizing team.

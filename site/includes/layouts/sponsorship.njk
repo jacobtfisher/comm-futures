@@ -5,33 +5,52 @@ data: sponsors
 
 <main id="main" class="main inner box-flex pt-800 pb-1100" tabindex="-1">
 
-        <header class="page-header">
+    <header class="page-header sponsors-hero">
 
-            <h1 class="page-title">{{ title }}</h1>
+        <p class="sponsors-kicker">2026 SUPPORTERS</p>
+        <h1 class="page-title">{{ title }}</h1>
 
-            {% if sub_heading %}
+        {% if hero_lede %}
 
-                <p class="sub-heading">{{ sub_heading }}</p>
+            <p class="sponsors-lede">{{ hero_lede }}</p>
 
-            {% endif %}
+        {% endif %}
 
-        </header>
+    </header>
 
-        <div class="content flow">
+    <section class="sponsors-current" aria-labelledby="current-sponsor-heading">
 
-        {{ content | safe }}
+        <div class="sponsors-section-heading">
+            <p class="sponsors-section-label">CURRENT SPONSOR</p>
+            <h2 id="current-sponsor-heading">Moveris</h2>
+            <p>We are grateful to Moveris for supporting Communication Science Futures 2026.</p>
+        </div>
 
-        <div class="box-grid sponsor-grid">
+        <div class="sponsor-grid">
             {%- for sponsor in sponsors %}
-            <div class = "masonry-brick tooltip">
-
-                <a href="{{ sponsor.link }}"><img data-src="{{ sponsor.logo }}" alt="{{ sponsor.name }}" style="flex:{{ sponsor.flex }}"></img></a>
-                <span class="tooltiptext">{{sponsor.name}}</span>
-
-            </div>
+            <article class="sponsor-card">
+                <div class="sponsor-card__mark">
+                    {% if sponsor.link %}
+                        <a href="{{ sponsor.link }}" target="_blank" rel="noopener"><img src="{{ sponsor.logo | url }}" alt="{{ sponsor.name }} logo"></a>
+                    {% else %}
+                        <img src="{{ sponsor.logo | url }}" alt="{{ sponsor.name }} logo">
+                    {% endif %}
+                </div>
+            </article>
             {% endfor -%}
         </div>
 
-    </div>
+    </section>
+
+    <section class="sponsors-inquiry" aria-labelledby="sponsor-inquiry-heading">
+        <div>
+            <p class="sponsors-section-label">PARTNER WITH CSF</p>
+            <h2 id="sponsor-inquiry-heading">Interested in becoming a sponsor?</h2>
+        </div>
+        <div class="sponsors-inquiry__action">
+            <p>Organizations interested in supporting Communication Science Futures can contact the organizing team to learn more.</p>
+            <a class="button" href="mailto:commscifutures@msu.edu?subject=Communication%20Science%20Futures%20sponsorship">Email the organizing team</a>
+        </div>
+    </section>
 
 </main>
