@@ -14,7 +14,7 @@
 
         {%- endfor %}
 
-        <li class="item ml-400"><a href="https://commscifutures.eventbrite.com/" target="_blank" rel="noopener" class="link link-get-started box-block weight-semibold pl-500 pr-500">Register</a></li>
+        <li class="item ml-400"><a href="{{ '/schedule/' | url }}" class="link link-get-started box-block weight-semibold pl-500 pr-500 {{ 'active' if page.url === '/schedule/' }}" {{ 'aria-current=page' if page.url === '/schedule/' }}>Schedule</a></li>
 
     </ul>
 

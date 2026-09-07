@@ -13,7 +13,7 @@
         {%- endfor %}
 
         <li class="item item-cta">
-            <a href="https://commscifutures.eventbrite.com/" target="_blank" rel="noopener" class="link link-get-started">Register</a>
+            <a href="{{ '/schedule/' | url }}" class="link link-get-started {{ 'active' if page.url === '/schedule/' }}" {{ 'aria-current=page' if page.url === '/schedule/' }}>Schedule</a>
         </li>
 
     </ul>

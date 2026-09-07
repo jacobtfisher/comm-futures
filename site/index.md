@@ -7,17 +7,16 @@ eleventyNavigation:
   key: Home
   order: 1
 hero_lede: "A collaboration-centered conference for scholars addressing pressing issues and emerging trends shaping the future of social scientific research into human communication."
-# The primary registration call to action lives in the gold banner rather than
-# the hero so the current conference status and next step sit together.
+# The conference status and the two most useful attendee links live together
+# in the gold banner.
 banner:
-  text: "Submissions for Communication Science Futures 2026 are now <strong>closed</strong>. Registration remains open while space is available."
+  text: "Submissions and registration for Communication Science Futures 2026 are now <strong>closed</strong>."
   primary:
-    label: "Register for CSF 2026"
-    url: "https://commscifutures.eventbrite.com/"
-    external: true
-  secondary:
     label: "View the Schedule"
     url: "/schedule/"
+  secondary:
+    label: "View Logistics"
+    url: "/logistics/"
 # Values kept short so all four cards sit on one row at full width.
 key_details:
   - label: Dates

@@ -13,7 +13,7 @@ eleventyNavigation:
 ---
 
 <div class="callout">
-  <div class="callout-text">Submissions for Communication Science Futures 2026 are now <strong>closed</strong>. If you are planning to attend, registration remains open while space is available. <a href="https://commscifutures.eventbrite.com/">Register for CSF 2026 →</a></div>
+  <div class="callout-text">Submissions and registration for Communication Science Futures 2026 are now <strong>closed</strong>. <a href="/schedule/">View the conference schedule →</a></div>
 </div>
 
 The organizing team for _Communication Science Futures_ invites submissions for the 2026 meeting, to be held **September 18th-20th, 2026** at the **MSU Union** on the campus of Michigan State University in East Lansing, Michigan. This year's conference will feature a keynote address by **James W. Pennebaker**, panel presentations, interactive breakout sessions, and poster sessions for students and early career researchers.
@@ -70,6 +70,6 @@ Submissions are open to scholars at all career stages and from all disciplinary 
 
 ---
 
-## Register
+## Registration
 
-**[Register for Communication Science Futures 2026 →](https://commscifutures.eventbrite.com/)**
+Registration for Communication Science Futures 2026 is now **closed**. [View the conference schedule →](/schedule/)
