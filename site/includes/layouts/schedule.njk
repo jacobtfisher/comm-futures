@@ -45,6 +45,89 @@ data: agenda
     {% endif %}
 {% endmacro %}
 
+{# Discussion cards deliberately reuse the stage-talk grid and disclosure
+   behavior. A title-only card remains a plain, non-interactive surface until
+   leader materials arrive; as soon as a description is added to the data,
+   the same card becomes an accessible expander with the available fields. #}
+{% macro discussiongrid(block) %}
+    {% set sessions = discussions | find("block", block) %}
+    {% if sessions | length %}
+        <h2 class="agenda-grid-title discussion-grid-title">Choose a discussion ({{ sessions | length }}):</h2>
+        <div class="agenda-grid discussion-grid">
+            {% for item in sessions %}
+                {% set has_details = item.description or item.central_question or item.prompts or item.outcome or item.resources %}
+                <article class="agenda-card discussion-card{% if not has_details %} discussion-card-preview{% endif %}" id="discussion-{{ item.number }}">
+                    {% if has_details %}
+                        <button type="button" class="agenda-card-trigger"
+                                aria-expanded="false" aria-controls="discussion-panel-{{ item.number }}">
+                    {% else %}
+                        <div class="agenda-card-trigger agenda-card-static">
+                    {% endif %}
+                        <span class="item-title">{{ item.title }}</span>
+                        <span class="card-identity">
+                            <span class="item-presenter">
+                                <span class="meta-row"><i class="fas fa-solid fa-user-group meta-icon" aria-hidden="true"></i><span class="meta-text">{{ item.presenter }}</span></span>
+                                <span class="meta-row"><i class="fas fa-university meta-icon" aria-hidden="true"></i><span class="meta-text">{{ item.affiliation }}</span></span>
+                            </span>
+                        </span>
+                        {% if has_details %}
+                            <span class="card-action"><span>Explore this discussion</span><i class="fas fa-plus" aria-hidden="true"></i></span>
+                        {% else %}
+                            <span class="card-action card-action-muted">Full details coming soon</span>
+                        {% endif %}
+                    {% if has_details %}
+                        </button>
+                    {% else %}
+                        </div>
+                    {% endif %}
+
+                    {% if has_details %}
+                        <div class="agenda-card-panel discussion-card-panel" id="discussion-panel-{{ item.number }}">
+                            <div class="discussion-details">
+                                {% if item.description %}
+                                    <p class="panel-abstract">{{ item.description }}</p>
+                                {% endif %}
+                                {% if item.central_question %}
+                                    <section class="discussion-detail-section">
+                                        <h3>Central question</h3>
+                                        <p>{{ item.central_question }}</p>
+                                    </section>
+                                {% endif %}
+                                {% if item.prompts %}
+                                    <section class="discussion-detail-section">
+                                        <h3>Conversation starters</h3>
+                                        <ol>
+                                            {% for prompt in item.prompts %}
+                                                <li>{{ prompt }}</li>
+                                            {% endfor %}
+                                        </ol>
+                                    </section>
+                                {% endif %}
+                                {% if item.outcome %}
+                                    <section class="discussion-detail-section">
+                                        <h3>Where the conversation is headed</h3>
+                                        <p>{{ item.outcome }}</p>
+                                    </section>
+                                {% endif %}
+                                {% if item.resources %}
+                                    <section class="discussion-detail-section">
+                                        <h3>Suggested reading</h3>
+                                        <ul>
+                                            {% for resource in item.resources %}
+                                                <li>{{ resource }}</li>
+                                            {% endfor %}
+                                        </ul>
+                                    </section>
+                                {% endif %}
+                            </div>
+                        </div>
+                    {% endif %}
+                </article>
+            {% endfor %}
+        </div>
+    {% endif %}
+{% endmacro %}
+
 {# Renders the poster listing for a given session (1 = Saturday lunch, 2 = Sunday lunch).
    Posters get a lighter multi-column treatment than stage talks: no cards, no detail
    pages, since there are ~15 per session and no abstracts to link to. #}
@@ -199,9 +282,11 @@ data: agenda
             </div>
             <div class = "event-title-text"> Breakout Session 1 </div>
             <div class = "event-body-text">
-                Small-format discussions and workshops on "hot topics" submitted by attendees. Some will build on panel and poster content; others will be standalone.
+                Choose one of nine 90-minute, facilitator-led round-table discussions. Select a card to see the question and conversation plan when details are available.
             </div>
         </div>
+
+        {{ discussiongrid(1) }}
 
         <div class = "event-title">
             <div class = "time-divider">
@@ -233,9 +318,11 @@ data: agenda
             </div>
             <div class = "event-title-text"> Breakout Session 2 </div>
             <div class = "event-body-text">
-                Small-format discussions and workshops on "hot topics" submitted by attendees. Some will build on panel and poster content; others will be standalone.
+                Choose one of nine 90-minute, facilitator-led round-table discussions. Select a card to see the question and conversation plan when details are available.
             </div>
         </div>
+
+        {{ discussiongrid(2) }}
 
         <div class = "event-title">
             <div class = "time-divider">

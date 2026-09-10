@@ -1,0 +1,203 @@
+[
+  {
+    "number": 1,
+    "block": 1,
+    "title": "Reconnecting Memory and Media Effects",
+    "presenter": "Allison Eden + Ewa Maslowska",
+    "affiliation": "Michigan State University · University of Illinois Urbana-Champaign",
+    "description": "In 1985, Kellermann wrote persuasively that ‘It seems trite to write that memory mediates the effects on an individual of mass communication...’ yet, forty years later, communication theories lack a comprehensive framework for memory’s role in downstream communication effects. In this discussion we will explore the core areas of current media memory research, illustrate operationalization challenges with two case studies, and attempt to reconcile the issues central to understanding memory as a key player in communication science research.",
+    "central_question": "What is the role of memory in communication effects?",
+    "prompts": [
+      "Communication studies often use recall or recognition as proxies for attention or manipulation checks rather than treating memory as an active cognitive process. Which parallel threads of memory research across communication and psychology could be consolidated to isolate the field’s core conceptual concerns?",
+      "How can we operationalize memory across communication subfields? When are recall and recognition appropriate, when should other paradigms be used, and what do those measurement choices mean for models of message and media processing?"
+    ],
+    "outcome": "A roadmap for integrating memory into communication research.",
+    "resources": [
+      "Braun-Latour, K. A., & Zaltman, G. (2006). Memory change: An intimate measure of persuasion. Journal of Advertising Research, 46(1), 57–72.",
+      "Furman, O., Dorfman, N., Hasson, U., Davachi, L., & Dudai, Y. (2007). They saw a movie: Long-term memory for an extended audiovisual narrative. Learning & Memory, 14(6), 457–467.",
+      "Lepsius, M. (2026). The brain edits the past: Neural systems of memory reconstruction and self-stability. New Ideas in Psychology, 80, 101221.",
+      "Shehata, A., Thomas, F., Glogger, I., & Andersen, K. (2024). Belief maintenance as a media effect: A conceptualization and empirical approach. Human Communication Research, 50(1), 1–13."
+    ]
+  },
+  {
+    "number": 2,
+    "block": 2,
+    "title": "Understanding Support Gaps: Current and Future Theorizing",
+    "presenter": "Yue Zhang",
+    "affiliation": "Michigan State University"
+  },
+  {
+    "number": 3,
+    "block": 2,
+    "title": "Not Just Old Wine in New Bottles: Extending CMC Theory to AI-Mediated Communication",
+    "presenter": "Rui (Cara) Zhu",
+    "affiliation": "Michigan State University"
+  },
+  {
+    "number": 4,
+    "block": 2,
+    "title": "Futures of Political Communication",
+    "presenter": "Stephen Spates",
+    "affiliation": "Michigan State University"
+  },
+  {
+    "number": 5,
+    "block": 1,
+    "title": "Online Hate and Harms as Communication",
+    "presenter": "Yidi Zhang",
+    "affiliation": "University of California, Santa Barbara"
+  },
+  {
+    "number": 6,
+    "block": 1,
+    "title": "Moving Beyond PROCESS: Rethinking Mediation Analysis",
+    "presenter": "Matthew Grizzard",
+    "affiliation": "The Ohio State University"
+  },
+  {
+    "number": 7,
+    "block": 1,
+    "title": "The Borgian Problem: Metaphors and Scientific Progress",
+    "presenter": "Juven Nino A. Villacastin",
+    "affiliation": "University of California, Santa Barbara"
+  },
+  {
+    "number": 8,
+    "block": 1,
+    "title": "Theory/Method Drift",
+    "presenter": "Jane Shawcroft + Michel M. Haigh",
+    "affiliation": "The Ohio State University · Texas State University",
+    "description": "This session will focus on how published research has drifted from the known parts of the theory. What happens when researchers ignore the underpinnings of the theory and its working components and this work makes it into the field?",
+    "central_question": "How do researchers correct the literature when the research has gone off course, ignoring the variables measured and the established working components of the theory?",
+    "prompts": [
+      "What role do we have as communication scholars to hold ourselves accountable for the theoretical drift occurring?",
+      "What is the best course of action to correct published literature that does not measure the established theoretical variables?",
+      "How do we address theoretical propositions woven into the literature as proven findings rather than claims about what might occur?"
+    ]
+  },
+  {
+    "number": 9,
+    "block": 1,
+    "title": "Building Theory and Testing a Theory of Marginalizing Messages",
+    "presenter": "Elizabeth Dorrance Hall",
+    "affiliation": "Michigan State University",
+    "description": "This session will focus on the process of testing a new theory. We will (a) talk about theory evaluation and discuss strengths and weaknesses of the theory of marginalizing messages (TMM), (b) develop ideas for testing TMM and communication contexts to which it can be applied, and (c) think about useful visual representations for theory building. While the focus will be on TMM, this discussion will be useful to anyone interested in theory building, testing, and evaluation.",
+    "central_question": "How can a theory of marginalizing messages be tested and used in different contexts?",
+    "prompts": [
+      "What constructs are similar to marginalizing messages, where do they overlap, and what makes marginalizing messages unique?",
+      "What would it look like to test this theory, and which existing measures could be useful?",
+      "To which communication contexts could the theory be applied, and what adaptations would be needed?",
+      "How could the propositions be represented in a figure? What makes for a useful visual in a theory piece?",
+      "Using DeAndrea and Holbert’s table as a starting point, how could areas of weakness in the theory be strengthened?"
+    ],
+    "outcome": "Sketch a research agenda for a systematic program of testing, extending, and applying the theory of marginalizing messages.",
+    "resources": [
+      "Dorrance Hall, E., & Wilson, S. R. (2021). Explicating the dimensions and types of marginalized family members. Journal of Social and Personal Relationships, 38(7), 2099–2120.",
+      "Dorrance Hall, E., & Gettings, P. (2020). ‘Who is this little girl they hired to work here?’: Women’s experiences of marginalizing communication in male-dominated workplaces. Communication Monographs, 87(4), 484–505."
+    ]
+  },
+  {
+    "number": 10,
+    "block": 2,
+    "title": "Narrative Effects Beyond Attitudes: Learning, Memory, and Understanding",
+    "presenter": "Kathryn Sam, Manushka Sondhi, Allison Eden, Matthew Grizzard + Ron Tamborini",
+    "affiliation": "Vanderbilt University · Michigan State University · The Ohio State University"
+  },
+  {
+    "number": 11,
+    "block": 2,
+    "title": "Colleagues, Tools, or Crutches: AI in Communication Research",
+    "presenter": "Ralf Schmälzle",
+    "affiliation": "Michigan State University",
+    "description": "AI is entering communication research faster than we can agree about it (or societies, journals, and universities can put out policy). Some see a threat to rigor and to training; others see the biggest expansion of what our field can study in decades. Both may be right. Some of what divides us is a value judgment; some of it is simply operational and solvable. This session tries to tell those apart and make progress on how we deal with AI in communication.",
+    "central_question": "How do we make sure we are getting the science right and the training right?",
+    "prompts": [
+      "Think of one time you used AI in your research and weren’t sure it was okay. What was the task, and what made you hesitate?",
+      "What is the best paper our field currently cannot write? If a question were unaskable only because it was too big, what would you go after?",
+      "Would you rather train in a lab that treats offloading writing as offloading thinking, or one that treats learning these tools as part of scientific training? Which lab would you rather hire from?",
+      "Your student can produce three papers this year using AI, or one without. What should they do?",
+      "For graduate students: What does AI make better, and what does it make worse?",
+      "For post-PhD researchers: What does AI make better, and what does it make worse?"
+    ]
+  },
+  {
+    "number": 12,
+    "block": 1,
+    "title": "AI Chatbots for Mental Health: Opportunities, Ethical Challenges, and Responsible Research Practices",
+    "presenter": "Yoo Jung (Erika) Oh",
+    "affiliation": "Michigan State University",
+    "description": "AI chatbots offer promising new possibilities for expanding access to mental health information, support, and interventions. This discussion will explore the potential of AI chatbots to support mental health, alongside ethical challenges such as IRB review, data monitoring, privacy, and unintended harms. Participants will collaboratively develop a practical list of recommended safeguards for responsible research and implementation.",
+    "central_question": "How can communication researchers study AI chatbots for mental health in ways that are theoretically grounded, practically effective, and ethically responsible?",
+    "prompts": [
+      "What communication theories can inform mental health chatbot research?",
+      "How should researchers design and implement chatbot interactions, including expert input, prompt development, and language model selection?",
+      "How should we evaluate whether a mental health chatbot actually works?",
+      "What safeguards are necessary when participants interact with mental health chatbots, including IRB disclosure, data monitoring, and procedures for responding to unintended harms or adverse events?",
+      "What does rigorous and transparent research practice look like when the technology is constantly changing?"
+    ],
+    "outcome": "Develop a practical research and design roadmap organized around four stages: ground the research, build the interaction, protect participants, and evaluate and report."
+  },
+  {
+    "number": 13,
+    "block": 2,
+    "title": "AI in the Workplace – Research Opportunities",
+    "presenter": "Vernon Miller",
+    "affiliation": "Michigan State University",
+    "description": "Media outlets are regularly reporting and often conjecturing about the role of AI in the workplace. This discussion group will consider the various forms of AI and their uses in organizational contexts. Participants are encouraged to share their research interests and foci of study."
+  },
+  {
+    "number": 14,
+    "block": 2,
+    "title": "Frames We Can(not) See: How Deficit Thinking Shapes the Communication Science of AI and Children",
+    "presenter": "Zhixin Li",
+    "affiliation": "Syracuse University"
+  },
+  {
+    "number": 15,
+    "block": 1,
+    "title": "Theory Building and Testing",
+    "presenter": "Timothy R. Levine",
+    "affiliation": "University of Oklahoma",
+    "description": "In the age of the replication crisis, what is the empirical status of communication theory? Do we have a problem with undead theories? If so, how do we deal with them and how can we do better? Proposed solutions for discussion include taking an abductive approach to theory building, greater attention to variability and distribution shapes, and risky tests in theory testing.",
+    "central_question": "Is there an empirical crisis for communication theory, and if so, what can be done to mitigate risk and produce empirically adequate theories?",
+    "prompts": [
+      "Do we have undead theories, or is the concern misplaced?",
+      "Do theories even need empirical support, and does falsification work in practice?",
+      "Care to name names?",
+      "Which of the proposed solutions resonate with you?",
+      "What solutions should be added to the list?"
+    ]
+  },
+  {
+    "number": 16,
+    "block": 2,
+    "title": "Conceptual and Theoretical Fundamentals for a Discipline of Communication: Implications for Research and Curriculum",
+    "presenter": "R. Kelly Aune + Alex Aune",
+    "affiliation": "University of Hawaiʻi at Mānoa · Michigan State University",
+    "description": "Earlier, we argued that Communication should embrace creating a state of understanding as the fundamental goal of communication. Understanding is conceptualized as an isomorphic meme manifesting as neurological alignment. We suggested that three premises referring to evolved capacities of humans can serve as foundational to explanations about human communication behavior: humans are fundamentally social in orientation, human mental processes are governed by a predisposition for efficiency, and predictive inference-making is a core feature of human mental activity.",
+    "central_question": "If the discipline of Communication were to embrace Creating Understanding as the fundamental goal of communication, how would that affect undergraduate and graduate education, research agendas, and the discipline’s relationship to natural science?",
+    "prompts": [
+      "If understanding is a state of neurological alignment, how should graduate curricula expand to prepare the next generation of researchers?",
+      "Does an emphasis on creating understanding suggest new paradigms for research?",
+      "Is there any warrant for claiming that Communication should be considered a natural science first and a social science second?"
+    ],
+    "outcome": "Disruption with the potential for transition.",
+    "resources": [
+      "Chapters 2 and 3 of Creating Understanding."
+    ]
+  },
+  {
+    "number": 17,
+    "block": 2,
+    "title": "Should I Tell My Advisor? Negotiating Generative AI, Scholarly Independence, and Responsibility in Doctoral Research",
+    "presenter": "Victoria A. Kyriakopoulos",
+    "affiliation": "Syracuse University"
+  },
+  {
+    "number": 18,
+    "block": 1,
+    "title": "Selective Exposure Processes",
+    "presenter": "Monique Turner",
+    "affiliation": "Michigan State University"
+  }
+]

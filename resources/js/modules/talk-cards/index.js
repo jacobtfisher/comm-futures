@@ -1,5 +1,5 @@
 /**
- * Expandable stage-talk cards on the schedule page.
+ * Expandable stage-talk and discussion cards on the schedule page.
  *
  * Talks used to live on generated /agenda-items/item-N/ detail pages. The
  * abstract now opens in place: the clicked card widens across the whole grid
@@ -76,7 +76,7 @@ const TalkCards = function TalkCards()
         card.classList.remove('is-open')
         clearTitleFit(card)
         if ( panel ) panel.hidden = true
-        if ( trigger ) trigger.setAttribute('aria-expanded', 'false')
+        if ( trigger && panel ) trigger.setAttribute('aria-expanded', 'false')
 
     }
 
@@ -86,9 +86,11 @@ const TalkCards = function TalkCards()
         const panel = panelFor(card)
         const trigger = triggerFor(card)
 
+        if ( ! panel || ! trigger ) return
+
         card.classList.add('is-open')
-        if ( panel ) panel.hidden = false
-        if ( trigger ) trigger.setAttribute('aria-expanded', 'true')
+        panel.hidden = false
+        trigger.setAttribute('aria-expanded', 'true')
 
         // Measure after the open layout (side-by-side columns) has applied.
         fitTitle(card)
@@ -102,8 +104,9 @@ const TalkCards = function TalkCards()
     cards.forEach(function(card) {
 
         const trigger = triggerFor(card)
+        const panel = panelFor(card)
 
-        if ( ! trigger ) return
+        if ( ! trigger || ! panel ) return
 
         trigger.addEventListener('click', function() {
 
@@ -139,17 +142,17 @@ const TalkCards = function TalkCards()
     })
 
     // Deep links from elsewhere on the site (or a shared URL) still land on a
-    // specific talk: #talk-7 opens that card instead of just jumping to it.
+    // specific talk or discussion and open it instead of just jumping to it.
     const openFromHash = function openFromHash()
     {
 
         const id = window.location.hash
 
-        if ( ! id || id.indexOf('#talk-') !== 0 ) return
+        if ( ! id || ! /^#(?:talk|discussion)-/.test(id) ) return
 
         const card = document.querySelector(id)
 
-        if ( ! card || ! card.classList.contains('agenda-card') ) return
+        if ( ! card || ! card.classList.contains('agenda-card') || ! panelFor(card) ) return
 
         cards.forEach(close)
         open(card)
