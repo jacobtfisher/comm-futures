@@ -99,9 +99,21 @@
   {
     "number": 10,
     "block": 2,
-    "title": "Narrative Effects Beyond Attitudes: Learning, Memory, and Understanding",
-    "presenter": "Kathryn Sam, Manushka Sondhi, Allison Eden, Matthew Grizzard + Ron Tamborini",
-    "affiliation": "Vanderbilt University · Michigan State University · The Ohio State University"
+    "title": "Defining Narratives for Communication Science",
+    "presenter": "Kathryn Sam, Manushka Sondhi, Allison Eden + Matthew Grizzard",
+    "affiliation": "Vanderbilt University · Michigan State University · The Ohio State University",
+    "description": "Narratives have been defined at different levels based on researcher assumptions, disciplinary conventions, and experimental needs. But an overarching examination of what constitutes a narrative in communication science has been lacking. We have gathered some extant definitions with the hopes of discussing which are useful for communication science and how we can productively think about and use narratives in our research.",
+    "central_question": "What is a useful definition and (perhaps) operationalization for narrative in communication science?",
+    "prompts": [
+      "What constitutes the smallest meaningful and measurable unit of a narrative? What are its necessary and sufficient components?",
+      "How do our definitions of narrative serve different hierarchical levels of our research questions, both at the moment-to-moment (local) and broader story-structure (global) levels? Do the different levels affect how we characterize these components?",
+      "What would a systems-level characterization of a theory of narrative experience look like in terms of how we specify its components, relations, environment, and evolution? How could we characterize internal dependencies across these units (e.g., multilevel networks)?",
+      "Where is most communication research situated currently? Can we organize narrative research into buckets at different timescales?"
+    ],
+    "outcome": "Highlight a gap in current research on narratives and generate productive directions for researchers considering narratives at all levels in their work. The group may also develop the discussion into a research article on narratives in communication science.",
+    "resources": [
+      "A handout with definitions will be provided."
+    ]
   },
   {
     "number": 11,
