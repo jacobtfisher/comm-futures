@@ -368,17 +368,17 @@
 }
 
 // Discussion listings inherit the stage-talk silhouette so the two formats
-// read as one program system. The green top rule and explicit footer clarify
+// read as one program system. A pale green surface and explicit footer clarify
 // that these cards open into a facilitated question rather than an abstract.
 .discussion-grid-title {
     margin-top: .75rem;
 }
 
-.discussion-card {
-    border-top: .35rem solid var(--green-500) !important;
+.agenda-grid .discussion-card {
+    background-color: var(--green-50);
 
-    .agenda-card-trigger {
-        padding-top: .75rem;
+    &:hover {
+        background-color: var(--green-100);
     }
 
     .card-action {
@@ -409,7 +409,9 @@
     }
 }
 
-.discussion-card.is-open {
+.agenda-grid .discussion-card.is-open {
+    background-color: var(--green-50);
+
     .card-action i {
         transform: rotate(45deg);
     }
