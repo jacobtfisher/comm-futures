@@ -147,6 +147,92 @@
     }
 }
 
+// Saturday happy hour. Same card vocabulary as the keynote callout (muted
+// surface, ink hairline), with a place map on the right so the location reads
+// at a glance instead of as a line of body copy.
+.event-title .happy-hour-callout {
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(16rem, .9fr);
+    gap: 1.5rem;
+    align-items: stretch;
+    max-width: 60rem;
+    width: 100%;
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: var(--surface-muted);
+    border: var(--card-border) solid var(--rule);
+
+    .happy-hour-body {
+        min-width: 0;
+        font-weight: 400;
+    }
+
+    .happy-hour-label {
+        display: block;
+        font-family: var(--font-mono);
+        font-size: #{get-size('300')};
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: var(--label-tracking);
+        color: var(--green-500);
+    }
+
+    .happy-hour-name {
+        font-family: var(--font-display);
+        font-size: #{get-size('600')};
+        font-weight: 700;
+        letter-spacing: -0.02em;
+        line-height: 1.2;
+        margin-top: .35rem;
+    }
+
+    .happy-hour-address {
+        font-family: var(--font-mono);
+        font-size: #{get-size('300')};
+        letter-spacing: .03em;
+        margin-top: .25rem;
+        color: var(--ink-soft);
+    }
+
+    .happy-hour-text {
+        font-size: #{get-size('400')};
+        line-height: 1.6;
+        max-width: 48ch;
+        margin: .9rem 0 0;
+    }
+
+    .happy-hour-links {
+        list-style: none;
+        margin: .9rem 0 0;
+        padding: 0;
+        font-family: var(--font-mono);
+        font-size: #{get-size('300')};
+        letter-spacing: .03em;
+
+        li + li {
+            margin-top: .35rem;
+        }
+    }
+
+    .happy-hour-map {
+        min-width: 0;
+
+        iframe {
+            display: block;
+            width: 100%;
+            height: 100%;
+            min-height: 16rem;
+            border: var(--card-border) solid var(--rule);
+        }
+    }
+}
+
+@media (max-width: 720px) {
+    .event-title .happy-hour-callout {
+        grid-template-columns: 1fr;
+    }
+}
+
 // Section label above the talk/poster grids, in the mono label voice rather
 // than the hardcoded `gray` it used before.
 .agenda-grid-title,
