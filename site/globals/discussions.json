@@ -24,28 +24,84 @@
     "block": 2,
     "title": "Understanding Support Gaps: Current and Future Theorizing",
     "presenter": "Yue Zhang",
-    "affiliation": "Michigan State University"
+    "affiliation": "Michigan State University",
+    "description": "Social support is important for well-being, yet receiving support is not always beneficial. Support can impose face threats, create unwanted obligations, or differ from what recipients desire. These complexities have drawn researchers’ attention to support gaps, or the discrepancies between the social support people desire and receive. Although research on support gaps has generated important insights, several key questions remain underexplored: what contributes to the development of support gaps, and why deficits and surpluses produce distinct outcomes. Clarifying these issues can advance support gap theorizing and provide a stronger foundation for future research and replication.",
+    "central_question": "How do support gaps emerge through communication within and across relationships?",
+    "prompts": [
+      "What individual, relational, situational, and cultural factors shape support desires? How should we theoretically distinguish desired support from expected support, and to what extent are desires formed prior to interaction versus reconstructed through communication itself?",
+      "While support gap research often focuses on individual recipients’ perceptions, supportive communication is inherently interactive. How do support gaps emerge as dyadic, two-way communication processes involving both the provider’s behaviors and the recipient’s responses?",
+      "What theoretical mechanisms explain why support deficits and surpluses produce distinct consequences for personal and relational well-being? Under what specific conditions is exact matching optimal, versus an optimal support surplus?",
+      "How do support gaps evolve across conversation moves, coping episodes, and broader relational trajectories, and how are they created or mitigated across a person’s broader relational network?"
+    ],
+    "resources": [
+      "Crowley, J. L., & High, A. C. (2020). Validating the support gaps framework: Longitudinal effects and moderators of experiencing deficits and surpluses during supportive interactions. Communication Quarterly, 68(1), 29–53.",
+      "Pederson, J. R., High, A. C., & McLaren, R. M. (2020). Support gaps surrounding conversations about coping with relational transgressions. Western Journal of Communication, 84(2), 204–226.",
+      "Youngvorst, L. J., & Ruppel, E. K. (2025). Social support among emerging adult friends: Dyadic and longitudinal associations between support gaps and relational quality. Journal of Social and Personal Relationships, 42(7), 1629–1656."
+    ]
   },
   {
     "number": 3,
     "block": 2,
-    "title": "Not Just Old Wine in New Bottles: Extending CMC Theory to AI-Mediated Communication",
+    "title": "Not Just Old Wine in New Bottles: Extending Computer-Mediated Communication Theories to AI-Mediated Communication",
     "presenter": "Rui (Cara) Zhu",
-    "affiliation": "Michigan State University"
+    "affiliation": "Michigan State University",
+    "description": "AI is increasingly becoming part of everyday online communication, helping people write interpersonal messages. How should we understand the changes AI introduces, and can existing computer-mediated communication (CMC) theories explain them? This discussion explores how CMC theories and concepts can inform the study of AI-mediated communication (AIMC), where existing theories may need revision, and what new theoretical perspectives are needed to address questions unique to AIMC.",
+    "central_question": "How can existing CMC theories and concepts inform our understanding of AIMC, and what new theoretical questions and concepts should AIMC research address that may not have been central to traditional CMC research?",
+    "prompts": [
+      "Do we need to reinvent our theories every time a new technology emerges? Why or why not?",
+      "What role does AI play in your research, now or in the future? Does it challenge any theories or assumptions you work with?",
+      "If you had to choose, is AI’s overall impact on interpersonal communication more positive or negative? Why?",
+      "Which interpersonal communication or CMC theories or concepts are useful for understanding AIMC, and which most need reconsideration? Why?",
+      "What theoretical questions or concepts become more important in AIMC than they were in traditional CMC research?"
+    ],
+    "resources": [
+      "Hancock, J. T., Naaman, M., & Levy, K. (2020). AI-mediated communication: Definition, research agenda, and ethical considerations. Journal of Computer-Mediated Communication, 25(1), 89–100.",
+      "Liu, B., Liu, J., & Wei, L. (2026). Thinking, fast, and artificial: Processing fluency in AI-mediated relational maintenance planning and its impact on relationship perceptions. Journal of Computer-Mediated Communication, 31(4), zmag018.",
+      "Zhu, R., Markowitz, D. M., & Van Der Heide, B. (2026). Presenting the augmented self: Extending sender effects of the hyperpersonal model in artificial intelligence-mediated communication. Annals of the International Communication Association, wlag029."
+    ]
   },
   {
     "number": 4,
     "block": 2,
     "title": "Futures of Political Communication",
-    "presenter": "Stephen Spates",
-    "affiliation": "Michigan State University"
+    "presenter": "Stephen Spates + Dustin Carnahan + Dan Bergan",
+    "affiliation": "Michigan State University",
+    "description": "Political communication is being remade by AI-generated content, algorithmic curation, and synthetic media, often faster than our theories, methods, or institutions can keep up. This session invites participants to think beyond present-day fixes toward the deeper question of how what constitutes political communication, along with related concepts such as legitimacy, trust, deliberation, and political speech, will evolve over the next decade. Expect open discussion, skepticism, and predictions about the future of the field.",
+    "central_question": "As AI-mediated content, algorithmic curation, and synthetic media reshape how political information is produced and consumed, how will our conceptualization of “political communication” evolve, who (or what) will count as a communicator under that new conceptualization, and what questions will become central to what these developments mean for democratic processes?",
+    "prompts": [
+      "The authorship question: When a political message is drafted by an AI, personalized by an algorithm, and delivered through a synthetic avatar, who is accountable for its content: the candidate, the platform, the AI developer, or the voter who engaged with it?",
+      "Fragmentation vs. fusion: Are we heading toward further fragmentation of political (and even non-political) publics through hyper-personalized feeds and niche communities, or a strange re-fusion around a handful of AI-mediated gatekeepers such as chatbots and recommendation engines? What evidence points each way? Does the field need to reconsider Postman’s thesis that current trends further facilitate the potential that we “amuse ourselves to death”?",
+      "Trust infrastructure: Traditional trust signals (bylines, institutional mastheads, “I’m a real journalist”) are eroding as synthetic content becomes indistinguishable from human-made content. What new trust infrastructures, technical, social, or regulatory, might replace them? What are the implications for epistemic trust?",
+      "The global asymmetry: Most political communication research and platform policy is built around U.S. and Western contexts. How might the futures we imagine look different in electoral democracies with weaker institutions, different media systems, or non-English-dominant information ecosystems? Which systems are best positioned to weather what is coming, if any?",
+      "The future of democracy: As rapidly accelerating technologies reshape what counts as political communication, how should research agendas evolve to consider the implications for the exercise of, and support for, democratic systems?"
+    ],
+    "outcome": "Recommendations for new research areas, such as comparative platform research on how different regulatory approaches (the EU AI Act, national deepfake laws) shape political communication on the ground; AI-mediated persuasion at the “micro-targeting 2.0” level of real-time, conversational persuasion via chatbots and voice assistants; and political communication in non-Western, non-English information ecosystems.",
+    "resources": [
+      "Young, D. G., & Miller, J. M. (2023). Political communication. In L. Huddy et al. (Eds.), The Oxford handbook of political psychology (3rd ed., pp. 555–600). Oxford University Press.",
+      "Lawrence, R. G. (2025). Editor’s note, January 2025. Political Communication, 42(1), 1–5."
+    ]
   },
   {
     "number": 5,
     "block": 1,
-    "title": "Online Hate and Harms as Communication",
+    "title": "Online Hate as a Communication Process",
     "presenter": "Yidi Zhang",
-    "affiliation": "University of California, Santa Barbara"
+    "affiliation": "University of California, Santa Barbara",
+    "description": "Online hate research often centers on hateful messages, including their content, detection, prevalence, and effects. This discussion asks what changes when we instead treat online hate as an ongoing communication process. We will consider how targets, bystanders, and perpetrators respond; how these interactions shape subsequent communication and relational outcomes; and how platform features reinforce, redirect, or interrupt these processes.",
+    "central_question": "How does our understanding of online hate change when we study it as an unfolding communication process rather than primarily as hateful content?",
+    "prompts": [
+      "If hateful content is only one part of the communication process, what else should online hate research examine?",
+      "Who are the relevant actors and audiences in online hate, and how should we understand their roles?",
+      "How does feedback to online hate, and from whom, influence subsequent behaviors?",
+      "What social and relational outcomes can emerge from online hate as a communication process?",
+      "What theories and methods are needed to study online hate as a dynamic communication process?"
+    ],
+    "outcome": "Identify key questions and develop a research agenda for studying how online hate unfolds through interaction, feedback, and relational outcomes.",
+    "resources": [
+      "Walther, J. B. (2025). Making a case for a social processes approach to online hate. In J. B. Walther & R. E. Rice (Eds.), Social processes of online hate (pp. 9–36). Routledge.",
+      "Matthes, J., Koban, K., Bührer, S., Kirchmair, T., Weiss, P., Khaleghipour, M., Saumer, M., & Meerson, R. (2026). The state of evidence in digital hate research: An umbrella review. Communication Research, 53(6), 867–896.",
+      "Walther, J. B. (2026). The effects of social approval signals on the production of online hate: A theoretical explication. Communication Research, 53(6), 751–777."
+    ]
   },
   {
     "number": 6,
@@ -155,7 +211,19 @@
     "title": "AI in the Workplace – Research Opportunities",
     "presenter": "Vernon Miller",
     "affiliation": "Michigan State University",
-    "description": "Media outlets are regularly reporting and often conjecturing about the role of AI in the workplace. This discussion group will consider the various forms of AI and their uses in organizational contexts. Participants are encouraged to share their research interests and foci of study."
+    "description": "Media outlets are regularly reporting and often conjecturing about the role of AI in the workplace. This discussion group will consider the various forms of AI and their uses in organizational contexts. Participants are encouraged to share their research interests and foci of study.",
+    "central_question": "In what ways can different forms of AI (predictive, perceptual, generative, decisional, optimization, organizational, and robotic AI; Pilny et al., 2025) enhance or disrupt organizational processes and the employee experience?",
+    "prompts": [
+      "What are the advantages and disadvantages of organizations using AI to socialize newcomers?",
+      "Will AI make employee performance appraisals more accurate, helpful, and acceptable to employees than their present performance appraisal systems?",
+      "What are the potential uses for AI in facilitating successful organizational change?"
+    ],
+    "outcome": "Refined directions for research and possible research collaborations.",
+    "resources": [
+      "Liu, Y., Ding, H., Yu, E., & Song, K. (2026). Navigating onboarding in the artificial intelligence (AI) era: How augmentation-based AI usage shapes newcomers’ organizational socialization. Current Psychology, 45(1073), 1–15.",
+      "Pilny, A., Endacott, C., & Treem, J. (2025). AI in the workplace. Wiley.",
+      "Xie, W., & Xiao, Q. (2026). “Your first colleague might be an AI”: Bridging functional value and affective trust for theorizing AI avatars in new-employee organizational socialization. International Journal of Human–Computer Interaction, 1–31."
+    ]
   },
   {
     "number": 14,
