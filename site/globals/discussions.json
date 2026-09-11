@@ -230,7 +230,20 @@
     "block": 2,
     "title": "Frames We Can(not) See: How Deficit Thinking Shapes the Communication Science of AI and Children",
     "presenter": "Zhixin Li",
-    "affiliation": "Syracuse University"
+    "affiliation": "Syracuse University",
+    "description": "“AI will make our children stupid,” reads one headline. “I’m a child—here’s why I’m friends with my AI chatbot,” reads another. Coverage of children and AI swings between these poles but leans heavily toward the first: children cast as vulnerable, exploited, or missing entirely as agents. This discussion considers what a deficit frame allows communication research to ask, what it makes harder to ask, and what a more expansive, child-centered research agenda could look like.",
+    "central_question": "What does it mean for communication science to study children and AI primarily through a deficit lens? What questions, methods, and forms of knowledge does that lens make harder to see?",
+    "prompts": [
+      "What do we lose, as a field, by treating risk, harm, or vulnerability as the default variable of interest in research on children and AI?",
+      "What methods exist (or do not) for treating children as agents in AI research, rather than primarily as subjects of protection?",
+      "Why has a deficit lens been so much easier for the field to build on than one centered on children’s agency?",
+      "If you don’t study children directly, has your own field faced a similar pull toward framing a population as vulnerable rather than capable? What made that framing hard to move past?"
+    ],
+    "outcome": "A working sketch of a research agenda for studying children and AI, naming concrete questions, methods, or approaches for the field to pursue.",
+    "resources": [
+      "Buckingham, D., & Strandgaard Jensen, H. (2012). Beyond “media panics”: Reconceptualising public debates about children and media. Journal of Children and Media, 6(4), 413–429.",
+      "Entman, R. M. (1993). Framing: Toward clarification of a fractured paradigm. Journal of Communication, 43(4), 51–58."
+    ]
   },
   {
     "number": 15,
