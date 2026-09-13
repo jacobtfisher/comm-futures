@@ -127,9 +127,20 @@
   {
     "number": 7,
     "block": 2,
-    "title": "The Borgian Problem: Metaphors and Scientific Progress",
-    "presenter": "Juven Nino A. Villacastin",
-    "affiliation": "University of California, Santa Barbara"
+    "title": "The Borgian Map Problem: Metaphors and Scientific Progress",
+    "presenter": "Juven Nino A. Villacastin + Kristy A. Hamilton",
+    "affiliation": "University of California, Santa Barbara",
+    "description": "We aim to explore how scientific progress unfolds in communication science and how metaphors and other surrogate reasoning systems advance or constrain theoretical progress. We also use the Borgian Map problem as a thought experiment to refine our assumptions about what counts as theoretical progress.",
+    "central_question": "To what extent are metaphors useful for theoretical progress in communication science?",
+    "prompts": [
+      "What does scientific progress look like in communication science? What are we trying to progress in theorizing (e.g., predictive power, explanatory power, question generation, parsimony, etc.)? To what extent can metaphors be useful for theoretical progress?",
+      "To what extent are metaphors useful for advancing our goals for scientific progress? What are common metaphors that have been used in theorizing communication, and do they generally tend toward Borgian Map explanations of communication phenomena? Are there empirical or theoretical conditions that necessitate using metaphors as a surrogate reasoning system? Are there communication phenomena where a Borgian Map may actually be epistemically beneficial?",
+      "Aside from metaphors, what other surrogate systems in communication science might enable or constrain progress? What are common surrogate systems used in the discipline and its different subfields?",
+      "If not metaphors, what other approaches might overcome or complement the utility of metaphors in theorizing communication?"
+    ],
+    "resources": [
+      "Borges, J. L. (1946/1998). On exactitude in science (A. Hurley, Trans.). In A. Hurley (Trans.), Collected fictions (p. 325). Penguin Books. https://kwarc.info/teaching/TDM/Borges.pdf"
+    ]
   },
   {
     "number": 8,
@@ -298,7 +309,20 @@
     "block": 2,
     "title": "Should I Tell My Advisor? Negotiating Generative AI, Scholarly Independence, and Responsibility in Doctoral Research",
     "presenter": "Victoria A. Kyriakopoulos",
-    "affiliation": "Syracuse University"
+    "affiliation": "Syracuse University",
+    "description": "Generative AI complicates a basic question in doctoral education: what does it mean for research to remain one’s own? Doctoral students may use AI across brainstorming, writing, coding, analysis, and interpretation, but expectations for when that use should be disclosed remain uneven. This discussion will examine where the boundary between individual research practice and shared scholarly responsibility should sit, and how that boundary changes across advising and coauthorship relationships.",
+    "central_question": "Where should we draw the line between a doctoral student’s private research process and GenAI use that should be disclosed to an advisor or collaborator?",
+    "prompts": [
+      "What should actually determine whether GenAI use requires disclosure: the amount of AI involvement, the intellectual significance of the task, the consequences of error, authorship, or something else?",
+      "What do we mean by ‘independent scholarship’ when researchers routinely rely on tools, collaborators, editors, software, and now generative AI? Is AI meaningfully different from those other forms of assistance, and if so, why?",
+      "Does an advisor have a legitimate claim to know how a student uses GenAI on independently authored work, or does that cross into unnecessary oversight of the student’s research process?",
+      "What changes when the advisor becomes a coauthor? Does authorship create a stronger right to know because responsibility for the integrity of the work is now shared?",
+      "Can disclosure be considered genuinely voluntary when the person receiving that disclosure also evaluates the student’s competence, progress, and future opportunities?"
+    ],
+    "outcome": "Identify the main factors that should shape GenAI disclosure decisions, clarify where people draw the line between a student’s own research process and shared responsibility with an advisor or collaborator, and surface areas of agreement, differing norms, and questions doctoral programs still need to address.",
+    "resources": [
+      "A one-page table memo, preliminary findings, and selected theory readings will be provided at the session."
+    ]
   },
   {
     "number": 18,
