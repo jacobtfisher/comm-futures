@@ -128,6 +128,68 @@ data: agenda
     {% endif %}
 {% endmacro %}
 
+{# Tool demos use the same accessible disclosure pattern as talks and
+   discussions. Station numbers map to the Sunday room layout, and links are
+   structured data so public resources remain real anchors rather than HTML
+   embedded in JSON. #}
+{% macro demogrid() %}
+    {% if demos | length %}
+        <h2 class="agenda-grid-title demo-grid-title">Explore the demos ({{ demos | length }}):</h2>
+        <div class="agenda-grid demo-grid">
+            {% for item in demos %}
+                <article class="agenda-card demo-card" id="demo-{{ item.number }}">
+                    <button type="button" class="agenda-card-trigger"
+                            aria-expanded="false" aria-controls="demo-panel-{{ item.number }}">
+                        <span class="item-title">{{ item.title }}</span>
+                        <span class="card-identity">
+                            <span class="item-presenter">
+                                <span class="meta-row"><i class="fas fa-solid fa-user-group meta-icon" aria-hidden="true"></i><span class="meta-text">{{ item.presenter }}</span></span>
+                                <span class="meta-row"><i class="fas fa-university meta-icon" aria-hidden="true"></i><span class="meta-text">{{ item.affiliation }}</span></span>
+                                <span class="meta-row"><i class="fas fa-location-dot meta-icon" aria-hidden="true"></i><span class="meta-text">Station {{ item.number }}</span></span>
+                            </span>
+                        </span>
+                        <span class="card-action"><span>Explore this demo</span><i class="fas fa-plus" aria-hidden="true"></i></span>
+                    </button>
+
+                    <div class="agenda-card-panel demo-card-panel" id="demo-panel-{{ item.number }}">
+                        <div class="discussion-details demo-details">
+                            <p class="panel-abstract">{{ item.description }}</p>
+                            {% if item.demo %}
+                                <section class="discussion-detail-section">
+                                    <h3>What you'll see</h3>
+                                    <p>{{ item.demo }}</p>
+                                </section>
+                            {% endif %}
+                            {% if item.takeaway %}
+                                <section class="discussion-detail-section">
+                                    <h3>What you'll leave with</h3>
+                                    <p>{{ item.takeaway }}</p>
+                                </section>
+                            {% endif %}
+                            {% if item.prerequisites %}
+                                <section class="discussion-detail-section">
+                                    <h3>Before the session</h3>
+                                    <p>{{ item.prerequisites }}</p>
+                                </section>
+                            {% endif %}
+                            {% if item.links %}
+                                <section class="discussion-detail-section">
+                                    <h3>Links and resources</h3>
+                                    <ul>
+                                        {% for link in item.links %}
+                                            <li><a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.label }} <span aria-hidden="true">↗</span></a></li>
+                                        {% endfor %}
+                                    </ul>
+                                </section>
+                            {% endif %}
+                        </div>
+                    </div>
+                </article>
+            {% endfor %}
+        </div>
+    {% endif %}
+{% endmacro %}
+
 {# Renders the poster listing for a given session (1 = Saturday lunch, 2 = Sunday lunch).
    Posters get a lighter multi-column treatment than stage talks: no cards, no detail
    pages, since there are ~15 per session and no abstracts to link to. #}
@@ -398,11 +460,13 @@ data: agenda
                 <div class="time-chip"> 10:30am - 12:00pm </div>
                 <div class = "time-hr"><hr></div>
             </div>
-            <div class = "event-title-text"> Breakout Session 3 </div>
+            <div class = "event-title-text"> Tool Demo Lab </div>
             <div class = "event-body-text">
-                Tool demos, workshops, and discussion groups. Participants choose between technical demos and interactive sessions. Content depends on submissions.
+                The block opens with seven four-minute pitches using the Ballroom screens, followed by an open demo lab from 11:07–11:55. Visit several stations, talk with the presenters, and try the tools that fit your work. Laptops are welcome but not required. Expand a card for the full description, prerequisites, and links.
             </div>
         </div>
+
+        {{ demogrid() }}
 
         <div class = "event-title">
             <div class = "time-divider">

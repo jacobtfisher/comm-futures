@@ -456,11 +456,13 @@
 // Discussion listings inherit the stage-talk silhouette so the two formats
 // read as one program system. A pale green surface and explicit footer clarify
 // that these cards open into a facilitated question rather than an abstract.
-.discussion-grid-title {
+.discussion-grid-title,
+.demo-grid-title {
     margin-top: .75rem;
 }
 
-.agenda-grid .discussion-card {
+.agenda-grid .discussion-card,
+.agenda-grid .demo-card {
     background-color: var(--green-50);
 
     &:hover {
@@ -495,14 +497,16 @@
     }
 }
 
-.agenda-grid .discussion-card.is-open {
+.agenda-grid .discussion-card.is-open,
+.agenda-grid .demo-card.is-open {
     background-color: var(--green-50);
 
     .card-action i {
         transform: rotate(45deg);
     }
 
-    .discussion-card-panel {
+    .discussion-card-panel,
+    .demo-card-panel {
         display: block;
     }
 }

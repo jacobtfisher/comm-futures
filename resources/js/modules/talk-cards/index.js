@@ -148,7 +148,7 @@ const TalkCards = function TalkCards()
 
         const id = window.location.hash
 
-        if ( ! id || ! /^#(?:talk|discussion)-/.test(id) ) return
+        if ( ! id || ! /^#(?:talk|discussion|demo)-/.test(id) ) return
 
         const card = document.querySelector(id)
 

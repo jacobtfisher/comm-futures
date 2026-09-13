@@ -1,0 +1,108 @@
+[
+  {
+    "number": 1,
+    "title": "Dyadic: A Scalable Platform for Human-Human and Human-AI Conversation Research",
+    "presenter": "David Markowitz",
+    "affiliation": "Michigan State University",
+    "description": "Researchers studying how people communicate (e.g., in negotiations, therapy, or conflict resolution) have no purpose-built tool. Today, academics and industry professionals use surveys, Zoom recordings, or spreadsheets when trying to draw insights from conversation data, if they can obtain such data at all. Attempts to study conversational dynamics often result in slow studies, messy data, and unscalable designs. Dyadic is a fully integrated platform for running conversation studies between humans or between humans and AI.",
+    "demo": "See how a researcher sets up, runs, and deploys human-human and human-AI conversation studies in Dyadic.",
+    "takeaway": "Understand how Dyadic supports online conversation studies and where it might fit future research.",
+    "prerequisites": "None.",
+    "links": [
+      {
+        "label": "Dyadic",
+        "url": "https://www.chatdyadic.com/"
+      }
+    ]
+  },
+  {
+    "number": 2,
+    "title": "DiSCoKit: A Toolkit for Embedding Live LLMs in Surveys for HMC Research",
+    "presenter": "Jaime Banks + Roman Saladino",
+    "affiliation": "Syracuse University iSchool",
+    "description": "Human-machine communication (HMC) research often relies on vignettes or recollections rather than live interaction, limiting ecological validity. We introduce DiSCoKit, an open-source toolkit enabling in-survey conversations with LLMs by linking Qualtrics, Microsoft Azure, and a conversation-logging database. Customizable for experimental manipulation, it supports genuine human-machine interaction studies. This demo covers the Qualtrics integration, underlying architecture, limitations/costs/technical requirements, and discussion of customization for diverse research needs.",
+    "demo": "See participant-side views of a live survey alongside the researcher-side backend, including system prompts, API hooks, Qualtrics random assignment, and examples of other multi-agent implementations.",
+    "takeaway": "Learn how controlled human-AI interactions can run inside a survey platform and what an institution needs to deploy the toolkit.",
+    "prerequisites": "No setup is needed to attend. Deploying DiSCoKit requires a JavaScript-enabled survey platform such as Qualtrics, Microsoft Azure, and a database for logging conversations.",
+    "links": [
+      {
+        "label": "DiSCoKit paper",
+        "url": "https://doi.org/10.1371/journal.pone.0354904"
+      },
+      {
+        "label": "DiSCoKit code",
+        "url": "https://github.com/SHASTAlink/DiSCoKit"
+      }
+    ]
+  },
+  {
+    "number": 3,
+    "title": "Manipulating Inclusion, Ostracism & Rejection Online",
+    "presenter": "Sara M. Grady",
+    "affiliation": "The Ohio State University",
+    "description": "Ostracism Online provides systematic control of social inclusion/exclusion (like its precursor, Cyberball). But social feedback comes in the forms of giving/receiving likes and dislikes in response to self-disclosures. This opens up new opportunities for examining communicative processes and digital interactions. We’ll (1) tour the open-source tool, (2) see how to edit various experimental parameters, and (3) workshop its potential use cases in interpersonal, CMC, and media research.",
+    "demo": "Tour the open-source tool, see how to change experimental parameters, and workshop communication-research use cases with the group.",
+    "takeaway": "Understand what Ostracism Online does, how its parameters can be manipulated, and how the paradigm could support new communication questions.",
+    "prerequisites": "A laptop with web access and a GitHub account may be helpful, but neither is required."
+  },
+  {
+    "number": 4,
+    "title": "Design, Deploy, and Collect: A Researcher’s Guide to Inoxity",
+    "presenter": "Rachael Kee",
+    "affiliation": "University of California, Davis",
+    "description": "This live demonstration provides a start-to-finish walkthrough of Inoxity, an open-source platform for high-throughput communication science and configurable iOS research studies. Using an example study, attendees will see how researchers build and manage a study through the dashboard, locate supporting documentation, enroll participants through the iOS app, and access study data. The demonstration will conclude with a behind-the-scenes look at the control and study backends that support configuration, routing, and data storage.",
+    "demo": "Follow an example study from configuration in the researcher dashboard through participant enrollment in the iOS app, data access, and a behind-the-scenes look at the control and study backends.",
+    "takeaway": "Understand the complete Inoxity workflow and evaluate how the platform could be customized for a research protocol.",
+    "prerequisites": "None. Just come curious!"
+  },
+  {
+    "number": 5,
+    "title": "Capturing and Analyzing Textual TikTok Data in Low-Resource Languages",
+    "presenter": "Yvens Rumbold",
+    "affiliation": "Michigan State University",
+    "description": "TikTok offers valuable opportunities to examine public opinion and emerging digital and social norms in communication, but collecting and analyzing data in low-resource languages can be challenging. Combining Zeeschuimer, large language models, and R, researchers can capture, preprocess, and analyze TikTok posts and comments. This workflow also supports reproducibility and replicability by documenting analytical steps, preserving code, and enabling researchers to apply the same procedures to new datasets and linguistic contexts.",
+    "demo": "Walk through collecting TikTok posts and comments, from query design and web-based capture to preprocessing in R and analysis.",
+    "takeaway": "Learn how to design a TikTok dataset, capture public data, apply the supplied R Markdown workflow, and begin an analysis.",
+    "prerequisites": "Anyone who wants to follow along should install Firefox and RStudio and create a dedicated TikTok account rather than use a personal account. A research account with a preferred generative-AI platform may also be useful. No prior R knowledge is required.",
+    "links": [
+      {
+        "label": "4CAT and Zeeschuimer installation",
+        "url": "https://github.com/digitalmethodsinitiative/4cat/wiki"
+      },
+      {
+        "label": "4CAT tutorials",
+        "url": "https://www.youtube.com/playlist?list=PLWukutaRyIn31H0uPfkYlmbWvo83PnXXo"
+      },
+      {
+        "label": "Peeters & Hagen (2022)",
+        "url": "https://doi.org/10.5117/ccr2022.2.007.hage"
+      }
+    ]
+  },
+  {
+    "number": 6,
+    "title": "Designing and Documenting Reproducible LLM-Augmented Systematic Reviews",
+    "presenter": "Jacob T. Fisher",
+    "affiliation": "Michigan State University",
+    "description": "Large language models can speed up systematic reviews, but only if their decisions can be inspected, challenged, and reproduced. This hands-on demo uses a 500-plus-article review of technology-delivered haptics to show a human-in-the-loop workflow built in Cursor: retrieving full texts from Zotero, translating a codebook into structured prompts, processing articles in documented batches, exporting decisions for human review, and refining the workflow when human and model judgments disagree.",
+    "demo": "Follow one article from Zotero retrieval and PDF extraction through two-stage screening, structured model output, CSV export, human audit, and prompt refinement.",
+    "takeaway": "Leave with a concrete codebook-to-audit workflow and a practical way to pilot, validate, and document LLM-assisted screening.",
+    "prerequisites": "None. A laptop is optional. Cursor, Python, Zotero, and an API account are not required."
+  },
+  {
+    "number": 7,
+    "title": "Preventing Bots in Research by Capturing Online Psychophysiology",
+    "presenter": "Eric Rasmussen",
+    "affiliation": "Moveris",
+    "description": "The proliferation of online-based paid research, coupled with advances in software development employing large language models and artificial intelligence, have made it increasingly difficult to verify that research participants are actually human. We introduce a system that uses standard webcams to capture and analyze, in real time, multiple physiological signals that serve as robust markers of genuine human presence.",
+    "demo": "See how a simple bot gets through common bot and attention checks, then how webcam-based psychophysiological capture can help verify that a participant is human.",
+    "takeaway": "Learn a new approach to preventing and detecting research-participant fraud.",
+    "prerequisites": "None.",
+    "links": [
+      {
+        "label": "Moveris",
+        "url": "https://www.moveris.com/"
+      }
+    ]
+  }
+]
