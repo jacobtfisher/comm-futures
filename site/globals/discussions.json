@@ -106,9 +106,23 @@
   {
     "number": 6,
     "block": 1,
-    "title": "Moving Beyond PROCESS: Rethinking Mediation Analysis",
-    "presenter": "Matthew Grizzard",
-    "affiliation": "The Ohio State University"
+    "title": "Moving Beyond PROCESS: Rethinking Mediation Analysis in Experiments",
+    "presenter": "Matthew Grizzard + Rebecca Frazer",
+    "affiliation": "The Ohio State University · University of Florida",
+    "description": "Experiments are designed to induce variance into a process and to isolate the effects of hypothesized causes. In experimental mediation analysis, these purposes require asking whether variance induced by a manipulation is transmitted through a proposed mediator to an outcome as theory predicts. Through staged analysis of contrasting simulated experiments, participants will (a) examine how stimulus design, random assignment, measurement validity, and model specification shape mediation claims, (b) compare competing analytical approaches, and (c) develop practical standards that maintain the possibility of falsification.",
+    "central_question": "How should researchers use mediation analysis in ways that account for experimental design, random assignment, and induced variance while maintaining the possibility of falsification?",
+    "prompts": [
+      "In a simple randomized experiment: (a) What relationship should we expect between X and Y, if X has no effect on Y? (b) How is variance in Y partitioned into variance associated with experimental condition and residual variance, and what role does random assignment play in interpreting that partition? (c) What does a significant observed X-Y relationship mean in this context, and what inference can be made?",
+      "Suppose a theory proposes that M causes Y. Researchers decide to test this causal relationship by manipulating a message feature X to induce different levels of M. (a) What role does measuring M play in testing this theory? (b) What does the strength of the effect of X on M imply for the model? (c) If the hypothesized X→M→Y causal chain is correct, what relationships should we observe among X, M, and Y? (d) What does the model assume about the residuals of M and Y, and what would nonindependence of those residuals imply?",
+      "When a direct X-Y path is included in the mediation model: (a) What variance is removed from the estimation of the M-Y path? (b) What variation in M is then used to estimate the M-Y path? (c) How does this change the meaning of the M-Y path and the indirect effect?",
+      "How does including or excluding the direct X-Y path affect the falsifiability of the hypothesized X→M→Y causal chain? What can the fit or misfit of a model that excludes the direct X-Y path tell us that a fully saturated mediation model cannot?",
+      "Given the inferential purpose of an experiment, what standards should researchers follow when designing, analyzing, interpreting, and reporting experimental mediation studies so that the hypothesized causal chain remains falsifiable?"
+    ],
+    "outcome": "A preliminary set of practical standards for designing, analyzing, interpreting, and reporting experimental mediation studies in ways that maintain the possibility of falsification and identify boundary conditions, along with areas of disagreement and unresolved methodological questions.",
+    "resources": [
+      "Grizzard, M., Carpenter, C. J., & Frazer, R. (2026; pre-print). Concerning the c′ Path: How PROCESS-based Mediation Undermines Experimental Methods. https://doi.org/10.31234/osf.io/39uqf_v1",
+      "O'Keefe, D. J. (2003). Message properties, mediating states, and manipulation checks: Claims, evidence, and data analysis in experimental persuasive message effects research. Communication Theory, 13(3), 251–274. https://doi.org/10.1111/j.1468-2885.2003.tb00292.x"
+    ]
   },
   {
     "number": 7,
