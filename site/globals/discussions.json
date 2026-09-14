@@ -327,8 +327,22 @@
   {
     "number": 18,
     "block": 2,
-    "title": "Selective Exposure Processes",
-    "presenter": "Monique Turner",
-    "affiliation": "Michigan State University"
+    "title": "Resource Management Explains Selective Exposure Across All Communication Functions",
+    "presenter": "Monique Turner + Alex Aune + Prathyusha Galinkala",
+    "affiliation": "Michigan State University",
+    "description": "In light of a recent push toward grounding communication theory, as well as exploring potential communication laws, we propose selective exposure as a potential candidate. Grounding selective exposure in resource management and limited cognitive capacity makes the resulting heuristic cues obviously adaptive strategies from an evolutionary perspective. Further, selective exposure becomes a metatheory of human interaction beyond the traditional scope of media selection and political communication.",
+    "central_question": "Is selective exposure a law of communication?",
+    "prompts": [
+      "Is the principle of selective exposure evident in every function of communication?",
+      "What are the underlying mechanisms that motivate or restrict (guide) selective exposure?",
+      "Is selective exposure evident in dozens of psychological and communication theories, just under different construct labels?",
+      "What novel avenues of research are unlocked by this paradigm shift?"
+    ],
+    "outcome": "Selective exposure is not merely a media or political communication phenomenon. It is evident across the various functions of communication: relating, informing, influencing, and entertaining. We argue that across all these domains, selective exposure is explained by humans’ limited cognitive-emotional capacity.",
+    "resources": [
+      "Fisher, J. T., Huskey, R., Keene, J. R., & Weber, R. (2018). The limited capacity model of motivated mediated message processing: Looking to the future. Annals of the International Communication Association, 42(4), 291–315.",
+      "Knobloch-Westerwick, S. (2015). The selective exposure self-and affect-management (SESAM) model: Applications in the realms of race, politics, and health. Communication Research, 42(7), 959–985.",
+      "Schmälzle, R., & Huskey, R. (2023). Skyhooks, cranes, and the construct dump: A comment on and extension of Boster (2023). Asian Communication Research, 20(2), 84–94."
+    ]
   }
 ]
