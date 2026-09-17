@@ -29,11 +29,11 @@
   {
     "number": 4,
     "theme": "research",
-    "title": "Narrative Character Networks Explain Storytelling Success",
-    "presenter": "Xuanjun Gong",
-    "affiliation": "Texas A&M University",
-    "headshot": "/images/headshots/gong.jpg",
-    "abstract": "Why do some stories captivate audiences while others fall flat? This talk treats narratives as character networks, with characters as nodes and their interactions as edges, and asks how a story's structure shapes its success. Across more than 10,000 novels and 1,000 film screenplays, network features predict real-world popularity and audience ratings. The approach links how people learn from networks to the architecture of stories at scale, and points toward a more computational, design-oriented future for narrative research."
+    "title": "Concerning the c′ Path: How PROCESS-based Mediation Undermines Experimental Methods",
+    "presenter": "Matthew Grizzard",
+    "affiliation": "The Ohio State University",
+    "headshot": "/images/headshots/grizzard.jpg",
+    "abstract": "A large amount of experimental mediation analysis in the field is run through PROCESS Model 4. This talk argues that the model often works against the experiments it is meant to serve. Simulations built on a real design show that the direct (c′) path controls away the very variance an experiment is built to induce, so PROCESS returns significant indirect effects whether or not the data fit the theory. The recommendation is a serial causal-chain SEM, and a cleaner standard for testing mediation going forward."
   },
   {
     "number": 5,
@@ -144,11 +144,11 @@
   {
     "number": 17,
     "theme": "methods",
-    "title": "Concerning the c′ Path: How PROCESS-based Mediation Undermines Experimental Methods",
-    "presenter": "Matthew Grizzard",
-    "affiliation": "The Ohio State University",
-    "headshot": "/images/headshots/grizzard.jpg",
-    "abstract": "A large amount of experimental mediation analysis in the field is run through PROCESS Model 4. This talk argues that the model often works against the experiments it is meant to serve. Simulations built on a real design show that the direct (c′) path controls away the very variance an experiment is built to induce, so PROCESS returns significant indirect effects whether or not the data fit the theory. The recommendation is a serial causal-chain SEM, and a cleaner standard for testing mediation going forward."
+    "title": "Narrative Character Networks Explain Storytelling Success",
+    "presenter": "Xuanjun Gong",
+    "affiliation": "Texas A&M University",
+    "headshot": "/images/headshots/gong.jpg",
+    "abstract": "Why do some stories captivate audiences while others fall flat? This talk treats narratives as character networks, with characters as nodes and their interactions as edges, and asks how a story's structure shapes its success. Across more than 10,000 novels and 1,000 film screenplays, network features predict real-world popularity and audience ratings. The approach links how people learn from networks to the architecture of stories at scale, and points toward a more computational, design-oriented future for narrative research."
   },
   {
     "number": 18,
