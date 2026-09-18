@@ -1,0 +1,44 @@
+//========== Photos ==========//
+
+// The QR-code landing page. Two stacked, full-width actions sized for a phone
+// held in one hand, because that is the only way anyone arrives here.
+.photos-page {
+    .photos-actions {
+        display: grid;
+        gap: 1rem;
+    }
+
+    .photos-action {
+        display: flex;
+        flex-direction: column;
+        gap: .35rem;
+        padding: 1.25rem 1.4rem;
+        text-align: left;
+        // The .button rule sets the mono label voice; the note below the label
+        // should read as running text, so the family is reset per span.
+        text-transform: none;
+        letter-spacing: 0;
+    }
+
+    .photos-action-label {
+        font-family: var(--font-mono);
+        font-size: get-size('500');
+        font-weight: 700;
+        letter-spacing: .08em;
+        text-transform: uppercase;
+    }
+
+    .photos-action-note {
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, sans-serif;
+        font-size: get-size('400');
+        font-weight: 400;
+        opacity: .85;
+    }
+
+    .photos-fineprint {
+        margin-top: 2rem;
+        max-width: 52ch;
+        font-size: get-size('400');
+        color: var(--ink-soft);
+    }
+}

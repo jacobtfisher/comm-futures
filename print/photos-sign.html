@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Futures photo sign</title>
+<!--
+  Letter-size sign for the conference. Print from a browser (File > Print,
+  margins: none) or regenerate the PDF:
+
+    "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless \
+      --print-to-pdf=print/photos-sign.pdf --no-pdf-header-footer print/photos-sign.html
+
+  The QR is inlined from images/photos-qr.svg and encodes
+  https://commscifutures.com/photos/ — never the Dropbox link — so the sign
+  survives any change of upload target.
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600..900&family=Inter:wght@400..600&family=JetBrains+Mono:wght@700&display=swap" rel="stylesheet">
+<style>
+  @page { size: letter; margin: 0; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body {
+    width: 8.5in; height: 11in;
+    font-family: Inter, system-ui, sans-serif;
+    color: #111827;
+    background: #fff;
+    display: flex; flex-direction: column;
+    padding: .75in .8in .7in;
+    -webkit-print-color-adjust: exact; print-color-adjust: exact;
+  }
+  .kicker {
+    font-family: "JetBrains Mono", monospace;
+    font-weight: 700; font-size: 13pt; letter-spacing: .12em; text-transform: uppercase;
+    color: #008934; margin: 0 0 .25in;
+  }
+  h1 {
+    font-family: Archivo, system-ui, sans-serif;
+    font-weight: 900; font-size: 54pt; line-height: .98; letter-spacing: -.01em;
+    margin: 0 0 .3in;
+  }
+  .qr-wrap {
+    flex: 1; display: flex; align-items: center; justify-content: center;
+    border-top: 4px solid #111827; border-bottom: 4px solid #111827;
+  }
+  .qr-wrap svg { width: 4.4in; height: 4.4in; }
+  .url {
+    font-family: "JetBrains Mono", monospace; font-weight: 700;
+    font-size: 24pt; letter-spacing: .04em; text-align: center; margin: .3in 0 .12in;
+  }
+  .alt {
+    font-size: 14pt; line-height: 1.4; text-align: center; margin: 0; color: #374151;
+  }
+  .alt strong { color: #111827; font-weight: 600; }
+  .foot {
+    font-family: "JetBrains Mono", monospace; font-weight: 700; font-size: 10pt;
+    letter-spacing: .1em; text-transform: uppercase; text-align: center;
+    color: #6b7280; margin-top: .3in;
+  }
+</style>
+</head>
+<body>
+  <p class="kicker">Communication Science Futures</p>
+  <h1>Took a photo?<br>Send it to us.</h1>
+  <div class="qr-wrap">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 370 370" role="img" aria-label="QR code linking to commscifutures.com/photos"><path transform="scale(10)" stroke="#111" d="M2 2.5h7m7 0h1m2 0h4m1 0h7m-29 1h1m5 0h1m3 0h2m4 0h1m1 0h1m1 0h1m1 0h1m5 0h1m-29 1h1m1 0h3m1 0h1m2 0h3m2 0h2m1 0h3m2 0h1m1 0h3m1 0h1m-29 1h1m1 0h3m1 0h1m2 0h3m1 0h1m4 0h3m1 0h1m1 0h3m1 0h1m-29 1h1m1 0h3m1 0h1m11 0h1m3 0h1m1 0h3m1 0h1m-29 1h1m5 0h1m1 0h2m1 0h1m3 0h1m1 0h1m1 0h1m2 0h1m5 0h1m-29 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-20 1h1m1 0h1m1 0h1m1 0h4m1 0h1m-21 1h1m2 0h1m1 0h2m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m4 0h1m1 0h1m-24 1h1m1 0h1m2 0h1m1 0h4m1 0h2m1 0h1m4 0h1m1 0h1m2 0h1m2 0h1m-28 1h3m1 0h2m6 0h2m1 0h2m1 0h2m2 0h5m-26 1h1m2 0h1m4 0h1m1 0h2m2 0h1m1 0h1m1 0h1m1 0h3m1 0h2m-25 1h2m1 0h3m2 0h1m2 0h4m3 0h2m2 0h1m1 0h2m-28 1h1m1 0h1m4 0h2m1 0h4m1 0h1m2 0h3m-22 1h1m1 0h6m1 0h1m1 0h4m2 0h1m2 0h1m1 0h1m1 0h5m-27 1h1m5 0h1m2 0h2m4 0h4m1 0h1m1 0h2m1 0h1m-28 1h2m2 0h1m1 0h1m1 0h3m1 0h2m2 0h4m1 0h1m5 0h1m-27 1h1m1 0h2m4 0h1m2 0h3m1 0h2m3 0h3m1 0h1m2 0h1m-29 1h1m1 0h2m1 0h3m1 0h2m3 0h1m2 0h1m2 0h1m2 0h1m3 0h2m-26 1h1m1 0h1m2 0h1m2 0h1m2 0h1m2 0h2m1 0h1m1 0h1m1 0h1m2 0h2m-29 1h1m3 0h1m1 0h2m2 0h3m2 0h2m3 0h5m1 0h1m-19 1h1m1 0h2m2 0h1m1 0h3m1 0h1m3 0h1m1 0h3m-29 1h7m3 0h1m1 0h1m5 0h1m1 0h1m1 0h1m1 0h1m2 0h1m-28 1h1m5 0h1m1 0h5m1 0h3m3 0h1m3 0h5m-29 1h1m1 0h3m1 0h1m2 0h2m1 0h1m4 0h1m2 0h5m3 0h1m-29 1h1m1 0h3m1 0h1m1 0h1m4 0h1m5 0h1m2 0h6m-28 1h1m1 0h3m1 0h1m4 0h2m4 0h3m4 0h3m1 0h1m-29 1h1m5 0h1m2 0h1m2 0h2m2 0h2m2 0h1m3 0h1m2 0h1m-28 1h7m1 0h4m2 0h2m1 0h1m2 0h1m1 0h1m1 0h2m1 0h1"/></svg>
+  </div>
+  <p class="url">commscifutures.com/photos</p>
+  <p class="alt">Scan to upload straight from your phone. No account needed.<br>Or email them to <strong>commscifutures@msu.edu</strong></p>
+  <p class="foot">Photos may appear on the Futures site and social posts</p>
+</body>
+</html>
