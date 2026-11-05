@@ -94,3 +94,18 @@
 		flex-flow: column wrap;
 	}
 }
+
+// Site-wide archived notice (components/archive-notice.njk). Sits above the
+// header, so it needs its own top breathing room and drops the callout's usual
+// bottom margin in favour of the header's own padding.
+.archive-notice {
+	padding-top: #{get-size('500')};
+
+	.callout {
+		margin-bottom: 0;
+	}
+
+	.callout-text {
+		font-size: #{get-size('400')};
+	}
+}

@@ -1,0 +1,17 @@
+{# Archived-site notice, shown on every page while site.archive.enabled is true
+   (site/globals/site.json). Wording is MSU's recommended archived-content notice,
+   from the College's accessibility review (Lauren Gaines, 2026-11-02). It sits
+   before the header so it is the first thing read, seen, and tabbed to; the
+   skip link would otherwise jump straight past it into <main>. #}
+{% if site.archive and site.archive.enabled %}
+<aside class="archive-notice inner" aria-label="Archived website notice">
+    <div class="callout">
+        <div class="callout-icon">
+            <i class="fas fa-info-circle" aria-hidden="true"></i>
+        </div>
+        <div class="callout-text">
+            <p>This website has been archived and is no longer being updated. Content is maintained for historical and reference purposes. For questions about the information presented or to request content in an accessible format, please contact <a href="mailto:{{ site.archive.contact }}">{{ site.archive.contact }}</a>.</p>
+        </div>
+    </div>
+</aside>
+{% endif %}

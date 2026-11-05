@@ -1,6 +1,10 @@
 {
     "name": "Communication Science Futures",
     "url": "https://commscifutures.com",
+    "archive": {
+        "enabled": true,
+        "contact": "jtf@msu.edu"
+    },
     "author": {
         "name": "Jacob Fisher",
         "handle": "@jake_fisher"
